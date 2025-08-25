@@ -250,7 +250,7 @@
     <section id="waarde" class="py-24 bg-gray-50 scroll-mt-24">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-4xl mx-auto mb-20">
-          <h2 class="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 mb-6" v-html="t('value.title', { helpr: '<span class=&quot;bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent&quot;>', '/helpr': '</span>' })"></h2>
+          <h2 class="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 mb-6" v-html="t('value.title', { helpr: '<span class=&quot;bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent font-bold&quot;>', '/helpr': '</span>' })"></h2>
           <p class="text-xl text-gray-600 leading-8">
             {{ t('value.subtitle') }}
           </p>
@@ -403,7 +403,7 @@
       
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
         <div class="text-center max-w-4xl mx-auto mb-20">
-          <h2 class="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 mb-6" v-html="t('working.title', { werkt: '<span class=&quot;bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent&quot;>', '/werkt': '</span>' })"></h2>
+          <h2 class="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 mb-6" v-html="t('working.title', { werkt: '<span class=&quot;bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent font-bold&quot;>', '/werkt': '</span>' })"></h2>
           <p class="text-xl text-gray-600 leading-8">
             {{ t('working.subtitle') }}
           </p>
