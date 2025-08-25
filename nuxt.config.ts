@@ -1,6 +1,6 @@
 // nuxt.config.ts
 export default defineNuxtConfig({
-  ssr: true,
+  ssr: false,
   nitro: {
     prerender: {
       crawlLinks: false,
