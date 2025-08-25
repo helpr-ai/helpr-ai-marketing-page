@@ -276,10 +276,10 @@ const translations = {
     },
     value: {
       title: "Why {helpr}Helpr.AI{/helpr}",
-      subtitle: "Transform unstructured conversations into professional, audit-ready compliance documentation in minutes, not weeks.",
+      subtitle: "The fastest and most accessible way to get your compliance documentation in order.",
       card1: {
-        title: "Fast information extraction",
-        description: "Reduce weeks of workshops and notes to one focused conversation. Less manual work, more progress with AI-driven interviews."
+        title: "Crazy fast workflow",
+        description: "Reduce weeks of workshops and notes to a few interviews whenever it suits you. Less manual work, more progress with AI-driven conversations."
       },
       card2: {
         title: "No new system needed",
@@ -290,19 +290,19 @@ const translations = {
         description: "Uniform structure and professional language, directly usable for audits and certifications like ISO 27001 and ISO 42001."
       },
       stats: {
-        reduction: "95%",
+        reduction: "88%",
         reductionLabel: "Time saving",
         quality: "100%",
-        qualityLabel: "Audit-ready",
+        qualityLabel: "Audit-ready output",
         integration: "5 min",
         integrationLabel: "Setup time",
-        standards: "2+",
+        standards: "200+",
         standardsLabel: "ISO standards"
       }
     },
     grant: {
       badge: "Recognized by ElevenLabs",
-      title: "We have been selected to receive the ElevenLabs Grant — recognition of our innovative approach to AI-compliance."
+      title: "We have received an ElevenLabs Grant. A recognition of our innovative approach in compliance."
     },
     common: {
       beta: "Beta",
@@ -315,11 +315,11 @@ const translations = {
       title: "Product overview",
       dashboardTitle: "Helpr.AI Dashboard",
       aiInterviews: "AI Interview",
-      aiInterviewsDesc: "Ask intelligent questions and collect answers from teams",
+      aiInterviewsDesc: "Get interviewed by an AI-based consultant",
       structuring: "Structuring", 
-      structuringDesc: "Automatically convert to audit-ready documentation",
+      structuringDesc: "Convert instantly to audit-ready documentation",
       exportReady: "Export Ready",
-      exportDesc: "Directly integrate into your existing ISMS",
+      exportDesc: "Directly integrate into your existing management system",
       features: [
         "Templates per standard: ISO 27001, ISO 42001 (and expandable)."
       ],
@@ -335,15 +335,15 @@ const translations = {
     target: {
       title: "Who is Helpr.AI for?",
       companies: {
-        title: "Companies (SME+ & Enterprise)",
+        title: "Companies (SME and Enterprise)",
         benefits: [
           "Faster path to certification with less dependency on external consultants.",
           "Consistent documentation and clear ownership.",
-          "Works with your existing ISMS/documentation process."
+          "Works with your existing management system and documentation process."
         ]
       },
       consultants: {
-        title: "ISO consultants & auditors",
+        title: "Compliance agencies",
         benefits: [
           "Accelerate trajectories and improve input quality.",
           "Uniform output helps with audit readiness and reporting.", 
@@ -353,10 +353,10 @@ const translations = {
     },
     working: {
       title: "How it {werkt}works{/werkt}",
-      subtitle: "Three steps. One streamline from conversation to certification.",
+      subtitle: "Three steps. With maximum efficiency from conversation to certification.",
       step1: {
         title: "AI Interview",
-        description: "Start a conversation with relevant employees. Our AI asks the right questions based on ISO requirements and business context.",
+        description: "Send an invitation to the relevant employees. Our AI asks the right questions based on your templates and business context.",
         demo: {
           question: "AI asks question about ISO 27001...",
           answer: "Expert responds naturally",
@@ -365,7 +365,7 @@ const translations = {
       },
       step2: {
         title: "AI Structuring", 
-        description: "Answers are automatically converted into uniform, audit-ready documentation and registers with professional structure.",
+        description: "Interviews are automatically converted into uniform, audit-ready documentation with professional structure.",
         categories: {
           policy: "Policy & Context",
           risk: "Risk Assessment", 
@@ -374,11 +374,11 @@ const translations = {
       },
       step3: {
         title: "Export & Integration",
-        description: "Export to your existing ISMS or documentation process and continue directly with implementation. Ready to use.",
+        description: "Export to your existing management system or documentation process and continue directly with implementation. Ready to use.",
         platforms: {
           sharepoint: "SharePoint",
           confluence: "Confluence", 
-          custom: "Custom ISMS"
+          custom: "Custom"
         }
       },
       features: {
@@ -388,13 +388,13 @@ const translations = {
         },
         templates: {
           title: "Expandable Templates", 
-          description: "Start with ISO 27001 & ISO 42001 and expand with standards like NEN 7510 and SOC 2. Templates are customizable per client context."
+          description: "Start with ISO 27001 & ISO 42001 and expand with standards like ISO9001 and ISO14001. Templates and client context are customizable."
         }
       }
     },
     demo: {
       badge: "Try Helpr.AI",
-      title: "Discover the power of AI-compliance",
+      title: "Discover the power of Helpr.AI",
       subtitle: "See in 20 minutes how Helpr.AI accelerates and simplifies your certification process",
       benefits: {
         walkthrough: {
@@ -432,28 +432,28 @@ const translations = {
       title: "Frequently asked questions",
       questions: [
         {
-          question: "Is Helpr.AI an ISMS?",
-          answer: "No. Helpr.AI works complementary to existing systems. We collect and structure the information; you use the output in your own ISMS or documentation process."
+          question: "Is Helpr.AI a management system?",
+          answer: "No. Helpr.AI works complementary to existing systems. We collect and structure the information; you use the output in your own management system or documentation process."
         },
         {
           question: "Which standards are supported?",
-          answer: "We start with ISO 27001 and ISO 42001. The roadmap includes standards like NEN 7510 (healthcare) and SOC 2. We continuously expand our standard sets."
+          answer: "We start with ISO 27001 and ISO 42001. But we continuously expand our standard sets. On the roadmap are standards like ISO9001 and ISO14001."
         },
         {
           question: "Is guidance needed?",
-          answer: "The tool is intuitive, but we offer onboarding and (optional) collaboration with ISO consultants. This way you quickly get value from the interviews and output."
+          answer: "The tool works intuitively and we offer onboarding. This way you quickly get value from the interviews and output."
         },
         {
           question: "What about security & privacy?",
-          answer: "Security-first: minimal data retention, clear logging, and transparent data location agreements. Contact us for our security factsheet."
+          answer: "Minimal data retention, clear logging, and transparent agreements. Contact us for our security factsheet."
         }
       ]
     },
     contact: {
       title: "Questions or interested in partnership?",
-      subtitle: "We'd love to talk with security & compliance teams and ISO consultants. Leave your details or email us directly.",
-      partnership: "partnership@Helpr.AI",
-      onepager: "one-pager on request",
+      subtitle: "We love to talk with compliance teams and ISO consultants. Leave your details or email us directly.",
+      partnership: "partnership@helpr.ai",
+      onepager: "One-pager on request",
       form: {
         name: "Name",
         email: "Email", 
@@ -477,11 +477,11 @@ const translations = {
     flowSteps: {
       conversation: {
         title: "Conversation",
-        description: "Natural conversations with teams and stakeholders"
+        description: "Natural interviews by AI-based consultants"
       },
       certification: {
         title: "Certification", 
-        description: "Audit-ready documentation for ISO compliance"
+        description: "Audit-ready documentation for compliance"
       }
     }
   }
