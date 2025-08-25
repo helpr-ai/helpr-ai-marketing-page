@@ -375,10 +375,10 @@
     <section id="voorwie" class="py-14 scroll-mt-24">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-bold tracking-tight text-center">{{ t('target.title') }}</h2>
-        <div class="mt-10 grid md:grid-cols-2 gap-6">
+        <div class="mt-10 grid md:grid-cols-2 gap-8">
           <div class="rounded-2xl border">
             <div class="p-4 border-b flex items-center gap-2 text-lg font-semibold"><BuildingOffice2Icon class="h-5 w-5"/> {{ t('target.companies.title') }}</div>
-            <div class="p-4 text-slate-600 grid gap-2">
+            <div class="p-4 text-slate-600 grid gap-8">
               <div class="flex items-start gap-3"><CheckCircleIcon class="h-5 w-5 text-slate-900 mt-0.5"/> {{ t('target.companies.benefits.0') }}</div>
               <div class="flex items-start gap-3"><CheckCircleIcon class="h-5 w-5 text-slate-900 mt-0.5"/> {{ t('target.companies.benefits.1') }}</div>
               <div class="flex items-start gap-3"><CheckCircleIcon class="h-5 w-5 text-slate-900 mt-0.5"/> {{ t('target.companies.benefits.2') }}</div>
@@ -386,7 +386,7 @@
           </div>
           <div class="rounded-2xl border">
             <div class="p-4 border-b flex items-center gap-2 text-lg font-semibold"><UsersIcon class="h-5 w-5"/> {{ t('target.consultants.title') }}</div>
-            <div class="p-4 text-slate-600 grid gap-2">
+            <div class="p-4 text-slate-600 grid gap-8">
               <div class="flex items-start gap-3"><CheckCircleIcon class="h-5 w-5 text-slate-900 mt-0.5"/> {{ t('target.consultants.benefits.0') }}</div>
               <div class="flex items-start gap-3"><CheckCircleIcon class="h-5 w-5 text-slate-900 mt-0.5"/> {{ t('target.consultants.benefits.1') }}</div>
               <div class="flex items-start gap-3"><CheckCircleIcon class="h-5 w-5 text-slate-900 mt-0.5"/> {{ t('target.consultants.benefits.2') }}</div>

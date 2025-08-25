@@ -275,7 +275,7 @@ const translations = {
       cta: "Experience it yourself"
     },
     value: {
-      title: "Why {helpr}Helpr.AI{/helpr}",
+      title: "Why {helpr}Helpr.AI{/helpr}?",
       subtitle: "The fastest and most accessible way to get your compliance documentation in order.",
       card1: {
         title: "Crazy fast workflow",

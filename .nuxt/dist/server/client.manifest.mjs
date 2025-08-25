@@ -1,1 +1,1 @@
-export { default } from "file:///Users/lemon/projects/helpr.ai/marketing-page/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"
+export { default } from "file:///Users/lemon/projects/helpr.ai/helpr-ai-marketing-page/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"
