@@ -1,0 +1,26 @@
+{
+  "name": "marketing-page",
+  "version": "1.0.0",
+  "main": "postcss.config.js",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@heroicons/vue": "^2.2.0",
+    "nuxt": "^4.0.3",
+    "vue": "^3.5.19"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17"
+  }
+}
