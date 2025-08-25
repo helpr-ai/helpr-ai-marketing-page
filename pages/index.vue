@@ -10,6 +10,8 @@
             class="h-8 w-auto"
           />
         </div>
+        
+        <!-- Desktop Navigation -->
         <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
           <button @click="scrollTo('product')" class="text-gray-700 hover:text-indigo-600 transition-colors">{{ t('nav.product') }}</button>
           <button @click="scrollTo('waarde')" class="text-gray-700 hover:text-indigo-600 transition-colors">{{ t('nav.value') }}</button>
@@ -17,7 +19,9 @@
           <button @click="scrollTo('voorwie')" class="text-gray-700 hover:text-indigo-600 transition-colors">{{ t('nav.whoItsFor') }}</button>
           <button @click="scrollTo('faq')" class="text-gray-700 hover:text-indigo-600 transition-colors">{{ t('nav.faq') }}</button>
         </nav>
-        <div class="flex items-center gap-4">
+        
+        <!-- Desktop Actions -->
+        <div class="hidden md:flex items-center gap-4">
           <!-- Language Switcher -->
           <div class="relative">
             <button 
@@ -47,6 +51,67 @@
           
           <button class="hidden sm:inline-flex h-11 items-center rounded-xl px-5 text-gray-700 hover:bg-gray-100 transition-colors font-medium" @click="scrollTo('contact')">{{ t('nav.contact') }}</button>
           <button class="h-11 items-center rounded-xl px-6 bg-gradient-to-r from-indigo-600 to-purple-600 text-white hover:from-indigo-700 hover:to-purple-700 transition-all shadow-lg hover:shadow-xl font-medium" @click="scrollTo('demo')">{{ t('nav.demo') }}</button>
+        </div>
+
+        <!-- Mobile Hamburger Menu -->
+        <div class="md:hidden">
+          <button
+            @click="toggleMobileMenu"
+            class="flex items-center justify-center w-10 h-10 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors"
+            type="button"
+          >
+            <Bars3Icon v-if="!showMobileMenu" class="h-6 w-6" />
+            <XMarkIcon v-else class="h-6 w-6" />
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Overlay -->
+      <div 
+        v-if="showMobileMenu" 
+        class="md:hidden absolute top-full left-0 right-0 bg-white border-b border-gray-200 shadow-lg z-40"
+      >
+        <div class="px-6 py-4 space-y-4">
+          <!-- Mobile Navigation Links -->
+          <div class="space-y-2">
+            <button @click="scrollTo('product'); closeMobileMenu()" class="w-full text-left px-3 py-2 text-gray-700 hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition-colors">{{ t('nav.product') }}</button>
+            <button @click="scrollTo('waarde'); closeMobileMenu()" class="w-full text-left px-3 py-2 text-gray-700 hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition-colors">{{ t('nav.value') }}</button>
+            <button @click="scrollTo('werking'); closeMobileMenu()" class="w-full text-left px-3 py-2 text-gray-700 hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition-colors">{{ t('nav.howItWorks') }}</button>
+            <button @click="scrollTo('voorwie'); closeMobileMenu()" class="w-full text-left px-3 py-2 text-gray-700 hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition-colors">{{ t('nav.whoItsFor') }}</button>
+            <button @click="scrollTo('faq'); closeMobileMenu()" class="w-full text-left px-3 py-2 text-gray-700 hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition-colors">{{ t('nav.faq') }}</button>
+            <button @click="scrollTo('contact'); closeMobileMenu()" class="w-full text-left px-3 py-2 text-gray-700 hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition-colors">{{ t('nav.contact') }}</button>
+          </div>
+          
+          <!-- Mobile CTA Button -->
+          <div class="pt-2 pb-4 border-b border-gray-100">
+            <button 
+              @click="scrollTo('demo'); closeMobileMenu()" 
+              class="w-full h-11 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 text-white hover:from-indigo-700 hover:to-purple-700 transition-all shadow-lg font-medium"
+            >
+              {{ t('nav.demo') }}
+            </button>
+          </div>
+
+          <!-- Mobile Language Switcher -->
+          <div>
+            <div class="text-sm font-medium text-gray-500 mb-3">Language</div>
+            <div class="flex gap-3">
+              <button
+                v-for="lang in languages"
+                :key="lang.code"
+                @click="changeLang(lang.code)"
+                :class="[
+                  'flex items-center gap-2 px-3 py-2 rounded-lg text-sm transition-colors',
+                  currentLocale === lang.code 
+                    ? 'bg-indigo-50 text-indigo-600 font-medium' 
+                    : 'text-gray-700 hover:bg-gray-50'
+                ]"
+              >
+                <span class="text-lg">{{ lang.flag }}</span>
+                <span>{{ lang.name }}</span>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -200,7 +265,7 @@
           
           <!-- Main tagline -->
           <h2 class="text-6xl sm:text-7xl lg:text-8xl font-bold text-white mb-8 leading-tight">
-            "{{ t('tagline.title') }}"
+            {{ t('tagline.title') }}
           </h2>
           
           <!-- Supporting text -->
@@ -844,6 +909,8 @@ import {
   CogIcon,
   StarIcon,
   TrophyIcon,
+  Bars3Icon,
+  XMarkIcon,
 } from '@heroicons/vue/24/outline'
 
 const scrollTo = (id: string) => {
@@ -872,10 +939,20 @@ const workStep3Reveal = createRevealElement()
 // I18n setup
 const { currentLocale, languages, setLocale, t, getRaw, getCurrentLanguage } = useI18n()
 const showLangDropdown = ref(false)
+const showMobileMenu = ref(false)
+
+const toggleMobileMenu = () => {
+  showMobileMenu.value = !showMobileMenu.value
+}
+
+const closeMobileMenu = () => {
+  showMobileMenu.value = false
+}
 
 const changeLang = (locale: string) => {
   setLocale(locale)
   showLangDropdown.value = false
+  showMobileMenu.value = false
 }
 
 // Success URL for form redirects
@@ -886,12 +963,19 @@ const successUrl = computed(() => {
   return '/success'
 })
 
-// Close dropdown when clicking outside
+// Close dropdown and mobile menu when clicking outside
 onMounted(() => {
   const handleClickOutside = (event: Event) => {
     const target = event.target as HTMLElement
+    
+    // Close language dropdown if clicking outside of language switcher
     if (!target.closest('.relative')) {
       showLangDropdown.value = false
+    }
+    
+    // Close mobile menu if clicking outside of header
+    if (!target.closest('header')) {
+      showMobileMenu.value = false
     }
   }
   document.addEventListener('click', handleClickOutside)

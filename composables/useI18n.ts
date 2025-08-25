@@ -57,12 +57,12 @@ const translations = {
       },
       stats: {
         reduction: "88%",
-        reductionLabel: "minder tijd",
+        reductionLabel: "minder tijd kwijt",
         quality: "100%",
         qualityLabel: "audit-klare output",
         integration: "5 min",
         integrationLabel: "setup tijd",
-        standards: "200+",
+        standards: "50+",
         standardsLabel: "ISO standaarden"
       }
     },
@@ -149,11 +149,11 @@ const translations = {
       },
       features: {
         security: {
-          title: "Security‑First Approach",
+          title: "Security‑First aanpak",
           description: "Privacy en informatiebeveiliging staan voorop. We beperken dataretentie en zorgen voor duidelijke logging & traceerbaarheid."
         },
         templates: {
-          title: "Uitbreidbare Templates", 
+          title: "Uit te breiden met eigen templates", 
           description: "Start met ISO 27001 & ISO 42001 en breid uit met o.a. ISO9001 en ISO14001. Templates en klantcontext zijn aanpasbaar."
         }
       }
@@ -207,7 +207,7 @@ const translations = {
         },
         {
           question: "Is er begeleiding nodig?",
-          answer: "De tool werkt intuïtief en we bieden onboarding. Zo haal je snel waarde uit de interviews en output."
+          answer: "De tool werkt intuïtief en we bieden ook onboarding aan. Zo haal je snel waarde uit de interviews en output."
         },
         {
           question: "Hoe zit het met security & privacy?",
@@ -243,7 +243,7 @@ const translations = {
     flowSteps: {
       conversation: {
         title: "Conversation",
-        description: "Natuurlijke interviews door AI-based consultants"
+        description: "Natuurlijk aanvoelende interviews door AI-based consultants"
       },
       certification: {
         title: "Certification", 
@@ -296,7 +296,7 @@ const translations = {
         qualityLabel: "Audit-ready output",
         integration: "5 min",
         integrationLabel: "Setup time",
-        standards: "200+",
+        standards: "50+",
         standardsLabel: "ISO standards"
       }
     },
