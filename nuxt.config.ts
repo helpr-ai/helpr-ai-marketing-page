@@ -9,7 +9,7 @@ export default defineNuxtConfig({
   },
   app: {
     head: {
-      title: 'Helpr.ai — From conversation to certification',
+      title: 'Helpr.ai // From conversation to certification',
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'description', content: 'AI-gestuurde interviews die ongestructureerde gesprekken omzetten naar audit-klare compliance-data (o.a. ISO 27001 & ISO 42001).'}

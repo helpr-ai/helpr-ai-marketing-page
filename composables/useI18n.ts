@@ -229,7 +229,7 @@ const translations = {
     },
     footer: {
       tagline: "\"From conversation to certification.\"",
-      copyright: "© {year} Helpr.AI — Alle rechten voorbehouden.",
+      copyright: "© {year} Helpr.AI // Alle rechten voorbehouden.",
       privacy: "Privacy",
       security: "Beveiliging", 
       status: "Status"
@@ -463,7 +463,7 @@ const translations = {
     },
     footer: {
       tagline: "\"From conversation to certification.\"",
-      copyright: "© {year} Helpr.AI — All rights reserved.",
+      copyright: "© {year} Helpr.AI // All rights reserved.",
       privacy: "Privacy",
       security: "Security", 
       status: "Status"
