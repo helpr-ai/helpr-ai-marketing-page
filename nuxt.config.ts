@@ -1,5 +1,12 @@
 // nuxt.config.ts
 export default defineNuxtConfig({
+  ssr: true,
+  nitro: {
+    prerender: {
+      crawlLinks: false,
+      routes: ['/']
+    }
+  },
   app: {
     head: {
       title: 'Helpr.ai — From conversation to certification',

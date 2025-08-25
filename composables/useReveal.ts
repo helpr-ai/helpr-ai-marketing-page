@@ -1,3 +1,5 @@
+import { ref, onMounted, onUnmounted } from 'vue'
+
 export const useReveal = () => {
   const createRevealElement = () => {
     const element = ref<HTMLElement>()
