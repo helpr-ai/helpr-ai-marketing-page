@@ -149,7 +149,7 @@
               </div>
             </div>
             <h1 class="text-5xl sm:text-6xl font-bold tracking-tight text-gray-900 leading-[1.1]" v-html="t('hero.title', { aiInterviews: '<span class=&quot;bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent&quot;>', '/aiInterviews': '</span>' })"></h1>
-            <p class="mt-8 text-xl text-gray-600 leading-8 max-w-xl" v-html="t('hero.description', { iso27001: '<span class=&quot;font-semibold text-indigo-600&quot;>', '/iso27001': '</span>', iso42001: '<span class=&quot;font-semibold text-indigo-600&quot;>', '/iso42001': '</span>' })"></p>
+            <p class="mt-8 text-xl text-gray-600 leading-8 max-w-xl" v-html="t('hero.description', { iso27001: '<nuxt-link to=&quot;/iso27001&quot; class=&quot;font-semibold text-indigo-600 hover:text-indigo-800 transition-colors cursor-pointer&quot;>', '/iso27001': '</nuxt-link>', iso42001: '<nuxt-link to=&quot;/iso42001&quot; class=&quot;font-semibold text-indigo-600 hover:text-indigo-800 transition-colors cursor-pointer&quot;>', '/iso42001': '</nuxt-link>' })"></p>
             <div class="mt-10 flex flex-col sm:flex-row gap-4">
               <button class="group inline-flex items-center justify-center rounded-2xl bg-gradient-to-r from-indigo-600 to-purple-600 px-8 py-4 text-lg font-semibold text-white shadow-xl hover:from-indigo-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 transition-all duration-200 hover:scale-[1.02]" @click="scrollTo('demo')">
                 {{ t('hero.cta') }}
@@ -192,8 +192,8 @@
               </div>
               <div class="p-6 space-y-4">
                 <div class="flex items-center gap-3 mb-4">
-                  <span class="inline-flex items-center rounded-full bg-indigo-100 px-3 py-1 text-xs font-medium text-indigo-700">{{ t('common.iso27001') }}</span>
-                  <span class="inline-flex items-center rounded-full bg-purple-100 px-3 py-1 text-xs font-medium text-purple-700">{{ t('common.iso42001') }}</span>
+                  <nuxt-link to="/iso27001" class="inline-flex items-center rounded-full bg-indigo-100 px-3 py-1 text-xs font-medium text-indigo-700 hover:bg-indigo-200 transition-colors cursor-pointer">{{ t('common.iso27001') }}</nuxt-link>
+                  <nuxt-link to="/iso42001" class="inline-flex items-center rounded-full bg-purple-100 px-3 py-1 text-xs font-medium text-purple-700 hover:bg-purple-200 transition-colors cursor-pointer">{{ t('common.iso42001') }}</nuxt-link>
                 </div>
                 
                 <div class="space-y-3">
@@ -442,14 +442,6 @@
         <h2 class="text-3xl font-bold tracking-tight text-center">{{ t('target.title') }}</h2>
         <div class="mt-10 grid md:grid-cols-2 gap-8">
           <div class="rounded-2xl border">
-            <div class="p-4 border-b flex items-center gap-2 text-lg font-semibold"><BuildingOffice2Icon class="h-5 w-5"/> {{ t('target.companies.title') }}</div>
-            <div class="p-4 text-slate-600 grid gap-8">
-              <div class="flex items-start gap-3"><CheckCircleIcon class="h-5 w-5 text-slate-900 mt-0.5"/> {{ t('target.companies.benefits.0') }}</div>
-              <div class="flex items-start gap-3"><CheckCircleIcon class="h-5 w-5 text-slate-900 mt-0.5"/> {{ t('target.companies.benefits.1') }}</div>
-              <div class="flex items-start gap-3"><CheckCircleIcon class="h-5 w-5 text-slate-900 mt-0.5"/> {{ t('target.companies.benefits.2') }}</div>
-            </div>
-          </div>
-          <div class="rounded-2xl border">
             <div class="p-4 border-b flex items-center gap-2 text-lg font-semibold"><UsersIcon class="h-5 w-5"/> {{ t('target.consultants.title') }}</div>
             <div class="p-4 text-slate-600 grid gap-8">
               <div class="flex items-start gap-3"><CheckCircleIcon class="h-5 w-5 text-slate-900 mt-0.5"/> {{ t('target.consultants.benefits.0') }}</div>
@@ -457,6 +449,119 @@
               <div class="flex items-start gap-3"><CheckCircleIcon class="h-5 w-5 text-slate-900 mt-0.5"/> {{ t('target.consultants.benefits.2') }}</div>
             </div>
           </div>
+          <div class="rounded-2xl border">
+            <div class="p-4 border-b flex items-center gap-2 text-lg font-semibold"><BuildingOffice2Icon class="h-5 w-5"/> {{ t('target.companies.title') }}</div>
+            <div class="p-4 text-slate-600 grid gap-8">
+              <div class="flex items-start gap-3"><CheckCircleIcon class="h-5 w-5 text-slate-900 mt-0.5"/> {{ t('target.companies.benefits.0') }}</div>
+              <div class="flex items-start gap-3"><CheckCircleIcon class="h-5 w-5 text-slate-900 mt-0.5"/> {{ t('target.companies.benefits.1') }}</div>
+              <div class="flex items-start gap-3"><CheckCircleIcon class="h-5 w-5 text-slate-900 mt-0.5"/> {{ t('target.companies.benefits.2') }}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Consultant Value Proposition -->
+    <section class="py-24 bg-gradient-to-b from-indigo-50/30 to-purple-50/30 relative overflow-hidden">
+      <!-- Background decoration -->
+      <div class="absolute inset-0 bg-gradient-to-r from-blue-50/40 to-indigo-50/40"></div>
+      <div class="absolute -top-24 -right-24 w-96 h-96 bg-gradient-to-r from-indigo-200/30 to-purple-200/30 rounded-full blur-3xl -z-10"></div>
+      <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-gradient-to-r from-purple-200/30 to-pink-200/30 rounded-full blur-3xl -z-10"></div>
+      
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
+        <div class="text-center max-w-4xl mx-auto mb-20">
+          <h2 class="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 mb-6" v-html="t('consultantValue.title', { consultants: '<span class=&quot;bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent font-bold&quot;>', '/consultants': '</span>' })"></h2>
+          <p class="text-xl text-gray-600 leading-8">
+            {{ t('consultantValue.subtitle') }}
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-8 mb-16">
+          <!-- Efficiency Card -->
+          <div class="bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden hover:shadow-2xl transition-all duration-500 hover:scale-[1.02]">
+            <div class="bg-gradient-to-br from-blue-500 to-indigo-600 p-8 text-white">
+              <div class="flex items-center justify-between mb-4">
+                <h3 class="text-2xl font-bold">{{ t('consultantValue.efficiency.title') }}</h3>
+                <ScaleIcon class="h-8 w-8 opacity-80" />
+              </div>
+              <p class="text-blue-100 leading-7">
+                {{ t('consultantValue.efficiency.description') }}
+              </p>
+            </div>
+            <div class="p-8">
+              <div class="grid grid-cols-2 gap-6">
+                <div class="text-center">
+                  <div class="text-3xl font-bold text-blue-600 mb-2">{{ t('consultantValue.efficiency.stats.clients') }}</div>
+                  <div class="text-sm text-gray-600 font-medium">{{ t('consultantValue.efficiency.stats.clientsLabel') }}</div>
+                </div>
+                <div class="text-center">
+                  <div class="text-3xl font-bold text-indigo-600 mb-2">{{ t('consultantValue.efficiency.stats.time') }}</div>
+                  <div class="text-sm text-gray-600 font-medium">{{ t('consultantValue.efficiency.stats.timeLabel') }}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quality Card -->
+          <div class="bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden hover:shadow-2xl transition-all duration-500 hover:scale-[1.02]">
+            <div class="bg-gradient-to-br from-purple-500 to-indigo-600 p-8 text-white">
+              <div class="flex items-center justify-between mb-4">
+                <h3 class="text-2xl font-bold">{{ t('consultantValue.quality.title') }}</h3>
+                <AcademicCapIcon class="h-8 w-8 opacity-80" />
+              </div>
+              <p class="text-purple-100 leading-7">
+                {{ t('consultantValue.quality.description') }}
+              </p>
+            </div>
+            <div class="p-8">
+              <div class="space-y-4">
+                <div 
+                  v-for="(benefit, index) in getRaw('consultantValue.quality.benefits')" 
+                  :key="index"
+                  class="flex items-start gap-3"
+                >
+                  <CheckCircleIcon class="h-5 w-5 text-purple-600 mt-0.5 flex-shrink-0" />
+                  <span class="text-gray-700 text-sm leading-6">{{ benefit }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Assurance Card -->
+          <div class="bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden hover:shadow-2xl transition-all duration-500 hover:scale-[1.02]">
+            <div class="bg-gradient-to-br from-indigo-500 to-purple-600 p-8 text-white">
+              <div class="flex items-center justify-between mb-4">
+                <h3 class="text-2xl font-bold">{{ t('consultantValue.assurance.title') }}</h3>
+                <ShieldCheckIcon class="h-8 w-8 opacity-80" />
+              </div>
+              <p class="text-indigo-100 leading-7">
+                {{ t('consultantValue.assurance.description') }}
+              </p>
+            </div>
+            <div class="p-8">
+              <div class="space-y-4">
+                <div 
+                  v-for="(point, index) in getRaw('consultantValue.assurance.points')" 
+                  :key="index"
+                  class="flex items-start gap-3"
+                >
+                  <CheckCircleIcon class="h-5 w-5 text-indigo-600 mt-0.5 flex-shrink-0" />
+                  <span class="text-gray-700 text-sm leading-6">{{ point }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="text-center">
+          <button 
+            @click="scrollTo('demo')" 
+            class="group inline-flex items-center justify-center rounded-2xl bg-gradient-to-r from-indigo-600 to-purple-600 px-8 py-4 text-lg font-semibold text-white shadow-xl hover:from-indigo-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 transition-all duration-200 hover:scale-[1.02]"
+          >
+            {{ t('tagline.cta') }}
+            <ArrowRightIcon class="ml-3 h-5 w-5 group-hover:translate-x-0.5 transition-transform" />
+          </button>
         </div>
       </div>
     </section>
@@ -684,6 +789,218 @@
       </div>
     </section>
 
+    <!-- Process Map Showcase -->
+    <section class="py-24 bg-gradient-to-br from-gray-50 to-indigo-50/30 relative overflow-hidden">
+      <!-- Background decoration -->
+      <div class="absolute inset-0 bg-gradient-to-r from-indigo-50/20 to-purple-50/20"></div>
+      
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
+        <div class="text-center max-w-4xl mx-auto mb-16">
+          <div class="inline-flex items-center rounded-full bg-indigo-100 px-4 py-2 text-sm font-medium text-indigo-700 ring-1 ring-inset ring-indigo-200 mb-6">
+            <SparklesIcon class="mr-2 h-4 w-4" />
+            {{ t('processMap.badge') }}
+          </div>
+          <h2 class="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 mb-6" v-html="t('processMap.title', { processMap: '<span class=&quot;bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent font-bold&quot;>', '/processMap': '</span>' })"></h2>
+          <p class="text-xl text-gray-600 leading-8">
+            {{ t('processMap.subtitle') }}
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <!-- Process Map Image -->
+          <div 
+            ref="processMapLeftReveal.element"
+            :class="[
+              'group relative opacity-0',
+              { 'animate-reveal-left': processMapLeftReveal.isVisible }
+            ]"
+          >
+            <div class="relative bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden p-4 group-hover:shadow-3xl transition-all duration-500">
+              <img 
+                src="~/assets/images/process_map.png" 
+                :alt="t('processMap.imageAlt')"
+                class="w-full h-auto rounded-lg"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"></div>
+            </div>
+            
+            <!-- Floating elements -->
+            <div class="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-r from-indigo-400 to-purple-400 rounded-full opacity-20 blur-xl -z-10"></div>
+            <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full opacity-20 blur-xl -z-10"></div>
+          </div>
+
+          <!-- Content -->
+          <div 
+            ref="processMapRightReveal.element"
+            :class="[
+              'opacity-0',
+              { 'animate-reveal-right': processMapRightReveal.isVisible }
+            ]"
+          >
+            <p class="text-lg text-gray-600 leading-8 mb-8">
+              {{ t('processMap.description') }}
+            </p>
+            
+            <!-- Features List -->
+            <div class="space-y-4">
+              <div 
+                v-for="(feature, index) in getRaw('processMap.features')" 
+                :key="index"
+                class="flex items-start gap-4"
+              >
+                <div class="flex-shrink-0 w-6 h-6 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full flex items-center justify-center mt-1">
+                  <CheckCircleIcon class="h-4 w-4 text-white" />
+                </div>
+                <span class="text-gray-700 leading-7">{{ feature }}</span>
+              </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="mt-10">
+              <button 
+                @click="scrollTo('demo')" 
+                class="group inline-flex items-center justify-center rounded-2xl bg-gradient-to-r from-indigo-600 to-purple-600 px-8 py-4 text-lg font-semibold text-white shadow-xl hover:from-indigo-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 transition-all duration-200 hover:scale-[1.02]"
+              >
+                {{ t('tagline.cta') }}
+                <ArrowRightIcon class="ml-3 h-5 w-5 group-hover:translate-x-0.5 transition-transform" />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Application Scope -->
+    <section class="py-24 bg-white relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-b from-gray-50/50 to-white"></div>
+      
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
+        <div class="text-center max-w-4xl mx-auto mb-20">
+          <h2 class="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 mb-6" v-html="t('applicationScope.title', { concrete: '<span class=&quot;bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent font-bold&quot;>', '/concrete': '</span>' })"></h2>
+          <p class="text-xl text-gray-600 leading-8">
+            {{ t('applicationScope.subtitle') }}
+          </p>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-8 mb-16">
+          <!-- Current Standards -->
+          <div class="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-3xl border border-emerald-200 p-8">
+            <div class="mb-6">
+              <div class="flex items-center gap-5 mb-3">
+                <div class="w-12 h-12 bg-emerald-500 rounded flex items-center justify-center flex-shrink-0">
+                  <CheckCircleIcon class="h-6 w-6 text-white" />
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900">{{ t('applicationScope.current.title') }}</h3>
+              </div>
+              <p class="text-gray-600 text-sm">{{ t('applicationScope.current.description') }}</p>
+            </div>
+            
+            <div class="space-y-4">
+              <div 
+                v-for="(standard, index) in getRaw('applicationScope.current.standards')" 
+                :key="index"
+                class="bg-white rounded-xl p-4 border border-emerald-100 hover:border-emerald-200 transition-colors"
+              >
+                <div class="font-semibold text-gray-900 mb-2">
+                  <nuxt-link 
+                    v-if="getStandardLink(standard.name)" 
+                    :to="getStandardLink(standard.name)" 
+                    class="hover:text-emerald-600 transition-colors cursor-pointer"
+                  >
+                    {{ standard.name }}
+                  </nuxt-link>
+                  <span v-else>{{ standard.name }}</span>
+                </div>
+                <div class="text-sm text-gray-600 leading-6">{{ standard.description }}</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Upcoming Standards -->
+          <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl border border-blue-200 p-8">
+            <div class="mb-6">
+              <div class="flex items-center gap-5 mb-3">
+                <div class="w-12 h-12 bg-blue-500 rounded flex items-center justify-center flex-shrink-0">
+                  <RocketLaunchIcon class="h-6 w-6 text-white" />
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900">{{ t('applicationScope.upcoming.title') }}</h3>
+              </div>
+              <p class="text-gray-600 text-sm">{{ t('applicationScope.upcoming.description') }}</p>
+            </div>
+            
+            <div class="space-y-3">
+              <div 
+                v-for="(standard, index) in getRaw('applicationScope.upcoming.standards')" 
+                :key="index"
+                class="bg-white rounded-lg p-3 border border-blue-100"
+              >
+                <div class="font-semibold text-gray-900 text-sm">
+                  <nuxt-link 
+                    v-if="getStandardLink(standard.name)" 
+                    :to="getStandardLink(standard.name)" 
+                    class="hover:text-blue-600 transition-colors cursor-pointer"
+                  >
+                    {{ standard.name }}
+                  </nuxt-link>
+                  <span v-else>{{ standard.name }}</span>
+                </div>
+                <div class="text-xs text-gray-600">{{ standard.description }}</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Custom Solutions -->
+          <div class="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-3xl border border-purple-200 p-8">
+            <div class="mb-6">
+              <div class="flex items-center gap-5 mb-3">
+                <div class="w-12 h-12 bg-purple-500 rounded flex items-center justify-center flex-shrink-0">
+                  <CogIcon class="h-6 w-6 text-white" />
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900">{{ t('applicationScope.custom.title') }}</h3>
+              </div>
+              <p class="text-gray-600 text-sm">{{ t('applicationScope.custom.description') }}</p>
+            </div>
+            
+            <div class="space-y-4 mb-6">
+              <div 
+                v-for="(feature, index) in getRaw('applicationScope.custom.features')" 
+                :key="index"
+                class="flex items-start gap-3"
+              >
+                <CheckCircleIcon class="h-5 w-5 text-purple-600 mt-0.5 flex-shrink-0" />
+                <span class="text-gray-700 text-sm leading-6">{{ feature }}</span>
+              </div>
+            </div>
+
+            <!-- Note about limitations -->
+            <div class="bg-purple-100 rounded-lg p-4 border border-purple-200">
+              <div class="flex items-start gap-3">
+                <LightBulbIcon class="h-5 w-5 text-purple-600 mt-0.5 flex-shrink-0" />
+                <p class="text-purple-800 text-sm leading-6">
+                  {{ t('applicationScope.custom.note') }}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="bg-gradient-to-r from-emerald-500 to-teal-600 rounded-3xl p-12 text-center text-white">
+          <h3 class="text-3xl font-bold mb-4">{{ t('cta.title') }}</h3>
+          <p class="text-emerald-100 text-lg mb-8 max-w-2xl mx-auto">
+            {{ t('cta.description') }}
+          </p>
+          <button 
+            @click="scrollTo('demo')" 
+            class="inline-flex items-center justify-center rounded-2xl bg-white px-8 py-4 text-lg font-semibold text-emerald-600 shadow-lg hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-emerald-600 transition-all duration-200 hover:scale-[1.02]"
+          >
+            {{ t('cta.button') }}
+            <ArrowRightIcon class="ml-3 h-5 w-5" />
+          </button>
+        </div>
+      </div>
+    </section>
+
     <!-- Demo CTA -->
     <section id="demo" class="py-24 bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 relative overflow-hidden scroll-mt-24">
       <!-- Background decoration -->
@@ -889,6 +1206,8 @@
 
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted } from 'vue'
+import { useReveal } from '~/composables/useReveal'
+import { useI18n } from '~/composables/useI18n'
 import {
   ShieldCheckIcon,
   DocumentTextIcon,
@@ -911,6 +1230,8 @@ import {
   TrophyIcon,
   Bars3Icon,
   XMarkIcon,
+  ScaleIcon,
+  AcademicCapIcon,
 } from '@heroicons/vue/24/outline'
 
 const scrollTo = (id: string) => {
@@ -935,6 +1256,8 @@ const valueCard3Reveal = createRevealElement()
 const workStep1Reveal = createRevealElement()
 const workStep2Reveal = createRevealElement()
 const workStep3Reveal = createRevealElement()
+const processMapLeftReveal = createRevealElement()
+const processMapRightReveal = createRevealElement()
 
 // I18n setup
 const { currentLocale, languages, setLocale, t, getRaw, getCurrentLanguage } = useI18n()
@@ -962,6 +1285,16 @@ const successUrl = computed(() => {
   }
   return '/success'
 })
+
+// Helper function to get link for ISO standards
+const getStandardLink = (standardName: string) => {
+  const linkMap: Record<string, string> = {
+    'ISO 27001': '/iso27001',
+    'ISO 42001': '/iso42001',
+    'ISO 9001': '/iso9001'
+  }
+  return linkMap[standardName] || null
+}
 
 // Close dropdown and mobile menu when clicking outside
 onMounted(() => {
