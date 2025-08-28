@@ -815,19 +815,15 @@ const translations = {
         description: "AI ensures uniform, professional output regardless of experience level. Consistently high quality across all projects.",
         benefits: [
           "Prevents human errors and inconsistencies",
-          "Juniors produce senior-quality output",
-          "Reduced review time for senior consultants",
-          "Uniform reporting across all clients"
+          "Reduced review time for consultants",
         ]
       },
       assurance: {
         title: "White labeled platform",
         description: "Offer Helpr.AI under your own brand with full control over branding and customer experience.",
         points: [
-          "Expert-developed templates",
-          "Always customizable output", 
-          "Human-in-the-loop review process",
-          "Traceability and logging"
+          "Expert-developed templates", 
+          "Customizable output", 
         ]
       }
     },
@@ -1237,11 +1233,6 @@ const translations = {
               title: "Review and adjustment", 
               description: "Check and adjust generated documents according to your specific needs"
             },
-            {
-              number: "04",
-              title: "Implementation support",
-              description: "Receive guidance for training, internal audits and preparation for certification"
-            }
           ]
         }
       }
