@@ -56,12 +56,12 @@ const translations = {
         description: "Uniforme structuur en professionele taal, direct bruikbaar voor audits en certificeringen zoals ISO 27001 en ISO 42001."
       },
       stats: {
-        reduction: "60-90%*",
-        reductionLabel: "minder tijd kwijt",
+        reduction: "2,5x *",
+        reductionLabel: "Sneller",
         quality: "95%",
         qualityLabel: "audit-klare output",
         integration: "5 min",
-        integrationLabel: "setup tijd",
+        integrationLabel: "Setup tijd",
         standards: "2",
         standardsLabel: "ISO standaarden"
       },
@@ -125,7 +125,7 @@ const translations = {
         title: "Efficiëntie",
         description: "Transformeer je business model: van weken documentatiework naar dagen resultaat. Helpr.AI automatiseert de tijdrovende taken zodat consultants zich kunnen richten op strategisch advies en klantrelaties.",
         stats: {
-          time: "60-90%",
+          time: "60%",
           timeLabel: "minder tijd per traject"
         }
       },
@@ -734,8 +734,8 @@ const translations = {
         description: "Uniform structure and professional language, directly usable for audits and certifications like ISO 27001 and ISO 42001."
       },
       stats: {
-        reduction: "60-90%*",
-        reductionLabel: "Time saving",
+        reduction: "2.5x *",
+        reductionLabel: "Faster",
         quality: "100%",
         qualityLabel: "Audit-ready output",
         integration: "5 min",
@@ -803,7 +803,7 @@ const translations = {
         title: "Efficiency and Scale",
         description: "Transform your business model: from weeks of documentation work to days of results. Helpr.AI automates time-consuming tasks so consultants can focus on strategic advice and client relationships.",
         stats: {
-          time: "60-90%",
+          time: "60%",
           timeLabel: "less time per project"
         }
       },
