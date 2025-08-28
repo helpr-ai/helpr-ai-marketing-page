@@ -56,7 +56,7 @@ const translations = {
         description: "Uniforme structuur en professionele taal, direct bruikbaar voor audits en certificeringen zoals ISO 27001 en ISO 42001."
       },
       stats: {
-        reduction: "60-90%",
+        reduction: "60-90%*",
         reductionLabel: "minder tijd kwijt",
         quality: "95%",
         qualityLabel: "audit-klare output",
@@ -64,7 +64,8 @@ const translations = {
         integrationLabel: "setup tijd",
         standards: "2",
         standardsLabel: "ISO standaarden"
-      }
+      },
+      timeRemark: "* Tijdbesparing o.a. door spreken vs. typen: <a href=\"https://www.nature.com/articles/d41586-025-02418-9\" target=\"_blank\" rel=\"noopener\" class=\"text-indigo-600 hover:underline\">spreken is significant sneller</a> dan <a href=\"https://dl.acm.org/doi/10.1145/3173574.3174220\" target=\"_blank\" rel=\"noopener\" class=\"text-indigo-600 hover:underline\">gemiddelde typesnelheden</a>. Bovendien vertraagt het structureren van gedachten op papier het denkproces aanzienlijk."
     },
     grant: {
       badge: "Erkend door ElevenLabs",
@@ -122,10 +123,8 @@ const translations = {
       subtitle: "Helpr.AI verandert hoe adviesbureaus werken: meer klanten, hogere kwaliteit, minder tijd.",
       efficiency: {
         title: "Efficiëntie",
-        description: "Een consultant kan met Helpr.AI tot 3x meer klanten per jaar certificeren.",
+        description: "Transformeer je business model: van weken documentatiework naar dagen resultaat. Helpr.AI automatiseert de tijdrovende taken zodat consultants zich kunnen richten op strategisch advies en klantrelaties.",
         stats: {
-          clients: "3x",
-          clientsLabel: "meer klanten per consultant",
           time: "60-90%",
           timeLabel: "minder tijd per traject"
         }
@@ -336,7 +335,6 @@ const translations = {
         title: "Maatwerk mogelijk",
         description: "Heb je een eigen methode of norm die niet in de lijst staat? Geen probleem.",
         features: [
-          "Zet je eigen templates in onze tool",
           "Samen met ons nieuwe standaarden toevoegen", 
           "Flexibele aanpassing aan jouw werkwijze",
           "Partner-specifieke template ontwikkeling"
@@ -710,7 +708,7 @@ const translations = {
     hero: {
       badge: "AI-powered compliance made simple",
       title: "Get certified faster with {aiInterviews}AI‑driven interviews{/aiInterviews}",
-      description: "Helpr.AI turns conversations directly into structured compliance data — ready for {iso27001}ISO 27001{/iso27001}, {iso42001}ISO 42001{/iso42001} and audits. No new management system needed.",
+      description: "Helpr.AI turns conversations directly into structured compliance data. Ready for {iso27001}ISO 27001{/iso27001}, {iso42001}ISO 42001{/iso42001} and audits. No new management system needed.",
       tagline: "Less hassle, more time for what matters",
       cta: "Schedule a live demo",
       ctaSecondary: "See how it works"
@@ -736,15 +734,16 @@ const translations = {
         description: "Uniform structure and professional language, directly usable for audits and certifications like ISO 27001 and ISO 42001."
       },
       stats: {
-        reduction: "88%",
+        reduction: "60-90%*",
         reductionLabel: "Time saving",
         quality: "100%",
         qualityLabel: "Audit-ready output",
         integration: "5 min",
         integrationLabel: "Setup time",
-        standards: "50+",
+        standards: "2",
         standardsLabel: "ISO standards"
-      }
+      },
+      timeRemark: "* Time savings from speaking vs. typing: <a href=\"https://www.nature.com/articles/d41586-025-02418-9\" target=\"_blank\" rel=\"noopener\" class=\"text-indigo-600 hover:underline\">speaking is significantly faster</a> than <a href=\"https://dl.acm.org/doi/10.1145/3173574.3174220\" target=\"_blank\" rel=\"noopener\" class=\"text-indigo-600 hover:underline\">average typing speeds</a>. Additionally, structuring thoughts on paper inherently slows down the thinking process."
     },
     grant: {
       badge: "Recognized by ElevenLabs",
@@ -802,11 +801,9 @@ const translations = {
       subtitle: "Helpr.AI transforms how advisory firms work: more clients, higher quality, less time.",
       efficiency: {
         title: "Efficiency and Scale",
-        description: "A consultant can certify up to 3x more clients per year with Helpr.AI. Going from 5 to 15 clients means a fundamental improvement of the business model.",
+        description: "Transform your business model: from weeks of documentation work to days of results. Helpr.AI automates time-consuming tasks so consultants can focus on strategic advice and client relationships.",
         stats: {
-          clients: "3x",
-          clientsLabel: "more clients per consultant",
-          time: "60%",
+          time: "60-90%",
           timeLabel: "less time per project"
         }
       },
@@ -1016,7 +1013,6 @@ const translations = {
         title: "Custom solutions possible",
         description: "Have your own methodology or standard not in the list? No problem.",
         features: [
-          "Build your own question templates in our tool",
           "Work with us to add new standards", 
           "Flexible adaptation to your workflow",
           "Partner-specific template development"

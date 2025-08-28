@@ -387,14 +387,10 @@
         </div>
         
         <!-- Stats Section -->
-        <div class="mt-20 grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+        <div class="mt-20 grid grid-cols-3 lg:grid-cols-3 gap-8 text-center">
           <div class="space-y-2">
             <div class="text-3xl font-bold text-indigo-600">{{ t('value.stats.reduction') }}</div>
             <div class="text-sm text-gray-600 font-medium">{{ t('value.stats.reductionLabel') }}</div>
-          </div>
-          <div class="space-y-2">
-            <div class="text-3xl font-bold text-purple-600">{{ t('value.stats.quality') }}</div>
-            <div class="text-sm text-gray-600 font-medium">{{ t('value.stats.qualityLabel') }}</div>
           </div>
           <div class="space-y-2">
             <div class="text-3xl font-bold text-emerald-600">{{ t('value.stats.integration') }}</div>
@@ -404,6 +400,11 @@
             <div class="text-3xl font-bold text-amber-600">{{ t('value.stats.standards') }}</div>
             <div class="text-sm text-gray-600 font-medium">{{ t('value.stats.standardsLabel') }}</div>
           </div>
+        </div>
+        
+        <!-- Time Remark -->
+        <div class="mt-8 text-center max-w-4xl mx-auto">
+          <p class="text-sm text-gray-500 leading-relaxed" v-html="t('value.timeRemark')"></p>
         </div>
       </div>
     </section>
@@ -477,31 +478,7 @@
         </div>
 
         <div class="grid lg:grid-cols-3 gap-8 mb-16">
-          <!-- Efficiency Card -->
-          <div class="bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden hover:shadow-2xl transition-all duration-500 hover:scale-[1.02]">
-            <div class="bg-gradient-to-br from-blue-500 to-indigo-600 p-8 text-white">
-              <div class="flex items-center justify-between mb-4">
-                <h3 class="text-2xl font-bold">{{ t('consultantValue.efficiency.title') }}</h3>
-                <ScaleIcon class="h-8 w-8 opacity-80" />
-              </div>
-              <p class="text-blue-100 leading-7">
-                {{ t('consultantValue.efficiency.description') }}
-              </p>
-            </div>
-            <div class="p-8">
-              <div class="grid grid-cols-2 gap-6">
-                <div class="text-center">
-                  <div class="text-3xl font-bold text-blue-600 mb-2">{{ t('consultantValue.efficiency.stats.clients') }}</div>
-                  <div class="text-sm text-gray-600 font-medium">{{ t('consultantValue.efficiency.stats.clientsLabel') }}</div>
-                </div>
-                <div class="text-center">
-                  <div class="text-3xl font-bold text-indigo-600 mb-2">{{ t('consultantValue.efficiency.stats.time') }}</div>
-                  <div class="text-sm text-gray-600 font-medium">{{ t('consultantValue.efficiency.stats.timeLabel') }}</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
+          
           <!-- Quality Card -->
           <div class="bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden hover:shadow-2xl transition-all duration-500 hover:scale-[1.02]">
             <div class="bg-gradient-to-br from-purple-500 to-indigo-600 p-8 text-white">
@@ -526,6 +503,28 @@
               </div>
             </div>
           </div>
+
+          <!-- Efficiency Card -->
+          <div class="bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden hover:shadow-2xl transition-all duration-500 hover:scale-[1.02]">
+            <div class="bg-gradient-to-br from-blue-500 to-indigo-600 p-8 text-white">
+              <div class="flex items-center justify-between mb-4">
+                <h3 class="text-2xl font-bold">{{ t('consultantValue.efficiency.title') }}</h3>
+                <ScaleIcon class="h-8 w-8 opacity-80" />
+              </div>
+              <p class="text-blue-100 leading-7">
+                {{ t('consultantValue.efficiency.description') }}
+              </p>
+            </div>
+            <div class="p-8">
+              <div class="grid grid-cols-1 gap-6">
+                <div class="text-center">
+                  <div class="text-3xl font-bold text-indigo-600 mb-2">{{ t('consultantValue.efficiency.stats.time') }}</div>
+                  <div class="text-sm text-gray-600 font-medium">{{ t('consultantValue.efficiency.stats.timeLabel') }}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
 
           <!-- Assurance Card -->
           <div class="bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden hover:shadow-2xl transition-all duration-500 hover:scale-[1.02]">
