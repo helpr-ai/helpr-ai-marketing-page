@@ -30,7 +30,7 @@ const translations = {
     hero: {
       badge: "AI-powered compliance made simple",
       title: "Sneller gecertificeerd met {aiInterviews}AI‑gestuurde interviews{/aiInterviews}",
-      description: "Bespaar tot 90% tijd in jouw certificeringstraject. Van gesprekken tot kant-en-klare informatie voor je managementsysteem. Zowel {iso27001}ISO 27001{/iso27001} en AI certificering {iso42001}ISO 42001{/iso42001}. Geen nieuw managementsysteem nodig.",
+      description: "Bespaar tot 60% tijd in jouw certificeringstraject. Van gesprekken tot kant-en-klare informatie voor je managementsysteem. Start met {iso9001}ISO 9001{/iso9001}, binnenkort ook {iso27001}ISO 27001{/iso27001} en {iso42001}ISO 42001{/iso42001}. Geen nieuw managementsysteem nodig.",
       tagline: "Minder gedoe, meer tijd voor wat echt telt",
       cta: "Plan een live demo",
       ctaSecondary: "Bekijk hoe het werkt"
@@ -53,7 +53,7 @@ const translations = {
       },
       card3: {
         title: "Audit-klare kwaliteit",
-        description: "Uniforme structuur en professionele taal, direct bruikbaar voor audits en certificeringen zoals ISO 27001 en ISO 42001."
+        description: "Uniforme structuur en professionele taal, direct bruikbaar voor audits en certificeringen zoals ISO 9001."
       },
       stats: {
         reduction: "2,5x *",
@@ -75,6 +75,7 @@ const translations = {
       beta: "Beta",
       live: "Live",
       brand: "Helpr.AI",
+      iso9001: "ISO 9001",
       iso27001: "ISO 27001",
       iso42001: "ISO 42001"
     },
@@ -88,7 +89,7 @@ const translations = {
       exportReady: "Export Ready",
       exportDesc: "Direct integreren in je bestaande managementsysteem",
       features: [
-        "Templates per norm: ISO 27001, ISO 42001 (en uitbreidbaar)."
+        "Ondersteunt ISO 9001, met ISO 27001 en ISO 42001 binnenkort beschikbaar."
       ],
       categories: {
         policy: "Beleid & Context",
@@ -141,8 +142,8 @@ const translations = {
         title: "White labeled platform",
         description: "Bied Helpr.AI aan onder jouw eigen merk met volledige controle over branding en klantervaring.",
         points: [
-          "Expert-ontwikkelde templates", 
-          "Aanpasbare output", 
+          "Aanpasbare output",
+          "Volledige branding controle"
         ]
       }
     },
@@ -151,7 +152,7 @@ const translations = {
       subtitle: "Drie stappen. Met maximale efficiëntie van gesprek naar certificering.",
       step1: {
         title: "AI Interview",
-        description: "Stuur een uitnodiging naar de relevante medewerkers. Onze AI stelt de juiste vragen op basis van je templates en bedrijfscontext.",
+        description: "Stuur een uitnodiging naar de relevante medewerkers. Onze AI stelt de juiste vragen op basis van jouw bedrijfscontext.",
         demo: {
           question: "AI stelt vraag over ISO 27001...",
           answer: "Medewerker antwoordt op natuurlijke wijze",
@@ -182,8 +183,8 @@ const translations = {
           description: "Privacy en informatiebeveiliging staan voorop. We beperken dataretentie en zorgen voor duidelijke logging & traceerbaarheid."
         },
         templates: {
-          title: "Uit te breiden met eigen templates", 
-          description: "Start met ISO 27001 & ISO 42001 en breid uit met o.a. ISO9001 en ISO14001. Templates en klantcontext zijn aanpasbaar."
+          title: "Uit te breiden naar meer normen",
+          description: "Start met ISO 9001 en breid uit naar ISO 27001, ISO 42001, ISO 14001 en meer."
         }
       }
     },
@@ -194,11 +195,11 @@ const translations = {
       benefits: {
         walkthrough: {
           title: "Live walkthrough",
-          description: "Ervaar zelf hoe AI-interviews werken met echte templates"
+          description: "Ervaar zelf hoe AI-interviews werken in de praktijk"
         },
         examples: {
           title: "Audit-klare voorbeelden",
-          description: "Bekijk concrete output voor ISO 27001 en ISO 42001"
+          description: "Bekijk concrete output voor ISO 9001"
         },
         advice: {
           title: "Persoonlijk advies",
@@ -232,7 +233,7 @@ const translations = {
         },
         {
           question: "Welke normen worden ondersteund?",
-          answer: "We starten met ISO 27001 en ISO 42001. Maar we breiden normensets continu uit. Op de planning staan o.a. ISO9001 en ISO14001."
+          answer: "We starten met ISO 9001. Binnenkort breiden we uit naar ISO 27001 en ISO 42001. Op de planning staan ook ISO 14001 en andere normen."
         },
         {
           question: "Is er begeleiding nodig?",
@@ -300,12 +301,8 @@ const translations = {
         description: "Direct inzetbaar voor de meest gevraagde certificeringen",
         standards: [
           {
-            name: "ISO 27001",
-            description: "Informatiebeveiliging"
-          },
-          {
-            name: "ISO 42001", 
-            description: "AI governance"
+            name: "ISO 9001",
+            description: "Kwaliteitsmanagement"
           }
         ]
       },
@@ -314,8 +311,12 @@ const translations = {
         description: "Uitbreiding naar veel gevraagde managementsystemen",
         standards: [
           {
-            name: "ISO 9001",
-            description: "Kwaliteitsmanagement"
+            name: "ISO 27001",
+            description: "Informatiebeveiliging"
+          },
+          {
+            name: "ISO 42001",
+            description: "AI governance"
           },
           {
             name: "ISO 14001",
@@ -335,9 +336,9 @@ const translations = {
         title: "Maatwerk mogelijk",
         description: "Heb je een eigen methode of norm die niet in de lijst staat? Geen probleem.",
         features: [
-          "Samen met ons nieuwe standaarden toevoegen", 
+          "Samen met ons nieuwe standaarden toevoegen",
           "Flexibele aanpassing aan jouw werkwijze",
-          "Partner-specifieke template ontwikkeling"
+          "Partner-specifieke configuratie"
         ],
         note: "Helpr.AI richt zich op managementsysteem-stijl normen. Voor pure productcertificaten is onze aanpak minder geschikt."
       }
@@ -523,11 +524,6 @@ const translations = {
             icon: "CheckCircleIcon"
           },
           {
-            title: "Template bibliotheek",
-            description: "Templates voor alle ISO 9001 secties, aangepast aan jouw branche",
-            icon: "Square3Stack3DIcon"
-          },
-          {
             title: "Audit voorbereiding",
             description: "Gestructureerde bewijsverzameling en audit-ready documentatie voor certificering",
             icon: "ShieldCheckIcon"
@@ -708,7 +704,7 @@ const translations = {
     hero: {
       badge: "AI-powered compliance made simple",
       title: "Get certified faster with {aiInterviews}AI‑driven interviews{/aiInterviews}",
-      description: "Helpr.AI turns conversations directly into structured compliance data. Ready for {iso27001}ISO 27001{/iso27001}, {iso42001}ISO 42001{/iso42001} and audits. No new management system needed.",
+      description: "Helpr.AI turns conversations directly into structured compliance data. Ready for {iso9001}ISO 9001{/iso9001}, with {iso27001}ISO 27001{/iso27001} and {iso42001}ISO 42001{/iso42001} coming soon. No new management system needed.",
       tagline: "Less hassle, more time for what matters",
       cta: "Schedule a live demo",
       ctaSecondary: "See how it works"
@@ -731,7 +727,7 @@ const translations = {
       },
       card3: {
         title: "Audit-ready quality",
-        description: "Uniform structure and professional language, directly usable for audits and certifications like ISO 27001 and ISO 42001."
+        description: "Uniform structure and professional language, directly usable for audits and certifications like ISO 9001."
       },
       stats: {
         reduction: "2.5x *",
@@ -753,6 +749,7 @@ const translations = {
       beta: "Beta",
       live: "Live",
       brand: "Helpr.AI",
+      iso9001: "ISO 9001",
       iso27001: "ISO 27001",
       iso42001: "ISO 42001"
     },
@@ -766,7 +763,7 @@ const translations = {
       exportReady: "Export Ready",
       exportDesc: "Directly integrate into your existing management system",
       features: [
-        "Templates per standard: ISO 27001, ISO 42001 (and expandable)."
+        "Supports ISO 9001, with ISO 27001 and ISO 42001 coming soon."
       ],
       categories: {
         policy: "Policy & Context",
@@ -819,8 +816,8 @@ const translations = {
         title: "White labeled platform",
         description: "Offer Helpr.AI under your own brand with full control over branding and customer experience.",
         points: [
-          "Expert-developed templates", 
-          "Customizable output", 
+          "Customizable output",
+          "Full branding control"
         ]
       }
     },
@@ -829,7 +826,7 @@ const translations = {
       subtitle: "Three steps. With maximum efficiency from conversation to certification.",
       step1: {
         title: "AI Interview",
-        description: "Send an invitation to the relevant employees. Our AI asks the right questions based on your templates and business context.",
+        description: "Send an invitation to the relevant employees. Our AI asks the right questions based on your business context.",
         demo: {
           question: "AI asks question about ISO 27001...",
           answer: "Expert responds naturally",
@@ -860,8 +857,8 @@ const translations = {
           description: "Privacy and information security come first. We limit data retention and ensure clear logging & traceability."
         },
         templates: {
-          title: "Expandable Templates", 
-          description: "Start with ISO 27001 & ISO 42001 and expand with standards like ISO9001 and ISO14001. Templates and client context are customizable."
+          title: "Expandable to more standards",
+          description: "Start with ISO 9001 and expand to ISO 27001, ISO 42001, ISO 14001 and more."
         }
       }
     },
@@ -872,11 +869,11 @@ const translations = {
       benefits: {
         walkthrough: {
           title: "Live walkthrough",
-          description: "Experience how AI interviews work with real templates"
+          description: "Experience how AI interviews work in practice"
         },
         examples: {
           title: "Audit-ready examples",
-          description: "View concrete output for ISO 27001 and ISO 42001"
+          description: "View concrete output for ISO 9001"
         },
         advice: {
           title: "Personal advice",
@@ -910,7 +907,7 @@ const translations = {
         },
         {
           question: "Which standards are supported?",
-          answer: "We start with ISO 27001 and ISO 42001. But we continuously expand our standard sets. On the roadmap are standards like ISO9001 and ISO14001."
+          answer: "We start with ISO 9001. Soon we will expand to ISO 27001 and ISO 42001. Also on the roadmap are ISO 14001 and other standards."
         },
         {
           question: "Is guidance needed?",
@@ -978,12 +975,8 @@ const translations = {
         description: "Ready to use for the most requested certifications",
         standards: [
           {
-            name: "ISO 27001",
-            description: "Information security"
-          },
-          {
-            name: "ISO 42001", 
-            description: "AI governance"
+            name: "ISO 9001",
+            description: "Quality management"
           }
         ]
       },
@@ -992,8 +985,12 @@ const translations = {
         description: "Expansion to frequently requested management systems",
         standards: [
           {
-            name: "ISO 9001",
-            description: "Quality management"
+            name: "ISO 27001",
+            description: "Information security"
+          },
+          {
+            name: "ISO 42001",
+            description: "AI governance"
           },
           {
             name: "ISO 14001",
@@ -1013,9 +1010,9 @@ const translations = {
         title: "Custom solutions possible",
         description: "Have your own methodology or standard not in the list? No problem.",
         features: [
-          "Work with us to add new standards", 
+          "Work with us to add new standards",
           "Flexible adaptation to your workflow",
-          "Partner-specific template development"
+          "Partner-specific configuration"
         ],
         note: "Helpr.AI focuses on management system-style standards. Our approach is less suitable for pure product certifications."
       }
@@ -1199,11 +1196,6 @@ const translations = {
             title: "Compliance tracking",
             description: "Real-time overview of progress per ISO 9001 requirement and automatic gap analysis",
             icon: "CheckCircleIcon"
-          },
-          {
-            title: "Template library",
-            description: "Pre-built templates for all ISO 9001 sections, adapted to your industry",
-            icon: "Square3Stack3DIcon"
           },
           {
             title: "Audit preparation",

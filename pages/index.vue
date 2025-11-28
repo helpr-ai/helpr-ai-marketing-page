@@ -149,7 +149,7 @@
               </div>
             </div>
             <h1 class="text-5xl sm:text-6xl font-bold tracking-tight text-gray-900 leading-[1.1]" v-html="t('hero.title', { aiInterviews: '<span class=&quot;bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent&quot;>', '/aiInterviews': '</span>' })"></h1>
-            <p class="mt-8 text-xl text-gray-600 leading-8 max-w-xl" v-html="t('hero.description', { iso27001: '<nuxt-link to=&quot;/iso27001&quot; class=&quot;font-semibold text-indigo-600 hover:text-indigo-800 transition-colors cursor-pointer&quot;>', '/iso27001': '</nuxt-link>', iso42001: '<nuxt-link to=&quot;/iso42001&quot; class=&quot;font-semibold text-indigo-600 hover:text-indigo-800 transition-colors cursor-pointer&quot;>', '/iso42001': '</nuxt-link>' })"></p>
+            <p class="mt-8 text-xl text-gray-600 leading-8 max-w-xl" v-html="t('hero.description', { iso9001: '<nuxt-link to=&quot;/iso9001&quot; class=&quot;font-semibold text-indigo-600 hover:text-indigo-800 transition-colors cursor-pointer&quot;>', '/iso9001': '</nuxt-link>', iso27001: '<nuxt-link to=&quot;/iso27001&quot; class=&quot;font-semibold text-indigo-600 hover:text-indigo-800 transition-colors cursor-pointer&quot;>', '/iso27001': '</nuxt-link>', iso42001: '<nuxt-link to=&quot;/iso42001&quot; class=&quot;font-semibold text-indigo-600 hover:text-indigo-800 transition-colors cursor-pointer&quot;>', '/iso42001': '</nuxt-link>' })"></p>
             <div class="mt-10 flex flex-col sm:flex-row gap-4">
               <button class="group inline-flex items-center justify-center rounded-2xl bg-gradient-to-r from-indigo-600 to-purple-600 px-8 py-4 text-lg font-semibold text-white shadow-xl hover:from-indigo-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 transition-all duration-200 hover:scale-[1.02]" @click="scrollTo('demo')">
                 {{ t('hero.cta') }}
@@ -192,8 +192,9 @@
               </div>
               <div class="p-6 space-y-4">
                 <div class="flex items-center gap-3 mb-4">
-                  <nuxt-link to="/iso27001" class="inline-flex items-center rounded-full bg-indigo-100 px-3 py-1 text-xs font-medium text-indigo-700 hover:bg-indigo-200 transition-colors cursor-pointer">{{ t('common.iso27001') }}</nuxt-link>
-                  <nuxt-link to="/iso42001" class="inline-flex items-center rounded-full bg-purple-100 px-3 py-1 text-xs font-medium text-purple-700 hover:bg-purple-200 transition-colors cursor-pointer">{{ t('common.iso42001') }}</nuxt-link>
+                  <nuxt-link to="/iso9001" class="inline-flex items-center rounded-full bg-emerald-100 px-3 py-1 text-xs font-medium text-emerald-700 hover:bg-emerald-200 transition-colors cursor-pointer">{{ t('common.iso9001') }}</nuxt-link>
+                  <span class="inline-flex items-center rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-500">{{ t('common.iso27001') }} (soon)</span>
+                  <span class="inline-flex items-center rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-500">{{ t('common.iso42001') }} (soon)</span>
                 </div>
                 
                 <div class="space-y-3">
