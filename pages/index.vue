@@ -163,7 +163,7 @@
             <div class="mt-8 flex items-center gap-4 text-sm text-gray-600">
               <div class="flex items-center gap-2">
                 <ShieldCheckIcon class="h-5 w-5 text-green-500" />
-                <span class="font-medium">{{ t('hero.tagline') }}</span>
+                <span class="font-medium" v-html="t('hero.tagline', { iso9001: '<nuxt-link to=&quot;/iso9001&quot; class=&quot;text-indigo-600 hover:text-indigo-800 transition-colors&quot;>', '/iso9001': '</nuxt-link>' })"></span>
               </div>
             </div>
           </div>
@@ -443,20 +443,70 @@
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <h2 class="text-3xl font-bold tracking-tight text-center">{{ t('target.title') }}</h2>
         <div class="mt-10 grid md:grid-cols-2 gap-8">
-          <div class="rounded-2xl border">
-            <div class="p-4 border-b flex items-center gap-2 text-lg font-semibold"><UsersIcon class="h-5 w-5"/> {{ t('target.consultants.title') }}</div>
-            <div class="p-4 text-slate-600 grid gap-8">
-              <div class="flex items-start gap-3"><CheckCircleIcon class="h-5 w-5 text-slate-900 mt-0.5"/> {{ t('target.consultants.benefits.0') }}</div>
-              <div class="flex items-start gap-3"><CheckCircleIcon class="h-5 w-5 text-slate-900 mt-0.5"/> {{ t('target.consultants.benefits.1') }}</div>
-              <div class="flex items-start gap-3"><CheckCircleIcon class="h-5 w-5 text-slate-900 mt-0.5"/> {{ t('target.consultants.benefits.2') }}</div>
+          <!-- Consultants -->
+          <div class="rounded-2xl border bg-white overflow-hidden">
+            <div class="p-4 border-b flex items-center gap-2 text-lg font-semibold bg-indigo-50">
+              <UsersIcon class="h-5 w-5 text-indigo-600"/>
+              {{ t('target.consultants.title') }}
+            </div>
+            <div class="p-6">
+              <!-- Challenges -->
+              <div class="mb-6">
+                <h4 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">{{ t('target.consultants.challengesTitle') }}</h4>
+                <div class="space-y-2">
+                  <div v-for="(challenge, index) in getRaw('target.consultants.challenges')" :key="'c-challenge-'+index" class="flex items-start gap-2 text-gray-600">
+                    <span class="text-red-400 mt-0.5">•</span>
+                    <span>{{ challenge }}</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Benefits -->
+              <div class="mb-6">
+                <h4 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">{{ t('target.consultants.benefitsTitle') }}</h4>
+                <div class="space-y-2">
+                  <div v-for="(benefit, index) in getRaw('target.consultants.benefits')" :key="'c-benefit-'+index" class="flex items-start gap-2 text-gray-700">
+                    <CheckCircleIcon class="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0"/>
+                    <span>{{ benefit }}</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Closing -->
+              <div class="pt-4 border-t">
+                <p class="text-indigo-600 font-semibold">{{ t('target.consultants.closing') }}</p>
+              </div>
             </div>
           </div>
-          <div class="rounded-2xl border">
-            <div class="p-4 border-b flex items-center gap-2 text-lg font-semibold"><BuildingOffice2Icon class="h-5 w-5"/> {{ t('target.companies.title') }}</div>
-            <div class="p-4 text-slate-600 grid gap-8">
-              <div class="flex items-start gap-3"><CheckCircleIcon class="h-5 w-5 text-slate-900 mt-0.5"/> {{ t('target.companies.benefits.0') }}</div>
-              <div class="flex items-start gap-3"><CheckCircleIcon class="h-5 w-5 text-slate-900 mt-0.5"/> {{ t('target.companies.benefits.1') }}</div>
-              <div class="flex items-start gap-3"><CheckCircleIcon class="h-5 w-5 text-slate-900 mt-0.5"/> {{ t('target.companies.benefits.2') }}</div>
+          <!-- Companies -->
+          <div class="rounded-2xl border bg-white overflow-hidden">
+            <div class="p-4 border-b flex items-center gap-2 text-lg font-semibold bg-emerald-50">
+              <BuildingOffice2Icon class="h-5 w-5 text-emerald-600"/>
+              {{ t('target.companies.title') }}
+            </div>
+            <div class="p-6">
+              <!-- Challenges -->
+              <div class="mb-6">
+                <h4 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">{{ t('target.companies.challengesTitle') }}</h4>
+                <div class="space-y-2">
+                  <div v-for="(challenge, index) in getRaw('target.companies.challenges')" :key="'o-challenge-'+index" class="flex items-start gap-2 text-gray-600">
+                    <span class="text-red-400 mt-0.5">•</span>
+                    <span>{{ challenge }}</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Benefits -->
+              <div class="mb-6">
+                <h4 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">{{ t('target.companies.benefitsTitle') }}</h4>
+                <div class="space-y-2">
+                  <div v-for="(benefit, index) in getRaw('target.companies.benefits')" :key="'o-benefit-'+index" class="flex items-start gap-2 text-gray-700">
+                    <CheckCircleIcon class="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0"/>
+                    <span>{{ benefit }}</span>
+                  </div>
+                </div>
+              </div>
+              <!-- Closing -->
+              <div class="pt-4 border-t">
+                <p class="text-emerald-600 font-semibold">{{ t('target.companies.closing') }}</p>
+              </div>
             </div>
           </div>
         </div>

@@ -25,47 +25,47 @@ const translations = {
       whoItsFor: "Voor wie",
       faq: "FAQ",
       contact: "Contact",
-      demo: "Plan demo"
+      demo: "Demo aanvragen"
     },
     hero: {
-      badge: "AI-powered compliance made simple",
-      title: "Sneller gecertificeerd met {aiInterviews}AI‑gestuurde interviews{/aiInterviews}",
-      description: "Bespaar tot 60% tijd in jouw certificeringstraject. Van gesprekken tot kant-en-klare informatie voor je managementsysteem. Start met {iso9001}ISO 9001{/iso9001}, binnenkort ook {iso27001}ISO 27001{/iso27001} en {iso42001}ISO 42001{/iso42001}. Geen nieuw managementsysteem nodig.",
-      tagline: "Minder gedoe, meer tijd voor wat echt telt",
-      cta: "Plan een live demo",
+      badge: "ISO & CO2 certificering vereenvoudigd",
+      title: "{aiInterviews}Sneller. Nauwkeuriger. Voordeliger.{/aiInterviews}",
+      description: "Gegevensverzameling en -verwerking voor ISO- en CO2-certificeringen — zonder de chaos. Helpr.ai zet gestructureerde gesprekken om in audit-klare compliance output, zodat organisaties en consultants minder tijd besteden aan herhaalwerk en meer aan waardecreatie.",
+      tagline: "Nu beschikbaar voor {iso9001}ISO 9001{/iso9001}",
+      cta: "Vraag een demo aan",
       ctaSecondary: "Bekijk hoe het werkt"
     },
     tagline: {
-      title: "From conversation to certification.",
-      subtitle: "Transformeer gesprekken naar professionele, audit-klare compliance documentatie.",
+      title: "Van gesprek naar certificering.",
+      subtitle: "ISO- en CO2-certificeringen falen zelden door de inhoud — ze falen door inefficiënte gegevensverzameling. Helpr.ai stroomlijnt dit proces en maakt certificering sneller, betrouwbaarder en kosteneffectiever door gestructureerde interviews in plaats van gefragmenteerde documenten.",
       cta: "Ervaar het zelf"
     },
     value: {
-      title: "Waarom {helpr}Helpr.AI{/helpr} ?",
-      subtitle: "De snelste en meest laagdrempelige manier om je compliance documentatie op orde te krijgen.",
+      title: "Wat levert {helpr}Helpr.ai{/helpr} op?",
+      subtitle: "Certificering die werkt voor zowel organisaties als consultants.",
       card1: {
-        title: "Snelle workflow",
-        description: "Verkort weken aan workshops en notities tot enkele interviews wanneer het jou uitkomt. Minder handwerk, meer voortgang met AI-gestuurde gesprekken."
+        title: "Sneller",
+        description: "Minder interviewrondes nodig. Snellere omzetting naar documentatie. Geen eindeloze herhaling van dezelfde vragen."
       },
       card2: {
-        title: "Geen nieuw systeem nodig",
-        description: "Werkt naadloos met je bestaande tooling en werkwijze. Exporteer in de structuur zoals je gewend bent."
+        title: "Nauwkeuriger",
+        description: "Extra interviews zijn eenvoudig uit te voeren. Minder tijdsdruk leidt tot betere antwoorden. Consistente, traceerbare output."
       },
       card3: {
-        title: "Audit-klare kwaliteit",
-        description: "Uniforme structuur en professionele taal, direct bruikbaar voor audits en certificeringen zoals ISO 9001."
+        title: "Voordeliger",
+        description: "Minder consultanturen besteed aan herhaling. Minder herwerk nodig. Lagere totale certificeringskosten."
       },
       stats: {
-        reduction: "2,5x *",
-        reductionLabel: "Sneller",
-        quality: "95%",
-        qualityLabel: "audit-klare output",
+        reduction: "~50%",
+        reductionLabel: "Tijdsbesparing",
+        quality: "100%",
+        qualityLabel: "Audit-klare output",
         integration: "5 min",
         integrationLabel: "Setup tijd",
-        standards: "2",
-        standardsLabel: "ISO standaarden"
+        standards: "1",
+        standardsLabel: "ISO standaard"
       },
-      timeRemark: "* Tijdbesparing o.a. door spreken vs. typen: <a href=\"https://www.nature.com/articles/d41586-025-02418-9\" target=\"_blank\" rel=\"noopener\" class=\"text-indigo-600 hover:underline\">spreken is significant sneller</a> dan <a href=\"https://dl.acm.org/doi/10.1145/3173574.3174220\" target=\"_blank\" rel=\"noopener\" class=\"text-indigo-600 hover:underline\">gemiddelde typesnelheden</a>. Bovendien vertraagt het structureren van gedachten op papier het denkproces aanzienlijk."
+      timeRemark: "In pilotprojecten bereiken organisaties doorgaans tot ~50% tijdsbesparing op gegevensverzameling en documentatie."
     },
     grant: {
       badge: "Erkend door ElevenLabs",
@@ -103,20 +103,37 @@ const translations = {
     target: {
       title: "Voor wie is Helpr.AI?",
       companies: {
-        title: "Bedrijven (MKB en Enterprise)",
+        title: "Voor organisaties",
+        subtitle: "MKB met ~30-250 medewerkers",
+        challengesTitle: "Veelvoorkomende uitdagingen:",
+        challenges: [
+          "Certificering voelt zwaar en tijdrovend",
+          "Medewerkers worden herhaaldelijk geïnterviewd",
+          "Onzekerheid over gereedheid en kwaliteit"
+        ],
+        benefitsTitle: "Helpr.ai helpt door:",
         benefits: [
-          "Werk samen met onze partner compliance bureaus voor optimale begeleiding.",
-          "Verkrijg hoogwaardige input voor de consultant door voorgestructureerde data.",
-          "Bespaar kosten door efficiëntere samenwerking."
-        ]
+          "Interviews te structureren",
+          "De interne werkdruk te verminderen",
+          "Sneller en met vertrouwen audit-klaar te zijn"
+        ],
+        closing: "Certificering in de helft van de tijd — met duidelijkheid en controle."
       },
       consultants: {
-        title: "Compliance bureaus",
+        title: "Voor ISO & compliance consultants",
+        challengesTitle: "Veelvoorkomende uitdagingen:",
+        challenges: [
+          "Repetitieve interviews",
+          "Inconsistente inputkwaliteit",
+          "Druk op tijd en marges"
+        ],
+        benefitsTitle: "Helpr.ai stelt je in staat om:",
         benefits: [
-          "Versnelt trajecten en verhoogt kwaliteit van input.",
-          "Uniforme output helpt bij audit‑readiness en rapportage.", 
-          "Samenwerkings‑ en partnerprogramma beschikbaar."
-        ]
+          "Sneller gegevens te verzamelen",
+          "Consistentie en kwaliteit te verbeteren",
+          "Te focussen op analyse en advieswerk"
+        ],
+        closing: "Minder herhaling. Meer waarde per opdracht."
       }
     },
     consultantValue: {
@@ -189,9 +206,9 @@ const translations = {
       }
     },
     demo: {
-      badge: "Probeer Helpr.AI",
-      title: "Ontdek de kracht van Helpr.AI",
-      subtitle: "Zie in 20 minuten hoe Helpr.AI jouw certificeringstraject versnelt en vereenvoudigt",
+      badge: "Probeer Helpr.ai",
+      title: "ISO- of CO2-certificering stroomlijnen?",
+      subtitle: "Vraag een demo aan en ontdek hoe Helpr.ai gegevensverzameling fundamenteel eenvoudiger maakt — zonder extra druk op je team of consultants.",
       benefits: {
         walkthrough: {
           title: "Live walkthrough",
@@ -216,7 +233,7 @@ const translations = {
         companyPlaceholder: "Bedrijfsnaam",
         questions: "Specifieke vragen (optioneel)",
         questionsPlaceholder: "Waar wil je op focussen tijdens de demo?",
-        submit: "Plan gratis demo",
+        submit: "Vraag demo aan",
         required: "*",
         privacy: {
           text: "Door te verzenden ga je akkoord met onze",
@@ -699,47 +716,47 @@ const translations = {
       whoItsFor: "Who it's for",
       faq: "FAQ",
       contact: "Contact",
-      demo: "Book demo"
+      demo: "Request demo"
     },
     hero: {
-      badge: "AI-powered compliance made simple",
-      title: "Get certified faster with {aiInterviews}AI‑driven interviews{/aiInterviews}",
-      description: "Helpr.AI turns conversations directly into structured compliance data. Ready for {iso9001}ISO 9001{/iso9001}, with {iso27001}ISO 27001{/iso27001} and {iso42001}ISO 42001{/iso42001} coming soon. No new management system needed.",
-      tagline: "Less hassle, more time for what matters",
-      cta: "Schedule a live demo",
+      badge: "ISO & CO2 certification simplified",
+      title: "{aiInterviews}Faster. More accurate. More affordable.{/aiInterviews}",
+      description: "Data collection and processing for ISO and CO2 certifications — without the chaos. Helpr.ai turns structured conversations into audit-ready compliance output, so organizations and consultants spend less time repeating work and more time creating value.",
+      tagline: "Now available for {iso9001}ISO 9001{/iso9001}",
+      cta: "Request a demo",
       ctaSecondary: "See how it works"
     },
     tagline: {
       title: "From conversation to certification.",
-      subtitle: "Transform unstructured conversations into professional, audit-ready compliance documentation.",
+      subtitle: "ISO and CO2 certification rarely fail due to content — they fail due to inefficient data collection. Helpr.ai streamlines this process, making certification faster, more reliable and more cost-effective through structured interviews instead of fragmented documents.",
       cta: "Experience it yourself"
     },
     value: {
-      title: "Why {helpr}Helpr.AI{/helpr}?",
-      subtitle: "The fastest and most accessible way to get your compliance documentation in order.",
+      title: "What does {helpr}Helpr.ai{/helpr} deliver?",
+      subtitle: "Certification that works for both organizations and consultants.",
       card1: {
-        title: "Crazy fast workflow",
-        description: "Reduce weeks of workshops and notes to a few interviews whenever it suits you. Less manual work, more progress with AI-driven conversations."
+        title: "Faster",
+        description: "Fewer interview rounds needed. Faster conversion to documentation. No endless repetition of the same questions."
       },
       card2: {
-        title: "No new system needed",
-        description: "Works seamlessly with your existing tooling and workflow. Export and document exactly as you're used to."
+        title: "More accurate",
+        description: "Additional interviews are easy to run. Less time pressure leads to better answers. Consistent, traceable output."
       },
       card3: {
-        title: "Audit-ready quality",
-        description: "Uniform structure and professional language, directly usable for audits and certifications like ISO 9001."
+        title: "More affordable",
+        description: "Fewer consultant hours spent on repetition. Less rework needed. Lower total certification costs."
       },
       stats: {
-        reduction: "2.5x *",
-        reductionLabel: "Faster",
+        reduction: "~50%",
+        reductionLabel: "Time savings",
         quality: "100%",
         qualityLabel: "Audit-ready output",
         integration: "5 min",
         integrationLabel: "Setup time",
-        standards: "2",
-        standardsLabel: "ISO standards"
+        standards: "1",
+        standardsLabel: "ISO standard"
       },
-      timeRemark: "* Time savings from speaking vs. typing: <a href=\"https://www.nature.com/articles/d41586-025-02418-9\" target=\"_blank\" rel=\"noopener\" class=\"text-indigo-600 hover:underline\">speaking is significantly faster</a> than <a href=\"https://dl.acm.org/doi/10.1145/3173574.3174220\" target=\"_blank\" rel=\"noopener\" class=\"text-indigo-600 hover:underline\">average typing speeds</a>. Additionally, structuring thoughts on paper inherently slows down the thinking process."
+      timeRemark: "In pilot projects, organizations typically achieve up to ~50% time savings on data collection and documentation."
     },
     grant: {
       badge: "Recognized by ElevenLabs",
@@ -777,20 +794,37 @@ const translations = {
     target: {
       title: "Who is Helpr.AI for?",
       companies: {
-        title: "Companies (SME and Enterprise)",
+        title: "For organizations",
+        subtitle: "SMEs with ~30-250 employees",
+        challengesTitle: "Common challenges:",
+        challenges: [
+          "Certification feels heavy and time-consuming",
+          "Employees are repeatedly interviewed",
+          "Uncertainty about readiness and quality"
+        ],
+        benefitsTitle: "Helpr.ai helps by:",
         benefits: [
-          "Collaborate with our partner compliance agencies for optimal guidance.",
-          "Provide high-quality input to a consultant through pre-structured data.",
-          "Save costs through more efficient collaboration."
-        ]
+          "Structuring interviews",
+          "Reducing internal workload",
+          "Reaching audit readiness faster and with confidence"
+        ],
+        closing: "Certification in half the time — with clarity and control."
       },
       consultants: {
-        title: "Compliance agencies",
+        title: "For ISO & compliance consultants",
+        challengesTitle: "Common challenges:",
+        challenges: [
+          "Repetitive interviews",
+          "Inconsistent input quality",
+          "Pressure on time and margins"
+        ],
+        benefitsTitle: "Helpr.ai enables you to:",
         benefits: [
-          "Accelerate trajectories and improve input quality.",
-          "Uniform output helps with audit readiness and reporting.", 
-          "Collaboration and partner program available."
-        ]
+          "Collect data faster",
+          "Improve consistency and quality",
+          "Focus on analysis and advisory work"
+        ],
+        closing: "Less repetition. More value per engagement."
       }
     },
     consultantValue: {
@@ -863,9 +897,9 @@ const translations = {
       }
     },
     demo: {
-      badge: "Try Helpr.AI",
-      title: "Discover the power of Helpr.AI",
-      subtitle: "See in 20 minutes how Helpr.AI accelerates and simplifies your certification process",
+      badge: "Try Helpr.ai",
+      title: "Looking to streamline ISO or CO2 certification?",
+      subtitle: "Request a demo and see how Helpr.ai makes data collection fundamentally simpler — without increasing pressure on your team or consultants.",
       benefits: {
         walkthrough: {
           title: "Live walkthrough",
@@ -890,7 +924,7 @@ const translations = {
         companyPlaceholder: "Company name",
         questions: "Specific questions (optional)",
         questionsPlaceholder: "What would you like to focus on during the demo?",
-        submit: "Schedule free demo",
+        submit: "Request demo",
         required: "*",
         privacy: {
           text: "By submitting you agree to our",
