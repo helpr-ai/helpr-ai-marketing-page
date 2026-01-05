@@ -37,7 +37,7 @@ const translations = {
     },
     tagline: {
       title: "Van gesprek naar certificering.",
-      subtitle: "ISO-certificeringen en de CO2-Prestatieladder falen zelden door de inhoud. Ze falen door inefficiënte gegevensverzameling. Helpr.ai stroomlijnt dit proces en maakt certificering sneller, betrouwbaarder en kosteneffectiever door gestructureerde interviews in plaats van gefragmenteerde documenten.",
+      subtitle: "Bij ISO-certificeringen en de CO2-Prestatieladder ligt de complexiteit meestal niet in de inhoud, maar in de dataverzameling. Helpr.ai vereenvoudigt dit proces en zorgt voor snellere, betrouwbaardere en kosteneffectievere certificering via gestructureerde interviews.",
       cta: "Ervaar het zelf"
     },
     value: {
