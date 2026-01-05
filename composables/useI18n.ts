@@ -28,16 +28,16 @@ const translations = {
       demo: "Demo aanvragen"
     },
     hero: {
-      badge: "ISO & CO2 certificering vereenvoudigd",
+      badge: "ISO & CO2-Prestatieladder vereenvoudigd",
       title: "{aiInterviews}Sneller. Nauwkeuriger. Voordeliger.{/aiInterviews}",
-      description: "Gegevensverzameling en -verwerking voor ISO- en CO2-certificeringen — zonder de chaos. Helpr.ai zet gestructureerde gesprekken om in audit-klare compliance output, zodat organisaties en consultants minder tijd besteden aan herhaalwerk en meer aan waardecreatie.",
+      description: "Gegevensverzameling en -verwerking voor ISO en de CO2-Prestatieladder, zonder de chaos. Helpr.ai zet gestructureerde gesprekken om in audit-klare compliance output, zodat organisaties en consultants minder tijd besteden aan herhaalwerk en meer aan waardecreatie.",
       tagline: "Nu beschikbaar voor {iso9001}ISO 9001{/iso9001}",
       cta: "Vraag een demo aan",
       ctaSecondary: "Bekijk hoe het werkt"
     },
     tagline: {
       title: "Van gesprek naar certificering.",
-      subtitle: "ISO- en CO2-certificeringen falen zelden door de inhoud — ze falen door inefficiënte gegevensverzameling. Helpr.ai stroomlijnt dit proces en maakt certificering sneller, betrouwbaarder en kosteneffectiever door gestructureerde interviews in plaats van gefragmenteerde documenten.",
+      subtitle: "ISO-certificeringen en de CO2-Prestatieladder falen zelden door de inhoud. Ze falen door inefficiënte gegevensverzameling. Helpr.ai stroomlijnt dit proces en maakt certificering sneller, betrouwbaarder en kosteneffectiever door gestructureerde interviews in plaats van gefragmenteerde documenten.",
       cta: "Ervaar het zelf"
     },
     value: {
@@ -117,7 +117,7 @@ const translations = {
           "De interne werkdruk te verminderen",
           "Sneller en met vertrouwen audit-klaar te zijn"
         ],
-        closing: "Certificering in de helft van de tijd — met duidelijkheid en controle."
+        closing: "Certificering in de helft van de tijd, met duidelijkheid en controle."
       },
       consultants: {
         title: "Voor ISO & compliance consultants",
@@ -207,8 +207,8 @@ const translations = {
     },
     demo: {
       badge: "Probeer Helpr.ai",
-      title: "ISO- of CO2-certificering stroomlijnen?",
-      subtitle: "Vraag een demo aan en ontdek hoe Helpr.ai gegevensverzameling fundamenteel eenvoudiger maakt — zonder extra druk op je team of consultants.",
+      title: "ISO of de CO2-Prestatieladder stroomlijnen?",
+      subtitle: "Vraag een demo aan en ontdek hoe Helpr.ai gegevensverzameling fundamenteel eenvoudiger maakt. Zonder extra druk op je team of consultants.",
       benefits: {
         walkthrough: {
           title: "Live walkthrough",
@@ -719,16 +719,16 @@ const translations = {
       demo: "Request demo"
     },
     hero: {
-      badge: "ISO & CO2 certification simplified",
+      badge: "ISO & CO2 Performance Ladder simplified",
       title: "{aiInterviews}Faster. More accurate. More affordable.{/aiInterviews}",
-      description: "Data collection and processing for ISO and CO2 certifications — without the chaos. Helpr.ai turns structured conversations into audit-ready compliance output, so organizations and consultants spend less time repeating work and more time creating value.",
+      description: "Data collection and processing for ISO and the CO2 Performance Ladder, without the chaos. Helpr.ai turns structured conversations into audit-ready compliance output, so organizations and consultants spend less time repeating work and more time creating value.",
       tagline: "Now available for {iso9001}ISO 9001{/iso9001}",
       cta: "Request a demo",
       ctaSecondary: "See how it works"
     },
     tagline: {
       title: "From conversation to certification.",
-      subtitle: "ISO and CO2 certification rarely fail due to content — they fail due to inefficient data collection. Helpr.ai streamlines this process, making certification faster, more reliable and more cost-effective through structured interviews instead of fragmented documents.",
+      subtitle: "ISO certifications and the CO2 Performance Ladder rarely fail due to content. They fail due to inefficient data collection. Helpr.ai streamlines this process, making certification faster, more reliable and more cost-effective through structured interviews instead of fragmented documents.",
       cta: "Experience it yourself"
     },
     value: {
@@ -808,7 +808,7 @@ const translations = {
           "Reducing internal workload",
           "Reaching audit readiness faster and with confidence"
         ],
-        closing: "Certification in half the time — with clarity and control."
+        closing: "Certification in half the time, with clarity and control."
       },
       consultants: {
         title: "For ISO & compliance consultants",
@@ -898,8 +898,8 @@ const translations = {
     },
     demo: {
       badge: "Try Helpr.ai",
-      title: "Looking to streamline ISO or CO2 certification?",
-      subtitle: "Request a demo and see how Helpr.ai makes data collection fundamentally simpler — without increasing pressure on your team or consultants.",
+      title: "Looking to streamline ISO or the CO2 Performance Ladder?",
+      subtitle: "Request a demo and see how Helpr.ai makes data collection fundamentally simpler. Without increasing pressure on your team or consultants.",
       benefits: {
         walkthrough: {
           title: "Live walkthrough",
