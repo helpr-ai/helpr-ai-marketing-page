@@ -706,6 +706,114 @@ const translations = {
       title: "Klaar om te ontdekken wat mogelijk is?",
       description: "Bespreek je specifieke behoefte en ontdek hoe Helpr.AI kan helpen.",
       button: "Plan een gesprek"
+    },
+    partner: {
+      nav: "Partners",
+      hero: {
+        title: "Samen versnellen we certificering",
+        subtitle: "Helpr.ai werkt exclusief samen met ervaren consultancypartners om ISO-certificeringen, de CO2-Prestatieladder en aanverwante normen efficienter, consistenter en schaalbaar te maken.",
+        intro: "Certificering draait niet alleen om normen en documenten, maar om context, keuzes en interpretatie. Daarom geloven wij niet in een 'tool-only' aanpak. Helpr.ai is een platform dat dataverzameling en documentatie structureert en versnelt. Onze partners zorgen voor de inhoudelijke duiding, begeleiding en borging."
+      },
+      whyPartners: {
+        title: "Waarom wij kiezen voor een partnergedreven model",
+        intro: "ISO-certificeringen en duurzaamheidsnormen vragen om ervaring, nuance en verantwoordelijkheid. Helpr.ai automatiseert het repeterende werk, maar de kern blijft mensenwerk.",
+        listIntro: "Daarom werken wij uitsluitend met geselecteerde partners die:",
+        points: [
+          "Inhoudelijk expert zijn in hun normenkader",
+          "Verantwoordelijkheid nemen richting eindklant",
+          "Werken volgens een consistente, audit-ready aanpak"
+        ],
+        conclusion: "Zo combineren we het beste van twee werelden: technologie op schaal, expertise met diepgang."
+      },
+      roles: {
+        title: "Heldere rolverdeling, een gezamenlijk resultaat",
+        helpr: {
+          title: "De rol van Helpr.ai",
+          points: [
+            "Gestructureerde AI-interviews voor dataverzameling",
+            "Vertaling van gesprekken naar audit-ready documentatie",
+            "Consistente formats (beleid, registers, procesoverzichten)",
+            "Versnelling van doorlooptijd en verlaging van administratieve last",
+            "Continu platform voor hergebruik en onderhoud"
+          ]
+        },
+        partner: {
+          title: "De rol van onze partners",
+          points: [
+            "Inhoudelijke interpretatie van normen",
+            "Begeleiding van de organisatie",
+            "Validatie en kwaliteitscontrole van output",
+            "Voorbereiding en begeleiding richting audit",
+            "Advies, besluitvorming en verandermanagement"
+          ]
+        },
+        conclusion: "Helpr.ai maakt het werk lichter en consistenter. De partner maakt het inhoudelijk juist en waardevol."
+      },
+      endUsers: {
+        title: "Altijd begeleiding via een erkende partner",
+        intro: "Wanneer organisaties Helpr.ai rechtstreeks benaderen, brengen wij hen altijd in contact met een van onze partners.",
+        whyTitle: "Waarom?",
+        whyPoints: [
+          "Certificering vraagt om inhoudelijke verantwoordelijkheid",
+          "Audits vereisen aantoonbare begeleiding en validatie",
+          "Partners kennen de praktijk, de auditor en de context"
+        ],
+        conclusion: "Helpr.ai levert het platform. Onze partners leveren de begeleiding. Zo borgen we kwaliteit, betrouwbaarheid en vertrouwen voor alle betrokkenen."
+      },
+      program: {
+        title: "Het Helpr.ai partnerprogramma",
+        intro: "Het partnerprogramma van Helpr.ai is ontwikkeld voor consultancybureaus die hun dienstverlening willen opschalen zonder in te leveren op kwaliteit.",
+        whatYouGet: {
+          title: "Wat partners krijgen",
+          points: [
+            "Toegang tot het Helpr.ai platform",
+            "Kant-en-klare interviewsets per norm (ISO 9001, 14001, 27001, CO2-Prestatieladder, etc.)",
+            "Audit-ready documentatie als output",
+            "Ondersteuning bij adoptie en implementatie",
+            "Doorontwikkeling van het platform in co-creatie"
+          ]
+        },
+        whatWeExpect: {
+          title: "Wat we van partners verwachten",
+          points: [
+            "Inhoudelijke expertise en ervaring",
+            "Actieve betrokkenheid bij klanten",
+            "Feedback op output en werkwijze",
+            "Commitment aan kwaliteit en continu verbeteren"
+          ]
+        }
+      },
+      forWhom: {
+        title: "Voor wie is dit programma geschikt?",
+        suitable: {
+          title: "Geschikt voor",
+          points: [
+            "ISO-advies- en consultancybureaus",
+            "Duurzaamheids- en ESG-consultants",
+            "Kwaliteits- en compliance specialisten",
+            "Organisaties die willen standaardiseren en opschalen"
+          ]
+        },
+        notSuitable: {
+          title: "Niet geschikt voor",
+          points: [
+            "Pure tooling-resellers",
+            "Organisaties zonder inhoudelijke begeleiding",
+            "'Plug-and-play' certificering zonder context"
+          ]
+        }
+      },
+      currentPartners: {
+        title: "Onze partners",
+        intro: "We werken samen met een selecte groep consultancypartners die actief bijdragen aan de doorontwikkeling van Helpr.ai.",
+        comingSoon: "Binnenkort meer informatie over onze partners."
+      },
+      cta: {
+        title: "Partner worden?",
+        description: "Ben je een consultancybureau en wil je certificering slimmer, consistenter en schaalbaarder aanpakken, zonder in te leveren op kwaliteit?",
+        subtitle: "Neem contact met ons op om te verkennen of een partnership past.",
+        button: "Interesse in partnership"
+      }
     }
   },
   en: {
@@ -1397,6 +1505,114 @@ const translations = {
       title: "Ready to discover what's possible?",
       description: "Discuss your specific certification needs and discover how Helpr.AI can help.",
       button: "Schedule a conversation"
+    },
+    partner: {
+      nav: "Partners",
+      hero: {
+        title: "Together we accelerate certification",
+        subtitle: "Helpr.ai works exclusively with experienced consultancy partners to make ISO certifications, the CO2 Performance Ladder and related standards more efficient, consistent and scalable.",
+        intro: "Certification is not just about standards and documents, but about context, choices and interpretation. That's why we don't believe in a 'tool-only' approach. Helpr.ai is a platform that structures and accelerates data collection and documentation. Our partners provide the substantive interpretation, guidance and assurance."
+      },
+      whyPartners: {
+        title: "Why we choose a partner-driven model",
+        intro: "ISO certifications and sustainability standards require experience, nuance and responsibility. Helpr.ai automates the repetitive work, but the core remains human work.",
+        listIntro: "That's why we work exclusively with selected partners who:",
+        points: [
+          "Are subject matter experts in their standards framework",
+          "Take responsibility towards the end customer",
+          "Work according to a consistent, audit-ready approach"
+        ],
+        conclusion: "This way we combine the best of both worlds: technology at scale, expertise with depth."
+      },
+      roles: {
+        title: "Clear role division, one shared result",
+        helpr: {
+          title: "The role of Helpr.ai",
+          points: [
+            "Structured AI interviews for data collection",
+            "Translation of conversations into audit-ready documentation",
+            "Consistent formats (policies, registers, process overviews)",
+            "Acceleration of lead time and reduction of administrative burden",
+            "Continuous platform for reuse and maintenance"
+          ]
+        },
+        partner: {
+          title: "The role of our partners",
+          points: [
+            "Substantive interpretation of standards",
+            "Guidance of the organization",
+            "Validation and quality control of output",
+            "Preparation and guidance towards audit",
+            "Advice, decision-making and change management"
+          ]
+        },
+        conclusion: "Helpr.ai makes the work lighter and more consistent. The partner makes it substantively correct and valuable."
+      },
+      endUsers: {
+        title: "Always guidance through a certified partner",
+        intro: "When organizations approach Helpr.ai directly, we always connect them with one of our partners.",
+        whyTitle: "Why?",
+        whyPoints: [
+          "Certification requires substantive responsibility",
+          "Audits require demonstrable guidance and validation",
+          "Partners know the practice, the auditor and the context"
+        ],
+        conclusion: "Helpr.ai provides the platform. Our partners provide the guidance. This ensures quality, reliability and trust for all stakeholders."
+      },
+      program: {
+        title: "The Helpr.ai partner program",
+        intro: "The Helpr.ai partner program is designed for consultancy firms that want to scale their services without compromising on quality.",
+        whatYouGet: {
+          title: "What partners receive",
+          points: [
+            "Access to the Helpr.ai platform",
+            "Ready-to-use interview sets per standard (ISO 9001, 14001, 27001, CO2 Performance Ladder, etc.)",
+            "Audit-ready documentation as output",
+            "Support with adoption and implementation",
+            "Co-creation in platform development"
+          ]
+        },
+        whatWeExpect: {
+          title: "What we expect from partners",
+          points: [
+            "Subject matter expertise and experience",
+            "Active involvement with clients",
+            "Feedback on output and methodology",
+            "Commitment to quality and continuous improvement"
+          ]
+        }
+      },
+      forWhom: {
+        title: "Who is this program suitable for?",
+        suitable: {
+          title: "Suitable for",
+          points: [
+            "ISO advisory and consultancy firms",
+            "Sustainability and ESG consultants",
+            "Quality and compliance specialists",
+            "Organizations looking to standardize and scale"
+          ]
+        },
+        notSuitable: {
+          title: "Not suitable for",
+          points: [
+            "Pure tooling resellers",
+            "Organizations without substantive guidance",
+            "'Plug-and-play' certification without context"
+          ]
+        }
+      },
+      currentPartners: {
+        title: "Our partners",
+        intro: "We work with a select group of consultancy partners who actively contribute to the development of Helpr.ai.",
+        comingSoon: "More information about our partners coming soon."
+      },
+      cta: {
+        title: "Become a partner?",
+        description: "Are you a consultancy firm looking to make certification smarter, more consistent and more scalable, without compromising on quality?",
+        subtitle: "Contact us to explore whether a partnership is right for you.",
+        button: "Interested in partnership"
+      }
     }
   }
 }
