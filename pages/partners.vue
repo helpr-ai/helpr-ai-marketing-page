@@ -76,10 +76,21 @@
             </span>
           </div>
 
-          <!-- Partner Icon -->
-          <div class="flex items-center justify-center mb-8">
-            <div class="w-24 h-24 bg-white/20 backdrop-blur-sm rounded-3xl flex items-center justify-center border border-white/20">
-              <HandshakeIcon class="h-12 w-12 text-white" />
+          <!-- Partner Logos -->
+          <div class="flex items-center justify-center gap-8 mb-8">
+            <div class="bg-white rounded-2xl px-6 py-4 shadow-lg">
+              <img
+                src="~/assets/images/logos/certificeringsadvies_nederland_logo.svg"
+                alt="Certificeringsadvies Nederland"
+                class="h-10 w-auto"
+              />
+            </div>
+            <div class="bg-white rounded-2xl px-6 py-4 shadow-lg">
+              <img
+                src="~/assets/images/logos/coning_logo.png"
+                alt="Coning Adviesgroep"
+                class="h-12 w-auto"
+              />
             </div>
           </div>
 
@@ -455,15 +466,6 @@ import {
   GiftIcon,
   ClipboardDocumentCheckIcon
 } from '@heroicons/vue/24/outline'
-
-// Custom handshake icon component (not in heroicons)
-const HandshakeIcon = {
-  template: `
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
-    </svg>
-  `
-}
 
 const scrollTo = (id: string) => {
   const el = document.getElementById(id)
