@@ -17,6 +17,7 @@
           <button @click="scrollTo('waarde')" class="text-gray-700 hover:text-indigo-600 transition-colors">{{ t('nav.value') }}</button>
           <button @click="scrollTo('werking')" class="text-gray-700 hover:text-indigo-600 transition-colors">{{ t('nav.howItWorks') }}</button>
           <button @click="scrollTo('voorwie')" class="text-gray-700 hover:text-indigo-600 transition-colors">{{ t('nav.whoItsFor') }}</button>
+          <nuxt-link to="/partners" class="text-gray-700 hover:text-indigo-600 transition-colors">{{ t('partner.nav') }}</nuxt-link>
           <button @click="scrollTo('faq')" class="text-gray-700 hover:text-indigo-600 transition-colors">{{ t('nav.faq') }}</button>
         </nav>
         
@@ -78,6 +79,7 @@
             <button @click="scrollTo('waarde'); closeMobileMenu()" class="w-full text-left px-3 py-2 text-gray-700 hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition-colors">{{ t('nav.value') }}</button>
             <button @click="scrollTo('werking'); closeMobileMenu()" class="w-full text-left px-3 py-2 text-gray-700 hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition-colors">{{ t('nav.howItWorks') }}</button>
             <button @click="scrollTo('voorwie'); closeMobileMenu()" class="w-full text-left px-3 py-2 text-gray-700 hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition-colors">{{ t('nav.whoItsFor') }}</button>
+            <nuxt-link to="/partners" @click="closeMobileMenu()" class="block w-full text-left px-3 py-2 text-gray-700 hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition-colors">{{ t('partner.nav') }}</nuxt-link>
             <button @click="scrollTo('faq'); closeMobileMenu()" class="w-full text-left px-3 py-2 text-gray-700 hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition-colors">{{ t('nav.faq') }}</button>
             <button @click="scrollTo('contact'); closeMobileMenu()" class="w-full text-left px-3 py-2 text-gray-700 hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition-colors">{{ t('nav.contact') }}</button>
           </div>
