@@ -375,11 +375,24 @@
             {{ t('partner.currentPartners.intro') }}
           </p>
 
-          <!-- Partner logos placeholder -->
+          <!-- Partner logos -->
           <div class="bg-white rounded-2xl p-12 shadow-lg border border-gray-200">
-            <p class="text-gray-500 italic">
-              {{ t('partner.currentPartners.comingSoon') }}
-            </p>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-16">
+              <a href="https://certificeringsadvies.nl" target="_blank" rel="noopener" class="hover:opacity-80 transition-opacity">
+                <img
+                  src="~/assets/images/logos/certificeringsadvies_nederland_logo.svg"
+                  alt="Certificeringsadvies Nederland"
+                  class="h-12 w-auto"
+                />
+              </a>
+              <a href="https://coning.nl" target="_blank" rel="noopener" class="hover:opacity-80 transition-opacity">
+                <img
+                  src="~/assets/images/logos/coning_logo.png"
+                  alt="Coning Adviesgroep"
+                  class="h-16 w-auto"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>
