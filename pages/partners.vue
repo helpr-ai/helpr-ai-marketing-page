@@ -396,7 +396,7 @@
                   class="h-12 w-auto"
                 />
               </a>
-              <a href="https://coning.nl" target="_blank" rel="noopener" class="hover:opacity-80 transition-opacity">
+              <a href="https://coningadviesgroep.nl" target="_blank" rel="noopener" class="hover:opacity-80 transition-opacity">
                 <img
                   src="~/assets/images/logos/coning_logo.png"
                   alt="Coning Adviesgroep"
