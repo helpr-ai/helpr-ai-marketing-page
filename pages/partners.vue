@@ -78,20 +78,20 @@
 
           <!-- Partner Logos -->
           <div class="flex items-center justify-center gap-8 mb-8">
-            <div class="bg-white rounded-2xl px-6 py-4 shadow-lg">
+            <a href="https://certificeringsadvies.nl" target="_blank" rel="noopener" class="bg-white rounded-2xl px-6 py-4 shadow-lg hover:shadow-xl hover:scale-105 transition-all">
               <img
                 src="~/assets/images/logos/certificeringsadvies_nederland_logo.svg"
                 alt="Certificeringsadvies Nederland"
                 class="h-10 w-auto"
               />
-            </div>
-            <div class="bg-white rounded-2xl px-6 py-4 shadow-lg">
+            </a>
+            <a href="https://coningadviesgroep.nl" target="_blank" rel="noopener" class="bg-white rounded-2xl px-6 py-4 shadow-lg hover:shadow-xl hover:scale-105 transition-all">
               <img
                 src="~/assets/images/logos/coning_logo.png"
                 alt="Coning Adviesgroep"
                 class="h-12 w-auto"
               />
-            </div>
+            </a>
           </div>
 
           <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6">
