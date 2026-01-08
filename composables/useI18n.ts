@@ -830,12 +830,12 @@ const translations = {
         coning: {
           name: "Coning Adviesgroep",
           description: "Specialist in kwaliteitsmanagement en ISO-certificeringen voor MKB en grotere organisaties.",
-          expertise: "ISO 9001, ISO 14001, ISO 27001"
+          expertise: "CO2-Prestatieladder, ISO 9001, ISO 14001"
         },
         certificeringsadvies: {
           name: "Certificeringsadvies Nederland",
           description: "Expert in certificeringstrajecten met focus op pragmatische implementatie en duurzame resultaten.",
-          expertise: "ISO 9001, CO2-Prestatieladder, VCA"
+          expertise: "ISO 9001, ISO 27001"
         },
         startButton: "Start traject"
       },
@@ -843,6 +843,43 @@ const translations = {
         title: "Wil je weten welke partner het beste past bij jouw organisatie?",
         description: "Neem contact op en we helpen je aan de juiste partner voor jouw certificeringstraject.",
         button: "Start jouw certificeringstraject"
+      }
+    },
+    startForm: {
+      badge: "Start je traject",
+      title: "Start je certificeringstraject",
+      subtitle: "Vul het formulier in en we koppelen je aan de juiste consultancypartner voor jouw organisatie.",
+      formTitle: "Aanvraagformulier",
+      formSubtitle: "We nemen binnen 1 werkdag contact op",
+      form: {
+        name: "Naam",
+        namePlaceholder: "Jouw volledige naam",
+        email: "E-mailadres",
+        emailPlaceholder: "jouw@email.nl",
+        phone: "Telefoonnummer",
+        phonePlaceholder: "+31 6 12345678",
+        company: "Organisatie",
+        companyPlaceholder: "Naam van je organisatie",
+        certification: "Gewenste certificering",
+        certificationPlaceholder: "Selecteer een certificering",
+        message: "Toelichting",
+        messagePlaceholder: "Vertel ons meer over je situatie, doelen of vragen...",
+        submit: "Verstuur aanvraag",
+        privacy: "Door dit formulier te versturen ga je akkoord met ons privacybeleid."
+      },
+      benefits: {
+        fast: {
+          title: "Snelle reactie",
+          description: "Binnen 1 werkdag nemen we contact op"
+        },
+        partner: {
+          title: "Juiste partner",
+          description: "We koppelen je aan een passende consultant"
+        },
+        quality: {
+          title: "Kwaliteitsgarantie",
+          description: "Ervaren partners met bewezen track record"
+        }
       }
     }
   },
@@ -1659,12 +1696,12 @@ const translations = {
         coning: {
           name: "Coning Adviesgroep",
           description: "Specialist in quality management and ISO certifications for SMEs and larger organizations.",
-          expertise: "ISO 9001, ISO 14001, ISO 27001"
+          expertise: "CO2 Performance Ladder, ISO 9001, ISO 14001"
         },
         certificeringsadvies: {
           name: "Certificeringsadvies Nederland",
           description: "Expert in certification projects with focus on pragmatic implementation and sustainable results.",
-          expertise: "ISO 9001, CO2 Performance Ladder, VCA"
+          expertise: "ISO 9001, ISO 27001"
         },
         startButton: "Start project"
       },
@@ -1672,6 +1709,43 @@ const translations = {
         title: "Want to know which partner best fits your organization?",
         description: "Contact us and we'll help you find the right partner for your certification project.",
         button: "Start your certification project"
+      }
+    },
+    startForm: {
+      badge: "Start your project",
+      title: "Start your certification project",
+      subtitle: "Fill in the form and we will connect you with the right consultancy partner for your organization.",
+      formTitle: "Request form",
+      formSubtitle: "We will contact you within 1 business day",
+      form: {
+        name: "Name",
+        namePlaceholder: "Your full name",
+        email: "Email address",
+        emailPlaceholder: "your@email.com",
+        phone: "Phone number",
+        phonePlaceholder: "+31 6 12345678",
+        company: "Organization",
+        companyPlaceholder: "Name of your organization",
+        certification: "Desired certification",
+        certificationPlaceholder: "Select a certification",
+        message: "Additional information",
+        messagePlaceholder: "Tell us more about your situation, goals or questions...",
+        submit: "Submit request",
+        privacy: "By submitting this form you agree to our privacy policy."
+      },
+      benefits: {
+        fast: {
+          title: "Quick response",
+          description: "We will contact you within 1 business day"
+        },
+        partner: {
+          title: "Right partner",
+          description: "We connect you with a suitable consultant"
+        },
+        quality: {
+          title: "Quality guarantee",
+          description: "Experienced partners with proven track record"
+        }
       }
     }
   }

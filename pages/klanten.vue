@@ -50,12 +50,12 @@
             </div>
           </div>
 
-          <button
-            @click="scrollTo('cta')"
+          <nuxt-link
+            to="/start-traject"
             class="inline-flex items-center justify-center rounded-2xl bg-emerald-600 px-6 py-3 text-sm font-semibold text-white shadow-lg hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:ring-offset-2 transition-all duration-200 hover:scale-[1.02]"
           >
             {{ t('customers.cta.button') }}
-          </button>
+          </nuxt-link>
         </div>
       </div>
     </header>
@@ -113,13 +113,13 @@
           </p>
 
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <button
-              @click="scrollTo('cta')"
+            <nuxt-link
+              to="/start-traject"
               class="inline-flex items-center justify-center rounded-2xl bg-white px-8 py-4 text-lg font-semibold text-emerald-600 shadow-xl hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-emerald-600 transition-all duration-200 hover:scale-[1.02]"
             >
               {{ t('customers.cta.button') }}
               <ArrowRightIcon class="ml-3 h-5 w-5" />
-            </button>
+            </nuxt-link>
             <button
               @click="scrollTo('how')"
               class="inline-flex items-center justify-center rounded-2xl bg-white/10 backdrop-blur-sm px-8 py-4 text-lg font-semibold text-white border border-white/20 hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-emerald-600 transition-all duration-200"
@@ -281,13 +281,13 @@
               <h3 class="text-xl font-bold text-gray-900 mb-2 text-center">{{ t('customers.partners.coning.name') }}</h3>
               <p class="text-gray-600 mb-4 text-center">{{ t('customers.partners.coning.description') }}</p>
               <p class="text-sm text-emerald-600 font-medium text-center mb-6">{{ t('customers.partners.coning.expertise') }}</p>
-              <button
-                @click="scrollTo('cta')"
+              <nuxt-link
+                to="/start-traject"
                 class="w-full inline-flex items-center justify-center rounded-xl bg-emerald-600 px-6 py-3 text-sm font-semibold text-white shadow-lg hover:bg-emerald-700 transition-all"
               >
                 {{ t('customers.partners.startButton') }}
                 <ArrowRightIcon class="ml-2 h-4 w-4" />
-              </button>
+              </nuxt-link>
             </div>
           </div>
 
@@ -304,13 +304,13 @@
               <h3 class="text-xl font-bold text-gray-900 mb-2 text-center">{{ t('customers.partners.certificeringsadvies.name') }}</h3>
               <p class="text-gray-600 mb-4 text-center">{{ t('customers.partners.certificeringsadvies.description') }}</p>
               <p class="text-sm text-emerald-600 font-medium text-center mb-6">{{ t('customers.partners.certificeringsadvies.expertise') }}</p>
-              <button
-                @click="scrollTo('cta')"
+              <nuxt-link
+                to="/start-traject"
                 class="w-full inline-flex items-center justify-center rounded-xl bg-emerald-600 px-6 py-3 text-sm font-semibold text-white shadow-lg hover:bg-emerald-700 transition-all"
               >
                 {{ t('customers.partners.startButton') }}
                 <ArrowRightIcon class="ml-2 h-4 w-4" />
-              </button>
+              </nuxt-link>
             </div>
           </div>
         </div>
@@ -330,7 +330,7 @@
         </p>
 
         <nuxt-link
-          to="/#demo"
+          to="/start-traject"
           class="inline-flex items-center justify-center rounded-2xl bg-white px-8 py-4 text-lg font-semibold text-emerald-600 shadow-xl hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-emerald-600 transition-all duration-200 hover:scale-[1.02]"
         >
           {{ t('customers.cta.button') }}
