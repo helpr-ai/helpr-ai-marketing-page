@@ -13,7 +13,7 @@
         
         <!-- Desktop Navigation -->
         <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
-          <button @click="scrollTo('product')" class="text-gray-700 hover:text-indigo-600 transition-colors">{{ t('nav.product') }}</button>
+          <nuxt-link to="/product" class="text-gray-700 hover:text-indigo-600 transition-colors">{{ t('nav.product') }}</nuxt-link>
           <button @click="scrollTo('waarde')" class="text-gray-700 hover:text-indigo-600 transition-colors">{{ t('nav.value') }}</button>
           <button @click="scrollTo('werking')" class="text-gray-700 hover:text-indigo-600 transition-colors">{{ t('nav.howItWorks') }}</button>
           <button @click="scrollTo('voorwie')" class="text-gray-700 hover:text-indigo-600 transition-colors">{{ t('nav.whoItsFor') }}</button>
@@ -76,7 +76,7 @@
         <div class="px-6 py-4 space-y-4">
           <!-- Mobile Navigation Links -->
           <div class="space-y-2">
-            <button @click="scrollTo('product'); closeMobileMenu()" class="w-full text-left px-3 py-2 text-gray-700 hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition-colors">{{ t('nav.product') }}</button>
+            <nuxt-link to="/product" @click="closeMobileMenu()" class="block w-full text-left px-3 py-2 text-gray-700 hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition-colors">{{ t('nav.product') }}</nuxt-link>
             <button @click="scrollTo('waarde'); closeMobileMenu()" class="w-full text-left px-3 py-2 text-gray-700 hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition-colors">{{ t('nav.value') }}</button>
             <button @click="scrollTo('werking'); closeMobileMenu()" class="w-full text-left px-3 py-2 text-gray-700 hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition-colors">{{ t('nav.howItWorks') }}</button>
             <button @click="scrollTo('voorwie'); closeMobileMenu()" class="w-full text-left px-3 py-2 text-gray-700 hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition-colors">{{ t('nav.whoItsFor') }}</button>

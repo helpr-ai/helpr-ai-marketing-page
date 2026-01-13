@@ -881,6 +881,114 @@ const translations = {
           description: "Ervaren partners met bewezen track record"
         }
       }
+    },
+    productPage: {
+      nav: {
+        features: "Functies",
+        co2: "CO2-Prestatieladder",
+        standards: "Standaarden"
+      },
+      hero: {
+        badge: "AI-gestuurde certificering",
+        title: "Van gesprek naar certificering",
+        subtitle: "Helpr.ai vereenvoudigt certificeringstrajecten door AI-gestuurde interviews om te zetten in audit-ready documentatie. Sneller, nauwkeuriger en voordeliger.",
+        learnMore: "Meer informatie"
+      },
+      howItWorks: {
+        title: "Hoe werkt Helpr.ai?",
+        subtitle: "Drie eenvoudige stappen van interview naar certificering-ready documentatie.",
+        step1: {
+          title: "AI Interview",
+          description: "Onze AI-consultant voert gestructureerde interviews met de juiste medewerkers in je organisatie.",
+          points: [
+            "Spraakgestuurde interviews in natuurlijke taal",
+            "Automatische follow-up vragen voor diepgang",
+            "Flexibel in te plannen per medewerker",
+            "Geen voorbereiding nodig"
+          ]
+        },
+        step2: {
+          title: "Automatisch structureren",
+          description: "De verzamelde informatie wordt automatisch gestructureerd volgens de vereisten van de certificeringsnorm.",
+          points: [
+            "Mapping naar normhoofdstukken",
+            "Identificatie van gaps en ontbrekende informatie",
+            "Consistentiecontrole over alle interviews",
+            "Real-time voortgangsinzicht"
+          ]
+        },
+        step3: {
+          title: "Export naar documentatie",
+          description: "Genereer audit-ready documentatie die direct in je managementsysteem past.",
+          points: [
+            "Export naar Word, PDF of direct naar SharePoint",
+            "Klaar voor review door consultant",
+            "Voldoet aan audit-eisen",
+            "Eenvoudig te updaten bij wijzigingen"
+          ]
+        }
+      },
+      co2: {
+        badge: "Duurzaamheidscertificering",
+        title: "CO2-Prestatieladder certificering",
+        subtitle: "De CO2-Prestatieladder is het belangrijkste instrument voor duurzaam inkopen in Nederland. Helpr.ai maakt certificering eenvoudiger en effectiever.",
+        what: {
+          title: "Wat is de CO2-Prestatieladder?",
+          description: "De CO2-Prestatieladder is een certificeringssysteem dat organisaties stimuleert om CO2-uitstoot te verminderen. Het wordt erkend door de OESO, IPCC en het World Economic Forum als best practice voor duurzaam inkopen.",
+          points: [
+            "Gunningsvoordeel bij aanbestedingen tot 10% fictieve korting",
+            "Erkend door 300+ overheden en publieke opdrachtgevers",
+            "Gecertificeerde organisaties reduceren CO2 twee keer zo snel",
+            "75% van certificaathouders zijn MKB-bedrijven",
+            "Uitbreiding naar Frankrijk, Duitsland, Ierland, Portugal en UK"
+          ]
+        },
+        stats: {
+          organizations: "gecertificeerde organisaties",
+          authorities: "deelnemende overheden",
+          reduction: "snellere CO2-reductie"
+        },
+        levels: {
+          title: "De drie treden (versie 4.0, 2025)",
+          step1: {
+            title: "Trede 1: Interne operaties",
+            description: "Focus op energiebesparing en Scope 1 & 2 emissies binnen de eigen organisatie. Vergelijkbaar met het voormalige niveau 3."
+          },
+          step2: {
+            title: "Trede 2: Waardeketen",
+            description: "Aanpak van emissies uit kernactiviteiten. Vereist een Klimaattransitieplan. Vergelijkbaar met het voormalige niveau 5."
+          },
+          step3: {
+            title: "Trede 3: Net Zero 2050",
+            description: "Streven naar net-zero emissies over alle scopes. Vereist een kwantitatief Klimaattransitieplan voor Scope 1, 2, 3 en buiten-grens emissies."
+          }
+        },
+        howWeHelp: {
+          title: "Hoe Helpr.ai helpt bij CO2-Prestatieladder",
+          subtitle: "Wij vereenvoudigen het verzamelen van de benodigde informatie voor certificering.",
+          benefits: [
+            "Gestructureerde interviews voor footprint-gegevens",
+            "Automatische mapping naar ladder-eisen",
+            "Ondersteuning bij ketenanalyses",
+            "Voortgangsrapportages voor audits"
+          ]
+        }
+      },
+      standards: {
+        title: "Ondersteunde standaarden",
+        subtitle: "Helpr.ai ondersteunt meerdere certificeringsnormen en breidt continu uit.",
+        available: "Beschikbaar",
+        coming: "Binnenkort",
+        iso9001: "Kwaliteitsmanagementsysteem voor consistente producten en diensten.",
+        co2: "Certificering voor CO2-reductie en duurzaam ondernemen.",
+        iso27001: "Informatiebeveiliging en bescherming van gevoelige data.",
+        iso14001: "Milieumanagementsysteem voor duurzame bedrijfsvoering."
+      },
+      cta: {
+        title: "Klaar om te starten?",
+        description: "Begin vandaag nog met je certificeringstraject. Wij koppelen je aan de juiste partner.",
+        button: "Start je traject"
+      }
     }
   },
   en: {
@@ -1746,6 +1854,114 @@ const translations = {
           title: "Quality guarantee",
           description: "Experienced partners with proven track record"
         }
+      }
+    },
+    productPage: {
+      nav: {
+        features: "Features",
+        co2: "CO2 Performance Ladder",
+        standards: "Standards"
+      },
+      hero: {
+        badge: "AI-powered certification",
+        title: "From conversation to certification",
+        subtitle: "Helpr.ai simplifies certification processes by converting AI-powered interviews into audit-ready documentation. Faster, more accurate, and more affordable.",
+        learnMore: "Learn more"
+      },
+      howItWorks: {
+        title: "How does Helpr.ai work?",
+        subtitle: "Three simple steps from interview to certification-ready documentation.",
+        step1: {
+          title: "AI Interview",
+          description: "Our AI consultant conducts structured interviews with the right employees in your organization.",
+          points: [
+            "Voice-driven interviews in natural language",
+            "Automatic follow-up questions for depth",
+            "Flexible scheduling per employee",
+            "No preparation needed"
+          ]
+        },
+        step2: {
+          title: "Automatic structuring",
+          description: "The collected information is automatically structured according to the certification standard requirements.",
+          points: [
+            "Mapping to standard chapters",
+            "Identification of gaps and missing information",
+            "Consistency check across all interviews",
+            "Real-time progress insight"
+          ]
+        },
+        step3: {
+          title: "Export to documentation",
+          description: "Generate audit-ready documentation that fits directly into your management system.",
+          points: [
+            "Export to Word, PDF or directly to SharePoint",
+            "Ready for consultant review",
+            "Meets audit requirements",
+            "Easy to update when changes occur"
+          ]
+        }
+      },
+      co2: {
+        badge: "Sustainability certification",
+        title: "CO2 Performance Ladder certification",
+        subtitle: "The CO2 Performance Ladder is the leading instrument for sustainable procurement in the Netherlands. Helpr.ai makes certification simpler and more effective.",
+        what: {
+          title: "What is the CO2 Performance Ladder?",
+          description: "The CO2 Performance Ladder is a certification system that encourages organizations to reduce CO2 emissions. It is recognized by the OECD, IPCC, and World Economic Forum as a best practice for sustainable procurement.",
+          points: [
+            "Award advantage in tenders up to 10% fictitious discount",
+            "Recognized by 300+ governments and public contracting authorities",
+            "Certified organizations reduce CO2 twice as fast",
+            "75% of certificate holders are SMEs",
+            "Expanding to France, Germany, Ireland, Portugal and UK"
+          ]
+        },
+        stats: {
+          organizations: "certified organizations",
+          authorities: "participating authorities",
+          reduction: "faster CO2 reduction"
+        },
+        levels: {
+          title: "The three steps (version 4.0, 2025)",
+          step1: {
+            title: "Step 1: Internal operations",
+            description: "Focus on energy savings and Scope 1 & 2 emissions within the organization. Comparable to former Level 3."
+          },
+          step2: {
+            title: "Step 2: Value chain",
+            description: "Addressing emissions from core activities. Requires a Climate Transition Plan. Comparable to former Level 5."
+          },
+          step3: {
+            title: "Step 3: Net Zero 2050",
+            description: "Achieving net-zero emissions across all scopes. Requires a quantitative Climate Transition Plan for Scope 1, 2, 3 and outside-boundary emissions."
+          }
+        },
+        howWeHelp: {
+          title: "How Helpr.ai helps with CO2 Performance Ladder",
+          subtitle: "We simplify collecting the required information for certification.",
+          benefits: [
+            "Structured interviews for footprint data",
+            "Automatic mapping to ladder requirements",
+            "Support for chain analyses",
+            "Progress reports for audits"
+          ]
+        }
+      },
+      standards: {
+        title: "Supported standards",
+        subtitle: "Helpr.ai supports multiple certification standards and is continuously expanding.",
+        available: "Available",
+        coming: "Coming soon",
+        iso9001: "Quality management system for consistent products and services.",
+        co2: "Certification for CO2 reduction and sustainable business.",
+        iso27001: "Information security and protection of sensitive data.",
+        iso14001: "Environmental management system for sustainable operations."
+      },
+      cta: {
+        title: "Ready to get started?",
+        description: "Start your certification journey today. We will connect you with the right partner.",
+        button: "Start your project"
       }
     }
   }
