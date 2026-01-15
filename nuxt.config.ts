@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     routeRules: {
       '/normen/**': {
         headers: {
-          'Content-Security-Policy': "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://unpkg.com https://*.elevenlabs.io; connect-src 'self' https://*.elevenlabs.io wss://*.elevenlabs.io; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; frame-src 'self' https://*.elevenlabs.io;"
+          'Content-Security-Policy': "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' data: blob: https://*.elevenlabs.io; connect-src 'self' https: wss:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; frame-src 'self' https://*.elevenlabs.io; worker-src 'self' blob: data:; media-src 'self' blob: data: https://*.elevenlabs.io;"
         }
       }
     }

@@ -40,15 +40,14 @@
 </template>
 
 <script setup lang="ts">
-// Load ElevenLabs ConvAI widget script
+import { onMounted } from 'vue'
+
+// Load ElevenLabs widget on client-side only
+onMounted(async () => {
+  await import('@elevenlabs/convai-widget-embed')
+})
+
 useHead({
-  title: 'CO2-Prestatieladder Interview | Helpr.AI',
-  script: [
-    {
-      src: 'https://unpkg.com/@elevenlabs/convai-widget-embed',
-      async: true,
-      type: 'text/javascript'
-    }
-  ]
+  title: 'CO2-Prestatieladder Interview | Helpr.AI'
 })
 </script>
