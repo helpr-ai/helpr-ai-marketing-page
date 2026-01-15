@@ -320,6 +320,10 @@ const translations = {
           {
             name: "ISO 9001",
             description: "Kwaliteitsmanagement"
+          },
+          {
+            name: "CO₂-Prestatieladder",
+            description: "Duurzaamheid & CO₂-reductie"
           }
         ]
       },
@@ -1294,6 +1298,10 @@ const translations = {
           {
             name: "ISO 9001",
             description: "Quality management"
+          },
+          {
+            name: "CO₂ Performance Ladder",
+            description: "Sustainability & CO₂ reduction"
           }
         ]
       },

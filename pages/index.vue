@@ -1341,12 +1341,14 @@ const successUrl = computed(() => {
   return '/success'
 })
 
-// Helper function to get link for ISO standards
+// Helper function to get link for standards
 const getStandardLink = (standardName: string) => {
   const linkMap: Record<string, string> = {
     'ISO 27001': '/iso27001',
     'ISO 42001': '/iso42001',
-    'ISO 9001': '/iso9001'
+    'ISO 9001': '/product',
+    'CO₂-Prestatieladder': '/product#co2',
+    'CO₂ Performance Ladder': '/product#co2'
   }
   return linkMap[standardName] || null
 }
