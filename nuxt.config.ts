@@ -5,6 +5,13 @@ export default defineNuxtConfig({
     prerender: {
       crawlLinks: false,
       routes: ['/']
+    },
+    routeRules: {
+      '/normen/**': {
+        headers: {
+          'Content-Security-Policy': "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://unpkg.com https://*.elevenlabs.io; connect-src 'self' https://*.elevenlabs.io wss://*.elevenlabs.io; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; frame-src 'self' https://*.elevenlabs.io;"
+        }
+      }
     }
   },
   app: {
