@@ -195,8 +195,9 @@
                 </div>
               </div>
               <div class="p-6 space-y-4">
-                <div class="flex items-center gap-3 mb-4">
-                  <nuxt-link to="/iso9001" class="inline-flex items-center rounded-full bg-emerald-100 px-3 py-1 text-xs font-medium text-emerald-700 hover:bg-emerald-200 transition-colors cursor-pointer">{{ t('common.iso9001') }}</nuxt-link>
+                <div class="flex items-center gap-3 mb-4 flex-wrap">
+                  <nuxt-link to="/product" class="inline-flex items-center rounded-full bg-emerald-100 px-3 py-1 text-xs font-medium text-emerald-700 hover:bg-emerald-200 transition-colors cursor-pointer">{{ t('common.iso9001') }}</nuxt-link>
+                  <nuxt-link to="/product#co2" class="inline-flex items-center rounded-full bg-emerald-100 px-3 py-1 text-xs font-medium text-emerald-700 hover:bg-emerald-200 transition-colors cursor-pointer">CO<sub>2</sub>-Prestatieladder</nuxt-link>
                   <span class="inline-flex items-center rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-500">{{ t('common.iso27001') }} (soon)</span>
                   <span class="inline-flex items-center rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-500">{{ t('common.iso42001') }} (soon)</span>
                 </div>
