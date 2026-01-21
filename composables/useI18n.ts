@@ -993,6 +993,45 @@ const translations = {
         description: "Begin vandaag nog met je certificeringstraject. Wij koppelen je aan de juiste partner.",
         button: "Start je traject"
       }
+    },
+    about: {
+      nav: "Over ons",
+      hero: {
+        badge: "Maak kennis met ons team",
+        titleHighlight: "For the love of",
+        titleRest: "Applied AI",
+        description: "Bij Helpr.ai overbruggen we de kloof tussen complexe bedrijfsvraagstukken en de kracht van toegepaste AI. Wij geloven dat technologie het meest waardevol is wanneer het de mens ontlast van repetitief basiswerk, zodat expertise weer de ruimte krijgt."
+      },
+      mission: {
+        title: "Onze missie",
+        quote: "We capture what people say and turn it into what auditors need.",
+        description: "Het verzamelen van de juiste informatie binnen een organisatie is vaak een hoofdpijndossier: data zit verspreid over verschillende mensen, afdelingen en documenten. Helpr.ai automatiseert dit proces door middel van gestructureerde AI-interviews. Wij luisteren, extraheren de essentie en zetten gesprekken om in gestructureerde, audit-ready documentatie."
+      },
+      team: {
+        title: "Het Team",
+        subtitle: "Samen werken we aan de toekomst van compliance automatisering.",
+        jorien: {
+          name: "Jorien Knevel",
+          role: "The Human side of change",
+          description: "Jorien richt zich op de menselijke kant van technologische transitie. Met haar ervaring zorgt zij ervoor dat de implementatie van AI niet alleen technisch klopt, maar ook daadwerkelijk landt binnen de organisatie."
+        },
+        jaap: {
+          name: "Jaap Koelewijn",
+          role: "AI Impact builder",
+          description: "Jaap is de drijvende kracht achter het bouwen van oplossingen die direct resultaat leveren. Hij vertaalt complexe visies naar praktische AI-toepassingen die de dagelijkse praktijk van consultants en klanten verbeteren."
+        },
+        erik: {
+          name: "Erik Methorst",
+          role: "AI & Data Specialist",
+          description: "Erik is de expert op het gebied van de onderliggende data en techniek. Hij zorgt ervoor dat de AI-interviews leiden tot consistente, herhaalbare en technisch hoogwaardige output waar auditors op kunnen bouwen."
+        }
+      },
+      cta: {
+        title: "Klaar voor de volgende stap?",
+        description: "Helpr.ai vervangt de consultant niet, maar automatiseert het voorwerk zodat jij sneller en slimmer kunt werken.",
+        button: "Vraag een demo aan",
+        secondaryButton: "Bekijk het product"
+      }
     }
   },
   en: {
@@ -1970,6 +2009,45 @@ const translations = {
         title: "Ready to get started?",
         description: "Start your certification journey today. We will connect you with the right partner.",
         button: "Start your project"
+      }
+    },
+    about: {
+      nav: "About Us",
+      hero: {
+        badge: "Meet our team",
+        titleHighlight: "For the love of",
+        titleRest: "Applied AI",
+        description: "At Helpr.ai, we bridge the gap between complex business challenges and the power of applied AI. We believe technology is most valuable when it relieves people from repetitive basic work, giving expertise the space it deserves."
+      },
+      mission: {
+        title: "Our Mission",
+        quote: "We capture what people say and turn it into what auditors need.",
+        description: "Collecting the right information within an organization is often a headache: data is scattered across different people, departments, and documents. Helpr.ai automates this process through structured AI interviews. We listen, extract the essence, and transform conversations into structured, audit-ready documentation."
+      },
+      team: {
+        title: "The Team",
+        subtitle: "Together we work on the future of compliance automation.",
+        jorien: {
+          name: "Jorien Knevel",
+          role: "The Human side of change",
+          description: "Jorien focuses on the human side of technological transition. With her experience, she ensures that AI implementation is not only technically sound but also truly lands within the organization."
+        },
+        jaap: {
+          name: "Jaap Koelewijn",
+          role: "AI Impact builder",
+          description: "Jaap is the driving force behind building solutions that deliver immediate results. He translates complex visions into practical AI applications that improve the daily practice of consultants and clients."
+        },
+        erik: {
+          name: "Erik Methorst",
+          role: "AI & Data Specialist",
+          description: "Erik is the expert in underlying data and technology. He ensures that AI interviews lead to consistent, repeatable, and technically high-quality output that auditors can build upon."
+        }
+      },
+      cta: {
+        title: "Ready for the next step?",
+        description: "Helpr.ai doesn't replace the consultant, but automates the groundwork so you can work faster and smarter.",
+        button: "Request a demo",
+        secondaryButton: "View the product"
       }
     }
   }
