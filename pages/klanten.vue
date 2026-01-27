@@ -4,21 +4,21 @@
     <header class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm">
       <div class="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12 py-6 flex items-center justify-between">
         <div class="flex items-center">
-          <nuxt-link to="/" class="flex items-center">
+          <NuxtLink :to="localePath('/')" class="flex items-center">
             <img
               src="~/assets/images/logos/helpr-ai-logo.svg"
               alt="Helpr.ai"
               class="h-8 w-auto"
             />
-          </nuxt-link>
+          </NuxtLink>
         </div>
 
         <!-- Desktop Navigation -->
         <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
-          <nuxt-link to="/" class="text-gray-700 hover:text-emerald-600 transition-colors">Home</nuxt-link>
-          <button @click="scrollTo('how')" class="text-gray-700 hover:text-emerald-600 transition-colors">{{ currentLocale === 'nl' ? 'Hoe het werkt' : 'How it works' }}</button>
-          <button @click="scrollTo('roles')" class="text-gray-700 hover:text-emerald-600 transition-colors">{{ currentLocale === 'nl' ? 'Rolverdeling' : 'Roles' }}</button>
-          <button @click="scrollTo('partners')" class="text-gray-700 hover:text-emerald-600 transition-colors">{{ t('customers.partners.title') }}</button>
+          <NuxtLink :to="localePath('/')" class="text-gray-700 hover:text-emerald-600 transition-colors">{{ $t('nav.home') }}</NuxtLink>
+          <button @click="scrollTo('how')" class="text-gray-700 hover:text-emerald-600 transition-colors">{{ locale === 'nl' ? 'Hoe het werkt' : 'How it works' }}</button>
+          <button @click="scrollTo('roles')" class="text-gray-700 hover:text-emerald-600 transition-colors">{{ locale === 'nl' ? 'Rolverdeling' : 'Roles' }}</button>
+          <button @click="scrollTo('partners')" class="text-gray-700 hover:text-emerald-600 transition-colors">{{ $t('customers.partners.title') }}</button>
         </nav>
 
         <!-- Desktop Actions -->
@@ -29,33 +29,34 @@
               @click="showLangDropdown = !showLangDropdown"
               class="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-gray-100 transition-colors"
             >
-              <span class="text-xl">{{ getCurrentLanguage.flag }}</span>
+              <span class="text-xl">{{ currentLocaleFlag }}</span>
             </button>
             <div
               v-if="showLangDropdown"
               class="absolute right-0 top-full mt-2 bg-white rounded-xl shadow-xl border border-gray-200 py-2 min-w-[160px] z-50"
             >
-              <button
-                v-for="lang in languages"
-                :key="lang.code"
-                @click="changeLang(lang.code)"
+              <NuxtLink
+                v-for="loc in availableLocales"
+                :key="loc.code"
+                :to="switchLocalePath(loc.code)"
+                @click="showLangDropdown = false"
                 :class="[
                   'w-full flex items-center gap-3 px-4 py-2 text-sm hover:bg-gray-50 transition-colors',
-                  currentLocale === lang.code ? 'bg-emerald-50 text-emerald-600' : 'text-gray-700'
+                  locale === loc.code ? 'bg-emerald-50 text-emerald-600' : 'text-gray-700'
                 ]"
               >
-                <span class="text-lg">{{ lang.flag }}</span>
-                <span>{{ lang.name }}</span>
-              </button>
+                <span class="text-lg">{{ loc.flag }}</span>
+                <span>{{ loc.name }}</span>
+              </NuxtLink>
             </div>
           </div>
 
-          <nuxt-link
-            to="/start-traject"
+          <NuxtLink
+            :to="localePath('start-traject')"
             class="inline-flex items-center justify-center rounded-2xl bg-emerald-600 px-6 py-3 text-sm font-semibold text-white shadow-lg hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:ring-offset-2 transition-all duration-200 hover:scale-[1.02]"
           >
-            {{ t('customers.cta.button') }}
-          </nuxt-link>
+            {{ $t('customers.cta.button') }}
+          </NuxtLink>
         </div>
       </div>
     </header>
@@ -72,7 +73,7 @@
           <div class="mb-6">
             <span class="inline-flex items-center rounded-full bg-white/20 backdrop-blur-sm px-4 py-2 text-sm font-medium text-white ring-1 ring-inset ring-white/20">
               <BuildingOffice2Icon class="mr-2 h-4 w-4" />
-              {{ t('customers.nav') }}
+              {{ $t('customers.nav') }}
             </span>
           </div>
 
@@ -103,28 +104,28 @@
           </div>
 
           <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6">
-            {{ t('customers.hero.title') }}
+            {{ $t('customers.hero.title') }}
           </h1>
           <p class="text-xl sm:text-2xl text-emerald-100 leading-8 max-w-3xl mx-auto mb-8">
-            {{ t('customers.hero.subtitle') }}
+            {{ $t('customers.hero.subtitle') }}
           </p>
           <p class="text-lg text-emerald-200 leading-8 max-w-3xl mx-auto mb-12">
-            {{ t('customers.hero.intro') }}
+            {{ $t('customers.hero.intro') }}
           </p>
 
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <nuxt-link
-              to="/start-traject"
+            <NuxtLink
+              :to="localePath('start-traject')"
               class="inline-flex items-center justify-center rounded-2xl bg-white px-8 py-4 text-lg font-semibold text-emerald-600 shadow-xl hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-emerald-600 transition-all duration-200 hover:scale-[1.02]"
             >
-              {{ t('customers.cta.button') }}
+              {{ $t('customers.cta.button') }}
               <ArrowRightIcon class="ml-3 h-5 w-5" />
-            </nuxt-link>
+            </NuxtLink>
             <button
               @click="scrollTo('how')"
               class="inline-flex items-center justify-center rounded-2xl bg-white/10 backdrop-blur-sm px-8 py-4 text-lg font-semibold text-white border border-white/20 hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-emerald-600 transition-all duration-200"
             >
-              {{ currentLocale === 'nl' ? 'Meer weten' : 'Learn more' }}
+              {{ locale === 'nl' ? 'Meer weten' : 'Learn more' }}
               <ChevronDownIcon class="ml-3 h-5 w-5" />
             </button>
           </div>
@@ -137,23 +138,23 @@
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-4xl mx-auto mb-16">
           <h2 class="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 mb-6">
-            {{ t('customers.howItWorks.title') }}
+            {{ $t('customers.howItWorks.title') }}
           </h2>
           <p class="text-xl text-gray-600 leading-8">
-            {{ t('customers.howItWorks.intro') }}
+            {{ $t('customers.howItWorks.intro') }}
           </p>
         </div>
 
         <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
           <div
-            v-for="(point, index) in getRaw('customers.howItWorks.points')"
+            v-for="(point, index) in tm('customers.howItWorks.points')"
             :key="index"
             class="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 text-center"
           >
             <div class="w-12 h-12 bg-emerald-600 rounded-xl flex items-center justify-center mx-auto mb-4">
               <CheckCircleIcon class="h-6 w-6 text-white" />
             </div>
-            <p class="text-gray-900 font-semibold text-lg">{{ point }}</p>
+            <p class="text-gray-900 font-semibold text-lg">{{ rt(point) }}</p>
           </div>
         </div>
       </div>
@@ -164,7 +165,7 @@
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-4xl mx-auto mb-16">
           <h2 class="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 mb-6">
-            {{ t('customers.roles.title') }}
+            {{ $t('customers.roles.title') }}
           </h2>
         </div>
 
@@ -176,18 +177,18 @@
                 <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
                   <CpuChipIcon class="h-6 w-6 text-white" />
                 </div>
-                <h3 class="text-2xl font-bold">{{ t('customers.roles.helpr.title') }}</h3>
+                <h3 class="text-2xl font-bold">{{ $t('customers.roles.helpr.title') }}</h3>
               </div>
             </div>
             <div class="p-6">
               <div class="space-y-4">
                 <div
-                  v-for="(point, index) in getRaw('customers.roles.helpr.points')"
+                  v-for="(point, index) in tm('customers.roles.helpr.points')"
                   :key="index"
                   class="flex items-start gap-3"
                 >
                   <CheckCircleIcon class="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
-                  <span class="text-gray-700 leading-7">{{ point }}</span>
+                  <span class="text-gray-700 leading-7">{{ rt(point) }}</span>
                 </div>
               </div>
             </div>
@@ -200,18 +201,18 @@
                 <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
                   <UsersIcon class="h-6 w-6 text-white" />
                 </div>
-                <h3 class="text-2xl font-bold">{{ t('customers.roles.partner.title') }}</h3>
+                <h3 class="text-2xl font-bold">{{ $t('customers.roles.partner.title') }}</h3>
               </div>
             </div>
             <div class="p-6">
               <div class="space-y-4">
                 <div
-                  v-for="(point, index) in getRaw('customers.roles.partner.points')"
+                  v-for="(point, index) in tm('customers.roles.partner.points')"
                   :key="index"
                   class="flex items-start gap-3"
                 >
                   <CheckCircleIcon class="h-5 w-5 text-indigo-600 mt-0.5 flex-shrink-0" />
-                  <span class="text-gray-700 leading-7">{{ point }}</span>
+                  <span class="text-gray-700 leading-7">{{ rt(point) }}</span>
                 </div>
               </div>
             </div>
@@ -224,9 +225,9 @@
             <div class="w-16 h-16 bg-emerald-500 rounded-2xl flex items-center justify-center mx-auto mb-6">
               <SparklesIcon class="h-8 w-8 text-white" />
             </div>
-            <h3 class="text-2xl font-bold text-gray-900 mb-4">{{ t('customers.roles.result.title') }}</h3>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">{{ $t('customers.roles.result.title') }}</h3>
             <p class="text-lg text-gray-700 leading-8">
-              {{ t('customers.roles.result.description') }}
+              {{ $t('customers.roles.result.description') }}
             </p>
           </div>
         </div>
@@ -242,13 +243,13 @@
               <ShieldCheckIcon class="h-8 w-8 text-white" />
             </div>
             <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-              {{ t('customers.alwaysPartner.title') }}
+              {{ $t('customers.alwaysPartner.title') }}
             </h2>
             <p class="text-lg text-gray-600 mb-6">
-              {{ t('customers.alwaysPartner.intro') }}
+              {{ $t('customers.alwaysPartner.intro') }}
             </p>
             <p class="text-xl text-gray-900 font-semibold">
-              {{ t('customers.alwaysPartner.conclusion') }}
+              {{ $t('customers.alwaysPartner.conclusion') }}
             </p>
           </div>
         </div>
@@ -260,10 +261,10 @@
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-4xl mx-auto mb-16">
           <h2 class="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 mb-6">
-            {{ t('customers.partners.title') }}
+            {{ $t('customers.partners.title') }}
           </h2>
           <p class="text-xl text-gray-600 leading-8">
-            {{ t('customers.partners.intro') }}
+            {{ $t('customers.partners.intro') }}
           </p>
         </div>
 
@@ -278,16 +279,16 @@
                   class="h-16 w-auto"
                 />
               </div>
-              <h3 class="text-xl font-bold text-gray-900 mb-2 text-center">{{ t('customers.partners.coning.name') }}</h3>
-              <p class="text-gray-600 mb-4 text-center">{{ t('customers.partners.coning.description') }}</p>
-              <p class="text-sm text-emerald-600 font-medium text-center mb-6">{{ t('customers.partners.coning.expertise') }}</p>
-              <nuxt-link
-                to="/start-traject"
+              <h3 class="text-xl font-bold text-gray-900 mb-2 text-center">{{ $t('customers.partners.coning.name') }}</h3>
+              <p class="text-gray-600 mb-4 text-center">{{ $t('customers.partners.coning.description') }}</p>
+              <p class="text-sm text-emerald-600 font-medium text-center mb-6">{{ $t('customers.partners.coning.expertise') }}</p>
+              <NuxtLink
+                :to="localePath('start-traject')"
                 class="w-full inline-flex items-center justify-center rounded-xl bg-emerald-600 px-6 py-3 text-sm font-semibold text-white shadow-lg hover:bg-emerald-700 transition-all"
               >
-                {{ t('customers.partners.startButton') }}
+                {{ $t('customers.partners.startButton') }}
                 <ArrowRightIcon class="ml-2 h-4 w-4" />
-              </nuxt-link>
+              </NuxtLink>
             </div>
           </div>
 
@@ -301,16 +302,16 @@
                   class="h-12 w-auto"
                 />
               </div>
-              <h3 class="text-xl font-bold text-gray-900 mb-2 text-center">{{ t('customers.partners.certificeringsadvies.name') }}</h3>
-              <p class="text-gray-600 mb-4 text-center">{{ t('customers.partners.certificeringsadvies.description') }}</p>
-              <p class="text-sm text-emerald-600 font-medium text-center mb-6">{{ t('customers.partners.certificeringsadvies.expertise') }}</p>
-              <nuxt-link
-                to="/start-traject"
+              <h3 class="text-xl font-bold text-gray-900 mb-2 text-center">{{ $t('customers.partners.certificeringsadvies.name') }}</h3>
+              <p class="text-gray-600 mb-4 text-center">{{ $t('customers.partners.certificeringsadvies.description') }}</p>
+              <p class="text-sm text-emerald-600 font-medium text-center mb-6">{{ $t('customers.partners.certificeringsadvies.expertise') }}</p>
+              <NuxtLink
+                :to="localePath('start-traject')"
                 class="w-full inline-flex items-center justify-center rounded-xl bg-emerald-600 px-6 py-3 text-sm font-semibold text-white shadow-lg hover:bg-emerald-700 transition-all"
               >
-                {{ t('customers.partners.startButton') }}
+                {{ $t('customers.partners.startButton') }}
                 <ArrowRightIcon class="ml-2 h-4 w-4" />
-              </nuxt-link>
+              </NuxtLink>
             </div>
           </div>
         </div>
@@ -323,19 +324,19 @@
 
       <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-4xl sm:text-5xl font-bold text-white mb-6">
-          {{ t('customers.cta.title') }}
+          {{ $t('customers.cta.title') }}
         </h2>
         <p class="text-xl text-emerald-100 mb-10 max-w-3xl mx-auto">
-          {{ t('customers.cta.description') }}
+          {{ $t('customers.cta.description') }}
         </p>
 
-        <nuxt-link
-          to="/start-traject"
+        <NuxtLink
+          :to="localePath('start-traject')"
           class="inline-flex items-center justify-center rounded-2xl bg-white px-8 py-4 text-lg font-semibold text-emerald-600 shadow-xl hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-emerald-600 transition-all duration-200 hover:scale-[1.02]"
         >
-          {{ t('customers.cta.button') }}
+          {{ $t('customers.cta.button') }}
           <ArrowRightIcon class="ml-3 h-5 w-5" />
-        </nuxt-link>
+        </NuxtLink>
       </div>
     </section>
 
@@ -343,14 +344,14 @@
     <footer class="py-10 border-t bg-white/60">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-6 items-center">
         <div class="text-sm text-slate-600">
-          <div class="font-semibold text-slate-800">Helpr.AI</div>
-          <div>"From conversation to certification."</div>
-          <div class="mt-1">&copy; {{ new Date().getFullYear() }} Helpr.AI // All rights reserved.</div>
+          <div class="font-semibold text-slate-800">{{ $t('common.brand') }}</div>
+          <div>{{ $t('footer.tagline') }}</div>
+          <div class="mt-1">{{ $t('footer.copyright', { year: new Date().getFullYear().toString() }) }}</div>
         </div>
         <div class="flex justify-start md:justify-end gap-4 text-sm text-slate-600">
-          <nuxt-link to="/" class="hover:text-slate-900">Home</nuxt-link>
-          <nuxt-link to="/partners" class="hover:text-slate-900">{{ t('partner.nav') }}</nuxt-link>
-          <a href="#" class="hover:text-slate-900">Privacy</a>
+          <NuxtLink :to="localePath('/')" class="hover:text-slate-900">{{ $t('nav.home') }}</NuxtLink>
+          <NuxtLink :to="localePath('partners')" class="hover:text-slate-900">{{ $t('partners.nav') }}</NuxtLink>
+          <a href="#" class="hover:text-slate-900">{{ $t('footer.privacy') }}</a>
         </div>
       </div>
     </footer>
@@ -358,8 +359,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from 'vue'
-import { useI18n } from '~/composables/useI18n'
+import { ref, computed, onMounted, onUnmounted } from 'vue'
 import {
   CheckCircleIcon,
   ArrowRightIcon,
@@ -383,27 +383,38 @@ const scrollTo = (id: string) => {
   }
 }
 
-// I18n setup
-const { currentLocale, languages, setLocale, t, getRaw, getCurrentLanguage } = useI18n()
+// i18n setup
+const { t, rt, locale, locales, tm } = useI18n()
+const localePath = useLocalePath()
+const switchLocalePath = useSwitchLocalePath()
+
+const localeFlags: Record<string, string> = { nl: '🇳🇱', en: '🇬🇧' }
+const currentLocaleFlag = computed(() => localeFlags[locale.value] || '🌐')
+const availableLocales = computed(() =>
+  (locales.value as Array<{ code: string; name: string }>).map(loc => ({
+    ...loc,
+    flag: localeFlags[loc.code] || '🌐'
+  }))
+)
+
 const showLangDropdown = ref(false)
 
-const changeLang = (locale: string) => {
-  setLocale(locale)
-  showLangDropdown.value = false
-}
+onMounted(() => {
+  const handleClickOutside = (event: Event) => {
+    const target = event.target as HTMLElement
+    if (!target.closest('.relative')) showLangDropdown.value = false
+  }
+  document.addEventListener('click', handleClickOutside)
+  onUnmounted(() => document.removeEventListener('click', handleClickOutside))
+})
 
 // SEO
-useHead({
-  title: computed(() => currentLocale.value === 'nl'
+useSeoMeta({
+  title: () => locale.value === 'nl'
     ? 'Voor klanten | Helpr.AI'
-    : 'For customers | Helpr.AI'),
-  meta: [
-    {
-      name: 'description',
-      content: computed(() => currentLocale.value === 'nl'
-        ? 'Start je certificeringstraject met Helpr.ai en een ervaren consultancypartner. Samen zorgen we voor een efficient en grondig traject.'
-        : 'Start your certification project with Helpr.ai and an experienced consultancy partner. Together we ensure an efficient and thorough project.')
-    }
-  ]
+    : 'For customers | Helpr.AI',
+  description: () => locale.value === 'nl'
+    ? 'Start je certificeringstraject met Helpr.ai en een ervaren consultancypartner. Samen zorgen we voor een efficient en grondig traject.'
+    : 'Start your certification project with Helpr.ai and an experienced consultancy partner. Together we ensure an efficient and thorough project.'
 })
 </script>

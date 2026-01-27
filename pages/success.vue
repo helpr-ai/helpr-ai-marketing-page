@@ -40,16 +40,18 @@
 <script setup lang="ts">
 import { CheckCircleIcon, ClockIcon, ArrowLeftIcon } from '@heroicons/vue/24/outline'
 
-// I18n setup  
-const { t } = useI18n()
+// I18n setup
+const { t, locale } = useI18n()
+const localePath = useLocalePath()
 
 // Navigation
+const router = useRouter()
 const goHome = () => {
-  window.location.href = '/'
+  router.push(localePath('/'))
 }
 
 // Set page title
 useHead({
-  title: 'Bedankt - Helpr.ai'
+  title: computed(() => locale.value === 'nl' ? 'Bedankt - Helpr.ai' : 'Thank you - Helpr.ai')
 })
 </script>

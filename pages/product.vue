@@ -4,22 +4,22 @@
     <header class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm">
       <div class="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12 py-6 flex items-center justify-between">
         <div class="flex items-center">
-          <nuxt-link to="/" class="flex items-center">
+          <NuxtLink :to="localePath('/')" class="flex items-center">
             <img
               src="~/assets/images/logos/helpr-ai-logo.svg"
               alt="Helpr.ai"
               class="h-8 w-auto"
             />
-          </nuxt-link>
+          </NuxtLink>
         </div>
 
         <!-- Desktop Navigation -->
         <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
-          <nuxt-link to="/" class="text-gray-700 hover:text-indigo-600 transition-colors">Home</nuxt-link>
-          <button @click="scrollTo('features')" class="text-gray-700 hover:text-indigo-600 transition-colors">{{ t('productPage.nav.features') }}</button>
-          <button @click="scrollTo('co2')" class="text-gray-700 hover:text-indigo-600 transition-colors">{{ t('productPage.nav.co2') }}</button>
-          <button @click="scrollTo('standards')" class="text-gray-700 hover:text-indigo-600 transition-colors">{{ t('productPage.nav.standards') }}</button>
-          <nuxt-link to="/klanten" class="text-gray-700 hover:text-indigo-600 transition-colors">{{ t('customers.nav') }}</nuxt-link>
+          <NuxtLink :to="localePath('/')" class="text-gray-700 hover:text-indigo-600 transition-colors">Home</NuxtLink>
+          <button @click="scrollTo('features')" class="text-gray-700 hover:text-indigo-600 transition-colors">{{ $t('productPage.nav.features') }}</button>
+          <button @click="scrollTo('co2')" class="text-gray-700 hover:text-indigo-600 transition-colors">{{ $t('productPage.nav.co2') }}</button>
+          <button @click="scrollTo('standards')" class="text-gray-700 hover:text-indigo-600 transition-colors">{{ $t('productPage.nav.standards') }}</button>
+          <NuxtLink :to="localePath('klanten')" class="text-gray-700 hover:text-indigo-600 transition-colors">{{ $t('customers.nav') }}</NuxtLink>
         </nav>
 
         <!-- Desktop Actions -->
@@ -30,33 +30,34 @@
               @click="showLangDropdown = !showLangDropdown"
               class="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-gray-100 transition-colors"
             >
-              <span class="text-xl">{{ getCurrentLanguage.flag }}</span>
+              <span class="text-xl">{{ currentLocaleFlag }}</span>
             </button>
             <div
               v-if="showLangDropdown"
               class="absolute right-0 top-full mt-2 bg-white rounded-xl shadow-xl border border-gray-200 py-2 min-w-[160px] z-50"
             >
-              <button
-                v-for="lang in languages"
-                :key="lang.code"
-                @click="changeLang(lang.code)"
+              <NuxtLink
+                v-for="loc in availableLocales"
+                :key="loc.code"
+                :to="switchLocalePath(loc.code)"
+                @click="showLangDropdown = false"
                 :class="[
                   'w-full flex items-center gap-3 px-4 py-2 text-sm hover:bg-gray-50 transition-colors',
-                  currentLocale === lang.code ? 'bg-indigo-50 text-indigo-600' : 'text-gray-700'
+                  locale === loc.code ? 'bg-indigo-50 text-indigo-600' : 'text-gray-700'
                 ]"
               >
-                <span class="text-lg">{{ lang.flag }}</span>
-                <span>{{ lang.name }}</span>
-              </button>
+                <span class="text-lg">{{ loc.flag }}</span>
+                <span>{{ loc.name }}</span>
+              </NuxtLink>
             </div>
           </div>
 
-          <nuxt-link
-            to="/start-traject"
+          <NuxtLink
+            :to="localePath('start-traject')"
             class="inline-flex items-center justify-center rounded-2xl bg-gradient-to-r from-indigo-600 to-purple-600 px-6 py-3 text-sm font-semibold text-white shadow-lg hover:from-indigo-700 hover:to-purple-700 transition-all duration-200 hover:scale-[1.02]"
           >
-            {{ t('productPage.cta.button') }}
-          </nuxt-link>
+            {{ $t('productPage.cta.button') }}
+          </NuxtLink>
         </div>
       </div>
     </header>
@@ -72,30 +73,30 @@
           <div class="mb-6">
             <span class="inline-flex items-center rounded-full bg-white/20 backdrop-blur-sm px-4 py-2 text-sm font-medium text-white ring-1 ring-inset ring-white/20">
               <SparklesIcon class="mr-2 h-4 w-4" />
-              {{ t('productPage.hero.badge') }}
+              {{ $t('productPage.hero.badge') }}
             </span>
           </div>
 
           <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6">
-            {{ t('productPage.hero.title') }}
+            {{ $t('productPage.hero.title') }}
           </h1>
           <p class="text-xl sm:text-2xl text-indigo-100 leading-8 max-w-3xl mx-auto mb-12">
-            {{ t('productPage.hero.subtitle') }}
+            {{ $t('productPage.hero.subtitle') }}
           </p>
 
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <nuxt-link
-              to="/start-traject"
+            <NuxtLink
+              :to="localePath('start-traject')"
               class="inline-flex items-center justify-center rounded-2xl bg-white px-8 py-4 text-lg font-semibold text-indigo-600 shadow-xl hover:bg-gray-50 transition-all duration-200 hover:scale-[1.02]"
             >
-              {{ t('productPage.cta.button') }}
+              {{ $t('productPage.cta.button') }}
               <ArrowRightIcon class="ml-3 h-5 w-5" />
-            </nuxt-link>
+            </NuxtLink>
             <button
               @click="scrollTo('features')"
               class="inline-flex items-center justify-center rounded-2xl bg-white/10 backdrop-blur-sm px-8 py-4 text-lg font-semibold text-white border border-white/20 hover:bg-white/20 transition-all duration-200"
             >
-              {{ t('productPage.hero.learnMore') }}
+              {{ $t('productPage.hero.learnMore') }}
               <ChevronDownIcon class="ml-3 h-5 w-5" />
             </button>
           </div>
@@ -108,10 +109,10 @@
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-4xl mx-auto mb-16">
           <h2 class="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 mb-6">
-            {{ t('productPage.howItWorks.title') }}
+            {{ $t('productPage.howItWorks.title') }}
           </h2>
           <p class="text-xl text-gray-600 leading-8">
-            {{ t('productPage.howItWorks.subtitle') }}
+            {{ $t('productPage.howItWorks.subtitle') }}
           </p>
         </div>
 
@@ -125,16 +126,16 @@
                 </div>
                 <span class="text-3xl font-bold">1</span>
               </div>
-              <h3 class="text-2xl font-bold">{{ t('productPage.howItWorks.step1.title') }}</h3>
+              <h3 class="text-2xl font-bold">{{ $t('productPage.howItWorks.step1.title') }}</h3>
             </div>
             <div class="p-8">
               <p class="text-gray-600 leading-7 mb-6">
-                {{ t('productPage.howItWorks.step1.description') }}
+                {{ $t('productPage.howItWorks.step1.description') }}
               </p>
               <div class="space-y-3">
-                <div v-for="(point, index) in getRaw('productPage.howItWorks.step1.points')" :key="index" class="flex items-start gap-3">
+                <div v-for="(point, index) in tm('productPage.howItWorks.step1.points')" :key="index" class="flex items-start gap-3">
                   <CheckCircleIcon class="h-5 w-5 text-blue-600 mt-0.5 flex-shrink-0" />
-                  <span class="text-gray-700 text-sm">{{ point }}</span>
+                  <span class="text-gray-700 text-sm">{{ rt(point) }}</span>
                 </div>
               </div>
             </div>
@@ -149,16 +150,16 @@
                 </div>
                 <span class="text-3xl font-bold">2</span>
               </div>
-              <h3 class="text-2xl font-bold">{{ t('productPage.howItWorks.step2.title') }}</h3>
+              <h3 class="text-2xl font-bold">{{ $t('productPage.howItWorks.step2.title') }}</h3>
             </div>
             <div class="p-8">
               <p class="text-gray-600 leading-7 mb-6">
-                {{ t('productPage.howItWorks.step2.description') }}
+                {{ $t('productPage.howItWorks.step2.description') }}
               </p>
               <div class="space-y-3">
-                <div v-for="(point, index) in getRaw('productPage.howItWorks.step2.points')" :key="index" class="flex items-start gap-3">
+                <div v-for="(point, index) in tm('productPage.howItWorks.step2.points')" :key="index" class="flex items-start gap-3">
                   <CheckCircleIcon class="h-5 w-5 text-purple-600 mt-0.5 flex-shrink-0" />
-                  <span class="text-gray-700 text-sm">{{ point }}</span>
+                  <span class="text-gray-700 text-sm">{{ rt(point) }}</span>
                 </div>
               </div>
             </div>
@@ -173,16 +174,16 @@
                 </div>
                 <span class="text-3xl font-bold">3</span>
               </div>
-              <h3 class="text-2xl font-bold">{{ t('productPage.howItWorks.step3.title') }}</h3>
+              <h3 class="text-2xl font-bold">{{ $t('productPage.howItWorks.step3.title') }}</h3>
             </div>
             <div class="p-8">
               <p class="text-gray-600 leading-7 mb-6">
-                {{ t('productPage.howItWorks.step3.description') }}
+                {{ $t('productPage.howItWorks.step3.description') }}
               </p>
               <div class="space-y-3">
-                <div v-for="(point, index) in getRaw('productPage.howItWorks.step3.points')" :key="index" class="flex items-start gap-3">
+                <div v-for="(point, index) in tm('productPage.howItWorks.step3.points')" :key="index" class="flex items-start gap-3">
                   <CheckCircleIcon class="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
-                  <span class="text-gray-700 text-sm">{{ point }}</span>
+                  <span class="text-gray-700 text-sm">{{ rt(point) }}</span>
                 </div>
               </div>
             </div>
@@ -198,14 +199,14 @@
           <div class="mb-6">
             <span class="inline-flex items-center rounded-full bg-emerald-100 px-4 py-2 text-sm font-medium text-emerald-700 ring-1 ring-inset ring-emerald-200">
               <GlobeEuropeAfricaIcon class="mr-2 h-4 w-4" />
-              {{ t('productPage.co2.badge') }}
+              {{ $t('productPage.co2.badge') }}
             </span>
           </div>
           <h2 class="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 mb-6">
-            {{ t('productPage.co2.title') }}
+            {{ $t('productPage.co2.title') }}
           </h2>
           <p class="text-xl text-gray-600 leading-8">
-            {{ t('productPage.co2.subtitle') }}
+            {{ $t('productPage.co2.subtitle') }}
           </p>
         </div>
 
@@ -213,14 +214,14 @@
         <div class="bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden mb-12">
           <div class="grid lg:grid-cols-2">
             <div class="p-8 lg:p-12">
-              <h3 class="text-2xl font-bold text-gray-900 mb-6">{{ t('productPage.co2.what.title') }}</h3>
+              <h3 class="text-2xl font-bold text-gray-900 mb-6">{{ $t('productPage.co2.what.title') }}</h3>
               <p class="text-gray-600 leading-7 mb-6">
-                {{ t('productPage.co2.what.description') }}
+                {{ $t('productPage.co2.what.description') }}
               </p>
               <div class="space-y-4">
-                <div v-for="(point, index) in getRaw('productPage.co2.what.points')" :key="index" class="flex items-start gap-3">
+                <div v-for="(point, index) in tm('productPage.co2.what.points')" :key="index" class="flex items-start gap-3">
                   <CheckCircleIcon class="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
-                  <span class="text-gray-700">{{ point }}</span>
+                  <span class="text-gray-700">{{ rt(point) }}</span>
                 </div>
               </div>
             </div>
@@ -228,15 +229,15 @@
               <div class="space-y-6">
                 <div class="text-center">
                   <div class="text-5xl font-bold mb-2">8.000+</div>
-                  <div class="text-emerald-100">{{ t('productPage.co2.stats.organizations') }}</div>
+                  <div class="text-emerald-100">{{ $t('productPage.co2.stats.organizations') }}</div>
                 </div>
                 <div class="text-center">
                   <div class="text-5xl font-bold mb-2">300+</div>
-                  <div class="text-emerald-100">{{ t('productPage.co2.stats.authorities') }}</div>
+                  <div class="text-emerald-100">{{ $t('productPage.co2.stats.authorities') }}</div>
                 </div>
                 <div class="text-center">
                   <div class="text-5xl font-bold mb-2">2x</div>
-                  <div class="text-emerald-100">{{ t('productPage.co2.stats.reduction') }}</div>
+                  <div class="text-emerald-100">{{ $t('productPage.co2.stats.reduction') }}</div>
                 </div>
               </div>
             </div>
@@ -245,28 +246,28 @@
 
         <!-- The Levels/Steps -->
         <div class="mb-12">
-          <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">{{ t('productPage.co2.levels.title') }}</h3>
+          <h3 class="text-2xl font-bold text-gray-900 mb-8 text-center">{{ $t('productPage.co2.levels.title') }}</h3>
           <div class="grid md:grid-cols-3 gap-6">
             <div class="bg-white rounded-2xl shadow-lg border border-gray-200 p-6">
               <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mb-4">
                 <span class="text-xl font-bold text-emerald-600">1</span>
               </div>
-              <h4 class="text-lg font-bold text-gray-900 mb-2">{{ t('productPage.co2.levels.step1.title') }}</h4>
-              <p class="text-gray-600 text-sm leading-6">{{ t('productPage.co2.levels.step1.description') }}</p>
+              <h4 class="text-lg font-bold text-gray-900 mb-2">{{ $t('productPage.co2.levels.step1.title') }}</h4>
+              <p class="text-gray-600 text-sm leading-6">{{ $t('productPage.co2.levels.step1.description') }}</p>
             </div>
             <div class="bg-white rounded-2xl shadow-lg border border-gray-200 p-6">
               <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mb-4">
                 <span class="text-xl font-bold text-emerald-600">2</span>
               </div>
-              <h4 class="text-lg font-bold text-gray-900 mb-2">{{ t('productPage.co2.levels.step2.title') }}</h4>
-              <p class="text-gray-600 text-sm leading-6">{{ t('productPage.co2.levels.step2.description') }}</p>
+              <h4 class="text-lg font-bold text-gray-900 mb-2">{{ $t('productPage.co2.levels.step2.title') }}</h4>
+              <p class="text-gray-600 text-sm leading-6">{{ $t('productPage.co2.levels.step2.description') }}</p>
             </div>
             <div class="bg-white rounded-2xl shadow-lg border border-gray-200 p-6">
               <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mb-4">
                 <span class="text-xl font-bold text-emerald-600">3</span>
               </div>
-              <h4 class="text-lg font-bold text-gray-900 mb-2">{{ t('productPage.co2.levels.step3.title') }}</h4>
-              <p class="text-gray-600 text-sm leading-6">{{ t('productPage.co2.levels.step3.description') }}</p>
+              <h4 class="text-lg font-bold text-gray-900 mb-2">{{ $t('productPage.co2.levels.step3.title') }}</h4>
+              <p class="text-gray-600 text-sm leading-6">{{ $t('productPage.co2.levels.step3.description') }}</p>
             </div>
           </div>
         </div>
@@ -274,13 +275,13 @@
         <!-- How Helpr.ai Helps -->
         <div class="bg-gradient-to-br from-indigo-600 via-purple-600 to-indigo-800 rounded-3xl p-8 lg:p-12 text-white">
           <div class="text-center max-w-3xl mx-auto mb-12">
-            <h3 class="text-3xl font-bold mb-4">{{ t('productPage.co2.howWeHelp.title') }}</h3>
-            <p class="text-indigo-100 text-lg">{{ t('productPage.co2.howWeHelp.subtitle') }}</p>
+            <h3 class="text-3xl font-bold mb-4">{{ $t('productPage.co2.howWeHelp.title') }}</h3>
+            <p class="text-indigo-100 text-lg">{{ $t('productPage.co2.howWeHelp.subtitle') }}</p>
           </div>
           <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div v-for="(benefit, index) in getRaw('productPage.co2.howWeHelp.benefits')" :key="index" class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
+            <div v-for="(benefit, index) in tm('productPage.co2.howWeHelp.benefits')" :key="index" class="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
               <CheckCircleIcon class="h-8 w-8 text-emerald-400 mb-4" />
-              <p class="text-white font-medium">{{ benefit }}</p>
+              <p class="text-white font-medium">{{ rt(benefit) }}</p>
             </div>
           </div>
         </div>
@@ -292,10 +293,10 @@
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-4xl mx-auto mb-16">
           <h2 class="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 mb-6">
-            {{ t('productPage.standards.title') }}
+            {{ $t('productPage.standards.title') }}
           </h2>
           <p class="text-xl text-gray-600 leading-8">
-            {{ t('productPage.standards.subtitle') }}
+            {{ $t('productPage.standards.subtitle') }}
           </p>
         </div>
 
@@ -304,56 +305,56 @@
           <div class="bg-white rounded-2xl shadow-lg border-2 border-emerald-200 p-6 relative">
             <div class="absolute top-4 right-4">
               <span class="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-700">
-                {{ t('productPage.standards.available') }}
+                {{ $t('productPage.standards.available') }}
               </span>
             </div>
             <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mb-4">
               <ShieldCheckIcon class="h-6 w-6 text-emerald-600" />
             </div>
             <h3 class="text-lg font-bold text-gray-900 mb-2">ISO 9001</h3>
-            <p class="text-gray-600 text-sm">{{ t('productPage.standards.iso9001') }}</p>
+            <p class="text-gray-600 text-sm">{{ $t('productPage.standards.iso9001') }}</p>
           </div>
 
           <!-- CO2-Prestatieladder -->
           <div class="bg-white rounded-2xl shadow-lg border-2 border-emerald-200 p-6 relative">
             <div class="absolute top-4 right-4">
               <span class="inline-flex items-center rounded-full bg-emerald-100 px-2.5 py-0.5 text-xs font-medium text-emerald-700">
-                {{ t('productPage.standards.available') }}
+                {{ $t('productPage.standards.available') }}
               </span>
             </div>
             <div class="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center mb-4">
               <GlobeEuropeAfricaIcon class="h-6 w-6 text-emerald-600" />
             </div>
-            <h3 class="text-lg font-bold text-gray-900 mb-2">{{ currentLocale === 'nl' ? 'CO2-Prestatieladder' : 'CO2 Performance Ladder' }}</h3>
-            <p class="text-gray-600 text-sm">{{ t('productPage.standards.co2') }}</p>
+            <h3 class="text-lg font-bold text-gray-900 mb-2">{{ locale === 'nl' ? 'CO2-Prestatieladder' : 'CO2 Performance Ladder' }}</h3>
+            <p class="text-gray-600 text-sm">{{ $t('productPage.standards.co2') }}</p>
           </div>
 
           <!-- ISO 27001 -->
           <div class="bg-white rounded-2xl shadow-lg border-2 border-blue-200 p-6 relative">
             <div class="absolute top-4 right-4">
               <span class="inline-flex items-center rounded-full bg-blue-100 px-2.5 py-0.5 text-xs font-medium text-blue-700">
-                {{ t('productPage.standards.coming') }}
+                {{ $t('productPage.standards.coming') }}
               </span>
             </div>
             <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
               <LockClosedIcon class="h-6 w-6 text-blue-600" />
             </div>
             <h3 class="text-lg font-bold text-gray-900 mb-2">ISO 27001</h3>
-            <p class="text-gray-600 text-sm">{{ t('productPage.standards.iso27001') }}</p>
+            <p class="text-gray-600 text-sm">{{ $t('productPage.standards.iso27001') }}</p>
           </div>
 
           <!-- ISO 14001 -->
           <div class="bg-white rounded-2xl shadow-lg border-2 border-blue-200 p-6 relative">
             <div class="absolute top-4 right-4">
               <span class="inline-flex items-center rounded-full bg-blue-100 px-2.5 py-0.5 text-xs font-medium text-blue-700">
-                {{ t('productPage.standards.coming') }}
+                {{ $t('productPage.standards.coming') }}
               </span>
             </div>
             <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-4">
               <GlobeEuropeAfricaIcon class="h-6 w-6 text-blue-600" />
             </div>
             <h3 class="text-lg font-bold text-gray-900 mb-2">ISO 14001</h3>
-            <p class="text-gray-600 text-sm">{{ t('productPage.standards.iso14001') }}</p>
+            <p class="text-gray-600 text-sm">{{ $t('productPage.standards.iso14001') }}</p>
           </div>
         </div>
       </div>
@@ -365,19 +366,19 @@
 
       <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
         <h2 class="text-4xl sm:text-5xl font-bold text-white mb-6">
-          {{ t('productPage.cta.title') }}
+          {{ $t('productPage.cta.title') }}
         </h2>
         <p class="text-xl text-indigo-100 mb-10 max-w-3xl mx-auto">
-          {{ t('productPage.cta.description') }}
+          {{ $t('productPage.cta.description') }}
         </p>
 
-        <nuxt-link
-          to="/start-traject"
+        <NuxtLink
+          :to="localePath('start-traject')"
           class="inline-flex items-center justify-center rounded-2xl bg-white px-8 py-4 text-lg font-semibold text-indigo-600 shadow-xl hover:bg-gray-50 transition-all duration-200 hover:scale-[1.02]"
         >
-          {{ t('productPage.cta.button') }}
+          {{ $t('productPage.cta.button') }}
           <ArrowRightIcon class="ml-3 h-5 w-5" />
-        </nuxt-link>
+        </NuxtLink>
       </div>
     </section>
 
@@ -385,14 +386,14 @@
     <footer class="py-10 border-t bg-white/60">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-6 items-center">
         <div class="text-sm text-slate-600">
-          <div class="font-semibold text-slate-800">Helpr.AI</div>
-          <div>"From conversation to certification."</div>
-          <div class="mt-1">&copy; {{ new Date().getFullYear() }} Helpr.AI // All rights reserved.</div>
+          <div class="font-semibold text-slate-800">{{ $t('common.brand') }}</div>
+          <div>{{ $t('footer.tagline') }}</div>
+          <div class="mt-1">{{ $t('footer.copyright', { year: new Date().getFullYear().toString() }) }}</div>
         </div>
         <div class="flex justify-start md:justify-end gap-4 text-sm text-slate-600">
-          <nuxt-link to="/" class="hover:text-slate-900">Home</nuxt-link>
-          <nuxt-link to="/klanten" class="hover:text-slate-900">{{ t('customers.nav') }}</nuxt-link>
-          <nuxt-link to="/partners" class="hover:text-slate-900">{{ t('partner.nav') }}</nuxt-link>
+          <NuxtLink :to="localePath('/')" class="hover:text-slate-900">Home</NuxtLink>
+          <NuxtLink :to="localePath('klanten')" class="hover:text-slate-900">{{ $t('customers.nav') }}</NuxtLink>
+          <NuxtLink :to="localePath('partners')" class="hover:text-slate-900">{{ $t('partners.nav') }}</NuxtLink>
         </div>
       </div>
     </footer>
@@ -401,7 +402,6 @@
 
 <script setup lang="ts">
 import { ref, computed } from 'vue'
-import { useI18n } from '~/composables/useI18n'
 import {
   SparklesIcon,
   ArrowRightIcon,
@@ -427,24 +427,31 @@ const scrollTo = (id: string) => {
   }
 }
 
-// I18n setup
-const { currentLocale, languages, setLocale, t, getRaw, getCurrentLanguage } = useI18n()
-const showLangDropdown = ref(false)
+// i18n setup
+const { t, rt, locale, locales, tm } = useI18n()
+const localePath = useLocalePath()
+const switchLocalePath = useSwitchLocalePath()
 
-const changeLang = (locale: string) => {
-  setLocale(locale)
-  showLangDropdown.value = false
-}
+const localeFlags: Record<string, string> = { nl: '🇳🇱', en: '🇬🇧' }
+const currentLocaleFlag = computed(() => localeFlags[locale.value] || '🌐')
+const availableLocales = computed(() =>
+  (locales.value as Array<{ code: string; name: string }>).map(loc => ({
+    ...loc,
+    flag: localeFlags[loc.code] || '🌐'
+  }))
+)
+
+const showLangDropdown = ref(false)
 
 // SEO
 useHead({
-  title: computed(() => currentLocale.value === 'nl'
+  title: computed(() => locale.value === 'nl'
     ? 'Product | Helpr.AI'
     : 'Product | Helpr.AI'),
   meta: [
     {
       name: 'description',
-      content: computed(() => currentLocale.value === 'nl'
+      content: computed(() => locale.value === 'nl'
         ? 'Ontdek hoe Helpr.ai certificeringstrajecten vereenvoudigt voor ISO 9001 en de CO2-Prestatieladder met AI-gestuurde interviews.'
         : 'Discover how Helpr.ai simplifies certification processes for ISO 9001 and the CO2 Performance Ladder with AI-powered interviews.')
     }

@@ -14,9 +14,84 @@ export default defineNuxtConfig({
       }
     }
   },
+  modules: ['@nuxtjs/i18n'],
+  i18n: {
+    locales: [
+      { code: 'nl', iso: 'nl-NL', name: 'Nederlands', file: 'nl.json' },
+      { code: 'en', iso: 'en-GB', name: 'English', file: 'en.json' }
+    ],
+    defaultLocale: 'nl',
+    strategy: 'prefix',
+    lazy: true,
+    langDir: 'locales/',
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root'
+    },
+    customRoutes: 'config',
+    pages: {
+      'index': {
+        nl: '/',
+        en: '/'
+      },
+      'about': {
+        nl: '/over-ons',
+        en: '/about'
+      },
+      'consultants': {
+        nl: '/consultants',
+        en: '/consultants'
+      },
+      'partners': {
+        nl: '/partners',
+        en: '/partners'
+      },
+      'klanten': {
+        nl: '/klanten',
+        en: '/clients'
+      },
+      'product': {
+        nl: '/product',
+        en: '/product'
+      },
+      'start-traject': {
+        nl: '/start-traject',
+        en: '/get-started'
+      },
+      'programs/index': {
+        nl: '/trajecten',
+        en: '/programs'
+      },
+      'programs/co2-prestatieladder': {
+        nl: '/trajecten/co2-prestatieladder',
+        en: '/programs/co2-performance-ladder'
+      },
+      'programs/iso9001': {
+        nl: '/trajecten/iso9001',
+        en: '/programs/iso9001'
+      },
+      'programs/iso27001': {
+        nl: '/trajecten/iso27001',
+        en: '/programs/iso27001'
+      },
+      'programs/iso14001': {
+        nl: '/trajecten/iso14001',
+        en: '/programs/iso14001'
+      },
+      'programs/iso42001': {
+        nl: '/trajecten/iso42001',
+        en: '/programs/iso42001'
+      },
+      'success': {
+        nl: '/succes',
+        en: '/success'
+      }
+    }
+  },
   app: {
     head: {
-      title: 'Helpr.ai // From conversation to certification',
+      title: 'Helpr.ai // Certification made easy',
       meta: [
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'description', content: 'AI-gestuurde interviews die ongestructureerde gesprekken omzetten naar audit-klare compliance-data (o.a. ISO 27001 & ISO 42001).'}
@@ -72,6 +147,5 @@ export default defineNuxtConfig({
       autoprefixer: {}
     }
   },
-  modules: [],
   compatibilityDate: '2024-10-01'
 })

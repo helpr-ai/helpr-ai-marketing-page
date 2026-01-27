@@ -1,24 +1,25 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-purple-50">
+  <div class="min-h-screen bg-gradient-to-br from-slate-50 via-white to-indigo-50">
     <!-- Header/Nav -->
     <header class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm">
       <div class="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12 py-6 flex items-center justify-between">
         <div class="flex items-center">
-          <nuxt-link to="/" class="flex items-center">
+          <NuxtLink :to="localePath('/')">
             <img
               src="~/assets/images/logos/helpr-ai-logo.svg"
               alt="Helpr.ai"
               class="h-8 w-auto"
             />
-          </nuxt-link>
+          </NuxtLink>
         </div>
 
         <!-- Desktop Navigation -->
         <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
-          <nuxt-link to="/" class="text-gray-700 hover:text-indigo-600 transition-colors">Home</nuxt-link>
-          <button @click="scrollTo('why')" class="text-gray-700 hover:text-indigo-600 transition-colors">{{ currentLocale === 'nl' ? 'Waarom partners' : 'Why partners' }}</button>
-          <button @click="scrollTo('what')" class="text-gray-700 hover:text-indigo-600 transition-colors">{{ currentLocale === 'nl' ? 'Wat we bieden' : 'What we offer' }}</button>
-          <button @click="scrollTo('forwhom')" class="text-gray-700 hover:text-indigo-600 transition-colors">{{ currentLocale === 'nl' ? 'Voor wie' : 'For whom' }}</button>
+          <NuxtLink :to="localePath('product')" class="text-gray-700 hover:text-indigo-600 transition-colors">{{ $t('nav.product') }}</NuxtLink>
+          <NuxtLink :to="localePath('consultants')" class="text-gray-700 hover:text-indigo-600 transition-colors">{{ $t('consultants.nav') }}</NuxtLink>
+          <NuxtLink :to="localePath('klanten')" class="text-gray-700 hover:text-indigo-600 transition-colors">{{ $t('customers.nav') }}</NuxtLink>
+          <NuxtLink :to="localePath('partners')" class="text-indigo-600 font-semibold">{{ $t('partners.nav') }}</NuxtLink>
+          <NuxtLink :to="localePath('about')" class="text-gray-700 hover:text-indigo-600 transition-colors">{{ $t('about.nav') }}</NuxtLink>
         </nav>
 
         <!-- Desktop Actions -->
@@ -29,288 +30,340 @@
               @click="showLangDropdown = !showLangDropdown"
               class="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-gray-100 transition-colors"
             >
-              <span class="text-xl">{{ getCurrentLanguage.flag }}</span>
+              <span class="text-xl">{{ currentLocaleFlag }}</span>
             </button>
             <div
               v-if="showLangDropdown"
               class="absolute right-0 top-full mt-2 bg-white rounded-xl shadow-xl border border-gray-200 py-2 min-w-[160px] z-50"
             >
-              <button
-                v-for="lang in languages"
-                :key="lang.code"
-                @click="changeLang(lang.code)"
+              <NuxtLink
+                v-for="loc in availableLocales"
+                :key="loc.code"
+                :to="switchLocalePath(loc.code)"
+                @click="showLangDropdown = false"
                 :class="[
                   'w-full flex items-center gap-3 px-4 py-2 text-sm hover:bg-gray-50 transition-colors',
-                  currentLocale === lang.code ? 'bg-indigo-50 text-indigo-600' : 'text-gray-700'
+                  locale === loc.code ? 'bg-indigo-50 text-indigo-600' : 'text-gray-700'
                 ]"
               >
-                <span class="text-lg">{{ lang.flag }}</span>
-                <span>{{ lang.name }}</span>
-              </button>
+                <span class="text-lg">{{ loc.flag }}</span>
+                <span>{{ loc.name }}</span>
+              </NuxtLink>
             </div>
           </div>
 
+          <NuxtLink :to="localePath('/') + '#demo'" class="h-11 flex items-center rounded-xl px-6 bg-gradient-to-r from-indigo-600 to-purple-600 text-white hover:from-indigo-700 hover:to-purple-700 transition-all shadow-lg hover:shadow-xl font-medium">{{ $t('nav.demo') }}</NuxtLink>
+        </div>
+
+        <!-- Mobile Hamburger Menu -->
+        <div class="md:hidden">
           <button
-            @click="scrollTo('cta')"
-            class="inline-flex items-center justify-center rounded-2xl bg-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-lg hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 transition-all duration-200 hover:scale-[1.02]"
+            @click="toggleMobileMenu"
+            class="flex items-center justify-center w-10 h-10 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors"
+            type="button"
           >
-            {{ t('partner.cta.button') }}
+            <Bars3Icon v-if="!showMobileMenu" class="h-6 w-6" />
+            <XMarkIcon v-else class="h-6 w-6" />
           </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu Overlay -->
+      <div
+        v-if="showMobileMenu"
+        class="md:hidden absolute top-full left-0 right-0 bg-white border-b border-gray-200 shadow-lg z-40"
+      >
+        <div class="px-6 py-4 space-y-4">
+          <div class="space-y-2">
+            <NuxtLink :to="localePath('product')" @click="closeMobileMenu()" class="block w-full text-left px-3 py-2 text-gray-700 hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition-colors">{{ $t('nav.product') }}</NuxtLink>
+            <NuxtLink :to="localePath('consultants')" @click="closeMobileMenu()" class="block w-full text-left px-3 py-2 text-gray-700 hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition-colors">{{ $t('consultants.nav') }}</NuxtLink>
+            <NuxtLink :to="localePath('klanten')" @click="closeMobileMenu()" class="block w-full text-left px-3 py-2 text-gray-700 hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition-colors">{{ $t('customers.nav') }}</NuxtLink>
+            <NuxtLink :to="localePath('partners')" @click="closeMobileMenu()" class="block w-full text-left px-3 py-2 text-indigo-600 font-semibold bg-indigo-50 rounded-lg">{{ $t('partners.nav') }}</NuxtLink>
+            <NuxtLink :to="localePath('about')" @click="closeMobileMenu()" class="block w-full text-left px-3 py-2 text-gray-700 hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition-colors">{{ $t('about.nav') }}</NuxtLink>
+          </div>
+
+          <div class="pt-2 pb-4 border-b border-gray-100">
+            <NuxtLink
+              :to="localePath('/') + '#demo'"
+              @click="closeMobileMenu()"
+              class="block w-full h-11 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 text-white hover:from-indigo-700 hover:to-purple-700 transition-all shadow-lg font-medium text-center leading-[44px]"
+            >
+              {{ $t('nav.demo') }}
+            </NuxtLink>
+          </div>
+
+          <div>
+            <div class="text-sm font-medium text-gray-500 mb-3">Language</div>
+            <div class="flex gap-3">
+              <NuxtLink
+                v-for="loc in availableLocales"
+                :key="loc.code"
+                :to="switchLocalePath(loc.code)"
+                @click="showMobileMenu = false"
+                :class="[
+                  'flex items-center gap-2 px-3 py-2 rounded-lg text-sm transition-colors',
+                  locale === loc.code
+                    ? 'bg-indigo-50 text-indigo-600 font-medium'
+                    : 'text-gray-700 hover:bg-gray-50'
+                ]"
+              >
+                <span class="text-lg">{{ loc.flag }}</span>
+                <span>{{ loc.name }}</span>
+              </NuxtLink>
+            </div>
+          </div>
         </div>
       </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="pt-32 pb-20 bg-gradient-to-br from-indigo-600 via-purple-600 to-indigo-800 relative overflow-hidden">
-      <!-- Background decoration -->
-      <div class="absolute inset-0 bg-gradient-to-r from-indigo-500/10 to-purple-500/10"></div>
-      <div class="absolute -top-24 -left-24 w-96 h-96 bg-gradient-to-r from-indigo-400/20 to-purple-400/20 rounded-full blur-3xl"></div>
-      <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-gradient-to-r from-purple-400/20 to-pink-400/20 rounded-full blur-3xl"></div>
+    <section class="relative overflow-hidden pt-36 pb-20">
+      <!-- Background decorations -->
+      <div class="absolute inset-0 -z-10 overflow-hidden">
+        <svg class="absolute left-[50%] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]" aria-hidden="true">
+          <defs>
+            <pattern id="hero-pattern-partners" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
+              <path d="M.5 200V.5H200" fill="none"></path>
+            </pattern>
+          </defs>
+          <rect width="100%" height="100%" stroke-width="0" fill="url(#hero-pattern-partners)"></rect>
+        </svg>
+        <div class="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-r from-indigo-400/20 to-purple-400/20 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-gradient-to-r from-purple-400/20 to-pink-400/20 rounded-full blur-3xl"></div>
+      </div>
 
-      <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-4xl mx-auto">
-          <div class="mb-6">
-            <span class="inline-flex items-center rounded-full bg-white/20 backdrop-blur-sm px-4 py-2 text-sm font-medium text-white ring-1 ring-inset ring-white/20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div
+          ref="heroReveal.element"
+          :class="[
+            'text-center max-w-4xl mx-auto opacity-0',
+            { 'animate-reveal-up': heroReveal.isVisible }
+          ]"
+        >
+          <div class="mb-8">
+            <div class="inline-flex items-center rounded-full bg-indigo-50 px-4 py-2 text-sm font-medium text-indigo-700 ring-1 ring-inset ring-indigo-200">
               <UsersIcon class="mr-2 h-4 w-4" />
-              {{ t('partner.nav') }}
-            </span>
+              {{ $t('partners.hero.badge') }}
+            </div>
           </div>
-
-          <!-- Current Partner Logos -->
-          <div class="flex items-center justify-center gap-6 mb-8">
-            <span class="text-white/60 text-sm">{{ currentLocale === 'nl' ? 'Huidige partners:' : 'Current partners:' }}</span>
-            <a href="https://certificeringsadvies.nl" target="_blank" rel="noopener" class="bg-white rounded-2xl px-4 py-3 shadow-lg hover:shadow-xl hover:scale-105 transition-all">
-              <img
-                src="~/assets/images/logos/certificeringsadvies_nederland_logo.svg"
-                alt="Certificeringsadvies Nederland"
-                class="h-8 w-auto"
-              />
-            </a>
-            <a href="https://coningadviesgroep.nl" target="_blank" rel="noopener" class="bg-white rounded-2xl px-4 py-3 shadow-lg hover:shadow-xl hover:scale-105 transition-all">
-              <img
-                src="~/assets/images/logos/coning_logo.png"
-                alt="Coning Adviesgroep"
-                class="h-10 w-auto"
-              />
-            </a>
-          </div>
-
-          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white mb-6">
-            {{ t('partner.hero.title') }}
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-gray-900 leading-[1.1]">
+            {{ $t('partners.hero.title') }}
           </h1>
-          <p class="text-xl sm:text-2xl text-indigo-100 leading-8 max-w-3xl mx-auto mb-8">
-            {{ t('partner.hero.subtitle') }}
+          <p class="mt-8 text-xl sm:text-2xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
+            {{ $t('partners.hero.description') }}
           </p>
-          <p class="text-lg text-indigo-200 leading-8 max-w-3xl mx-auto mb-12">
-            {{ t('partner.hero.intro') }}
-          </p>
-
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <button
-              @click="scrollTo('cta')"
-              class="inline-flex items-center justify-center rounded-2xl bg-white px-8 py-4 text-lg font-semibold text-indigo-600 shadow-xl hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600 transition-all duration-200 hover:scale-[1.02]"
-            >
-              {{ t('partner.cta.button') }}
-              <ArrowRightIcon class="ml-3 h-5 w-5" />
-            </button>
-            <button
-              @click="scrollTo('why')"
-              class="inline-flex items-center justify-center rounded-2xl bg-white/10 backdrop-blur-sm px-8 py-4 text-lg font-semibold text-white border border-white/20 hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600 transition-all duration-200"
-            >
-              {{ currentLocale === 'nl' ? 'Meer weten' : 'Learn more' }}
-              <ChevronDownIcon class="ml-3 h-5 w-5" />
-            </button>
-          </div>
         </div>
       </div>
     </section>
 
-    <!-- Why Partners Section -->
-    <section id="why" class="py-24 scroll-mt-24">
+    <!-- Partners Showcase -->
+    <section id="partners" class="py-24 bg-gradient-to-br from-gray-50 to-indigo-50/30 scroll-mt-24">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div class="text-center max-w-4xl mx-auto mb-16">
-          <h2 class="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 mb-6">
-            {{ t('partner.whyPartners.title') }}
+          <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900 mb-6">
+            {{ $t('partners.showcase.title') }}
           </h2>
           <p class="text-xl text-gray-600 leading-8">
-            {{ t('partner.whyPartners.intro') }}
+            {{ $t('partners.showcase.subtitle') }}
           </p>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-6 mb-12">
+        <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <!-- Certificeringsadvies Nederland -->
           <div
-            v-for="(point, index) in getRaw('partner.whyPartners.points')"
-            :key="index"
-            class="bg-white rounded-2xl p-6 shadow-lg border border-gray-200"
+            ref="partner1Reveal.element"
+            :class="[
+              'group opacity-0',
+              { 'animate-reveal-up': partner1Reveal.isVisible }
+            ]"
           >
-            <div class="flex items-start gap-4">
-              <div class="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center flex-shrink-0">
-                <CheckCircleIcon class="h-5 w-5 text-white" />
+            <a
+              href="https://certificeringsadvies.nl"
+              target="_blank"
+              rel="noopener"
+              class="block bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden hover:shadow-2xl transition-all duration-500 hover:scale-[1.02]"
+            >
+              <div class="p-8 flex flex-col items-center text-center">
+                <div class="bg-gray-50 rounded-2xl p-6 mb-6 group-hover:bg-indigo-50 transition-colors">
+                  <img
+                    src="~/assets/images/logos/certificeringsadvies_nederland_logo.svg"
+                    alt="Certificeringsadvies Nederland"
+                    class="h-16 w-auto"
+                  />
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-3">Certificeringsadvies Nederland</h3>
+                <p class="text-gray-600 leading-7 mb-4">
+                  {{ $t('partners.showcase.partner1.description') }}
+                </p>
+                <div class="flex flex-wrap gap-2 justify-center">
+                  <span class="inline-flex items-center rounded-full bg-indigo-100 px-3 py-1 text-xs font-medium text-indigo-700">ISO 9001</span>
+                  <span class="inline-flex items-center rounded-full bg-indigo-100 px-3 py-1 text-xs font-medium text-indigo-700">ISO 27001</span>
+                  <span class="inline-flex items-center rounded-full bg-indigo-100 px-3 py-1 text-xs font-medium text-indigo-700">ISO 14001</span>
+                </div>
+                <div class="mt-6 flex items-center text-indigo-600 font-medium group-hover:text-indigo-700">
+                  {{ $t('partners.showcase.visitWebsite') }}
+                  <ArrowTopRightOnSquareIcon class="ml-2 h-4 w-4" />
+                </div>
               </div>
-              <p class="text-gray-700 leading-7 font-medium">{{ point }}</p>
-            </div>
+            </a>
           </div>
-        </div>
 
-        <div class="text-center">
-          <p class="text-xl text-gray-900 font-semibold max-w-3xl mx-auto">
-            {{ t('partner.whyPartners.conclusion') }}
-          </p>
+          <!-- Coning Adviesgroep -->
+          <div
+            ref="partner2Reveal.element"
+            :class="[
+              'group opacity-0',
+              { 'animate-reveal-up': partner2Reveal.isVisible }
+            ]"
+          >
+            <a
+              href="https://coningadviesgroep.nl"
+              target="_blank"
+              rel="noopener"
+              class="block bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden hover:shadow-2xl transition-all duration-500 hover:scale-[1.02]"
+            >
+              <div class="p-8 flex flex-col items-center text-center">
+                <div class="bg-gray-50 rounded-2xl p-6 mb-6 group-hover:bg-indigo-50 transition-colors">
+                  <img
+                    src="~/assets/images/logos/coning_logo.png"
+                    alt="Coning Adviesgroep"
+                    class="h-16 w-auto"
+                  />
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-3">Coning Adviesgroep</h3>
+                <p class="text-gray-600 leading-7 mb-4">
+                  {{ $t('partners.showcase.partner2.description') }}
+                </p>
+                <div class="flex flex-wrap gap-2 justify-center">
+                  <span class="inline-flex items-center rounded-full bg-emerald-100 px-3 py-1 text-xs font-medium text-emerald-700">CO₂-Prestatieladder</span>
+                  <span class="inline-flex items-center rounded-full bg-emerald-100 px-3 py-1 text-xs font-medium text-emerald-700">{{ $t('partners.showcase.sustainability') }}</span>
+                </div>
+                <div class="mt-6 flex items-center text-indigo-600 font-medium group-hover:text-indigo-700">
+                  {{ $t('partners.showcase.visitWebsite') }}
+                  <ArrowTopRightOnSquareIcon class="ml-2 h-4 w-4" />
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- What We Do Section -->
-    <section id="what" class="py-24 bg-gray-50 scroll-mt-24">
+    <!-- How We Work Together -->
+    <section class="py-24 scroll-mt-24">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="grid lg:grid-cols-2 gap-8">
+        <div class="text-center max-w-4xl mx-auto mb-16">
+          <h2 class="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900 mb-6">
+            {{ $t('partners.collaboration.title') }}
+          </h2>
+          <p class="text-xl text-gray-600 leading-8">
+            {{ $t('partners.collaboration.subtitle') }}
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           <!-- What Helpr.ai Does -->
-          <div class="bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden">
-            <div class="bg-gradient-to-br from-indigo-500 to-purple-600 p-6 text-white">
-              <div class="flex items-center gap-4">
-                <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
-                  <CpuChipIcon class="h-6 w-6 text-white" />
+          <div
+            ref="collab1Reveal.element"
+            :class="[
+              'opacity-0',
+              { 'animate-reveal-left': collab1Reveal.isVisible }
+            ]"
+          >
+            <div class="bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden h-full">
+              <div class="bg-gradient-to-br from-indigo-500 to-purple-600 p-6 text-white">
+                <div class="flex items-center gap-4">
+                  <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
+                    <CpuChipIcon class="h-6 w-6 text-white" />
+                  </div>
+                  <h3 class="text-xl font-bold">{{ $t('partners.collaboration.helpr.title') }}</h3>
                 </div>
-                <h3 class="text-2xl font-bold">{{ t('partner.whatHelprDoes.title') }}</h3>
               </div>
-            </div>
-            <div class="p-6">
-              <div class="space-y-4">
-                <div
-                  v-for="(point, index) in getRaw('partner.whatHelprDoes.points')"
-                  :key="index"
-                  class="flex items-start gap-3"
-                >
-                  <CheckCircleIcon class="h-5 w-5 text-indigo-600 mt-0.5 flex-shrink-0" />
-                  <span class="text-gray-700 leading-7">{{ point }}</span>
+              <div class="p-6">
+                <div class="space-y-4">
+                  <div
+                    v-for="(point, index) in tm('partners.collaboration.helpr.points')"
+                    :key="index"
+                    class="flex items-start gap-3"
+                  >
+                    <CheckCircleIcon class="h-5 w-5 text-indigo-600 mt-0.5 flex-shrink-0" />
+                    <span class="text-gray-700 leading-7">{{ rt(point) }}</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
           <!-- What Partners Do -->
-          <div class="bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden">
-            <div class="bg-gradient-to-br from-emerald-500 to-teal-600 p-6 text-white">
-              <div class="flex items-center gap-4">
-                <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
-                  <UsersIcon class="h-6 w-6 text-white" />
-                </div>
-                <h3 class="text-2xl font-bold">{{ t('partner.whatPartnersDo.title') }}</h3>
-              </div>
-            </div>
-            <div class="p-6">
-              <div class="space-y-4">
-                <div
-                  v-for="(point, index) in getRaw('partner.whatPartnersDo.points')"
-                  :key="index"
-                  class="flex items-start gap-3"
-                >
-                  <CheckCircleIcon class="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
-                  <span class="text-gray-700 leading-7">{{ point }}</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- For Whom Section -->
-    <section id="forwhom" class="py-24 scroll-mt-24">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-4xl mx-auto mb-16">
-          <h2 class="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 mb-6">
-            {{ t('partner.forWhom.title') }}
-          </h2>
-        </div>
-
-        <div class="grid lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <!-- Suitable For -->
-          <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 border border-green-200">
-            <div class="flex items-center gap-4 mb-6">
-              <div class="w-12 h-12 bg-green-500 rounded-xl flex items-center justify-center">
-                <CheckCircleIcon class="h-6 w-6 text-white" />
-              </div>
-              <h3 class="text-2xl font-bold text-gray-900">{{ t('partner.forWhom.suitable.title') }}</h3>
-            </div>
-            <div class="space-y-3">
-              <div
-                v-for="(point, index) in getRaw('partner.forWhom.suitable.points')"
-                :key="index"
-                class="flex items-start gap-3"
-              >
-                <CheckCircleIcon class="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
-                <span class="text-gray-700 leading-7">{{ point }}</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Not Suitable For -->
-          <div class="bg-gradient-to-br from-red-50 to-orange-50 rounded-2xl p-8 border border-red-200">
-            <div class="flex items-center gap-4 mb-6">
-              <div class="w-12 h-12 bg-red-500 rounded-xl flex items-center justify-center">
-                <XCircleIcon class="h-6 w-6 text-white" />
-              </div>
-              <h3 class="text-2xl font-bold text-gray-900">{{ t('partner.forWhom.notSuitable.title') }}</h3>
-            </div>
-            <div class="space-y-3">
-              <div
-                v-for="(point, index) in getRaw('partner.forWhom.notSuitable.points')"
-                :key="index"
-                class="flex items-start gap-3"
-              >
-                <XCircleIcon class="h-5 w-5 text-red-500 mt-0.5 flex-shrink-0" />
-                <span class="text-gray-700 leading-7">{{ point }}</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- What Partners Get Section -->
-    <section class="py-24 bg-gray-50 scroll-mt-24">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-4xl mx-auto mb-16">
-          <h2 class="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 mb-6">
-            {{ t('partner.program.title') }}
-          </h2>
-        </div>
-
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
           <div
-            v-for="(point, index) in getRaw('partner.program.points')"
-            :key="index"
-            class="bg-white rounded-2xl p-6 shadow-lg border border-gray-200 text-center"
+            ref="collab2Reveal.element"
+            :class="[
+              'opacity-0',
+              { 'animate-reveal-right': collab2Reveal.isVisible }
+            ]"
           >
-            <div class="w-12 h-12 bg-indigo-600 rounded-xl flex items-center justify-center mx-auto mb-4">
-              <CheckCircleIcon class="h-6 w-6 text-white" />
+            <div class="bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden h-full">
+              <div class="bg-gradient-to-br from-emerald-500 to-teal-600 p-6 text-white">
+                <div class="flex items-center gap-4">
+                  <div class="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center">
+                    <UsersIcon class="h-6 w-6 text-white" />
+                  </div>
+                  <h3 class="text-xl font-bold">{{ $t('partners.collaboration.partners.title') }}</h3>
+                </div>
+              </div>
+              <div class="p-6">
+                <div class="space-y-4">
+                  <div
+                    v-for="(point, index) in tm('partners.collaboration.partners.points')"
+                    :key="index"
+                    class="flex items-start gap-3"
+                  >
+                    <CheckCircleIcon class="h-5 w-5 text-emerald-600 mt-0.5 flex-shrink-0" />
+                    <span class="text-gray-700 leading-7">{{ rt(point) }}</span>
+                  </div>
+                </div>
+              </div>
             </div>
-            <p class="text-gray-900 font-medium">{{ point }}</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CTA Section -->
-    <section id="cta" class="py-24 bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 relative overflow-hidden scroll-mt-24">
-      <div class="absolute inset-0 bg-gradient-to-r from-indigo-500/20 to-purple-500/20"></div>
+    <!-- Become a Partner CTA -->
+    <section id="contact" class="py-24 bg-gradient-to-br from-indigo-600 via-purple-600 to-indigo-800 relative overflow-hidden scroll-mt-24">
+      <div class="absolute inset-0 bg-gradient-to-r from-indigo-500/10 to-purple-500/10"></div>
+      <div class="absolute -top-24 -left-24 w-96 h-96 bg-gradient-to-r from-indigo-400/20 to-purple-400/20 rounded-full blur-3xl"></div>
+      <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-gradient-to-r from-purple-400/20 to-pink-400/20 rounded-full blur-3xl"></div>
 
-      <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-        <h2 class="text-4xl sm:text-5xl font-bold text-white mb-6">
-          {{ t('partner.cta.title') }}
-        </h2>
-        <p class="text-xl text-indigo-100 mb-10 max-w-3xl mx-auto">
-          {{ t('partner.cta.description') }}
-        </p>
-
-        <a
-          href="mailto:partnership@helpr.ai"
-          class="inline-flex items-center justify-center rounded-2xl bg-white px-8 py-4 text-lg font-semibold text-indigo-600 shadow-xl hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600 transition-all duration-200 hover:scale-[1.02]"
+      <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div
+          ref="ctaReveal.element"
+          :class="[
+            'text-center max-w-3xl mx-auto opacity-0',
+            { 'animate-reveal-scale': ctaReveal.isVisible }
+          ]"
         >
-          {{ t('partner.cta.button') }}
-          <ArrowRightIcon class="ml-3 h-5 w-5" />
-        </a>
+          <div class="flex items-center justify-center w-16 h-16 bg-white/20 rounded-full mx-auto mb-6">
+            <HandshakeIcon class="h-8 w-8 text-white" />
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">
+            {{ $t('partners.cta.title') }}
+          </h2>
+          <p class="text-xl text-indigo-100 leading-8 mb-10">
+            {{ $t('partners.cta.description') }}
+          </p>
+
+          <a
+            href="mailto:partnership@helpr.ai"
+            class="inline-flex items-center justify-center rounded-2xl bg-white px-8 py-4 text-lg font-semibold text-indigo-600 shadow-xl hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600 transition-all duration-200 hover:scale-[1.02]"
+          >
+            {{ $t('partners.cta.button') }}
+            <ArrowRightIcon class="ml-3 h-5 w-5" />
+          </a>
+          <p class="mt-6 text-indigo-200 text-sm">
+            {{ $t('partners.cta.email') }}: partnership@helpr.ai
+          </p>
+        </div>
       </div>
     </section>
 
@@ -318,14 +371,17 @@
     <footer class="py-10 border-t bg-white/60">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-6 items-center">
         <div class="text-sm text-slate-600">
-          <div class="font-semibold text-slate-800">Helpr.AI</div>
-          <div>"From conversation to certification."</div>
-          <div class="mt-1">&copy; {{ new Date().getFullYear() }} Helpr.AI // All rights reserved.</div>
+          <div class="font-semibold text-slate-800">{{ $t('common.brand') }}</div>
+          <div>{{ $t('footer.tagline') }}</div>
+          <div class="mt-1">{{ $t('footer.copyright', { year: new Date().getFullYear().toString() }) }}</div>
         </div>
         <div class="flex justify-start md:justify-end gap-4 text-sm text-slate-600">
-          <nuxt-link to="/" class="hover:text-slate-900">Home</nuxt-link>
-          <nuxt-link to="/klanten" class="hover:text-slate-900">{{ t('customers.nav') }}</nuxt-link>
-          <a href="#" class="hover:text-slate-900">Privacy</a>
+          <a href="#" class="hover:text-slate-900">{{ $t('footer.privacy') }}</a>
+          <a href="#" class="hover:text-slate-900">{{ $t('footer.security') }}</a>
+          <a href="#" class="hover:text-slate-900 flex items-center gap-2">
+            {{ $t('footer.status') }}
+            <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+          </a>
         </div>
       </div>
     </footer>
@@ -333,49 +389,92 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from 'vue'
-import { useI18n } from '~/composables/useI18n'
+import { ref, computed, onMounted, onUnmounted } from 'vue'
+import { useReveal } from '~/composables/useReveal'
 import {
-  CheckCircleIcon,
-  XCircleIcon,
-  ArrowRightIcon,
-  ChevronDownIcon,
   UsersIcon,
-  CpuChipIcon
+  CheckCircleIcon,
+  ArrowRightIcon,
+  ArrowTopRightOnSquareIcon,
+  CpuChipIcon,
+  Bars3Icon,
+  XMarkIcon,
 } from '@heroicons/vue/24/outline'
 
-const scrollTo = (id: string) => {
-  const el = document.getElementById(id)
-  if (el) {
-    const headerHeight = 96
-    const elementPosition = el.offsetTop - headerHeight
-    window.scrollTo({
-      top: elementPosition,
-      behavior: 'smooth'
-    })
-  }
+// Custom handshake icon component
+const HandshakeIcon = {
+  template: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zm-7.518-.267L8.16 15.09m0 0l-2.51-2.225.568 9.47-5.227-7.917 3.287.672zM12 5.432l-3.75 6.75h7.5L12 5.432z" /></svg>`
 }
 
-// I18n setup
-const { currentLocale, languages, setLocale, t, getRaw, getCurrentLanguage } = useI18n()
+// Reveal animation setup
+const { createRevealElement } = useReveal()
+const heroReveal = createRevealElement()
+const partner1Reveal = createRevealElement()
+const partner2Reveal = createRevealElement()
+const collab1Reveal = createRevealElement()
+const collab2Reveal = createRevealElement()
+const ctaReveal = createRevealElement()
+
+// i18n setup
+const { t, rt, locale, locales, tm } = useI18n()
+const localePath = useLocalePath()
+const switchLocalePath = useSwitchLocalePath()
+
+const localeFlags: Record<string, string> = { nl: '\u{1F1F3}\u{1F1F1}', en: '\u{1F1EC}\u{1F1E7}' }
+const currentLocaleFlag = computed(() => localeFlags[locale.value] || '\u{1F310}')
+const availableLocales = computed(() =>
+  (locales.value as Array<{ code: string; name: string }>).map(loc => ({
+    ...loc,
+    flag: localeFlags[loc.code] || '\u{1F310}'
+  }))
+)
+
 const showLangDropdown = ref(false)
+const showMobileMenu = ref(false)
 
-const changeLang = (locale: string) => {
-  setLocale(locale)
-  showLangDropdown.value = false
+const toggleMobileMenu = () => {
+  showMobileMenu.value = !showMobileMenu.value
 }
+
+const closeMobileMenu = () => {
+  showMobileMenu.value = false
+}
+
+// Close dropdown and mobile menu when clicking outside
+onMounted(() => {
+  const handleClickOutside = (event: Event) => {
+    const target = event.target as HTMLElement
+
+    if (!target.closest('.relative')) {
+      showLangDropdown.value = false
+    }
+
+    if (!target.closest('header')) {
+      showMobileMenu.value = false
+    }
+  }
+  document.addEventListener('click', handleClickOutside)
+  onUnmounted(() => {
+    document.removeEventListener('click', handleClickOutside)
+  })
+})
+
+// Ensure page starts at top on mount
+onMounted(() => {
+  window.scrollTo({ top: 0, behavior: 'instant' })
+})
 
 // SEO
 useHead({
-  title: computed(() => currentLocale.value === 'nl'
-    ? 'Partnerprogramma | Helpr.AI'
-    : 'Partner Program | Helpr.AI'),
+  title: computed(() => locale.value === 'nl'
+    ? 'Onze Partners | Helpr.AI'
+    : 'Our Partners | Helpr.AI'),
   meta: [
     {
       name: 'description',
-      content: computed(() => currentLocale.value === 'nl'
-        ? 'Word partner van Helpr.ai. Schaal certificeringstrajecten zonder in te leveren op kwaliteit.'
-        : 'Become a Helpr.ai partner. Scale certification projects without compromising on quality.')
+      content: computed(() => locale.value === 'nl'
+        ? 'Ontdek de consultancybureaus waarmee Helpr.ai samenwerkt voor ISO- en CO2-prestatieladder certificeringen.'
+        : 'Discover the consultancies that work with Helpr.ai for ISO and CO2 performance ladder certifications.')
     }
   ]
 })

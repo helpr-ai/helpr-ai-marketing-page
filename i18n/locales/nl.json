@@ -1,0 +1,1476 @@
+{
+  "nav": {
+    "home": "Home",
+    "product": "Product",
+    "value": "Waarde",
+    "howItWorks": "Werking",
+    "whoItsFor": "Voor wie",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "demo": "Demo aanvragen"
+  },
+  "hero": {
+    "badge": "ISO & CO2-Prestatieladder vereenvoudigd",
+    "title": "{aiInterviews}Sneller. Nauwkeuriger. Voordeliger.{aiInterviewsEnd}",
+    "description": "Gegevensverzameling en -verwerking voor ISO en de CO2-Prestatieladder, zonder de chaos. Helpr.ai zet gestructureerde gesprekken om in audit-klare compliance output, zodat organisaties en consultants minder tijd besteden aan herhaalwerk en meer aan waardecreatie.",
+    "tagline": "Nu beschikbaar voor {iso9001}ISO 9001{iso9001End}",
+    "cta": "Vraag een demo aan",
+    "ctaSecondary": "Bekijk hoe het werkt"
+  },
+  "tagline": {
+    "title": "Certification made easy.",
+    "subtitle": "Bij ISO-certificeringen en de CO2-Prestatieladder ligt de complexiteit meestal niet in de inhoud, maar in de dataverzameling. Helpr.ai vereenvoudigt dit proces en zorgt voor snellere, betrouwbaardere en kosteneffectievere certificering via gestructureerde interviews.",
+    "cta": "Ervaar het zelf"
+  },
+  "value": {
+    "title": "Wat levert {helpr}Helpr.ai{helprEnd} op?",
+    "subtitle": "Certificering die werkt voor zowel organisaties als consultants.",
+    "card1": {
+      "title": "Sneller",
+      "description": "Minder interviewrondes nodig. Snellere omzetting naar documentatie. Geen eindeloze herhaling van dezelfde vragen."
+    },
+    "card2": {
+      "title": "Nauwkeuriger",
+      "description": "Extra interviews zijn eenvoudig uit te voeren. Minder tijdsdruk leidt tot betere antwoorden. Consistente, traceerbare output."
+    },
+    "card3": {
+      "title": "Voordeliger",
+      "description": "Minder consultanturen besteed aan herhaling. Minder herwerk nodig. Lagere totale certificeringskosten."
+    },
+    "stats": {
+      "reduction": "~50%",
+      "reductionLabel": "Tijdsbesparing",
+      "quality": "100%",
+      "qualityLabel": "Audit-klare output",
+      "integration": "5 min",
+      "integrationLabel": "Setup tijd",
+      "standards": "1",
+      "standardsLabel": "ISO standaard"
+    },
+    "timeRemark": "In pilotprojecten bereiken organisaties doorgaans tot ~50% tijdsbesparing op gegevensverzameling en documentatie."
+  },
+  "grant": {
+    "badge": "Erkend door ElevenLabs",
+    "title": "Wij hebben een ElevenLabs Grant ontvangen. Een erkenning van onze innovatieve aanpak in compliance."
+  },
+  "common": {
+    "beta": "Beta",
+    "live": "Live",
+    "brand": "Helpr.AI",
+    "iso9001": "ISO 9001",
+    "iso27001": "ISO 27001",
+    "iso42001": "ISO 42001"
+  },
+  "product": {
+    "title": "De tool in het kort",
+    "dashboardTitle": "Helpr.AI Dashboard",
+    "aiInterviews": "AI Interview",
+    "aiInterviewsDesc": "Word geïnterviewd door een AI-based consultant",
+    "structuring": "Structureren",
+    "structuringDesc": "Automatisch omzetten naar relevante informatie",
+    "exportReady": "Export Ready",
+    "exportDesc": "Direct integreren in je bestaande managementsysteem",
+    "features": [
+      "Ondersteunt ISO 9001, met ISO 27001 en ISO 42001 binnenkort beschikbaar."
+    ],
+    "categories": {
+      "policy": "Beleid & Context",
+      "policyDesc": "Scope, belanghebbenden, rolverdeling, risicokaders",
+      "risk": "Risicobeoordeling",
+      "riskDesc": "Methodiek, risico‑register, maatregelenmap",
+      "controls": "Controls (Annex A)",
+      "controlsDesc": "Bewijsverzameling, verantwoordelijken, status"
+    }
+  },
+  "target": {
+    "title": "Voor wie is Helpr.AI?",
+    "companies": {
+      "title": "Voor organisaties",
+      "subtitle": "MKB met ~30-250 medewerkers",
+      "challengesTitle": "Veelvoorkomende uitdagingen:",
+      "challenges": [
+        "Certificering voelt zwaar en tijdrovend",
+        "Medewerkers worden herhaaldelijk geïnterviewd",
+        "Onzekerheid over gereedheid en kwaliteit"
+      ],
+      "benefitsTitle": "Helpr.ai helpt door:",
+      "benefits": [
+        "Interviews te structureren",
+        "De interne werkdruk te verminderen",
+        "Sneller en met vertrouwen audit-klaar te zijn"
+      ],
+      "closing": "Certificering in de helft van de tijd, met duidelijkheid en controle."
+    },
+    "consultants": {
+      "title": "Voor ISO & compliance consultants",
+      "challengesTitle": "Veelvoorkomende uitdagingen:",
+      "challenges": [
+        "Repetitieve interviews",
+        "Inconsistente inputkwaliteit",
+        "Druk op tijd en marges"
+      ],
+      "benefitsTitle": "Helpr.ai stelt je in staat om:",
+      "benefits": [
+        "Sneller gegevens te verzamelen",
+        "Consistentie en kwaliteit te verbeteren",
+        "Te focussen op analyse en advieswerk"
+      ],
+      "closing": "Minder herhaling. Meer waarde per opdracht."
+    }
+  },
+  "consultantValue": {
+    "title": "De waarde voor {consultants}compliance agencies{consultantsEnd}",
+    "subtitle": "Helpr.AI verandert hoe adviesbureaus werken: meer klanten, hogere kwaliteit, minder tijd.",
+    "efficiency": {
+      "title": "Efficiëntie",
+      "description": "Transformeer je business model: van weken documentatiework naar dagen resultaat. Helpr.AI automatiseert de tijdrovende taken zodat consultants zich kunnen richten op strategisch advies en klantrelaties.",
+      "stats": {
+        "time": "60%",
+        "timeLabel": "minder tijd per traject"
+      }
+    },
+    "quality": {
+      "title": "Kwaliteit en consistentie",
+      "description": "AI zorgt voor uniforme, professionele output ongeacht ervaring. Consistent hoge kwaliteit voor alle projecten.",
+      "benefits": [
+        "Voorkomt menselijke fouten en inconsistenties",
+        "Verminderde review tijd voor consultants"
+      ]
+    },
+    "assurance": {
+      "title": "White labeled platform",
+      "description": "Bied Helpr.AI aan onder jouw eigen merk met volledige controle over branding en klantervaring.",
+      "points": [
+        "Aanpasbare output",
+        "Volledige branding controle"
+      ]
+    }
+  },
+  "working": {
+    "title": "Hoe het {werkt}werkt{werktEnd}",
+    "subtitle": "Drie stappen. Met maximale efficiëntie van gesprek naar certificering.",
+    "step1": {
+      "title": "AI Interview",
+      "description": "Stuur een uitnodiging naar de relevante medewerkers. Onze AI stelt de juiste vragen op basis van jouw bedrijfscontext.",
+      "demo": {
+        "question": "AI stelt vraag over ISO 27001...",
+        "answer": "Medewerker antwoordt op natuurlijke wijze",
+        "capture": "Context wordt vastgelegd"
+      }
+    },
+    "step2": {
+      "title": "AI Structurering",
+      "description": "Interviews worden automatisch omgezet in uniforme, audit‑klare documentatie met professionele structuur.",
+      "categories": {
+        "policy": "Beleid & Context",
+        "risk": "Risicobeoordeling",
+        "controls": "Controls (Annex A)"
+      }
+    },
+    "step3": {
+      "title": "Export & Integratie",
+      "description": "Exporteer naar je bestaande managementsysteem of documentatieproces en ga direct door met implementeren. Klaar voor gebruik.",
+      "platforms": {
+        "sharepoint": "SharePoint",
+        "confluence": "Confluence",
+        "custom": "Custom"
+      }
+    },
+    "features": {
+      "security": {
+        "title": "Security‑First aanpak",
+        "description": "Privacy en informatiebeveiliging staan voorop. We beperken dataretentie en zorgen voor duidelijke logging & traceerbaarheid."
+      },
+      "templates": {
+        "title": "Uit te breiden naar meer normen",
+        "description": "Start met ISO 9001 en breid uit naar ISO 27001, ISO 42001, ISO 14001 en meer."
+      }
+    }
+  },
+  "demo": {
+    "badge": "Probeer Helpr.ai",
+    "title": "ISO of de CO2-Prestatieladder stroomlijnen?",
+    "subtitle": "Vraag een demo aan en ontdek hoe Helpr.ai gegevensverzameling fundamenteel eenvoudiger maakt. Zonder extra druk op je team of consultants.",
+    "benefits": {
+      "walkthrough": {
+        "title": "Live walkthrough",
+        "description": "Ervaar zelf hoe AI-interviews werken in de praktijk"
+      },
+      "examples": {
+        "title": "Audit-klare voorbeelden",
+        "description": "Bekijk concrete output voor ISO 9001"
+      },
+      "advice": {
+        "title": "Persoonlijk advies",
+        "description": "Bespreek jouw specifieke compliance-uitdagingen"
+      }
+    },
+    "guarantee": "Geen verplichtingen • Privacy gegarandeerd • 20 minuten",
+    "form": {
+      "name": "Naam",
+      "namePlaceholder": "Je naam",
+      "email": "E-mailadres",
+      "emailPlaceholder": "naam{'@'}bedrijf.nl",
+      "company": "Bedrijf",
+      "companyPlaceholder": "Bedrijfsnaam",
+      "questions": "Specifieke vragen (optioneel)",
+      "questionsPlaceholder": "Waar wil je op focussen tijdens de demo?",
+      "submit": "Vraag demo aan",
+      "required": "*",
+      "privacy": {
+        "text": "Door te verzenden ga je akkoord met onze",
+        "link": "privacyverklaring"
+      }
+    }
+  },
+  "faq": {
+    "title": "Veelgestelde vragen",
+    "questions": [
+      {
+        "question": "Is Helpr.AI een managementsysteem?",
+        "answer": "Nee. Helpr.AI werkt aanvullend op bestaande systemen. Wij verzamelen en structureren de informatie; jij gebruikt de output in je eigen managementsysteem of documentatieproces."
+      },
+      {
+        "question": "Welke normen worden ondersteund?",
+        "answer": "We starten met ISO 9001. Binnenkort breiden we uit naar ISO 27001 en ISO 42001. Op de planning staan ook ISO 14001 en andere normen."
+      },
+      {
+        "question": "Is er begeleiding nodig?",
+        "answer": "De tool werkt intuïtief en we bieden ook onboarding aan. Zo haal je snel waarde uit de interviews en output."
+      },
+      {
+        "question": "Hoe zit het met security & privacy?",
+        "answer": "Minimale dataretentie, duidelijke logging, en heldere afspraken. Neem contact op voor onze security-factsheet."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Vragen of interesse in partnership?",
+    "subtitle": "Benieuwd naar ons partnerprogramma, of ons white labeled platform? We praten graag door met complianceteams en ISO consultants. Laat je gegevens achter of mail ons direct.",
+    "partnership": "partnership{'@'}helpr.ai",
+    "onepager": "One‑pager op aanvraag",
+    "form": {
+      "name": "Naam",
+      "email": "E‑mail",
+      "message": "Waarover wil je in gesprek?",
+      "submit": "Neem contact op"
+    }
+  },
+  "footer": {
+    "tagline": "\"Certification made easy.\"",
+    "copyright": "© {year} Helpr.AI // Alle rechten voorbehouden.",
+    "privacy": "Privacy",
+    "security": "Beveiliging",
+    "status": "Status"
+  },
+  "success": {
+    "title": "Bedankt voor je bericht!",
+    "message": "We hebben je aanvraag ontvangen en nemen binnen 24 uur contact met je op.",
+    "responseTime": "Reactietijd: binnen 24 uur",
+    "backButton": "Terug naar website"
+  },
+  "flowSteps": {
+    "conversation": {
+      "title": "Conversation",
+      "description": "Natuurlijk aanvoelende interviews door AI-based consultants"
+    },
+    "certification": {
+      "title": "Certification",
+      "description": "Audit-klare documentatie voor compliance"
+    }
+  },
+  "processMap": {
+    "badge": "Praktijkvoorbeeld",
+    "title": "Meer dan alleen documentatie: {processMap}procesdiagrammen{processMapEnd}",
+    "subtitle": "Helpr.AI analyseert gesprekken en genereert automatisch visuele procesdiagrammen die aansluiten bij compliance vereisten.",
+    "description": "Van een eenvoudig gesprek over incidentafhandeling naar een compleet procesdiagram met rollen, systemen en workflows. Perfect voor ISO 27001 documentatie.",
+    "features": [
+      "Automatische procesherkenning uit gesprekken",
+      "Visuele diagrammen met rollen en verantwoordelijkheden",
+      "Compliance-ready procesomschrijvingen",
+      "Exporteerbaar naar je managementsysteem"
+    ],
+    "imageAlt": "Voorbeeld van een automatisch gegenereerd procesdiagram voor incidentafhandeling"
+  },
+  "applicationScope": {
+    "title": "Breed inzetbaar, {concrete}concreet toepasbaar{concreteEnd}",
+    "subtitle": "Van ISO 27001 tot branchespecifieke normen: Helpr.AI groeit mee met je certificeringsbehoeften.",
+    "current": {
+      "title": "Nu beschikbaar",
+      "description": "Direct inzetbaar voor de meest gevraagde certificeringen",
+      "standards": [
+        {
+          "name": "ISO 9001",
+          "description": "Kwaliteitsmanagement"
+        },
+        {
+          "name": "CO₂-Prestatieladder",
+          "description": "Duurzaamheid & CO₂-reductie"
+        }
+      ]
+    },
+    "upcoming": {
+      "title": "Binnenkort beschikbaar",
+      "description": "Uitbreiding naar veel gevraagde managementsystemen",
+      "standards": [
+        {
+          "name": "ISO 27001",
+          "description": "Informatiebeveiliging"
+        },
+        {
+          "name": "ISO 42001",
+          "description": "AI governance"
+        },
+        {
+          "name": "ISO 14001",
+          "description": "Milieumanagementsystemen"
+        },
+        {
+          "name": "NEN 7510",
+          "description": "Informatiebeveiliging in de zorg"
+        },
+        {
+          "name": "BRL normen",
+          "description": "Branchespecifieke normen (bouw, installatie)"
+        }
+      ]
+    },
+    "custom": {
+      "title": "Maatwerk mogelijk",
+      "description": "Heb je een eigen methode of norm die niet in de lijst staat? Geen probleem.",
+      "features": [
+        "Samen met ons nieuwe standaarden toevoegen",
+        "Flexibele aanpassing aan jouw werkwijze",
+        "Partner-specifieke configuratie"
+      ],
+      "note": "Helpr.AI richt zich op managementsysteem-stijl normen. Voor pure productcertificaten is onze aanpak minder geschikt."
+    }
+  },
+  "iso27001": {
+    "title": "{bold}ISO 27001{boldEnd} Informatiebeveiliging",
+    "subtitle": "Streamline je ISO 27001 certificering met AI-gestuurde interviews en gestructureerde documentatie.",
+    "cta": "Ontdek Helpr.AI",
+    "hero": {
+      "badge": "Informatiebeveiliging certificering",
+      "description": "Verkort je ISO 27001 traject van maanden naar weken met geautomatiseerde documentatie en compliance tracking."
+    },
+    "about": {
+      "title": "Wat is ISO 27001?",
+      "description": "ISO 27001 is de internationale standaard voor informatiebeveiligingsmanagementsystemen (ISMS). Het helpt organisaties om informatie systematisch te beveiligen door risico's te identificeren, beheersen en continue te verbeteren.",
+      "importance": {
+        "title": "Waarom is ISO 27001 belangrijk?",
+        "items": [
+          "Beschermt vertrouwelijke bedrijfsinformatie en klantgegevens",
+          "Vereist voor veel klanten en partnerships in digitale sectoren",
+          "Vermindert risico op datalekken en cybersecurity incidenten",
+          "Vergroot vertrouwen van klanten en stakeholders",
+          "Compliance met privacy wetgeving zoals AVG/GDPR"
+        ]
+      }
+    },
+    "requirements": {
+      "title": "Certificeringsvereisten",
+      "subtitle": "ISO 27001 certificering vereist een uitgebreid informatiebeveiligingsmanagementsysteem",
+      "items": [
+        {
+          "title": "Context van de organisatie",
+          "description": "Identificeer interne/externe factoren die het ISMS beïnvloeden en bepaal het toepassingsgebied"
+        },
+        {
+          "title": "Leiderschap",
+          "description": "Topmanagement commitment, informatiebeveiliging beleid en rollen/verantwoordelijkheden"
+        },
+        {
+          "title": "Planning",
+          "description": "Risicobeoordelingen, behandelingsplannen en informatiebeveiligingsdoelstellingen"
+        },
+        {
+          "title": "Ondersteuning",
+          "description": "Resources, competenties, bewustzijn, communicatie en gedocumenteerde informatie"
+        },
+        {
+          "title": "Uitvoering",
+          "description": "Implementatie van risicobehandeling en operationele procedures voor informatiebeveiliging"
+        },
+        {
+          "title": "Prestatie-evaluatie",
+          "description": "Monitoring, meting, interne audits en managementreview van het ISMS"
+        },
+        {
+          "title": "Verbetering",
+          "description": "Continue verbetering, incidentafhandeling en correctieve maatregelen"
+        }
+      ],
+      "challenges": {
+        "title": "Waarom is certificering zo arbeidsintensief?",
+        "items": [
+          "Uitgebreide documentatie van alle beveiligingsprocessen en procedures",
+          "Gedetailleerde risicoanalyses voor alle informatieactiva",
+          "Implementatie en documentatie van 93 beveiligingsmaatregelen (Annex A)",
+          "Training en bewustzijn programma's voor alle medewerkers",
+          "Continue monitoring en rapportage van beveiligingsincidenten"
+        ]
+      }
+    },
+    "solution": {
+      "title": "Hoe helpt Helpr.AI?",
+      "subtitle": "Van gesprekken naar kant-en-klare ISMS documentatie",
+      "steps": [
+        {
+          "number": "01",
+          "title": "ISMS Assessment Interview",
+          "description": "Beantwoord vragen over je IT-omgeving, huidige beveiligingsmaatregelen en risicolandschap"
+        },
+        {
+          "number": "02",
+          "title": "Automatische documentatie",
+          "description": "AI genereert risicoregister, beleid documenten en implementatieplannen op basis van je input"
+        },
+        {
+          "number": "03",
+          "title": "Annex A Controles",
+          "description": "Gestructureerde implementatie en documentatie van alle relevante beveiligingsmaatregelen"
+        },
+        {
+          "number": "04",
+          "title": "Audit voorbereiding",
+          "description": "Complete ISMS documentatie klaar voor interne en externe audits"
+        }
+      ]
+    },
+    "additional": {
+      "securityManagement": {
+        "title": "Information Security Management",
+        "description": "Systematische aanpak voor het beheren van gevoelige bedrijfsinformatie en ervoor zorgen dat deze veilig blijft."
+      },
+      "finalCta": {
+        "title": "Klaar om je ISO 27001 certificering te stroomlijnen?",
+        "description": "Transformeer je informatiebeveiliging management van maanden handmatig werk naar weken gestructureerde vooruitgang."
+      }
+    }
+  },
+  "iso9001": {
+    "title": "{iso9001}ISO 9001{iso9001End} Kwaliteitsmanagement",
+    "subtitle": "Streamline je ISO 9001 certificering met AI-gestuurde interviews en gestructureerde documentatie.",
+    "cta": "Ontdek Helpr.AI",
+    "hero": {
+      "badge": "Kwaliteitsmanagement certificering",
+      "description": "Verkort je ISO 9001 traject van maanden naar weken met geautomatiseerde documentatie."
+    },
+    "about": {
+      "title": "Wat is ISO 9001?",
+      "description": "ISO 9001 is de internationale standaard voor kwaliteitsmanagementsystemen (QMS). Het helpt organisaties om consistent hoogwaardige producten en diensten te leveren die voldoen aan klant- en regelgevingseisen.",
+      "importance": [
+        "Verbetert klanttevredenheid door consistente kwaliteit",
+        "Verhoogt operationele efficiëntie en vermindert verspilling",
+        "Creëert een cultuur van continue verbetering",
+        "Vergroot marktgeloofwaardigheid en concurrentievoordeel",
+        "Vereist voor veel aanbestedingen en partnerships"
+      ]
+    },
+    "requirements": {
+      "title": "Certificeringsvereisten",
+      "subtitle": "ISO 9001 certificering vereist een uitgebreid kwaliteitsmanagementsysteem",
+      "items": [
+        {
+          "title": "Context van de organisatie",
+          "description": "Identificeer interne/externe factoren en belanghebbenden die het QMS beïnvloeden"
+        },
+        {
+          "title": "Leiderschap en betrokkenheid",
+          "description": "Topmanagement commitment, kwaliteitsbeleid en rollen/verantwoordelijkheden"
+        },
+        {
+          "title": "Planning",
+          "description": "Risico's en kansen, kwaliteitsdoelstellingen en plannen om deze te bereiken"
+        },
+        {
+          "title": "Ondersteuning",
+          "description": "Resources, competenties, bewustzijn, communicatie en gedocumenteerde informatie"
+        },
+        {
+          "title": "Uitvoering",
+          "description": "Operationele planning, productrealisatie en controle van geleverde producten/diensten"
+        },
+        {
+          "title": "Prestatie-evaluatie",
+          "description": "Monitoring, meting, interne audits en managementreview"
+        },
+        {
+          "title": "Verbetering",
+          "description": "Continue verbetering, non-conformiteiten en correctieve maatregelen"
+        }
+      ],
+      "challenges": {
+        "title": "Waarom is certificering zo tijdrovend?",
+        "points": [
+          "Uitgebreide documentatie van alle processen en procedures",
+          "Training van personeel over nieuwe werkwijzen en processen",
+          "Implementatie van meetbare kwaliteitsdoelstellingen",
+          "Interne audits en continue monitoring systemen opzetten",
+          "Voorbereiding op externe certificeringsaudit"
+        ]
+      }
+    },
+    "helprSolution": {
+      "title": "Hoe Helpr.AI helpt",
+      "subtitle": "Van traag documentatiewerk naar snelle, gestructureerde implementatie",
+      "benefits": [
+        {
+          "title": "Geautomatiseerde documentatie",
+          "description": "AI-interviews genereren automatisch procesbeschrijvingen, werkwijzen en kwaliteitshandboeken",
+          "icon": "DocumentTextIcon"
+        },
+        {
+          "title": "Compliance tracking",
+          "description": "Real-time overzicht van voortgang per ISO 9001 vereiste en automatische gap analysis",
+          "icon": "CheckCircleIcon"
+        },
+        {
+          "title": "Audit voorbereiding",
+          "description": "Gestructureerde bewijsverzameling en audit-ready documentatie voor certificering",
+          "icon": "ShieldCheckIcon"
+        }
+      ],
+      "process": {
+        "title": "Het proces",
+        "steps": [
+          {
+            "number": "01",
+            "title": "AI Interview",
+            "description": "Beantwoord vragen over je huidige processen, kwaliteitsmaatregelen en organisatiestructuur"
+          },
+          {
+            "number": "02",
+            "title": "Automatische documentatie",
+            "description": "AI genereert kwaliteitshandboek, procesbeschrijvingen en werkwijzen op basis van je input"
+          },
+          {
+            "number": "03",
+            "title": "Review en aanpassing",
+            "description": "Controleer en pas gegenereerde documenten aan volgens jouw specifieke behoeften"
+          }
+        ]
+      }
+    }
+  },
+  "iso42001": {
+    "title": "{iso42001}ISO 42001{iso42001End} AI Management",
+    "subtitle": "Klaar voor de toekomst van AI governance met gestructureerde certificering en compliance tracking.",
+    "cta": "Ontdek Helpr.AI",
+    "hero": {
+      "badge": "AI governance certificering",
+      "description": "De eerste internationale standaard voor AI management systemen. Implementeer verantwoorde AI met Helpr.AI's gespecialiseerde aanpak."
+    },
+    "about": {
+      "title": "Wat is ISO 42001?",
+      "description": "ISO 42001 is de eerste internationale standaard voor Artificial Intelligence Management Systems (AIMS). Het biedt een framework voor organisaties om AI-systemen verantwoord te ontwikkelen, implementeren en beheren.",
+      "aiRelevance": {
+        "title": "Waarom is deze standaard juist nu cruciaal?",
+        "points": [
+          "AI-systemen beïnvloeden steeds meer bedrijfskritische processen",
+          "Regeldruk neemt toe (EU AI Act, Amerikaanse AI Executive Orders)",
+          "Klanten en partners vereisen transparantie in AI-gebruik",
+          "Risico's van bias, privacy schendingen en onbetrouwbare output",
+          "Concurrentievoordeel door vertrouwde, ethische AI-implementatie"
+        ]
+      },
+      "importance": [
+        "Bouwt vertrouwen bij stakeholders in AI-systemen",
+        "Vermindert juridische en reputatierisico's",
+        "Zorgt voor consistente AI governance over de organisatie",
+        "Faciliteert compliance met toekomstige AI-regulatie",
+        "Verbetert AI-systeem prestaties en betrouwbaarheid"
+      ]
+    },
+    "requirements": {
+      "title": "Certificeringsvereisten",
+      "subtitle": "ISO 42001 vereist een uitgebreid AI management systeem met focus op risicomanagement",
+      "items": [
+        {
+          "title": "AI Governance Framework",
+          "description": "Beleid, rollen en verantwoordelijkheden voor AI-ontwikkeling en -gebruik door de organisatie"
+        },
+        {
+          "title": "Risico Assessment",
+          "description": "Systematische identificatie en evaluatie van AI-risico's: bias, privacy, veiligheid, betrouwbaarheid"
+        },
+        {
+          "title": "Data Management",
+          "description": "Processen voor data kwaliteit, privacy, beveiliging en lifecycle management voor AI-systemen"
+        },
+        {
+          "title": "AI System Lifecycle",
+          "description": "Gestructureerde ontwikkeling van ontwerp tot deployment, monitoring en decommissioning"
+        },
+        {
+          "title": "Transparantie en Explainability",
+          "description": "Documentatie van AI-besluitvorming en communicatie naar stakeholders"
+        },
+        {
+          "title": "Human Oversight",
+          "description": "Menselijke controle en interventie mogelijkheden in AI-gedreven processen"
+        },
+        {
+          "title": "Incident Management",
+          "description": "Procedures voor AI-gerelateerde incidenten, correctieve maatregelen en lessons learned"
+        },
+        {
+          "title": "Performance Monitoring",
+          "description": "Continue evaluatie van AI-systeem prestaties, accuracy en bias detectie"
+        }
+      ],
+      "challenges": {
+        "title": "Waarom is AI governance zo complex?",
+        "points": [
+          "Multidisciplinaire kennis vereist: tech, legal, ethics, business",
+          "Snel evoluerend regelgevingslandschap en best practices",
+          "Complexe AI-systemen met ondoorzichtige besluitvorming",
+          "Organisatie-brede impact vereist cultuurverandering",
+          "Balanceren van innovatie met risicomanagement",
+          "Gebrek aan gestandaardiseerde tools en methodologieën"
+        ]
+      }
+    },
+    "helprSolution": {
+      "title": "Hoe Helpr.AI helpt met AI governance",
+      "subtitle": "Van AI chaos naar gestructureerde governance met AI-native tools",
+      "aiAdvantage": {
+        "title": "AI begrijpt AI",
+        "description": "Helpr.AI gebruikt AI om AI governance te vereenvoudigen. Een unieke meta-aanpak die complexe AI concepten vertaalt naar concrete implementatiestappen."
+      },
+      "benefits": [
+        {
+          "title": "AI Risk Assessment",
+          "description": "Geautomatiseerde identificatie van AI-risico's per use case, inclusief bias detection en impact analysis",
+          "icon": "ExclamationTriangleIcon"
+        },
+        {
+          "title": "Governance Documentation",
+          "description": "AI-gegenereerde beleidsdocumenten, procedures en frameworks specifiek voor jouw AI-landschap",
+          "icon": "DocumentTextIcon"
+        },
+        {
+          "title": "Compliance Mapping",
+          "description": "Automatische mapping van je AI-systemen tegen ISO 42001 vereisten en toekomstige regulatie",
+          "icon": "CheckCircleIcon"
+        },
+        {
+          "title": "Stakeholder Communication",
+          "description": "Heldere, toegankelijke uitleg van AI-systemen voor verschillende doelgroepen (management, legal, klanten)",
+          "icon": "ChatBubbleLeftRightIcon"
+        }
+      ],
+      "process": {
+        "title": "Het AI governance proces",
+        "steps": [
+          {
+            "number": "01",
+            "title": "AI Inventory & Assessment",
+            "description": "Identificeer alle AI-systemen in je organisatie en evalueer hun risico's, impact en governance behoeften"
+          },
+          {
+            "number": "02",
+            "title": "Governance Framework Design",
+            "description": "AI genereert op maat gemaakte beleid, procedures en governance structuren gebaseerd op je specifieke AI-landschap"
+          },
+          {
+            "number": "03",
+            "title": "Implementation Roadmap",
+            "description": "Gestructureerd implementatieplan met prioriteiten, timelines en stakeholder verantwoordelijkheden"
+          },
+          {
+            "number": "04",
+            "title": "Monitoring & Compliance",
+            "description": "Continue tracking van compliance status, performance metrics en emerging risks in je AI-ecosysteem"
+          }
+        ]
+      }
+    }
+  },
+  "cta": {
+    "title": "Klaar om te ontdekken wat mogelijk is?",
+    "description": "Bespreek je specifieke behoefte en ontdek hoe Helpr.AI kan helpen.",
+    "button": "Plan een gesprek"
+  },
+  "programs": {
+    "nav": "Programma's",
+    "hero": {
+      "badge": "Certificeringsprogramma's",
+      "title": "Certificering voor elke standaard",
+      "description": "Ontdek welke certificeringsprogramma's Helpr.ai ondersteunt en hoe we je kunnen helpen bij het behalen van je certificering."
+    },
+    "available": {
+      "title": "Beschikbare programma's",
+      "subtitle": "Start vandaag nog met deze certificeringen via het Helpr.ai platform."
+    },
+    "comingSoon": {
+      "title": "Binnenkort beschikbaar",
+      "subtitle": "We werken aan ondersteuning voor deze standaarden. Neem contact op voor early access."
+    },
+    "status": {
+      "available": "Beschikbaar",
+      "comingSoon": "Binnenkort"
+    },
+    "learnMore": "Meer informatie",
+    "backToPrograms": "Terug naar programma's",
+    "iso9001": {
+      "tagline": "Kwaliteitsmanagement",
+      "description": "Het internationale standaard voor kwaliteitsmanagementsystemen. Zorg voor consistente kwaliteit in producten en diensten."
+    },
+    "co2": {
+      "name": "CO2-Prestatieladder",
+      "tagline": "Duurzaamheid & CO2-reductie",
+      "description": "Het belangrijkste instrument voor duurzaam inkopen in Nederland. Behaal gunningsvoordeel bij aanbestedingen."
+    },
+    "iso27001": {
+      "tagline": "Informatiebeveiliging",
+      "description": "Bescherm gevoelige bedrijfsinformatie en klantdata met een systematische aanpak van informatiebeveiliging."
+    },
+    "iso14001": {
+      "tagline": "Milieumanagement",
+      "description": "Verminder je ecologische voetafdruk en voldoe aan milieuwetgeving met een milieumanagement systeem."
+    },
+    "iso42001": {
+      "tagline": "AI Governance",
+      "description": "De eerste internationale standaard voor AI management. Implementeer verantwoorde AI in je organisatie."
+    },
+    "cta": {
+      "title": "Klaar om te starten?",
+      "description": "Vraag een demo aan en ontdek hoe Helpr.ai je certificeringstraject kan versnellen.",
+      "button": "Vraag een demo aan"
+    }
+  },
+  "co2Page": {
+    "hero": {
+      "badge": "Duurzaamheidscertificering",
+      "title": "CO2-Prestatieladder certificering",
+      "description": "De CO2-Prestatieladder is het belangrijkste instrument voor duurzaam inkopen in Nederland. Helpr.ai maakt certificering eenvoudiger en effectiever."
+    },
+    "cta": {
+      "primary": "Start je certificering",
+      "secondary": "Meer informatie"
+    },
+    "stats": {
+      "organizations": "gecertificeerde organisaties",
+      "authorities": "deelnemende overheden",
+      "reduction": "snellere CO2-reductie",
+      "discount": "fictieve korting"
+    },
+    "about": {
+      "title": "Wat is de CO2-Prestatieladder?",
+      "description": "De CO2-Prestatieladder is een certificeringssysteem dat organisaties stimuleert om CO2-uitstoot te verminderen. Het wordt erkend als best practice voor duurzaam inkopen en biedt concrete voordelen bij aanbestedingen.",
+      "points": [
+        "Gunningsvoordeel bij aanbestedingen tot 10% fictieve korting",
+        "Erkend door 300+ overheden en publieke opdrachtgevers",
+        "Gecertificeerde organisaties reduceren CO2 twee keer zo snel",
+        "75% van certificaathouders zijn MKB-bedrijven",
+        "Internationale uitbreiding naar Frankrijk, Duitsland, Ierland, Portugal en UK"
+      ],
+      "recognition": {
+        "title": "Internationale erkenning",
+        "organizations": [
+          "OECD - Organisatie voor Economische Samenwerking en Ontwikkeling",
+          "IPCC - Intergovernmental Panel on Climate Change",
+          "World Economic Forum - Best Practice voor Duurzaam Inkopen",
+          "SKAO - Stichting Klimaatvriendelijk Aanbesteden & Ondernemen"
+        ]
+      }
+    },
+    "levels": {
+      "title": "De drie treden (versie 4.0, 2025)",
+      "subtitle": "De vernieuwde CO2-Prestatieladder richt zich op concrete klimaatactie en Net Zero doelen.",
+      "step1": {
+        "title": "Trede 1: Interne operaties",
+        "description": "Focus op energiebesparing en Scope 1 & 2 emissies binnen de eigen organisatie.",
+        "points": [
+          "Energiemonitoring en -besparing",
+          "Scope 1 & 2 emissie-inventarisatie",
+          "Interne reductiedoelstellingen",
+          "Bewustwording onder medewerkers"
+        ]
+      },
+      "step2": {
+        "title": "Trede 2: Waardeketen",
+        "description": "Aanpak van emissies uit kernactiviteiten. Vereist een Klimaattransitieplan.",
+        "points": [
+          "Scope 3 emissies in kaart",
+          "Klimaattransitieplan vereist",
+          "Keteninitiatieven opstarten",
+          "Sectorale samenwerking"
+        ]
+      },
+      "step3": {
+        "title": "Trede 3: Net Zero 2050",
+        "description": "Streven naar net-zero emissies over alle scopes met een kwantitatief klimaatplan.",
+        "points": [
+          "Net Zero 2050 commitment",
+          "Volledige Scope 1, 2 en 3 aanpak",
+          "Science-based targets",
+          "Externe verificatie"
+        ]
+      }
+    },
+    "howWeHelp": {
+      "title": "Hoe Helpr.ai helpt bij CO2-Prestatieladder",
+      "subtitle": "Wij vereenvoudigen het verzamelen van de benodigde informatie voor certificering.",
+      "benefits": [
+        {
+          "title": "Gestructureerde interviews",
+          "description": "AI-gestuurde interviews voor het verzamelen van footprint-gegevens en keteninfo."
+        },
+        {
+          "title": "Automatische mapping",
+          "description": "Verzamelde data wordt automatisch gekoppeld aan ladder-eisen per trede."
+        },
+        {
+          "title": "Ketenanalyse ondersteuning",
+          "description": "Hulp bij het in kaart brengen van Scope 3 emissies in je waardeketen."
+        },
+        {
+          "title": "Audit-ready rapportages",
+          "description": "Voortgangsrapportages die direct bruikbaar zijn voor audits en reviews."
+        }
+      ]
+    },
+    "process": {
+      "title": "Het certificeringsproces met Helpr.ai",
+      "step1": {
+        "title": "AI Interview",
+        "description": "Beantwoord vragen over je energieverbruik, emissies en duurzaamheidsinitiatieven."
+      },
+      "step2": {
+        "title": "Automatische structurering",
+        "description": "Je input wordt gestructureerd volgens de eisen van de CO2-Prestatieladder."
+      },
+      "step3": {
+        "title": "Audit-ready documentatie",
+        "description": "Ontvang complete documentatie voor je certificeringsaudit."
+      }
+    },
+    "finalCta": {
+      "title": "Klaar voor je CO2-Prestatieladder certificering?",
+      "description": "Ontdek hoe Helpr.ai je kan helpen om sneller en effectiever te certificeren.",
+      "button": "Vraag een demo aan"
+    }
+  },
+  "iso9001Page": {
+    "hero": {
+      "badge": "Kwaliteitsmanagement certificering",
+      "title": "ISO 9001 certificering",
+      "description": "De internationale standaard voor kwaliteitsmanagementsystemen. Helpr.ai maakt certificering sneller en effectiever."
+    },
+    "cta": {
+      "primary": "Start je certificering",
+      "secondary": "Meer informatie"
+    },
+    "stats": {
+      "certified": "gecertificeerde organisaties",
+      "countries": "landen wereldwijd",
+      "standard": "meest gebruikte ISO standaard",
+      "years": "jaar bewezen succes"
+    },
+    "about": {
+      "title": "Wat is ISO 9001?",
+      "description": "ISO 9001 is de internationale standaard voor kwaliteitsmanagementsystemen (QMS). Het helpt organisaties om consistent hoogwaardige producten en diensten te leveren die voldoen aan klant- en regelgevingseisen.",
+      "points": [
+        "Verbetert klanttevredenheid door consistente kwaliteit",
+        "Verhoogt operationele efficiëntie en vermindert verspilling",
+        "Creëert een cultuur van continue verbetering",
+        "Vergroot marktgeloofwaardigheid en concurrentievoordeel",
+        "Vereist voor veel aanbestedingen en samenwerkingen"
+      ],
+      "benefits": {
+        "title": "Voordelen van certificering",
+        "items": [
+          "Hogere klanttevredenheid",
+          "Verbeterde procesefficiëntie",
+          "Minder fouten en herwerk",
+          "Sterkere marktpositie",
+          "Betere risicobeheersing"
+        ]
+      }
+    },
+    "requirements": {
+      "title": "Certificeringsvereisten",
+      "subtitle": "ISO 9001 vereist een uitgebreid kwaliteitsmanagementsysteem met de volgende elementen.",
+      "items": [
+        {
+          "title": "Context organisatie",
+          "description": "Identificeer interne/externe factoren en stakeholders die het QMS beïnvloeden."
+        },
+        {
+          "title": "Leiderschap",
+          "description": "Commitment van topmanagement, kwaliteitsbeleid en rollen/verantwoordelijkheden."
+        },
+        {
+          "title": "Planning",
+          "description": "Risico's en kansen, kwaliteitsdoelstellingen en plannen om deze te bereiken."
+        },
+        {
+          "title": "Ondersteuning",
+          "description": "Resources, competenties, bewustzijn, communicatie en gedocumenteerde informatie."
+        },
+        {
+          "title": "Uitvoering",
+          "description": "Operationele planning, productrealisatie en controle van geleverde producten/diensten."
+        },
+        {
+          "title": "Prestatie-evaluatie",
+          "description": "Monitoring, meting, interne audits en managementreview."
+        },
+        {
+          "title": "Verbetering",
+          "description": "Continue verbetering, non-conformiteiten en correctieve maatregelen."
+        },
+        {
+          "title": "Klantgerichtheid",
+          "description": "Focus op klanttevredenheid en het voldoen aan klantverwachtingen."
+        }
+      ]
+    },
+    "challenges": {
+      "title": "Waarom is certificering zo tijdrovend?",
+      "items": [
+        "Uitgebreide documentatie van alle processen en procedures",
+        "Training van personeel over nieuwe werkwijzen",
+        "Implementatie van meetbare kwaliteitsdoelstellingen",
+        "Interne audits en continue monitoring opzetten",
+        "Voorbereiding op externe certificeringsaudit",
+        "Consistente naleving door alle afdelingen"
+      ]
+    },
+    "howWeHelp": {
+      "title": "Hoe Helpr.ai helpt bij ISO 9001",
+      "subtitle": "Wij vereenvoudigen het certificeringsproces van maanden naar weken.",
+      "benefits": [
+        {
+          "title": "Geautomatiseerde documentatie",
+          "description": "AI-interviews genereren automatisch procesbeschrijvingen en kwaliteitshandboeken."
+        },
+        {
+          "title": "Gap analyse",
+          "description": "Real-time overzicht van voortgang per ISO 9001 vereiste en ontbrekende onderdelen."
+        },
+        {
+          "title": "Audit voorbereiding",
+          "description": "Gestructureerde bewijsverzameling en audit-ready documentatie voor certificering."
+        }
+      ]
+    },
+    "process": {
+      "title": "Het certificeringsproces met Helpr.ai",
+      "step1": {
+        "title": "AI Interview",
+        "description": "Beantwoord vragen over je huidige processen, kwaliteitsmaatregelen en organisatiestructuur."
+      },
+      "step2": {
+        "title": "Automatische documentatie",
+        "description": "AI genereert kwaliteitshandboek, procesbeschrijvingen en werkwijzen op basis van je input."
+      },
+      "step3": {
+        "title": "Review en certificering",
+        "description": "Controleer documenten, bereid je voor op de audit en behaal je certificering."
+      }
+    },
+    "finalCta": {
+      "title": "Klaar voor je ISO 9001 certificering?",
+      "description": "Ontdek hoe Helpr.ai je kan helpen om sneller en effectiever te certificeren.",
+      "button": "Vraag een demo aan"
+    }
+  },
+  "comingSoon": {
+    "badge": "Binnenkort beschikbaar",
+    "notify": {
+      "title": "Als eerste op de hoogte?",
+      "description": "Laat je gegevens achter en wij informeren je zodra deze standaard beschikbaar is op het Helpr.ai platform.",
+      "button": "Neem contact op"
+    },
+    "available": {
+      "title": "Nu al beschikbaar",
+      "subtitle": "Start vandaag met een van onze beschikbare certificeringsprogramma's."
+    }
+  },
+  "iso27001Coming": {
+    "hero": {
+      "description": "De internationale standaard voor informatiebeveiliging. Bescherm gevoelige bedrijfsinformatie en klantdata met een systematische aanpak."
+    },
+    "about": {
+      "title": "Wat is ISO 27001?",
+      "description": "ISO 27001 is de internationale standaard voor Information Security Management Systems (ISMS). Het helpt organisaties om informatie systematisch te beschermen door risico's te identificeren, te beheersen en continu te verbeteren.",
+      "points": [
+        "Beschermt vertrouwelijke bedrijfsinformatie en klantdata",
+        "Vereist door veel klanten en partners in digitale sectoren",
+        "Vermindert risico op datalekken en cybersecurity-incidenten",
+        "Verhoogt vertrouwen bij klanten en stakeholders",
+        "Compliance met privacywetgeving zoals AVG"
+      ],
+      "helprTitle": "Helpr.ai voor ISO 27001",
+      "helprDescription": "We werken aan ondersteuning voor ISO 27001 certificering. Met AI-gestuurde interviews verzamelen we informatie over je IT-omgeving, beveiligingsmaatregelen en risicolandschap om automatisch ISMS-documentatie te genereren."
+    }
+  },
+  "iso14001Coming": {
+    "hero": {
+      "description": "De internationale standaard voor milieumanagementsystemen. Verminder je ecologische voetafdruk en voldoe aan milieuwetgeving."
+    },
+    "about": {
+      "title": "Wat is ISO 14001?",
+      "description": "ISO 14001 is de internationale standaard voor Environmental Management Systems (EMS). Het helpt organisaties om hun milieueffecten te beheersen, te verminderen en continu te verbeteren.",
+      "points": [
+        "Vermindert milieueffecten en ecologische voetafdruk",
+        "Zorgt voor compliance met milieuwetgeving",
+        "Bespaart kosten door efficiënter gebruik van grondstoffen",
+        "Verbetert reputatie bij milieubewuste klanten",
+        "Sluit aan bij duurzaamheidsdoelstellingen"
+      ],
+      "helprTitle": "Helpr.ai voor ISO 14001",
+      "helprDescription": "We werken aan ondersteuning voor ISO 14001 certificering. Met AI-gestuurde interviews verzamelen we informatie over je milieuaspecten, wetgevingseisen en duurzaamheidsinitiatieven om automatisch EMS-documentatie te genereren."
+    }
+  },
+  "iso42001Coming": {
+    "hero": {
+      "description": "De eerste internationale standaard voor AI management. Implementeer verantwoorde AI met een gestructureerd governance framework."
+    },
+    "about": {
+      "title": "Wat is ISO 42001?",
+      "description": "ISO 42001 is de eerste internationale standaard voor Artificial Intelligence Management Systems (AIMS). Het biedt een framework voor organisaties om AI-systemen verantwoord te ontwikkelen, implementeren en beheren.",
+      "points": [
+        "Bouwt vertrouwen bij stakeholders in AI-systemen",
+        "Vermindert juridische en reputatierisico's",
+        "Zorgt voor consistente AI governance",
+        "Faciliteert compliance met toekomstige AI-regulatie",
+        "Verbetert AI-systeem prestaties en betrouwbaarheid"
+      ],
+      "helprTitle": "Helpr.ai voor ISO 42001",
+      "helprDescription": "We werken aan ondersteuning voor ISO 42001 certificering. Met AI-gestuurde interviews verzamelen we informatie over je AI-systemen, risico's en governance-behoeften om automatisch AIMS-documentatie te genereren."
+    }
+  },
+  "partners": {
+    "nav": "Partners",
+    "hero": {
+      "badge": "Onze Partners",
+      "title": "Samen bouwen aan de toekomst van certificering",
+      "description": "Helpr.ai werkt samen met toonaangevende consultancybureaus die vooroplopen in ISO- en duurzaamheidscertificering."
+    },
+    "showcase": {
+      "title": "Met wie we samenwerken",
+      "subtitle": "Onze partners zijn ervaren consultancybureaus die Helpr.ai inzetten om hun klanten sneller en beter te bedienen.",
+      "partner1": {
+        "description": "Specialist in ISO-certificeringen voor MKB-bedrijven. Begeleidt organisaties van A tot Z naar succesvolle certificering."
+      },
+      "partner2": {
+        "description": "Expert in duurzaamheid en CO2-reductie. Helpt organisaties bij het behalen van de CO2-Prestatieladder certificering."
+      },
+      "visitWebsite": "Bezoek website",
+      "sustainability": "Duurzaamheid"
+    },
+    "collaboration": {
+      "title": "Hoe we samenwerken",
+      "subtitle": "Een heldere taakverdeling zorgt voor optimale resultaten.",
+      "helpr": {
+        "title": "Wat Helpr.ai doet",
+        "points": [
+          "AI-gestuurde interviews voor dataverzameling",
+          "Automatische generatie van audit-ready documentatie",
+          "Consistente en herhaalbare processen",
+          "Technische ondersteuning en platform updates"
+        ]
+      },
+      "partners": {
+        "title": "Wat onze partners doen",
+        "points": [
+          "Inhoudelijke begeleiding van klanten",
+          "Interpretatie van normen en vereisten",
+          "Validatie en kwaliteitscontrole",
+          "Auditvoorbereiding en advies"
+        ]
+      }
+    },
+    "cta": {
+      "title": "Ook partner worden?",
+      "description": "Ben je een consultancybureau en wil je samenwerken met Helpr.ai? Neem contact met ons op.",
+      "button": "Neem contact op",
+      "email": "E-mail"
+    }
+  },
+  "customers": {
+    "nav": "Voor klanten",
+    "hero": {
+      "title": "Samen met onze partners: certificering goed geregeld",
+      "subtitle": "Helpr.ai werkt samen met ervaren consultancypartners om certificeringstrajecten slimmer, sneller en consistenter te laten verlopen, zonder in te leveren op kwaliteit.",
+      "intro": "Certificering draait niet alleen om normen en documenten, maar om context, keuzes en richting kiezen. Daarom combineren we bij Helpr.ai technologie met inhoudelijke begeleiding door gespecialiseerde partners."
+    },
+    "howItWorks": {
+      "title": "Hoe werkt dit voor jou als organisatie?",
+      "intro": "Als klant werk je bij Helpr.ai altijd samen met een erkende consultancypartner. Helpr.ai levert de software die dataverzameling en documentatie structureert. Onze partners begeleiden het traject inhoudelijk en zorgen dat alles klopt richting audit.",
+      "points": [
+        "Een geintegreerd traject",
+        "Geen losse tooling",
+        "Geen self-service certificering"
+      ]
+    },
+    "roles": {
+      "title": "Heldere rolverdeling, een gezamenlijk resultaat",
+      "helpr": {
+        "title": "Helpr.ai",
+        "points": [
+          "Gestructureerde interviews om kennis op te halen",
+          "Automatische vertaling naar audit-ready documentatie",
+          "Consistente formats en herbruikbare output",
+          "Minder handwerk en minder herhaling"
+        ]
+      },
+      "partner": {
+        "title": "Onze partners",
+        "points": [
+          "Inhoudelijke interpretatie van normen",
+          "Begeleiding bij keuzes en prioriteiten",
+          "Validatie en kwaliteitscontrole",
+          "Begeleiding richting audit"
+        ]
+      },
+      "result": {
+        "title": "Het resultaat voor jou als klant",
+        "description": "Een efficient en grondig certificeringstraject van hoge kwaliteit, met minder doorlooptijd, minder administratieve last, en tegen een scherpere prijs dan traditionele trajecten."
+      }
+    },
+    "alwaysPartner": {
+      "title": "Altijd begeleiding via een partner",
+      "intro": "Helpr.ai wordt nooit 'los' ingezet. Ook wanneer je Helpr.ai direct benadert, werken we altijd via een van onze partners.",
+      "conclusion": "Helpr.ai is het platform. Onze partners zijn jouw adviseur."
+    },
+    "partners": {
+      "title": "Onze partners",
+      "intro": "We werken samen met ervaren consultancypartners die jouw certificeringstraject begeleiden.",
+      "coning": {
+        "name": "Coning Adviesgroep",
+        "description": "Specialist in kwaliteitsmanagement en ISO-certificeringen voor MKB en grotere organisaties.",
+        "expertise": "CO2-Prestatieladder, ISO 9001, ISO 14001"
+      },
+      "certificeringsadvies": {
+        "name": "Certificeringsadvies Nederland",
+        "description": "Expert in certificeringstrajecten met focus op pragmatische implementatie en duurzame resultaten.",
+        "expertise": "ISO 9001, ISO 27001"
+      },
+      "startButton": "Start traject"
+    },
+    "cta": {
+      "title": "Wil je weten welke partner het beste past bij jouw organisatie?",
+      "description": "Neem contact op en we helpen je aan de juiste partner voor jouw certificeringstraject.",
+      "button": "Start jouw certificeringstraject"
+    }
+  },
+  "startForm": {
+    "badge": "Start je traject",
+    "title": "Start je certificeringstraject",
+    "subtitle": "Vul het formulier in en we koppelen je aan de juiste consultancypartner voor jouw organisatie.",
+    "formTitle": "Aanvraagformulier",
+    "formSubtitle": "We nemen binnen 1 werkdag contact op",
+    "form": {
+      "name": "Naam",
+      "namePlaceholder": "Jouw volledige naam",
+      "email": "E-mailadres",
+      "emailPlaceholder": "jouw{'@'}email.nl",
+      "phone": "Telefoonnummer",
+      "phonePlaceholder": "+31 6 12345678",
+      "company": "Organisatie",
+      "companyPlaceholder": "Naam van je organisatie",
+      "certification": "Gewenste certificering",
+      "certificationPlaceholder": "Selecteer een certificering",
+      "message": "Toelichting",
+      "messagePlaceholder": "Vertel ons meer over je situatie, doelen of vragen...",
+      "submit": "Verstuur aanvraag",
+      "privacy": "Door dit formulier te versturen ga je akkoord met ons privacybeleid."
+    },
+    "benefits": {
+      "fast": {
+        "title": "Snelle reactie",
+        "description": "Binnen 1 werkdag nemen we contact op"
+      },
+      "partner": {
+        "title": "Juiste partner",
+        "description": "We koppelen je aan een passende consultant"
+      },
+      "quality": {
+        "title": "Kwaliteitsgarantie",
+        "description": "Ervaren partners met bewezen track record"
+      }
+    }
+  },
+  "productPage": {
+    "nav": {
+      "features": "Functies",
+      "co2": "CO2-Prestatieladder",
+      "standards": "Standaarden"
+    },
+    "hero": {
+      "badge": "AI-gestuurde certificering",
+      "title": "Certification made easy",
+      "subtitle": "Helpr.ai vereenvoudigt certificeringstrajecten door AI-gestuurde interviews om te zetten in audit-ready documentatie. Sneller, nauwkeuriger en voordeliger.",
+      "learnMore": "Meer informatie"
+    },
+    "howItWorks": {
+      "title": "Hoe werkt Helpr.ai?",
+      "subtitle": "Drie eenvoudige stappen van interview naar certificering-ready documentatie.",
+      "step1": {
+        "title": "AI Interview",
+        "description": "Onze AI-consultant voert gestructureerde interviews met de juiste medewerkers in je organisatie.",
+        "points": [
+          "Spraakgestuurde interviews in natuurlijke taal",
+          "Automatische follow-up vragen voor diepgang",
+          "Flexibel in te plannen per medewerker",
+          "Geen voorbereiding nodig"
+        ]
+      },
+      "step2": {
+        "title": "Automatisch structureren",
+        "description": "De verzamelde informatie wordt automatisch gestructureerd volgens de vereisten van de certificeringsnorm.",
+        "points": [
+          "Mapping naar normhoofdstukken",
+          "Identificatie van gaps en ontbrekende informatie",
+          "Consistentiecontrole over alle interviews",
+          "Real-time voortgangsinzicht"
+        ]
+      },
+      "step3": {
+        "title": "Export naar documentatie",
+        "description": "Genereer audit-ready documentatie die direct in je managementsysteem past.",
+        "points": [
+          "Export naar Word, PDF of direct naar SharePoint",
+          "Klaar voor review door consultant",
+          "Voldoet aan audit-eisen",
+          "Eenvoudig te updaten bij wijzigingen"
+        ]
+      }
+    },
+    "co2": {
+      "badge": "Duurzaamheidscertificering",
+      "title": "CO2-Prestatieladder certificering",
+      "subtitle": "De CO2-Prestatieladder is het belangrijkste instrument voor duurzaam inkopen in Nederland. Helpr.ai maakt certificering eenvoudiger en effectiever.",
+      "what": {
+        "title": "Wat is de CO2-Prestatieladder?",
+        "description": "De CO2-Prestatieladder is een certificeringssysteem dat organisaties stimuleert om CO2-uitstoot te verminderen. Het wordt erkend door de OESO, IPCC en het World Economic Forum als best practice voor duurzaam inkopen.",
+        "points": [
+          "Gunningsvoordeel bij aanbestedingen tot 10% fictieve korting",
+          "Erkend door 300+ overheden en publieke opdrachtgevers",
+          "Gecertificeerde organisaties reduceren CO2 twee keer zo snel",
+          "75% van certificaathouders zijn MKB-bedrijven",
+          "Uitbreiding naar Frankrijk, Duitsland, Ierland, Portugal en UK"
+        ]
+      },
+      "stats": {
+        "organizations": "gecertificeerde organisaties",
+        "authorities": "deelnemende overheden",
+        "reduction": "snellere CO2-reductie"
+      },
+      "levels": {
+        "title": "De drie treden (versie 4.0, 2025)",
+        "step1": {
+          "title": "Trede 1: Interne operaties",
+          "description": "Focus op energiebesparing en Scope 1 & 2 emissies binnen de eigen organisatie. Vergelijkbaar met het voormalige niveau 3."
+        },
+        "step2": {
+          "title": "Trede 2: Waardeketen",
+          "description": "Aanpak van emissies uit kernactiviteiten. Vereist een Klimaattransitieplan. Vergelijkbaar met het voormalige niveau 5."
+        },
+        "step3": {
+          "title": "Trede 3: Net Zero 2050",
+          "description": "Streven naar net-zero emissies over alle scopes. Vereist een kwantitatief Klimaattransitieplan voor Scope 1, 2, 3 en buiten-grens emissies."
+        }
+      },
+      "howWeHelp": {
+        "title": "Hoe Helpr.ai helpt bij CO2-Prestatieladder",
+        "subtitle": "Wij vereenvoudigen het verzamelen van de benodigde informatie voor certificering.",
+        "benefits": [
+          "Gestructureerde interviews voor footprint-gegevens",
+          "Automatische mapping naar ladder-eisen",
+          "Ondersteuning bij ketenanalyses",
+          "Voortgangsrapportages voor audits"
+        ]
+      }
+    },
+    "standards": {
+      "title": "Ondersteunde standaarden",
+      "subtitle": "Helpr.ai ondersteunt meerdere certificeringsnormen en breidt continu uit.",
+      "available": "Beschikbaar",
+      "coming": "Binnenkort",
+      "iso9001": "Kwaliteitsmanagementsysteem voor consistente producten en diensten.",
+      "co2": "Certificering voor CO2-reductie en duurzaam ondernemen.",
+      "iso27001": "Informatiebeveiliging en bescherming van gevoelige data.",
+      "iso14001": "Milieumanagementsysteem voor duurzame bedrijfsvoering."
+    },
+    "cta": {
+      "title": "Klaar om te starten?",
+      "description": "Begin vandaag nog met je certificeringstraject. Wij koppelen je aan de juiste partner.",
+      "button": "Start je traject"
+    }
+  },
+  "about": {
+    "nav": "Over ons",
+    "hero": {
+      "badge": "Maak kennis met ons team",
+      "titleHighlight": "For the love of",
+      "titleRest": "Applied AI",
+      "description": "Bij Helpr.ai overbruggen we de kloof tussen complexe bedrijfsvraagstukken en de kracht van toegepaste AI. Wij geloven dat technologie het meest waardevol is wanneer het de mens ontlast van repetitief basiswerk, zodat expertise weer de ruimte krijgt."
+    },
+    "mission": {
+      "title": "Onze missie",
+      "quote": "We capture what people say and turn it into what auditors need.",
+      "description": "Het verzamelen van de juiste informatie binnen een organisatie is vaak een hoofdpijndossier: data zit verspreid over verschillende mensen, afdelingen en documenten. Helpr.ai automatiseert dit proces door middel van gestructureerde AI-interviews. Wij luisteren, extraheren de essentie en zetten gesprekken om in gestructureerde, audit-ready documentatie."
+    },
+    "team": {
+      "title": "Het Team",
+      "subtitle": "Samen werken we aan de toekomst van compliance automatisering.",
+      "jorien": {
+        "name": "Jorien Knevel",
+        "role": "The Human side of change",
+        "description": "Jorien richt zich op de menselijke kant van technologische transitie. Met haar ervaring zorgt zij ervoor dat de implementatie van AI niet alleen technisch klopt, maar ook daadwerkelijk landt binnen de organisatie."
+      },
+      "jaap": {
+        "name": "Jaap Koelewijn",
+        "role": "AI Impact builder",
+        "description": "Jaap is de drijvende kracht achter het bouwen van oplossingen die direct resultaat leveren. Hij vertaalt complexe visies naar praktische AI-toepassingen die de dagelijkse praktijk van consultants en klanten verbeteren."
+      },
+      "erik": {
+        "name": "Erik Methorst",
+        "role": "AI & Data Specialist",
+        "description": "Erik is de expert op het gebied van de onderliggende data en techniek. Hij zorgt ervoor dat de AI-interviews leiden tot consistente, herhaalbare en technisch hoogwaardige output waar auditors op kunnen bouwen."
+      }
+    },
+    "cta": {
+      "title": "Klaar voor de volgende stap?",
+      "description": "Helpr.ai vervangt de consultant niet, maar automatiseert het voorwerk zodat jij sneller en slimmer kunt werken.",
+      "button": "Vraag een demo aan",
+      "secondaryButton": "Bekijk het product"
+    }
+  },
+  "consultants": {
+    "nav": "Voor Consultants",
+    "hero": {
+      "badge": "AI-Transformatie voor Consultancies",
+      "titlePart1": "Van Uren naar",
+      "titleHighlight": "Waarde:",
+      "titlePart2": "De AI-Transformatie voor Consultancybureaus",
+      "description": "Stap in 3 dagen over van handmatige dataverzameling naar hoogwaardige, door AI ondersteunde waardecreatie.",
+      "cta": "Plan een Transformatie Sessie",
+      "ctaSecondary": "Bekijk het programma"
+    },
+    "product": {
+      "badge": "Het Platform",
+      "title": "Hoe consultants het platform gebruiken",
+      "subtitle": "Helpr.ai neemt het repetitieve interviewwerk uit handen, zodat jij je kunt focussen op advies en kwaliteitscontrole.",
+      "step1": {
+        "title": "Nodig klantmedewerkers uit",
+        "description": "Stuur vanuit het dashboard een uitnodiging naar de relevante medewerkers bij je klant. Zij ontvangen een link naar hun persoonlijke AI-interview."
+      },
+      "step2": {
+        "title": "AI voert het interview",
+        "description": "De AI-interviewer stelt contextuele vragen over processen, risico's en beleid. Medewerkers antwoorden in hun eigen tempo, via spraak of tekst."
+      },
+      "step3": {
+        "title": "Review en exporteer",
+        "description": "Bekijk de gestructureerde output in het dashboard. Valideer, pas aan waar nodig, en exporteer audit-ready documentatie naar je managementsysteem."
+      },
+      "features": [
+        "Geen handmatige transcripties meer",
+        "Consistente interviewkwaliteit",
+        "Real-time voortgangsinzicht",
+        "White-label mogelijkheid",
+        "Meerdere normen ondersteund",
+        "Veilige dataopslag",
+        "Export naar Word/PDF",
+        "Onbeperkt interviews"
+      ]
+    },
+    "pillars": {
+      "title": "De Drie Pijlers van Transformatie",
+      "subtitle": "Ontdek hoe AI je consultancybureau fundamenteel verandert.",
+      "pillar1": {
+        "title": "Value Based Pricing",
+        "description": "Omdat AI de benodigde tijd drastisch verkort, stappen we af van uurtje-factuurtje. Factureer op basis van de waarde van het resultaat en de snelheid van levering."
+      },
+      "pillar2": {
+        "title": "AI-gestuurde Certificering",
+        "description": "Vervang repeterend werk (zoals ISO of CO2-prestatieladder trajecten) door AI-interviews die ongestructureerde data direct mappen naar de norm."
+      },
+      "pillar3": {
+        "title": "De Consultant als Expert",
+        "description": "De focus verschuift van tijdrovende dataverzameling naar de rol van 'Expert-Adviseur' die toeziet op kwaliteit en audit-gereedheid."
+      }
+    },
+    "program": {
+      "badge": "3-Daags Transformatieprogramma",
+      "title": "Van Traditioneel naar AI-Gedreven",
+      "subtitle": "Een intensief traject waarin we je organisatie transformeren naar een moderne, AI-ondersteunde werkwijze.",
+      "dayLabel": "Dag",
+      "day1": {
+        "title": "Strategische Herpositionering",
+        "description": "Definiëren van echte klantwaarde en afscheid nemen van de uren-logica.",
+        "items": [
+          "Analyse van je huidige businessmodel",
+          "Definiëren van waarde-proposities",
+          "Interne cultuur meenemen in de transitie",
+          "Nieuwe pricing-strategieën ontwikkelen"
+        ]
+      },
+      "day2": {
+        "title": "Operationele Integratie",
+        "description": "Hands-on training in het Helpr.ai platform en het vastleggen van de nieuwe klantreis.",
+        "items": [
+          "Platform training en certificering",
+          "Inrichten van validatie-flows",
+          "Integratie met bestaande processen",
+          "Nieuwe klantreis documenteren"
+        ]
+      },
+      "day3": {
+        "title": "Schaalvergroting",
+        "description": "Capaciteitsoptimalisatie en het lanceren van een unieke marktpropositie.",
+        "items": [
+          "3x tot 5x meer klanten bedienen",
+          "Marktpropositie ontwikkelen",
+          "Lanceringsplan opstellen",
+          "Geen handmatig schrijfwerk meer"
+        ]
+      }
+    },
+    "why": {
+      "title": "Waarom Helpr.ai?",
+      "description": "De consultant wordt niet vervangen, maar krijgt 'superkrachten'. De consultant adviseert op hoog niveau; Helpr.ai doet de rest.",
+      "point1": {
+        "title": "Superkrachten voor Consultants",
+        "description": "AI neemt het repetitieve werk over, zodat jij je kunt focussen op strategisch advies en klantrelaties."
+      },
+      "point2": {
+        "title": "Schaalbare Groei",
+        "description": "Bedien 3 tot 5 keer meer klanten zonder extra personeel aan te nemen."
+      },
+      "point3": {
+        "title": "Hogere Marges",
+        "description": "Value-based pricing betekent betere marges en meer waardering voor je expertise."
+      },
+      "visual": {
+        "title": "Jouw Transformatie",
+        "clients": "Meer klanten",
+        "time": "Minder tijd per traject",
+        "quality": "Audit-ready kwaliteit"
+      }
+    },
+    "cta": {
+      "title": "Klaar voor je AI-Transformatie?",
+      "subtitle": "Plan een sessie en ontdek hoe je consultancybureau kan groeien met AI.",
+      "form": {
+        "name": "Naam",
+        "namePlaceholder": "Je volledige naam",
+        "email": "E-mailadres",
+        "emailPlaceholder": "naam{'@'}consultancy.nl",
+        "company": "Consultancybureau",
+        "companyPlaceholder": "Naam van je bureau",
+        "message": "Vertel ons over je situatie (optioneel)",
+        "messagePlaceholder": "Welke uitdagingen ervaar je momenteel?",
+        "submit": "Plan Transformatie Sessie",
+        "privacy": "We nemen binnen 24 uur contact met je op."
+      }
+    }
+  }
+}
