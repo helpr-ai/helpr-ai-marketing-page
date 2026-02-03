@@ -245,6 +245,86 @@
               </div>
             </a>
           </div>
+
+          <!-- Van Houten & Partners -->
+          <div
+            ref="partner3Reveal.element"
+            :class="[
+              'group opacity-0',
+              { 'animate-reveal-up': partner3Reveal.isVisible }
+            ]"
+          >
+            <a
+              href="https://www.vanhouten.nl/"
+              target="_blank"
+              rel="noopener"
+              class="block bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden hover:shadow-2xl transition-all duration-500 hover:scale-[1.02]"
+            >
+              <div class="p-8 flex flex-col items-center text-center">
+                <div class="bg-gray-50 rounded-2xl p-6 mb-6 group-hover:bg-indigo-50 transition-colors">
+                  <img
+                    src="~/assets/images/logos/logo_van_houten_en_partners.svg"
+                    alt="Van Houten & Partners"
+                    class="h-16 w-auto"
+                  />
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-3">Van Houten & Partners</h3>
+                <p class="text-gray-600 leading-7 mb-4">
+                  {{ $t('partners.showcase.partner3.description') }}
+                </p>
+                <div class="flex flex-wrap gap-2 justify-center">
+                  <span class="inline-flex items-center rounded-full bg-indigo-100 px-3 py-1 text-xs font-medium text-indigo-700">ISO 9001</span>
+                  <span class="inline-flex items-center rounded-full bg-indigo-100 px-3 py-1 text-xs font-medium text-indigo-700">ISO 14001</span>
+                  <span class="inline-flex items-center rounded-full bg-indigo-100 px-3 py-1 text-xs font-medium text-indigo-700">ISO 27001</span>
+                  <span class="inline-flex items-center rounded-full bg-emerald-100 px-3 py-1 text-xs font-medium text-emerald-700">CO₂-Prestatieladder</span>
+                </div>
+                <div class="mt-6 flex items-center text-indigo-600 font-medium group-hover:text-indigo-700">
+                  {{ $t('partners.showcase.visitWebsite') }}
+                  <ArrowTopRightOnSquareIcon class="ml-2 h-4 w-4" />
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Team Kikk -->
+          <div
+            ref="partner4Reveal.element"
+            :class="[
+              'group opacity-0',
+              { 'animate-reveal-up': partner4Reveal.isVisible }
+            ]"
+          >
+            <a
+              href="https://www.teamkikk.nl/"
+              target="_blank"
+              rel="noopener"
+              class="block bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden hover:shadow-2xl transition-all duration-500 hover:scale-[1.02]"
+            >
+              <div class="p-8 flex flex-col items-center text-center">
+                <div class="bg-gray-50 rounded-2xl p-6 mb-6 group-hover:bg-indigo-50 transition-colors">
+                  <img
+                    src="~/assets/images/logos/logo_team_kikk.png"
+                    alt="Team Kikk"
+                    class="h-16 w-auto"
+                  />
+                </div>
+                <h3 class="text-2xl font-bold text-gray-900 mb-3">Team Kikk</h3>
+                <p class="text-gray-600 leading-7 mb-4">
+                  {{ $t('partners.showcase.partner4.description') }}
+                </p>
+                <div class="flex flex-wrap gap-2 justify-center">
+                  <span class="inline-flex items-center rounded-full bg-indigo-100 px-3 py-1 text-xs font-medium text-indigo-700">ISO 9001</span>
+                  <span class="inline-flex items-center rounded-full bg-indigo-100 px-3 py-1 text-xs font-medium text-indigo-700">ISO 14001</span>
+                  <span class="inline-flex items-center rounded-full bg-indigo-100 px-3 py-1 text-xs font-medium text-indigo-700">ISO 27001</span>
+                  <span class="inline-flex items-center rounded-full bg-purple-100 px-3 py-1 text-xs font-medium text-purple-700">VCA</span>
+                </div>
+                <div class="mt-6 flex items-center text-indigo-600 font-medium group-hover:text-indigo-700">
+                  {{ $t('partners.showcase.visitWebsite') }}
+                  <ArrowTopRightOnSquareIcon class="ml-2 h-4 w-4" />
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -411,6 +491,8 @@ const { createRevealElement } = useReveal()
 const heroReveal = createRevealElement()
 const partner1Reveal = createRevealElement()
 const partner2Reveal = createRevealElement()
+const partner3Reveal = createRevealElement()
+const partner4Reveal = createRevealElement()
 const collab1Reveal = createRevealElement()
 const collab2Reveal = createRevealElement()
 const ctaReveal = createRevealElement()

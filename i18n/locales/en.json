@@ -1061,6 +1061,12 @@
       "partner2": {
         "description": "Expert in sustainability and CO2 reduction. Helps organizations achieve CO2 Performance Ladder certification."
       },
+      "partner3": {
+        "description": "Certification without worries. Specializes in ISO, VCA, and CO2 Performance Ladder with a guaranteed approach and fixed pricing."
+      },
+      "partner4": {
+        "description": "Fast, affordable, and stress-free certification. Helps mid-sized businesses achieve ISO, VCA, and HACCP compliance."
+      },
       "visitWebsite": "Visit website",
       "sustainability": "Sustainability"
     },
