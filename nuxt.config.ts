@@ -3,8 +3,14 @@ export default defineNuxtConfig({
   ssr: true,
   nitro: {
     prerender: {
-      crawlLinks: false,
-      routes: ['/']
+      crawlLinks: true,
+      routes: [
+        '/',
+        '/sitemap.xml',
+        '/sitemap_index.xml',
+        '/__sitemap__/nl-NL.xml',
+        '/__sitemap__/en-GB.xml'
+      ]
     },
     routeRules: {
       '/normen/**': {
