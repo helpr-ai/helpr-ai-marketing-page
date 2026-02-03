@@ -14,7 +14,23 @@ export default defineNuxtConfig({
       }
     }
   },
-  modules: ['@nuxtjs/i18n'],
+  modules: ['@nuxtjs/i18n', '@nuxtjs/sitemap'],
+  site: {
+    url: 'https://helpr.ai'
+  },
+  sitemap: {
+    autoI18n: true,
+    exclude: [
+      '/nl/succes',
+      '/en/success',
+      '/normen/**'
+    ],
+    defaults: {
+      changefreq: 'weekly',
+      priority: 0.8,
+      lastmod: new Date().toISOString()
+    }
+  },
   i18n: {
     locales: [
       { code: 'nl', iso: 'nl-NL', name: 'Nederlands', file: 'nl.json' },
