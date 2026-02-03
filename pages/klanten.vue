@@ -78,7 +78,7 @@
           </div>
 
           <!-- Partner Logos -->
-          <div class="flex items-center justify-center gap-6 mb-8">
+          <div class="flex items-center justify-center gap-4 mb-8 flex-wrap">
             <div class="bg-white rounded-2xl px-5 py-3 shadow-lg">
               <img
                 src="~/assets/images/logos/helpr-ai-logo.svg"
@@ -99,6 +99,20 @@
                 src="~/assets/images/logos/coning_logo.png"
                 alt="Coning Adviesgroep"
                 class="h-10 w-auto"
+              />
+            </div>
+            <div class="bg-white rounded-2xl px-4 py-3 shadow-lg">
+              <img
+                src="~/assets/images/logos/logo_van_houten_en_partners.svg"
+                alt="Van Houten & Partners"
+                class="h-8 w-auto"
+              />
+            </div>
+            <div class="bg-white rounded-2xl px-4 py-3 shadow-lg">
+              <img
+                src="~/assets/images/logos/logo_team_kikk.svg"
+                alt="Team Kikk"
+                class="h-8 w-auto"
               />
             </div>
           </div>
@@ -268,7 +282,7 @@
           </p>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           <!-- Coning -->
           <div class="bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden">
             <div class="p-8">
@@ -305,6 +319,52 @@
               <h3 class="text-xl font-bold text-gray-900 mb-2 text-center">{{ $t('customers.partners.certificeringsadvies.name') }}</h3>
               <p class="text-gray-600 mb-4 text-center">{{ $t('customers.partners.certificeringsadvies.description') }}</p>
               <p class="text-sm text-emerald-600 font-medium text-center mb-6">{{ $t('customers.partners.certificeringsadvies.expertise') }}</p>
+              <NuxtLink
+                :to="localePath('start-traject')"
+                class="w-full inline-flex items-center justify-center rounded-xl bg-emerald-600 px-6 py-3 text-sm font-semibold text-white shadow-lg hover:bg-emerald-700 transition-all"
+              >
+                {{ $t('customers.partners.startButton') }}
+                <ArrowRightIcon class="ml-2 h-4 w-4" />
+              </NuxtLink>
+            </div>
+          </div>
+
+          <!-- Van Houten & Partners -->
+          <div class="bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden">
+            <div class="p-8">
+              <div class="flex items-center justify-center mb-6 h-20">
+                <img
+                  src="~/assets/images/logos/logo_van_houten_en_partners.svg"
+                  alt="Van Houten & Partners"
+                  class="h-12 w-auto"
+                />
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2 text-center">{{ $t('customers.partners.vanhouten.name') }}</h3>
+              <p class="text-gray-600 mb-4 text-center">{{ $t('customers.partners.vanhouten.description') }}</p>
+              <p class="text-sm text-emerald-600 font-medium text-center mb-6">{{ $t('customers.partners.vanhouten.expertise') }}</p>
+              <NuxtLink
+                :to="localePath('start-traject')"
+                class="w-full inline-flex items-center justify-center rounded-xl bg-emerald-600 px-6 py-3 text-sm font-semibold text-white shadow-lg hover:bg-emerald-700 transition-all"
+              >
+                {{ $t('customers.partners.startButton') }}
+                <ArrowRightIcon class="ml-2 h-4 w-4" />
+              </NuxtLink>
+            </div>
+          </div>
+
+          <!-- Team Kikk -->
+          <div class="bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden">
+            <div class="p-8">
+              <div class="flex items-center justify-center mb-6 h-20">
+                <img
+                  src="~/assets/images/logos/logo_team_kikk.svg"
+                  alt="Team Kikk"
+                  class="h-12 w-auto"
+                />
+              </div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2 text-center">{{ $t('customers.partners.teamkikk.name') }}</h3>
+              <p class="text-gray-600 mb-4 text-center">{{ $t('customers.partners.teamkikk.description') }}</p>
+              <p class="text-sm text-emerald-600 font-medium text-center mb-6">{{ $t('customers.partners.teamkikk.expertise') }}</p>
               <NuxtLink
                 :to="localePath('start-traject')"
                 class="w-full inline-flex items-center justify-center rounded-xl bg-emerald-600 px-6 py-3 text-sm font-semibold text-white shadow-lg hover:bg-emerald-700 transition-all"

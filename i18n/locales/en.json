@@ -1158,6 +1158,16 @@
         "description": "Expert in certification projects with focus on pragmatic implementation and sustainable results.",
         "expertise": "ISO 9001, ISO 27001"
       },
+      "vanhouten": {
+        "name": "Van Houten & Partners",
+        "description": "Certification without worries. Specializes in ISO, VCA, and CO2 Performance Ladder with a guaranteed approach and fixed pricing.",
+        "expertise": "ISO 9001, ISO 14001, ISO 27001, CO₂ Performance Ladder"
+      },
+      "teamkikk": {
+        "name": "Team Kikk",
+        "description": "Fast, affordable, and stress-free certification. Helps mid-sized businesses achieve ISO, VCA, and HACCP compliance.",
+        "expertise": "ISO 9001, ISO 14001, ISO 27001, VCA"
+      },
       "startButton": "Start project"
     },
     "cta": {

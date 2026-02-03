@@ -1158,6 +1158,16 @@
         "description": "Expert in certificeringstrajecten met focus op pragmatische implementatie en duurzame resultaten.",
         "expertise": "ISO 9001, ISO 27001"
       },
+      "vanhouten": {
+        "name": "Van Houten & Partners",
+        "description": "Certificering zonder zorgen. Gespecialiseerd in ISO, VCA en CO2-Prestatieladder met een gegarandeerde aanpak en vaste prijzen.",
+        "expertise": "ISO 9001, ISO 14001, ISO 27001, CO₂-Prestatieladder"
+      },
+      "teamkikk": {
+        "name": "Team Kikk",
+        "description": "Vlot, betaalbaar en stressvrij certificeren. Helpt MKB-bedrijven bij ISO, VCA en HACCP compliance.",
+        "expertise": "ISO 9001, ISO 14001, ISO 27001, VCA"
+      },
       "startButton": "Start traject"
     },
     "cta": {
