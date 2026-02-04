@@ -110,7 +110,7 @@
             </div>
             <div class="bg-white rounded-2xl px-4 py-3 shadow-lg">
               <img
-                src="~/assets/images/logos/logo_team_kikk.svg"
+                src="~/assets/images/logos/logo_team_kikk.png"
                 alt="Team Kikk"
                 class="h-8 w-auto"
               />
@@ -357,7 +357,7 @@
             <div class="p-8">
               <div class="flex items-center justify-center mb-6 h-20">
                 <img
-                  src="~/assets/images/logos/logo_team_kikk.svg"
+                  src="~/assets/images/logos/logo_team_kikk.png"
                   alt="Team Kikk"
                   class="h-12 w-auto"
                 />
