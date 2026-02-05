@@ -1,3 +1,7 @@
+# Redirect root based on browser language
+/ /nl/ 302 Language=nl
+/ /en/ 302
+
 # Redirect old URLs without locale prefix to Dutch version
 /klanten /nl/klanten/ 301
 /klanten/ /nl/klanten/ 301
