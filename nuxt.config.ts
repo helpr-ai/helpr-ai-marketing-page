@@ -26,6 +26,7 @@ export default defineNuxtConfig({
   },
   sitemap: {
     autoI18n: true,
+    trailingSlash: true,
     exclude: [
       '/nl/succes',
       '/en/success',

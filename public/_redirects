@@ -1,0 +1,18 @@
+# Redirect old URLs without locale prefix to Dutch version
+/klanten /nl/klanten/ 301
+/klanten/ /nl/klanten/ 301
+/partners /nl/partners/ 301
+/partners/ /nl/partners/ 301
+/product /nl/product/ 301
+/product/ /nl/product/ 301
+/consultants /nl/consultants/ 301
+/consultants/ /nl/consultants/ 301
+/over-ons /nl/over-ons/ 301
+/over-ons/ /nl/over-ons/ 301
+/start-traject /nl/start-traject/ 301
+/start-traject/ /nl/start-traject/ 301
+/trajecten /nl/trajecten/ 301
+/trajecten/ /nl/trajecten/ 301
+/trajecten/* /nl/trajecten/:splat 301
+/succes /nl/succes/ 301
+/succes/ /nl/succes/ 301
