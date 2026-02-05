@@ -167,7 +167,7 @@
             <div class="mt-8 flex items-center gap-4 text-sm text-gray-600">
               <div class="flex items-center gap-2">
                 <ShieldCheckIcon class="h-5 w-5 text-green-500" />
-                <span class="font-medium" v-html="$t('hero.tagline', { iso9001: '<a href=\'' + iso9001Path + '\' class=&quot;text-indigo-600 hover:text-indigo-800 transition-colors&quot;>', iso9001End: '</a>' })"></span>
+                <span class="font-medium" v-html="$t('hero.tagline', { iso9001: '<a href=\'' + iso9001Path + '\' class=&quot;text-indigo-600 hover:text-indigo-800 transition-colors&quot;>', iso9001End: '</a>', co2: '<a href=\'' + co2Path + '\' class=&quot;text-indigo-600 hover:text-indigo-800 transition-colors&quot;>', co2End: '</a>' })"></span>
               </div>
             </div>
           </div>
@@ -443,6 +443,25 @@
       </div>
     </section>
 
+    <!-- Quote Section 1: Dragon -->
+    <section class="py-20 bg-gradient-to-br from-slate-900 via-emerald-900 to-slate-900 relative overflow-hidden">
+      <div class="absolute inset-0">
+        <div class="absolute top-0 left-1/4 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl"></div>
+      </div>
+      <div class="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+        <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-2xl mb-8 shadow-2xl shadow-emerald-500/30">
+          <SparklesIcon class="h-8 w-8 text-white" />
+        </div>
+        <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">
+          {{ $t('quotes.dragon.title') }}
+        </h2>
+        <p class="text-xl text-emerald-100 leading-relaxed max-w-2xl mx-auto italic">
+          "{{ $t('quotes.dragon.description') }}"
+        </p>
+      </div>
+    </section>
+
     <!-- Voor wie -->
     <section id="voorwie" class="py-14 scroll-mt-24">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -617,6 +636,29 @@
             {{ $t('tagline.cta') }}
             <ArrowRightIcon class="ml-3 h-5 w-5 group-hover:translate-x-0.5 transition-transform" />
           </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote Section 2: Comfort -->
+    <section class="py-16 bg-gradient-to-r from-amber-50 via-orange-50 to-yellow-50 border-y border-amber-100">
+      <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+          <div class="flex-shrink-0">
+            <div class="w-20 h-20 bg-gradient-to-br from-amber-400 to-orange-500 rounded-full flex items-center justify-center shadow-xl shadow-amber-200">
+              <svg class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+              </svg>
+            </div>
+          </div>
+          <div class="text-center md:text-left">
+            <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
+              {{ $t('quotes.comfort.title') }}
+            </h2>
+            <p class="text-lg text-amber-800 leading-relaxed italic">
+              "{{ $t('quotes.comfort.description') }}"
+            </p>
+          </div>
         </div>
       </div>
     </section>
@@ -919,6 +961,37 @@
                 {{ $t('tagline.cta') }}
                 <ArrowRightIcon class="ml-3 h-5 w-5 group-hover:translate-x-0.5 transition-transform" />
               </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quote Section 3: Strategic Partner -->
+    <section class="py-20 bg-white relative">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="bg-gradient-to-br from-indigo-600 via-purple-600 to-indigo-700 rounded-3xl p-8 sm:p-12 lg:p-16 relative overflow-hidden shadow-2xl">
+          <div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+          <div class="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2"></div>
+
+          <div class="relative grid lg:grid-cols-5 gap-8 items-center">
+            <div class="lg:col-span-3">
+              <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">
+                {{ $t('quotes.strategic.title') }}
+              </h2>
+              <p class="text-xl text-indigo-100 leading-relaxed italic">
+                "{{ $t('quotes.strategic.description') }}"
+              </p>
+            </div>
+            <div class="lg:col-span-2 flex justify-center lg:justify-end">
+              <div class="relative">
+                <div class="w-32 h-32 bg-white/10 backdrop-blur rounded-2xl flex items-center justify-center">
+                  <RocketLaunchIcon class="h-16 w-16 text-white" />
+                </div>
+                <div class="absolute -top-2 -right-2 w-8 h-8 bg-amber-400 rounded-full flex items-center justify-center shadow-lg">
+                  <ArrowRightIcon class="h-4 w-4 text-amber-900" />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1343,6 +1416,7 @@ const closeMobileMenu = () => {
 const iso9001Path = computed(() => localePath('programs-iso9001'))
 const iso27001Path = computed(() => localePath('programs-iso27001'))
 const iso42001Path = computed(() => localePath('programs-iso42001'))
+const co2Path = computed(() => localePath('programs-co2-prestatieladder'))
 
 // Success URL for form redirects
 const successUrl = computed(() => {

@@ -13,7 +13,7 @@
     "badge": "ISO & CO2 Performance Ladder simplified",
     "title": "{aiInterviews}Faster. More accurate. More affordable.{aiInterviewsEnd}",
     "description": "Data collection and processing for ISO and the CO2 Performance Ladder, without the chaos. Helpr.ai turns structured conversations into audit-ready compliance output, so organizations and consultants spend less time repeating work and more time creating value.",
-    "tagline": "Now available for {iso9001}ISO 9001{iso9001End}",
+    "tagline": "Now available for {iso9001}ISO 9001{iso9001End} and the {co2}CO₂ Performance Ladder{co2End}",
     "cta": "Request a demo",
     "ctaSecondary": "See how it works"
   },
@@ -21,6 +21,20 @@
     "title": "Certification made easy.",
     "subtitle": "ISO certifications and the CO2 Performance Ladder rarely fail due to content. They fail due to inefficient data collection. Helpr.ai streamlines this process, making certification faster, more reliable and more cost-effective through structured interviews instead of fragmented documents.",
     "cta": "Experience it yourself"
+  },
+  "quotes": {
+    "dragon": {
+      "title": "Tame the monster of the CO₂ Performance Ladder",
+      "description": "Transform a complex process from a 'monster of a project' into a crystal-clear and organized whole."
+    },
+    "comfort": {
+      "title": "Collect data comfortably, wherever you are",
+      "description": "The most comfortable way to gather all the information for your certification. Even while on the road in your car."
+    },
+    "strategic": {
+      "title": "From information gatherer to strategic partner",
+      "description": "Elevate your role as a consultant: spend less time collecting information, more time on real impact and strategic next steps."
+    }
   },
   "value": {
     "title": "What does {helpr}Helpr.ai{helprEnd} deliver?",

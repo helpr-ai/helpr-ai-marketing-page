@@ -13,7 +13,7 @@
     "badge": "ISO & CO2-Prestatieladder vereenvoudigd",
     "title": "{aiInterviews}Sneller. Nauwkeuriger. Voordeliger.{aiInterviewsEnd}",
     "description": "Gegevensverzameling en -verwerking voor ISO en de CO2-Prestatieladder, zonder de chaos. Helpr.ai zet gestructureerde gesprekken om in audit-klare compliance output, zodat organisaties en consultants minder tijd besteden aan herhaalwerk en meer aan waardecreatie.",
-    "tagline": "Nu beschikbaar voor {iso9001}ISO 9001{iso9001End}",
+    "tagline": "Nu beschikbaar voor {iso9001}ISO 9001{iso9001End} en de {co2}CO₂-Prestatieladder{co2End}",
     "cta": "Vraag een demo aan",
     "ctaSecondary": "Bekijk hoe het werkt"
   },
@@ -21,6 +21,20 @@
     "title": "Certification made easy.",
     "subtitle": "Bij ISO-certificeringen en de CO2-Prestatieladder ligt de complexiteit meestal niet in de inhoud, maar in de dataverzameling. Helpr.ai vereenvoudigt dit proces en zorgt voor snellere, betrouwbaardere en kosteneffectievere certificering via gestructureerde interviews.",
     "cta": "Ervaar het zelf"
+  },
+  "quotes": {
+    "dragon": {
+      "title": "Tem de draak van de CO₂-prestatieladder",
+      "description": "Transformeer een complex proces van een 'draak van een traject' naar een glashelder en overzichtelijk geheel."
+    },
+    "comfort": {
+      "title": "Comfortabel data verzamelen, waar je ook bent",
+      "description": "De meest comfortabele manier om alle gegevens voor je certificering te verzamelen. Zelfs gewoon onderweg in de auto."
+    },
+    "strategic": {
+      "title": "Van informatie-verzamelaar naar strategisch partner",
+      "description": "Til je rol als consultant naar een hoger niveau: minder tijd kwijt aan informatie opvragen, meer tijd voor echte impact en strategische vervolgstappen."
+    }
   },
   "value": {
     "title": "Wat levert {helpr}Helpr.ai{helprEnd} op?",
