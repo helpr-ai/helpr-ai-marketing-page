@@ -1114,7 +1114,7 @@
     }
   },
   "customers": {
-    "nav": "Voor klanten",
+    "nav": "Organisaties",
     "hero": {
       "title": "Samen met onze partners: certificering goed geregeld",
       "subtitle": "Helpr.ai werkt samen met ervaren consultancypartners om certificeringstrajecten slimmer, sneller en consistenter te laten verlopen, zonder in te leveren op kwaliteit.",
@@ -1499,6 +1499,133 @@
         "message": "Vertel ons over je situatie (optioneel)",
         "messagePlaceholder": "Welke uitdagingen ervaar je momenteel?",
         "submit": "Plan Transformatie Sessie",
+        "privacy": "We nemen binnen 24 uur contact met je op."
+      }
+    }
+  },
+  "pricing": {
+    "nav": "Prijzen",
+    "hero": {
+      "badge": "Transparante prijzen",
+      "titlePart1": "Schaal je bureau",
+      "titleHighlight": "zonder extra personeel",
+      "titlePart2": "",
+      "description": "Verhoog je marges en focus op impactvol advies. Kies het plan dat past bij jouw groeiambitie.",
+      "cta": "Start vandaag",
+      "ctaSecondary": "Bekijk de plannen"
+    },
+    "tiers": {
+      "bronze": {
+        "badge": "Brons",
+        "name": "Focus op Start",
+        "focus": "Instap voor adviseurs",
+        "audience": "Individuele adviseurs en kleine bureaus die Helpr.ai willen verkennen.",
+        "price": "€ 749,-",
+        "priceSub": "per traject",
+        "details": [
+          "Minimaal 2 trajecten per maand",
+          "Extra trajecten: € 650,- per stuk",
+          "Ideaal om ervaring op te bouwen"
+        ]
+      },
+      "silver": {
+        "badge": "Zilver",
+        "name": "Focus op Schaal",
+        "focus": "Bureaus die certificering als een geoliede machine willen draaien",
+        "audience": "Maximale winstgevendheid. Gebruik AI als 'digitale junior consultants' en verwerk 4x zoveel klanten.",
+        "price": "€ 399,-",
+        "priceSub": "per traject",
+        "popular": "Populairst",
+        "details": [
+          "Minimaal 10 trajecten per maand",
+          "Extra trajecten: € 349,- per stuk",
+          "4x zoveel klanten met hetzelfde team"
+        ]
+      },
+      "gold": {
+        "badge": "Goud",
+        "name": "Bulk & Custom",
+        "focus": "Voor grote adviesorganisaties en koepelorganisaties",
+        "audience": "Volledig op maat ingericht voor maximale schaalbaarheid en integratie.",
+        "price": "Op aanvraag",
+        "priceSub": "",
+        "enterprise": "Enterprise",
+        "details": [
+          "API-koppelingen",
+          "White-label rapportages",
+          "Dedicated support"
+        ]
+      }
+    },
+    "norms": {
+      "title": "Ondersteunde normen & standaarden",
+      "items": ["ISO 9001", "ISO 14001", "ISO 27001", "ISO 42001", "CO₂-Prestatieladder"]
+    },
+    "crossLink": {
+      "title": "Bent u een organisatie die zelf wil certificeren?",
+      "description": "Bekijk ons Versnellingstraject voor organisaties die werken met een eigen adviseur.",
+      "cta": "Bekijk organisatie-prijzen"
+    },
+    "cta": {
+      "title": "Klaar om te starten?",
+      "subtitle": "Neem contact op en ontdek welk plan het beste bij jouw bureau past.",
+      "form": {
+        "name": "Naam",
+        "namePlaceholder": "Je volledige naam",
+        "email": "E-mailadres",
+        "emailPlaceholder": "naam{'@'}bureau.nl",
+        "company": "Bedrijfsnaam",
+        "companyPlaceholder": "Naam van je bureau",
+        "message": "Bericht (optioneel)",
+        "messagePlaceholder": "Vertel ons over je situatie of welk plan je interesse heeft.",
+        "submit": "Neem contact op",
+        "privacy": "We nemen binnen 24 uur contact met je op."
+      }
+    }
+  },
+  "orgPricing": {
+    "nav": "Prijzen organisaties",
+    "hero": {
+      "badge": "Voor organisaties",
+      "titlePart1": "Het",
+      "titleHighlight": "Versnellingstraject",
+      "titlePart2": "",
+      "description": "De kortste weg naar certificering voor organisaties die werken met een eigen adviseur.",
+      "cta": "Start je traject",
+      "ctaSecondary": "Bekijk wat je krijgt"
+    },
+    "plan": {
+      "price": "€ 1.250,-",
+      "priceSub": "per traject",
+      "features": [
+        "75% van de documentatie geautomatiseerd",
+        "Combineer met je eigen (externe) adviseur voor een 100% compliant resultaat",
+        "Geen maandenlange doorlooptijd — start direct met een gevuld systeem",
+        "Less hassle, meer focus op je kernactiviteiten"
+      ]
+    },
+    "norms": {
+      "title": "Ondersteunde normen & standaarden",
+      "items": ["ISO 9001", "ISO 14001", "ISO 27001", "ISO 42001", "CO₂-Prestatieladder"]
+    },
+    "crossLink": {
+      "title": "Bent u een adviesbureau of partner?",
+      "description": "Bekijk onze staffelprijzen voor adviesbureaus met volume-kortingen.",
+      "cta": "Bekijk adviesbureau-prijzen"
+    },
+    "cta": {
+      "title": "Klaar om te versnellen?",
+      "subtitle": "Start je Versnellingstraject en heb binnen dagen een gevuld managementsysteem.",
+      "form": {
+        "name": "Naam",
+        "namePlaceholder": "Je volledige naam",
+        "email": "E-mailadres",
+        "emailPlaceholder": "naam{'@'}organisatie.nl",
+        "company": "Organisatie",
+        "companyPlaceholder": "Naam van je organisatie",
+        "message": "Bericht (optioneel)",
+        "messagePlaceholder": "Vertel ons over je certificeringsdoel.",
+        "submit": "Start je traject",
         "privacy": "We nemen binnen 24 uur contact met je op."
       }
     }

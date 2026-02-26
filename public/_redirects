@@ -2,9 +2,17 @@
 / /nl/ 302 Language=nl
 / /en/ 302
 
+# Redirect old /klanten URLs to /organisaties
+/klanten /nl/organisaties/ 301
+/klanten/ /nl/organisaties/ 301
+/nl/klanten /nl/organisaties/ 301
+/nl/klanten/ /nl/organisaties/ 301
+/en/clients /en/organizations/ 301
+/en/clients/ /en/organizations/ 301
+
 # Redirect old URLs without locale prefix to Dutch version
-/klanten /nl/klanten/ 301
-/klanten/ /nl/klanten/ 301
+/organisaties /nl/organisaties/ 301
+/organisaties/ /nl/organisaties/ 301
 /partners /nl/partners/ 301
 /partners/ /nl/partners/ 301
 /product /nl/product/ 301

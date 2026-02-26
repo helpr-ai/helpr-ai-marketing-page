@@ -70,9 +70,9 @@ export default defineNuxtConfig({
         nl: '/partners',
         en: '/partners'
       },
-      'klanten': {
-        nl: '/klanten',
-        en: '/clients'
+      'organisaties/index': {
+        nl: '/organisaties',
+        en: '/organizations'
       },
       'product': {
         nl: '/product',
@@ -105,6 +105,14 @@ export default defineNuxtConfig({
       'programs/iso42001': {
         nl: '/trajecten/iso42001',
         en: '/programs/iso42001'
+      },
+      'prijzen': {
+        nl: '/prijzen',
+        en: '/pricing'
+      },
+      'organisaties/prijzen': {
+        nl: '/organisaties/prijzen',
+        en: '/organizations/pricing'
       },
       'success': {
         nl: '/succes',

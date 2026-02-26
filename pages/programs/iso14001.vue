@@ -11,9 +11,9 @@
 
         <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
           <NuxtLink :to="localePath('product')" class="text-gray-700 hover:text-indigo-600 transition-colors">{{ $t('nav.product') }}</NuxtLink>
-          <NuxtLink :to="localePath('programs')" class="text-green-600 font-semibold">{{ $t('programs.nav') }}</NuxtLink>
           <NuxtLink :to="localePath('consultants')" class="text-gray-700 hover:text-indigo-600 transition-colors">{{ $t('consultants.nav') }}</NuxtLink>
-          <NuxtLink :to="localePath('klanten')" class="text-gray-700 hover:text-indigo-600 transition-colors">{{ $t('customers.nav') }}</NuxtLink>
+          <NuxtLink :to="localePath('organisaties')" class="text-gray-700 hover:text-indigo-600 transition-colors">{{ $t('customers.nav') }}</NuxtLink>
+          <NuxtLink :to="localePath('prijzen')" class="text-gray-700 hover:text-indigo-600 transition-colors">{{ $t('pricing.nav') }}</NuxtLink>
           <NuxtLink :to="localePath('about')" class="text-gray-700 hover:text-indigo-600 transition-colors">{{ $t('about.nav') }}</NuxtLink>
         </nav>
 
@@ -44,9 +44,9 @@
         <div class="px-6 py-4 space-y-4">
           <div class="space-y-2">
             <NuxtLink :to="localePath('product')" @click="closeMobileMenu()" class="block w-full text-left px-3 py-2 text-gray-700 hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition-colors">{{ $t('nav.product') }}</NuxtLink>
-            <NuxtLink :to="localePath('programs')" @click="closeMobileMenu()" class="block w-full text-left px-3 py-2 text-green-600 font-semibold bg-green-50 rounded-lg">{{ $t('programs.nav') }}</NuxtLink>
             <NuxtLink :to="localePath('consultants')" @click="closeMobileMenu()" class="block w-full text-left px-3 py-2 text-gray-700 hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition-colors">{{ $t('consultants.nav') }}</NuxtLink>
-            <NuxtLink :to="localePath('klanten')" @click="closeMobileMenu()" class="block w-full text-left px-3 py-2 text-gray-700 hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition-colors">{{ $t('customers.nav') }}</NuxtLink>
+            <NuxtLink :to="localePath('organisaties')" @click="closeMobileMenu()" class="block w-full text-left px-3 py-2 text-gray-700 hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition-colors">{{ $t('customers.nav') }}</NuxtLink>
+            <NuxtLink :to="localePath('prijzen')" @click="closeMobileMenu()" class="block w-full text-left px-3 py-2 text-gray-700 hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition-colors">{{ $t('pricing.nav') }}</NuxtLink>
             <NuxtLink :to="localePath('about')" @click="closeMobileMenu()" class="block w-full text-left px-3 py-2 text-gray-700 hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition-colors">{{ $t('about.nav') }}</NuxtLink>
           </div>
           <div class="pt-2 pb-4">
@@ -184,7 +184,7 @@
         </div>
         <div class="flex justify-start md:justify-end gap-4 text-sm text-slate-600">
           <NuxtLink :to="localePath('programs')" class="hover:text-slate-900">{{ $t('programs.nav') }}</NuxtLink>
-          <NuxtLink :to="localePath('klanten')" class="hover:text-slate-900">{{ $t('customers.nav') }}</NuxtLink>
+          <NuxtLink :to="localePath('organisaties')" class="hover:text-slate-900">{{ $t('customers.nav') }}</NuxtLink>
           <NuxtLink :to="localePath('partners')" class="hover:text-slate-900">{{ $t('partners.nav') }}</NuxtLink>
         </div>
       </div>

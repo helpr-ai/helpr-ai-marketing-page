@@ -15,10 +15,11 @@
 
         <!-- Desktop Navigation -->
         <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
-          <NuxtLink :to="localePath('/')" class="text-gray-700 hover:text-emerald-600 transition-colors">{{ $t('nav.home') }}</NuxtLink>
-          <button @click="scrollTo('how')" class="text-gray-700 hover:text-emerald-600 transition-colors">{{ locale === 'nl' ? 'Hoe het werkt' : 'How it works' }}</button>
-          <button @click="scrollTo('roles')" class="text-gray-700 hover:text-emerald-600 transition-colors">{{ locale === 'nl' ? 'Rolverdeling' : 'Roles' }}</button>
-          <button @click="scrollTo('partners')" class="text-gray-700 hover:text-emerald-600 transition-colors">{{ $t('customers.partners.title') }}</button>
+          <NuxtLink :to="localePath('product')" class="text-gray-700 hover:text-emerald-600 transition-colors">{{ $t('nav.product') }}</NuxtLink>
+          <NuxtLink :to="localePath('consultants')" class="text-gray-700 hover:text-emerald-600 transition-colors">{{ $t('consultants.nav') }}</NuxtLink>
+          <NuxtLink :to="localePath('organisaties')" class="text-emerald-600 font-semibold">{{ $t('customers.nav') }}</NuxtLink>
+          <NuxtLink :to="localePath('prijzen')" class="text-gray-700 hover:text-emerald-600 transition-colors">{{ $t('pricing.nav') }}</NuxtLink>
+          <NuxtLink :to="localePath('about')" class="text-gray-700 hover:text-emerald-600 transition-colors">{{ $t('about.nav') }}</NuxtLink>
         </nav>
 
         <!-- Desktop Actions -->
@@ -270,6 +271,47 @@
       </div>
     </section>
 
+    <!-- Pricing Highlight Section -->
+    <section class="py-24 scroll-mt-24">
+      <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+        <div class="bg-gradient-to-br from-indigo-900 via-purple-900 to-slate-900 rounded-3xl shadow-2xl overflow-hidden">
+          <div class="p-8 sm:p-12 text-center">
+            <div class="mb-6">
+              <span class="inline-flex items-center rounded-full bg-white/10 backdrop-blur-sm px-4 py-2 text-sm font-medium text-indigo-200 ring-1 ring-inset ring-white/20">
+                <CurrencyEuroIcon class="mr-2 h-4 w-4" />
+                {{ $t('orgPricing.hero.badge') }}
+              </span>
+            </div>
+            <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">
+              {{ $t('orgPricing.hero.titlePart1') }} <span class="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">{{ $t('orgPricing.hero.titleHighlight') }}</span>
+            </h2>
+            <div class="mt-6 mb-4">
+              <span class="text-5xl sm:text-6xl font-extrabold text-white">{{ $t('orgPricing.plan.price') }}</span>
+              <span class="text-indigo-200 text-lg ml-2">{{ $t('orgPricing.plan.priceSub') }}</span>
+            </div>
+            <p class="text-lg text-indigo-100 max-w-2xl mx-auto mb-8">
+              {{ $t('orgPricing.hero.description') }}
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+              <NuxtLink
+                :to="localePath('organisaties-prijzen')"
+                class="inline-flex items-center justify-center rounded-2xl bg-white px-8 py-4 text-lg font-semibold text-indigo-600 shadow-xl hover:bg-gray-50 transition-all duration-200 hover:scale-[1.02]"
+              >
+                {{ $t('orgPricing.hero.ctaSecondary') }}
+                <ArrowRightIcon class="ml-3 h-5 w-5" />
+              </NuxtLink>
+              <NuxtLink
+                :to="localePath('start-traject')"
+                class="inline-flex items-center justify-center rounded-2xl border-2 border-white/30 bg-white/10 backdrop-blur-sm px-8 py-4 text-lg font-semibold text-white hover:bg-white/20 transition-all duration-200"
+              >
+                {{ $t('orgPricing.hero.cta') }}
+              </NuxtLink>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Partners Section -->
     <section id="partners" class="py-24 bg-gray-50 scroll-mt-24">
       <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -428,7 +470,8 @@ import {
   ShieldCheckIcon,
   CpuChipIcon,
   BuildingOffice2Icon,
-  SparklesIcon
+  SparklesIcon,
+  CurrencyEuroIcon
 } from '@heroicons/vue/24/outline'
 
 const scrollTo = (id: string) => {
@@ -471,8 +514,8 @@ onMounted(() => {
 // SEO
 useSeoMeta({
   title: () => locale.value === 'nl'
-    ? 'Voor klanten | Helpr.AI'
-    : 'For customers | Helpr.AI',
+    ? 'Organisaties | Helpr.AI'
+    : 'Organizations | Helpr.AI',
   description: () => locale.value === 'nl'
     ? 'Start je certificeringstraject met Helpr.ai en een ervaren consultancypartner. Samen zorgen we voor een efficient en grondig traject.'
     : 'Start your certification project with Helpr.ai and an experienced consultancy partner. Together we ensure an efficient and thorough project.'

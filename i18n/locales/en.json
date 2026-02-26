@@ -1114,7 +1114,7 @@
     }
   },
   "customers": {
-    "nav": "For customers",
+    "nav": "Organizations",
     "hero": {
       "title": "Together with our partners: certification done right",
       "subtitle": "Helpr.ai works with experienced consultancy partners to make certification projects smarter, faster and more consistent, without compromising on quality.",
@@ -1499,6 +1499,133 @@
         "message": "Tell us about your situation (optional)",
         "messagePlaceholder": "What challenges are you currently experiencing?",
         "submit": "Schedule Transformation Session",
+        "privacy": "We will contact you within 24 hours."
+      }
+    }
+  },
+  "pricing": {
+    "nav": "Pricing",
+    "hero": {
+      "badge": "Transparent pricing",
+      "titlePart1": "Scale your firm",
+      "titleHighlight": "without extra staff",
+      "titlePart2": "",
+      "description": "Increase your margins and focus on impactful advice. Choose the plan that fits your growth ambition.",
+      "cta": "Get started today",
+      "ctaSecondary": "View plans"
+    },
+    "tiers": {
+      "bronze": {
+        "badge": "Bronze",
+        "name": "Focus on Start",
+        "focus": "Entry level for advisors",
+        "audience": "Individual advisors and small firms looking to explore Helpr.ai.",
+        "price": "€ 749",
+        "priceSub": "per program",
+        "details": [
+          "Minimum 2 programs per month",
+          "Additional programs: € 650 each",
+          "Ideal for building experience"
+        ]
+      },
+      "silver": {
+        "badge": "Silver",
+        "name": "Focus on Scale",
+        "focus": "Firms that want certification running like a well-oiled machine",
+        "audience": "Maximum profitability. Use AI as 'digital junior consultants' and process 4x as many clients.",
+        "price": "€ 399",
+        "priceSub": "per program",
+        "popular": "Most popular",
+        "details": [
+          "Minimum 10 programs per month",
+          "Additional programs: € 349 each",
+          "4x as many clients with the same team"
+        ]
+      },
+      "gold": {
+        "badge": "Gold",
+        "name": "Bulk & Custom",
+        "focus": "For large advisory organizations and umbrella organizations",
+        "audience": "Fully customized for maximum scalability and integration.",
+        "price": "On request",
+        "priceSub": "",
+        "enterprise": "Enterprise",
+        "details": [
+          "API integrations",
+          "White-label reports",
+          "Dedicated support"
+        ]
+      }
+    },
+    "norms": {
+      "title": "Supported standards & frameworks",
+      "items": ["ISO 9001", "ISO 14001", "ISO 27001", "ISO 42001", "CO₂ Performance Ladder"]
+    },
+    "crossLink": {
+      "title": "Are you an organization looking to certify on your own?",
+      "description": "Check out our Acceleration Program for organizations working with their own advisor.",
+      "cta": "View organization pricing"
+    },
+    "cta": {
+      "title": "Ready to get started?",
+      "subtitle": "Get in touch and discover which plan fits your firm best.",
+      "form": {
+        "name": "Name",
+        "namePlaceholder": "Your full name",
+        "email": "Email address",
+        "emailPlaceholder": "name{'@'}firm.com",
+        "company": "Company name",
+        "companyPlaceholder": "Name of your firm",
+        "message": "Message (optional)",
+        "messagePlaceholder": "Tell us about your situation or which plan interests you.",
+        "submit": "Get in touch",
+        "privacy": "We will contact you within 24 hours."
+      }
+    }
+  },
+  "orgPricing": {
+    "nav": "Organization pricing",
+    "hero": {
+      "badge": "For organizations",
+      "titlePart1": "The",
+      "titleHighlight": "Acceleration Program",
+      "titlePart2": "",
+      "description": "The shortest path to certification for organizations working with their own advisor.",
+      "cta": "Start your program",
+      "ctaSecondary": "See what you get"
+    },
+    "plan": {
+      "price": "€ 1,250",
+      "priceSub": "per program",
+      "features": [
+        "75% of documentation automated",
+        "Combine with your own (external) advisor for a 100% compliant result",
+        "No months-long lead time — start immediately with a pre-filled system",
+        "Less hassle, more focus on your core activities"
+      ]
+    },
+    "norms": {
+      "title": "Supported standards & frameworks",
+      "items": ["ISO 9001", "ISO 14001", "ISO 27001", "ISO 42001", "CO₂ Performance Ladder"]
+    },
+    "crossLink": {
+      "title": "Are you a consultancy firm or partner?",
+      "description": "Check out our tiered pricing for consultancy firms with volume discounts.",
+      "cta": "View consultancy pricing"
+    },
+    "cta": {
+      "title": "Ready to accelerate?",
+      "subtitle": "Start your Acceleration Program and have a pre-filled management system within days.",
+      "form": {
+        "name": "Name",
+        "namePlaceholder": "Your full name",
+        "email": "Email address",
+        "emailPlaceholder": "name{'@'}organization.com",
+        "company": "Organization",
+        "companyPlaceholder": "Name of your organization",
+        "message": "Message (optional)",
+        "messagePlaceholder": "Tell us about your certification goal.",
+        "submit": "Start your program",
         "privacy": "We will contact you within 24 hours."
       }
     }
