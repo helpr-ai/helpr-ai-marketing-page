@@ -196,7 +196,7 @@
         </div>
 
         <div class="grid lg:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
-          <div class="aspect-square p-8 bg-white rounded-2xl border border-warm-border shadow-card flex flex-col">
+          <div class="lg:aspect-square p-8 bg-white rounded-2xl border border-warm-border shadow-card flex flex-col">
             <div class="inline-flex items-center self-start px-3 py-1 rounded-full bg-navy-50 text-navy-700 text-xs font-semibold uppercase tracking-wider">
               {{ $t('audience.experienced.tag') }}
             </div>
@@ -213,7 +213,7 @@
             />
           </div>
 
-          <div class="aspect-square p-8 bg-white rounded-2xl border border-warm-border shadow-card flex flex-col">
+          <div class="lg:aspect-square p-8 bg-white rounded-2xl border border-warm-border shadow-card flex flex-col">
             <div class="inline-flex items-center self-start px-3 py-1 rounded-full bg-amber-50 text-gold-600 text-xs font-semibold uppercase tracking-wider">
               {{ $t('audience.junior.tag') }}
             </div>
