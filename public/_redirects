@@ -2,29 +2,67 @@
 / /nl/ 302 Language=nl
 / /en/ 302
 
-# Redirect old /klanten URLs to /organisaties
-/klanten /nl/organisaties/ 301
-/klanten/ /nl/organisaties/ 301
-/nl/klanten /nl/organisaties/ 301
-/nl/klanten/ /nl/organisaties/ 301
-/en/clients /en/organizations/ 301
-/en/clients/ /en/organizations/ 301
-
-# Redirect old URLs without locale prefix to Dutch version
-/organisaties /nl/organisaties/ 301
-/organisaties/ /nl/organisaties/ 301
-/partners /nl/partners/ 301
-/partners/ /nl/partners/ 301
-/product /nl/product/ 301
-/product/ /nl/product/ 301
-/consultants /nl/consultants/ 301
-/consultants/ /nl/consultants/ 301
+# Old paths → homepage
 /over-ons /nl/over-ons/ 301
 /over-ons/ /nl/over-ons/ 301
-/start-traject /nl/start-traject/ 301
-/start-traject/ /nl/start-traject/ 301
-/trajecten /nl/trajecten/ 301
-/trajecten/ /nl/trajecten/ 301
-/trajecten/* /nl/trajecten/:splat 301
-/succes /nl/succes/ 301
-/succes/ /nl/succes/ 301
+/about /en/about/ 301
+/about/ /en/about/ 301
+
+# Removed pages — redirect to homepage
+/klanten /nl/ 301
+/klanten/ /nl/ 301
+/nl/klanten /nl/ 301
+/nl/klanten/ /nl/ 301
+/en/clients /en/ 301
+/en/clients/ /en/ 301
+/organisaties /nl/ 301
+/organisaties/ /nl/ 301
+/nl/organisaties /nl/ 301
+/nl/organisaties/ /nl/ 301
+/en/organizations /en/ 301
+/en/organizations/ /en/ 301
+/partners /nl/ 301
+/partners/ /nl/ 301
+/nl/partners /nl/ 301
+/nl/partners/ /nl/ 301
+/en/partners /en/ 301
+/en/partners/ /en/ 301
+/product /nl/ 301
+/product/ /nl/ 301
+/nl/product /nl/ 301
+/nl/product/ /nl/ 301
+/en/product /en/ 301
+/en/product/ /en/ 301
+/consultants /nl/ 301
+/consultants/ /nl/ 301
+/nl/consultants /nl/ 301
+/nl/consultants/ /nl/ 301
+/en/consultants /en/ 301
+/en/consultants/ /en/ 301
+/start-traject /nl/ 301
+/start-traject/ /nl/ 301
+/nl/start-traject /nl/ 301
+/nl/start-traject/ /nl/ 301
+/en/get-started /en/ 301
+/en/get-started/ /en/ 301
+/trajecten /nl/ 301
+/trajecten/ /nl/ 301
+/trajecten/* /nl/ 301
+/nl/trajecten /nl/ 301
+/nl/trajecten/ /nl/ 301
+/nl/trajecten/* /nl/ 301
+/en/programs /en/ 301
+/en/programs/ /en/ 301
+/en/programs/* /en/ 301
+/prijzen /nl/ 301
+/prijzen/ /nl/ 301
+/nl/prijzen /nl/ 301
+/nl/prijzen/ /nl/ 301
+/en/pricing /en/ 301
+/en/pricing/ /en/ 301
+/succes /nl/ 301
+/succes/ /nl/ 301
+/nl/succes /nl/ 301
+/nl/succes/ /nl/ 301
+/en/success /en/ 301
+/en/success/ /en/ 301

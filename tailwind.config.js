@@ -11,100 +11,57 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'sans': ['Mukta', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        'sans': ['Rawson', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        'display': ['Fran', 'Georgia', 'serif'],
+      },
+      colors: {
+        navy: {
+          50: '#F4F2EE',
+          100: '#E0DFDC',
+          500: '#0A66C2',
+          600: '#004182',
+          700: '#003366',
+          900: '#191919',
+        },
+        warm: {
+          bg: '#F4F2EE',
+          border: '#E0DFDC',
+          ink: '#191919',
+          gray: '#666666',
+        },
+        gold: {
+          500: '#915907',
+          600: '#7A4A05',
+        },
       },
       animation: {
-        'blob': 'blob 7s infinite',
-        'spin-slow': 'spin 3s linear infinite',
-        'spin-reverse': 'spin-reverse 4s linear infinite',
-        'bounce-slow': 'bounce-slow 3s ease-in-out infinite',
-        'float': 'float 4s ease-in-out infinite',
-        'reveal-up': 'reveal-up 0.8s ease-out forwards',
-        'reveal-left': 'reveal-left 0.8s ease-out forwards',
-        'reveal-right': 'reveal-right 0.8s ease-out forwards',
+        'reveal-up': 'reveal-up 0.7s ease-out forwards',
+        'reveal-fade': 'reveal-fade 0.7s ease-out forwards',
         'reveal-scale': 'reveal-scale 0.6s ease-out forwards',
+        'float': 'float 6s ease-in-out infinite',
       },
       keyframes: {
-        blob: {
-          '0%': {
-            transform: 'translate(0px, 0px) scale(1)',
-          },
-          '33%': {
-            transform: 'translate(30px, -50px) scale(1.1)',
-          },
-          '66%': {
-            transform: 'translate(-20px, 20px) scale(0.9)',
-          },
-          '100%': {
-            transform: 'translate(0px, 0px) scale(1)',
-          },
-        },
-        'spin-reverse': {
-          '0%': {
-            transform: 'rotate(0deg)',
-          },
-          '100%': {
-            transform: 'rotate(-360deg)',
-          },
-        },
-        'bounce-slow': {
-          '0%, 100%': {
-            transform: 'translateY(-5%)',
-            'animation-timing-function': 'cubic-bezier(0.8,0,1,1)',
-          },
-          '50%': {
-            transform: 'translateY(0)',
-            'animation-timing-function': 'cubic-bezier(0,0,0.2,1)',
-          },
-        },
-        'float': {
-          '0%, 100%': {
-            transform: 'translateY(0px)',
-          },
-          '50%': {
-            transform: 'translateY(-10px)',
-          },
-        },
         'reveal-up': {
-          '0%': {
-            opacity: '0',
-            transform: 'translateY(30px)',
-          },
-          '100%': {
-            opacity: '1',
-            transform: 'translateY(0)',
-          },
+          '0%': { opacity: '0', transform: 'translateY(24px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
         },
-        'reveal-left': {
-          '0%': {
-            opacity: '0',
-            transform: 'translateX(-30px)',
-          },
-          '100%': {
-            opacity: '1',
-            transform: 'translateX(0)',
-          },
-        },
-        'reveal-right': {
-          '0%': {
-            opacity: '0',
-            transform: 'translateX(30px)',
-          },
-          '100%': {
-            opacity: '1',
-            transform: 'translateX(0)',
-          },
+        'reveal-fade': {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
         },
         'reveal-scale': {
-          '0%': {
-            opacity: '0',
-            transform: 'scale(0.95)',
-          },
-          '100%': {
-            opacity: '1',
-            transform: 'scale(1)',
-          },
+          '0%': { opacity: '0', transform: 'scale(0.96)' },
+          '100%': { opacity: '1', transform: 'scale(1)' },
         },
+        'float': {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-8px)' },
+        },
+      },
+      boxShadow: {
+        'card': '0 0 0 1px rgba(0, 0, 0, 0.08), 0 2px 4px rgba(0, 0, 0, 0.06)',
+        'card-hover': '0 0 0 1px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.12)',
+        'modal': '0 4px 16px rgba(0, 0, 0, 0.2)',
       },
     },
   },

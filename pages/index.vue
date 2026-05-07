@@ -1,1501 +1,787 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-cyan-50">
-    <!-- Header/Nav -->
-    <header class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md border-b border-gray-200 shadow-sm">
-      <div class="mx-auto max-w-7xl px-6 sm:px-8 lg:px-12 py-6 flex items-center justify-between">
-        <div class="flex items-center">
-          <img
-            src="~/assets/images/logos/helpr-ai-logo.svg"
-            alt="Helpr.ai"
-            class="h-8 w-auto"
-          />
-        </div>
+  <div>
+    <!-- HERO -->
+    <section class="relative pt-32 pb-24 lg:pt-40 lg:pb-32 overflow-hidden">
+      <div class="absolute inset-0 -z-10">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[80rem] h-[40rem] bg-gradient-to-br from-navy-50 via-white to-warm-bg opacity-60 blur-3xl"></div>
+      </div>
 
-        <!-- Desktop Navigation -->
-        <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
-          <NuxtLink :to="localePath('product')" class="text-gray-700 hover:text-indigo-600 transition-colors">{{ $t('nav.product') }}</NuxtLink>
-          <NuxtLink :to="localePath('consultants')" class="text-gray-700 hover:text-indigo-600 transition-colors">{{ $t('consultants.nav') }}</NuxtLink>
-          <NuxtLink :to="localePath('organisaties')" class="text-gray-700 hover:text-indigo-600 transition-colors">{{ $t('customers.nav') }}</NuxtLink>
-          <NuxtLink :to="localePath('prijzen')" class="text-gray-700 hover:text-indigo-600 transition-colors">{{ $t('pricing.nav') }}</NuxtLink>
-          <NuxtLink :to="localePath('about')" class="text-gray-700 hover:text-indigo-600 transition-colors">{{ $t('about.nav') }}</NuxtLink>
-        </nav>
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          <div class="lg:col-span-6">
+            <h1 class="font-display text-5xl sm:text-6xl lg:text-7xl leading-[1.05] text-warm-ink font-bold">
+              {{ $t('hero.titleA') }}<br />
+              <span class="text-navy-500">{{ $t('hero.titleB') }}</span>
+            </h1>
 
-        <!-- Desktop Actions -->
-        <div class="hidden md:flex items-center gap-4">
-          <!-- Language Switcher -->
-          <div class="relative">
-            <button
-              @click="showLangDropdown = !showLangDropdown"
-              class="flex items-center gap-2 px-3 py-2 rounded-lg hover:bg-gray-100 transition-colors"
-            >
-              <span class="text-xl">{{ currentLocaleFlag }}</span>
-            </button>
-            <div
-              v-if="showLangDropdown"
-              class="absolute right-0 top-full mt-2 bg-white rounded-xl shadow-xl border border-gray-200 py-2 min-w-[160px] z-50"
-            >
-              <NuxtLink
-                v-for="loc in availableLocales"
-                :key="loc.code"
-                :to="switchLocalePath(loc.code)"
-                @click="showLangDropdown = false"
-                :class="[
-                  'w-full flex items-center gap-3 px-4 py-2 text-sm hover:bg-gray-50 transition-colors',
-                  locale === loc.code ? 'bg-indigo-50 text-indigo-600' : 'text-gray-700'
-                ]"
+            <p class="mt-8 text-xl lg:text-2xl text-warm-ink/70 leading-relaxed max-w-2xl">
+              {{ $t('hero.subtitle') }}
+            </p>
+
+            <div class="mt-10 flex flex-col sm:flex-row gap-4">
+              <a
+                href="#cta"
+                class="inline-flex h-12 items-center justify-center rounded-full px-7 bg-navy-500 text-white font-semibold hover:bg-navy-600 transition-colors shadow-card"
               >
-                <span class="text-lg">{{ loc.flag }}</span>
-                <span>{{ loc.name }}</span>
-              </NuxtLink>
+                {{ $t('hero.ctaPrimary') }}
+                <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+              </a>
+              <a
+                href="#how"
+                class="inline-flex h-12 items-center justify-center rounded-full px-7 bg-white border border-warm-border text-warm-ink font-semibold hover:bg-warm-bg transition-colors"
+              >
+                {{ $t('hero.ctaSecondary') }}
+              </a>
             </div>
           </div>
 
-          <button class="hidden sm:inline-flex h-11 items-center rounded-xl px-5 text-gray-700 hover:bg-gray-100 transition-colors font-medium" @click="scrollTo('contact')">{{ $t('nav.contact') }}</button>
-          <button class="h-11 items-center rounded-xl px-6 bg-gradient-to-r from-indigo-600 to-purple-600 text-white hover:from-indigo-700 hover:to-purple-700 transition-all shadow-lg hover:shadow-xl font-medium" @click="scrollTo('demo')">{{ $t('nav.demo') }}</button>
+          <div class="lg:col-span-6 hidden lg:block">
+            <ClientOnly>
+              <HeroGrid />
+            </ClientOnly>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARTNERS STRIP -->
+    <section class="py-16 border-y border-warm-border bg-white">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <p class="text-center text-xs font-semibold uppercase tracking-wider text-warm-gray mb-10">
+          {{ $t('partners.heading') }}
+        </p>
+        <div class="flex flex-wrap items-center justify-center gap-x-12 gap-y-8 lg:gap-x-20">
+          <a href="https://coningadviesgroep.nl" target="_blank" rel="noopener noreferrer" aria-label="Coning Adviesgroep">
+            <img src="~/assets/images/logos/coning_logo.png" alt="Coning" class="h-10 w-auto opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
+          </a>
+          <a href="https://www.teamkikk.nl/" target="_blank" rel="noopener noreferrer" aria-label="Team Kikk">
+            <img src="~/assets/images/logos/logo_team_kikk.png" alt="Team Kikk" class="h-10 w-auto opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
+          </a>
+          <a href="https://www.vanhouten.nl/" target="_blank" rel="noopener noreferrer" aria-label="Van Houten en Partners">
+            <img src="~/assets/images/logos/logo_van_houten_en_partners.svg" alt="Van Houten en Partners" class="h-10 w-auto opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
+          </a>
+          <a href="https://certificeringsadvies.nl" target="_blank" rel="noopener noreferrer" aria-label="Certificeringsadvies Nederland">
+            <img src="~/assets/images/logos/certificeringsadvies_nederland_logo.svg" alt="Certificeringsadvies Nederland" class="h-10 w-auto opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAIN -->
+    <section class="py-24 lg:py-32">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="grid lg:grid-cols-12 gap-16 items-center">
+          <div class="lg:col-span-7">
+            <p class="text-sm font-semibold uppercase tracking-wider text-navy-500 mb-4">{{ $t('pain.eyebrow') }}</p>
+            <h2 class="font-display text-4xl lg:text-5xl text-warm-ink font-bold leading-tight mb-8">
+              {{ $t('pain.title') }}
+            </h2>
+            <p class="text-lg text-warm-ink/70 leading-relaxed mb-6">
+              {{ $t('pain.body1') }}
+            </p>
+            <p class="text-lg text-warm-ink/70 leading-relaxed">
+              {{ $t('pain.body2') }}
+            </p>
+          </div>
+          <div class="lg:col-span-5">
+            <div class="relative rounded-2xl bg-warm-bg border border-warm-border shadow-card overflow-hidden">
+              <iframe
+                src="https://player.cloudinary.com/embed/?cloud_name=dmh4ubixs&public_id=Helpr_website_explainer_v4_-_with_logo_csti3q"
+                style="aspect-ratio: 640 / 360;"
+                class="w-full h-auto block"
+                allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+                allowfullscreen
+                frameborder="0"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE: AI INTERVIEWS -->
+    <section id="core" class="py-24 lg:py-32 bg-warm-ink text-white scroll-mt-24">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-[auto_1fr_1fr] gap-8 lg:gap-12 lg:items-stretch">
+          <svg
+            viewBox="0 0 64 80"
+            preserveAspectRatio="xMidYMid meet"
+            class="lg:self-stretch w-24 h-32 lg:w-auto lg:h-auto text-navy-500"
+            style="aspect-ratio: 64 / 80;"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <rect x="22" y="6" width="20" height="38" rx="10" fill="currentColor" fill-opacity="0.18" />
+            <rect x="22" y="6" width="20" height="38" rx="10" />
+            <line x1="28" y1="18" x2="36" y2="18" stroke-opacity="0.55" />
+            <line x1="28" y1="25" x2="36" y2="25" stroke-opacity="0.55" />
+            <line x1="28" y1="32" x2="36" y2="32" stroke-opacity="0.55" />
+            <path d="M14 32c0 9.94 8.06 18 18 18s18-8.06 18-18" />
+            <line x1="32" y1="50" x2="32" y2="62" />
+            <line x1="24" y1="62" x2="40" y2="62" />
+          </svg>
+
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-wider text-navy-500 mb-4">{{ $t('core.eyebrow') }}</p>
+            <h2 class="font-display text-3xl lg:text-4xl text-white font-bold leading-tight mb-5">
+              {{ $t('core.title') }}
+            </h2>
+            <p class="text-base lg:text-lg text-white/70 leading-relaxed">
+              {{ $t('core.body') }}
+            </p>
+          </div>
+
+          <ul class="space-y-5 lg:space-y-6">
+            <li
+              v-for="f in coreFeatures"
+              :key="f"
+              class="flex items-start gap-3"
+            >
+              <svg viewBox="0 0 9 5" fill="currentColor" class="flex-shrink-0 w-7 h-auto text-navy-500 mt-1.5" aria-hidden="true">
+                <path d="M0 0 L6 0 L9 2.5 L6 5 L0 5 Z" />
+              </svg>
+              <div>
+                <h3 class="font-display text-base font-bold text-white mb-1">{{ $t(`core.features.${f}.title`) }}</h3>
+                <p class="text-sm text-white/65 leading-snug">{{ $t(`core.features.${f}.body`) }}</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROMISE -->
+    <section class="py-24 lg:py-32 bg-warm-bg">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="max-w-3xl mb-20">
+          <p class="text-sm font-semibold uppercase tracking-wider text-navy-500 mb-4">{{ $t('promise.eyebrow') }}</p>
+          <h2 class="font-display text-4xl lg:text-5xl text-warm-ink font-bold leading-tight mb-8">
+            {{ $t('promise.title') }}
+          </h2>
+          <p class="text-xl text-warm-ink/70 leading-relaxed">
+            {{ $t('promise.body') }}
+          </p>
         </div>
 
-        <!-- Mobile Hamburger Menu -->
-        <div class="md:hidden">
-          <button
-            @click="toggleMobileMenu"
-            class="flex items-center justify-center w-10 h-10 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors"
-            type="button"
+        <div class="space-y-4 max-w-4xl mx-auto">
+          <div
+            v-for="pillar in promisePillars"
+            :key="pillar"
+            class="flex flex-col lg:flex-row lg:items-center gap-6 lg:gap-12 p-8 bg-white rounded-2xl border border-warm-border shadow-card"
           >
-            <Bars3Icon v-if="!showMobileMenu" class="h-6 w-6" />
-            <XMarkIcon v-else class="h-6 w-6" />
+            <div class="lg:w-1/2">
+              <h3 class="font-display text-2xl text-warm-ink font-bold mb-2">{{ $t(`promise.pillars.${pillar}.title`) }}</h3>
+              <p class="text-warm-ink/70 leading-relaxed">{{ $t(`promise.pillars.${pillar}.body`) }}</p>
+            </div>
+            <div class="lg:w-1/2 flex lg:justify-center">
+              <PillarViz :kind="pillar" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AUDIENCE -->
+    <section id="audience" class="py-24 lg:py-32 bg-navy-500 scroll-mt-24">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <p class="text-sm font-semibold uppercase tracking-wider text-amber-300 mb-4">{{ $t('audience.eyebrow') }}</p>
+          <h2 class="font-display text-4xl lg:text-5xl text-white font-bold leading-tight">
+            {{ $t('audience.title') }}
+          </h2>
+        </div>
+
+        <div class="grid lg:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto">
+          <div class="aspect-square p-8 bg-white rounded-2xl border border-warm-border shadow-card flex flex-col">
+            <div class="inline-flex items-center self-start px-3 py-1 rounded-full bg-navy-50 text-navy-700 text-xs font-semibold uppercase tracking-wider">
+              {{ $t('audience.experienced.tag') }}
+            </div>
+            <h3 class="font-display text-2xl text-warm-ink font-bold mt-5 mb-3">{{ $t('audience.experienced.title') }}</h3>
+            <p class="text-warm-ink/70 leading-relaxed">{{ $t('audience.experienced.body') }}</p>
+            <p class="text-warm-ink font-semibold italic mt-auto pt-4">{{ $t('audience.experienced.quote') }}</p>
+          </div>
+
+          <div class="aspect-square">
+            <img
+              src="~/assets/images/senior_junior.jpg"
+              alt="Senior en junior adviseur rug aan rug"
+              class="w-full h-full object-cover rounded-2xl shadow-card"
+            />
+          </div>
+
+          <div class="aspect-square p-8 bg-white rounded-2xl border border-warm-border shadow-card flex flex-col">
+            <div class="inline-flex items-center self-start px-3 py-1 rounded-full bg-amber-50 text-gold-600 text-xs font-semibold uppercase tracking-wider">
+              {{ $t('audience.junior.tag') }}
+            </div>
+            <h3 class="font-display text-2xl text-warm-ink font-bold mt-5 mb-3">{{ $t('audience.junior.title') }}</h3>
+            <p class="text-warm-ink/70 leading-relaxed">{{ $t('audience.junior.body') }}</p>
+            <p class="text-warm-ink font-semibold italic mt-auto pt-4">{{ $t('audience.junior.quote') }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- USE CASE: BREDE INZETBAARHEID -->
+    <section class="py-24 lg:py-32 bg-warm-bg">
+      <div class="mx-auto max-w-5xl px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <p class="text-sm font-semibold uppercase tracking-wider text-navy-500 mb-4">{{ $t('usecase.eyebrow') }}</p>
+          <h2 class="font-display text-4xl lg:text-5xl text-warm-ink font-bold leading-tight mb-6">
+            {{ $t('usecase.title') }}
+          </h2>
+          <p class="text-lg text-warm-ink/70 leading-relaxed max-w-2xl mx-auto">
+            {{ $t('usecase.body') }}
+          </p>
+        </div>
+
+        <figure class="bg-white rounded-2xl border border-warm-border shadow-card p-8 lg:p-10">
+          <svg class="w-10 h-10 text-navy-500/30 mb-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M9.583 17.321C8.553 16.227 8 15 8 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179zm10 0C18.553 16.227 18 15 18 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z" />
+          </svg>
+          <blockquote class="font-display text-xl lg:text-2xl text-warm-ink leading-snug mb-6">
+            {{ $t('usecase.quote.text') }}
+          </blockquote>
+          <figcaption class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-navy-500 text-white flex items-center justify-center font-semibold text-sm">
+              FB
+            </div>
+            <div>
+              <div class="font-semibold text-warm-ink">{{ $t('usecase.quote.author') }}</div>
+              <div class="text-sm text-warm-ink/60">{{ $t('usecase.quote.role') }}</div>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- INDUSTRIES: BREAK SECTION -->
+    <section class="py-20 lg:py-24 bg-warm-ink text-white overflow-hidden">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="max-w-3xl mb-12 lg:mb-16">
+          <p class="text-sm font-semibold uppercase tracking-wider text-amber-300 mb-4">{{ $t('industries.eyebrow') }}</p>
+          <h2 class="font-display text-4xl lg:text-5xl text-white font-bold leading-tight mb-6">
+            {{ $t('industries.title') }}
+          </h2>
+          <p class="text-lg text-white/70 leading-relaxed">
+            {{ $t('industries.body') }}
+          </p>
+        </div>
+
+        <ClientOnly>
+          <IndustryGrid />
+        </ClientOnly>
+      </div>
+    </section>
+
+    <!-- TOOLBOX -->
+    <section id="toolbox" class="py-24 lg:py-32 bg-white scroll-mt-24">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="max-w-3xl mb-12">
+          <p class="text-sm font-semibold uppercase tracking-wider text-navy-500 mb-4">{{ $t('toolbox.eyebrow') }}</p>
+          <h2 class="font-display text-4xl lg:text-5xl text-warm-ink font-bold leading-tight mb-6">
+            {{ $t('toolbox.title') }}
+          </h2>
+          <p class="text-lg text-warm-ink/70 leading-relaxed">
+            {{ $t('toolbox.subtitle') }}
+          </p>
+        </div>
+
+        <div class="flex flex-wrap gap-2 mb-10">
+          <button
+            v-for="cat in categories"
+            :key="cat.id"
+            @click="activeCategory = cat.id"
+            :class="[
+              'px-4 py-2 rounded-full text-sm font-semibold transition-colors border',
+              activeCategory === cat.id
+                ? 'bg-navy-500 text-white border-navy-500'
+                : 'bg-white text-warm-ink/70 border-warm-border hover:border-navy-500 hover:text-warm-ink'
+            ]"
+          >
+            {{ $t(`toolbox.categories.${cat.id}`) }}
+            <span class="ml-1.5 text-xs opacity-60">{{ cat.id === 'all' ? modules.length : modules.filter(m => m.category === cat.id).length }}</span>
           </button>
         </div>
-      </div>
 
-      <!-- Mobile Menu Overlay -->
-      <div
-        v-if="showMobileMenu"
-        class="md:hidden absolute top-full left-0 right-0 bg-white border-b border-gray-200 shadow-lg z-40"
-      >
-        <div class="px-6 py-4 space-y-4">
-          <!-- Mobile Navigation Links -->
-          <div class="space-y-2">
-            <NuxtLink :to="localePath('product')" @click="closeMobileMenu()" class="block w-full text-left px-3 py-2 text-gray-700 hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition-colors">{{ $t('nav.product') }}</NuxtLink>
-            <NuxtLink :to="localePath('consultants')" @click="closeMobileMenu()" class="block w-full text-left px-3 py-2 text-gray-700 hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition-colors">{{ $t('consultants.nav') }}</NuxtLink>
-            <NuxtLink :to="localePath('organisaties')" @click="closeMobileMenu()" class="block w-full text-left px-3 py-2 text-gray-700 hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition-colors">{{ $t('customers.nav') }}</NuxtLink>
-            <NuxtLink :to="localePath('prijzen')" @click="closeMobileMenu()" class="block w-full text-left px-3 py-2 text-gray-700 hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition-colors">{{ $t('pricing.nav') }}</NuxtLink>
-            <NuxtLink :to="localePath('about')" @click="closeMobileMenu()" class="block w-full text-left px-3 py-2 text-gray-700 hover:text-indigo-600 hover:bg-gray-50 rounded-lg transition-colors">{{ $t('about.nav') }}</NuxtLink>
-          </div>
-
-          <!-- Mobile CTA Button -->
-          <div class="pt-2 pb-4 border-b border-gray-100">
-            <button
-              @click="scrollTo('demo'); closeMobileMenu()"
-              class="w-full h-11 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 text-white hover:from-indigo-700 hover:to-purple-700 transition-all shadow-lg font-medium"
+        <div class="relative">
+          <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+            <div
+              v-for="module in filteredModules"
+              :key="module.id"
+              class="group p-4 bg-white rounded-xl border border-warm-border hover:shadow-card-hover hover:border-navy-500 transition-all cursor-default"
             >
-              {{ $t('nav.demo') }}
-            </button>
-          </div>
-
-          <!-- Mobile Language Switcher -->
-          <div>
-            <div class="text-sm font-medium text-gray-500 mb-3">Language</div>
-            <div class="flex gap-3">
-              <NuxtLink
-                v-for="loc in availableLocales"
-                :key="loc.code"
-                :to="switchLocalePath(loc.code)"
-                @click="closeMobileMenu()"
-                :class="[
-                  'flex items-center gap-2 px-3 py-2 rounded-lg text-sm transition-colors',
-                  locale === loc.code
-                    ? 'bg-indigo-50 text-indigo-600 font-medium'
-                    : 'text-gray-700 hover:bg-gray-50'
-                ]"
-              >
-                <span class="text-lg">{{ loc.flag }}</span>
-                <span>{{ loc.name }}</span>
-              </NuxtLink>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- Hero -->
-    <section class="relative overflow-hidden pt-36 pb-20">
-      <!-- Background decorations -->
-      <div class="absolute inset-0 -z-10 overflow-hidden">
-        <svg class="absolute left-[50%] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]" aria-hidden="true">
-          <defs>
-            <pattern id="hero-pattern" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
-              <path d="M.5 200V.5H200" fill="none"></path>
-            </pattern>
-          </defs>
-          <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
-            <path d="m-1 0 1 1V0h-1z" stroke="none"></path>
-          </svg>
-          <rect width="100%" height="100%" stroke-width="0" fill="url(#hero-pattern)"></rect>
-        </svg>
-      </div>
-
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="grid lg:grid-cols-2 gap-16 items-center">
-          <div
-            ref="heroReveal.element"
-            :class="[
-              'max-w-2xl opacity-0',
-              { 'animate-reveal-up': heroReveal.isVisible }
-            ]"
-          >
-            <div class="mb-8">
-              <div class="inline-flex items-center rounded-full bg-indigo-50 px-4 py-2 text-sm font-medium text-indigo-700 ring-1 ring-inset ring-indigo-200">
-                <SparklesIcon class="mr-2 h-4 w-4" />
-                {{ $t('hero.badge') }}
+              <div class="flex items-start justify-between gap-2 mb-2">
+                <span class="text-[10px] font-semibold uppercase tracking-wider text-warm-gray truncate">{{ $t(`toolbox.categories.${module.category}`) }}</span>
+                <span
+                  v-if="module.status === 'live'"
+                  class="text-[9px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded-full bg-green-50 text-green-700 border border-green-200 flex-shrink-0"
+                >Live</span>
+                <span
+                  v-else-if="module.status === 'beta'"
+                  class="text-[9px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded-full bg-amber-50 text-gold-600 border border-amber-200 flex-shrink-0"
+                >Beta</span>
+                <span
+                  v-else
+                  class="text-[9px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded-full bg-warm-bg text-warm-gray border border-warm-border flex-shrink-0"
+                >{{ $t('toolbox.soon') }}</span>
               </div>
-            </div>
-            <h1 class="text-5xl sm:text-6xl font-bold tracking-tight text-gray-900 leading-[1.1]" v-html="$t('hero.title', { aiInterviews: '<span class=&quot;bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent&quot;>', aiInterviewsEnd: '</span>' })"></h1>
-            <p class="mt-8 text-xl text-gray-600 leading-8 max-w-xl" v-html="$t('hero.description', { iso9001: '<a href=\'' + iso9001Path + '\' class=&quot;font-semibold text-indigo-600 hover:text-indigo-800 transition-colors cursor-pointer&quot;>', iso9001End: '</a>', iso27001: '<a href=\'' + iso27001Path + '\' class=&quot;font-semibold text-indigo-600 hover:text-indigo-800 transition-colors cursor-pointer&quot;>', iso27001End: '</a>', iso42001: '<a href=\'' + iso42001Path + '\' class=&quot;font-semibold text-indigo-600 hover:text-indigo-800 transition-colors cursor-pointer&quot;>', iso42001End: '</a>' })"></p>
-            <div class="mt-10 flex flex-col sm:flex-row gap-4">
-              <button class="group inline-flex items-center justify-center rounded-2xl bg-gradient-to-r from-indigo-600 to-purple-600 px-8 py-4 text-lg font-semibold text-white shadow-xl hover:from-indigo-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 transition-all duration-200 hover:scale-[1.02]" @click="scrollTo('demo')">
-                {{ $t('hero.cta') }}
-                <ArrowRightIcon class="ml-3 h-5 w-5 group-hover:translate-x-0.5 transition-transform" />
-              </button>
-              <button class="inline-flex items-center justify-center rounded-2xl border-2 border-gray-300 bg-white px-8 py-4 text-lg font-semibold text-gray-700 hover:border-indigo-300 hover:bg-indigo-50 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 transition-all duration-200" @click="scrollTo('werking')">
-                <PlayCircleIcon class="mr-3 h-5 w-5" />
-                {{ $t('hero.ctaSecondary') }}
-              </button>
-            </div>
-            <div class="mt-8 flex items-center gap-4 text-sm text-gray-600">
-              <div class="flex items-center gap-2">
-                <ShieldCheckIcon class="h-5 w-5 text-green-500" />
-                <span class="font-medium" v-html="$t('hero.tagline', { iso9001: '<a href=\'' + iso9001Path + '\' class=&quot;text-indigo-600 hover:text-indigo-800 transition-colors&quot;>', iso9001End: '</a>', co2: '<a href=\'' + co2Path + '\' class=&quot;text-indigo-600 hover:text-indigo-800 transition-colors&quot;>', co2End: '</a>' })"></span>
-              </div>
+              <h3 class="text-sm font-semibold text-warm-ink leading-snug">{{ $t(`toolbox.modules.${module.id}`) }}</h3>
             </div>
           </div>
-
-          <div class="relative lg:ml-auto">
-            <!-- Floating background elements -->
-            <div class="absolute -top-4 -left-4 w-72 h-72 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob"></div>
-            <div class="absolute -top-4 -right-4 w-72 h-72 bg-gradient-to-r from-yellow-400 to-red-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-2000"></div>
-            <div class="absolute -bottom-8 left-20 w-72 h-72 bg-gradient-to-r from-indigo-400 to-cyan-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-blob animation-delay-4000"></div>
-
-            <div class="relative bg-white rounded-3xl shadow-2xl border border-gray-200 overflow-hidden">
-              <div class="px-6 py-4 border-b border-gray-200 bg-gray-50">
-                <div class="flex items-center justify-between">
-                  <div class="flex items-center gap-3">
-                    <div class="flex gap-1.5">
-                      <div class="w-3 h-3 rounded-full bg-red-400"></div>
-                      <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
-                      <div class="w-3 h-3 rounded-full bg-green-400"></div>
-                    </div>
-                    <span class="text-sm font-medium text-gray-600">{{ $t('product.dashboardTitle') }}</span>
-                  </div>
-                  <div class="flex items-center gap-2">
-                    <span class="inline-flex items-center rounded-full bg-green-100 px-2.5 py-0.5 text-xs font-medium text-green-800">{{ $t('common.live') }}</span>
-                  </div>
-                </div>
-              </div>
-              <div class="p-6 space-y-4">
-                <div class="flex items-center gap-3 mb-4 flex-wrap">
-                  <NuxtLink :to="localePath('product')" class="inline-flex items-center rounded-full bg-emerald-100 px-3 py-1 text-xs font-medium text-emerald-700 hover:bg-emerald-200 transition-colors cursor-pointer">{{ $t('common.iso9001') }}</NuxtLink>
-                  <NuxtLink :to="localePath('product') + '#co2'" class="inline-flex items-center rounded-full bg-emerald-100 px-3 py-1 text-xs font-medium text-emerald-700 hover:bg-emerald-200 transition-colors cursor-pointer">CO<sub>2</sub>-Prestatieladder</NuxtLink>
-                  <span class="inline-flex items-center rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-500">{{ $t('common.iso27001') }} (soon)</span>
-                  <span class="inline-flex items-center rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-500">{{ $t('common.iso42001') }} (soon)</span>
-                </div>
-
-                <div class="space-y-3">
-                  <div class="rounded-xl bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 p-4">
-                    <div class="flex items-center gap-3 mb-2">
-                      <div class="flex-shrink-0 w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center">
-                        <ChatBubbleLeftRightIcon class="h-4 w-4 text-white" />
-                      </div>
-                      <div class="font-semibold text-blue-900">{{ $t('product.aiInterviews') }}</div>
-                      <div class="ml-auto">
-                        <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                      </div>
-                    </div>
-                    <p class="text-sm text-blue-700">{{ $t('product.aiInterviewsDesc') }}</p>
-                  </div>
-
-                  <div class="rounded-xl bg-gradient-to-r from-purple-50 to-pink-50 border border-purple-200 p-4">
-                    <div class="flex items-center gap-3 mb-2">
-                      <div class="flex-shrink-0 w-8 h-8 bg-purple-500 rounded-lg flex items-center justify-center">
-                        <Square3Stack3DIcon class="h-4 w-4 text-white" />
-                      </div>
-                      <div class="font-semibold text-purple-900">{{ $t('product.structuring') }}</div>
-                      <div class="ml-auto">
-                        <CheckCircleIcon class="w-5 h-5 text-green-500" />
-                      </div>
-                    </div>
-                    <p class="text-sm text-purple-700">{{ $t('product.structuringDesc') }}</p>
-                  </div>
-
-                  <div class="rounded-xl bg-gradient-to-r from-green-50 to-emerald-50 border border-green-200 p-4">
-                    <div class="flex items-center gap-3 mb-2">
-                      <div class="flex-shrink-0 w-8 h-8 bg-green-500 rounded-lg flex items-center justify-center">
-                        <CloudArrowUpIcon class="h-4 w-4 text-white" />
-                      </div>
-                      <div class="font-semibold text-green-900">{{ $t('product.exportReady') }}</div>
-                      <div class="ml-auto">
-                        <CheckCircleIcon class="w-5 h-5 text-green-500" />
-                      </div>
-                    </div>
-                    <p class="text-sm text-green-700">{{ $t('product.exportDesc') }}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Tagline Section -->
-    <section class="py-32 bg-gradient-to-br from-slate-900 via-gray-900 to-indigo-900 relative overflow-hidden">
-      <!-- Background decorative elements -->
-      <div class="absolute inset-0 bg-gradient-to-r from-indigo-600/10 to-purple-600/10"></div>
-      <div class="absolute -top-40 -left-40 w-80 h-80 bg-gradient-to-r from-indigo-400/10 to-purple-400/10 rounded-full blur-3xl"></div>
-      <div class="absolute -bottom-40 -right-40 w-80 h-80 bg-gradient-to-r from-purple-400/10 to-pink-400/10 rounded-full blur-3xl"></div>
-
-      <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-        <div
-          ref="taglineReveal.element"
-          :class="[
-            'max-w-4xl mx-auto opacity-0',
-            { 'animate-reveal-scale': taglineReveal.isVisible }
-          ]"
-        >
-          <!-- Icon -->
-          <div class="flex items-center justify-center w-20 h-20 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full mx-auto mb-8 shadow-2xl">
-            <ChatBubbleLeftRightIcon class="h-10 w-10 text-white" />
-          </div>
-
-          <!-- Main tagline -->
-          <h2 class="text-6xl sm:text-7xl lg:text-8xl font-bold text-white mb-8 leading-tight">
-            {{ $t('tagline.title') }}
-          </h2>
-
-          <!-- Supporting text -->
-          <p class="text-xl sm:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed mb-12">
-            {{ $t('tagline.subtitle') }}
-          </p>
-
-          <!-- Visual flow indicators -->
-          <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div class="flex flex-col items-center space-y-4">
-              <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center shadow-lg">
-                <ChatBubbleLeftRightIcon class="h-8 w-8 text-white" />
-              </div>
-              <h3 class="text-lg font-semibold text-white">{{ $t('flowSteps.conversation.title') }}</h3>
-              <p class="text-gray-400 text-center text-sm">{{ $t('flowSteps.conversation.description') }}</p>
-            </div>
-
-            <!-- Arrow -->
-            <div class="hidden md:flex items-center justify-center">
-              <ArrowRightIcon class="h-12 w-12 text-white drop-shadow-lg animate-slide-arrow" stroke-width="3" />
-            </div>
-
-            <div class="flex flex-col items-center space-y-4">
-              <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center shadow-lg">
-                <ShieldCheckIcon class="h-8 w-8 text-white" />
-              </div>
-              <h3 class="text-lg font-semibold text-white">{{ $t('flowSteps.certification.title') }}</h3>
-              <p class="text-gray-400 text-center text-sm">{{ $t('flowSteps.certification.description') }}</p>
-            </div>
-          </div>
-
-          <!-- CTA -->
-          <div class="mt-16">
-            <button
-              @click="scrollTo('demo')"
-              class="group inline-flex items-center justify-center rounded-2xl bg-gradient-to-r from-indigo-600 to-purple-600 px-10 py-5 text-lg font-semibold text-white shadow-2xl hover:from-indigo-700 hover:to-purple-700 focus:outline-none focus:ring-4 focus:ring-indigo-500/50 transition-all duration-300 hover:scale-105"
-            >
-              {{ $t('tagline.cta') }}
-              <ArrowRightIcon class="ml-3 h-6 w-6 group-hover:translate-x-1 transition-transform" />
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Value Props -->
-    <section id="waarde" class="py-24 bg-gray-50 scroll-mt-24">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-4xl mx-auto mb-20">
-          <h2 class="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 mb-6" v-html="$t('value.title', { helpr: '<span class=&quot;bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent font-bold&quot;>', helprEnd: '</span>' })"></h2>
-          <p class="text-xl text-gray-600 leading-8">
-            {{ $t('value.subtitle') }}
-          </p>
+          <div class="absolute inset-x-0 bottom-0 h-[40%] bg-gradient-to-b from-white/0 via-white/85 to-white pointer-events-none"></div>
         </div>
 
-        <div class="grid lg:grid-cols-3 gap-8">
-          <div
-            ref="valueCard1Reveal.element"
-            :class="[
-              'group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-200 hover:border-indigo-300 opacity-0',
-              { 'animate-reveal-left': valueCard1Reveal.isVisible }
-            ]"
-          >
-            <div class="absolute inset-0 bg-gradient-to-br from-indigo-50 to-purple-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            <div class="relative p-8">
-              <div class="flex items-center justify-center w-14 h-14 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-2xl shadow-lg mb-6 group-hover:scale-110 transition-transform duration-300">
-                <RocketLaunchIcon class="h-7 w-7 text-white" />
-              </div>
-              <h3 class="text-xl font-bold text-gray-900 mb-4 group-hover:text-indigo-600 transition-colors">
-                {{ $t('value.card1.title') }}
-              </h3>
-              <p class="text-gray-600 leading-7">
-                {{ $t('value.card1.description') }}
-              </p>
-            </div>
-          </div>
-
-          <div
-            ref="valueCard2Reveal.element"
-            :class="[
-              'group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-200 hover:border-indigo-300 opacity-0',
-              { 'animate-reveal-up': valueCard2Reveal.isVisible }
-            ]"
-          >
-            <div class="absolute inset-0 bg-gradient-to-br from-indigo-50 to-purple-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            <div class="relative p-8">
-              <div class="flex items-center justify-center w-14 h-14 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl shadow-lg mb-6 group-hover:scale-110 transition-transform duration-300">
-                <CogIcon class="h-7 w-7 text-white" />
-              </div>
-              <h3 class="text-xl font-bold text-gray-900 mb-4 group-hover:text-emerald-600 transition-colors">
-                {{ $t('value.card2.title') }}
-              </h3>
-              <p class="text-gray-600 leading-7">
-                {{ $t('value.card2.description') }}
-              </p>
-            </div>
-          </div>
-
-          <div
-            ref="valueCard3Reveal.element"
-            :class="[
-              'group relative bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-200 hover:border-indigo-300 opacity-0',
-              { 'animate-reveal-right': valueCard3Reveal.isVisible }
-            ]"
-          >
-            <div class="absolute inset-0 bg-gradient-to-br from-indigo-50 to-purple-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            <div class="relative p-8">
-              <div class="flex items-center justify-center w-14 h-14 bg-gradient-to-br from-amber-500 to-orange-600 rounded-2xl shadow-lg mb-6 group-hover:scale-110 transition-transform duration-300">
-                <StarIcon class="h-7 w-7 text-white" />
-              </div>
-              <h3 class="text-xl font-bold text-gray-900 mb-4 group-hover:text-amber-600 transition-colors">
-                {{ $t('value.card3.title') }}
-              </h3>
-              <p class="text-gray-600 leading-7">
-                {{ $t('value.card3.description') }}
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Stats Section -->
-        <div class="mt-20 grid grid-cols-3 lg:grid-cols-3 gap-8 text-center">
-          <div class="space-y-2">
-            <div class="text-3xl font-bold text-indigo-600">{{ $t('value.stats.reduction') }}</div>
-            <div class="text-sm text-gray-600 font-medium">{{ $t('value.stats.reductionLabel') }}</div>
-          </div>
-          <div class="space-y-2">
-            <div class="text-3xl font-bold text-emerald-600">{{ $t('value.stats.integration') }}</div>
-            <div class="text-sm text-gray-600 font-medium">{{ $t('value.stats.integrationLabel') }}</div>
-          </div>
-          <div class="space-y-2">
-            <div class="text-3xl font-bold text-amber-600">{{ $t('value.stats.standards') }}</div>
-            <div class="text-sm text-gray-600 font-medium">{{ $t('value.stats.standardsLabel') }}</div>
-          </div>
-        </div>
-
-        <!-- Time Remark -->
-        <div class="mt-8 text-center max-w-4xl mx-auto">
-          <p class="text-sm text-gray-500 leading-relaxed" v-html="$t('value.timeRemark')"></p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ElevenLabs Grant Section -->
-    <section class="py-16 bg-gradient-to-r from-indigo-50 to-purple-50">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-4xl mx-auto">
-          <div class="mb-8">
-            <span class="inline-flex items-center rounded-full bg-indigo-100 px-4 py-2 text-sm font-medium text-indigo-700 ring-1 ring-inset ring-indigo-200 mb-6">
-              <StarIcon class="mr-2 h-4 w-4" />
-              {{ $t('grant.badge') }}
-            </span>
-          </div>
-
-          <div class="flex items-center justify-center mb-8">
-            <TrophyIcon class="h-32 w-32 text-yellow-500 mr-8" />
-            <h2 class="text-3xl sm:text-4xl tracking-tight text-gray-600">
-              {{ $t('grant.title') }}
-            </h2>
-          </div>
-
-          <!-- ElevenLabs Grant Image -->
-          <div class="flex justify-center">
-            <a href="https://elevenlabs.io/text-to-speech">
-              <img src="https://eleven-public-cdn.elevenlabs.io/payloadcms/pwsc4vchsqt-ElevenLabsGrants.webp" alt="Text to Speech" style="width:250px">
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Quote Section 1: Dragon -->
-    <section class="py-20 bg-gradient-to-br from-slate-900 via-emerald-900 to-slate-900 relative overflow-hidden">
-      <div class="absolute inset-0">
-        <div class="absolute top-0 left-1/4 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl"></div>
-        <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl"></div>
-      </div>
-      <div class="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-        <div class="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-2xl mb-8 shadow-2xl shadow-emerald-500/30">
-          <SparklesIcon class="h-8 w-8 text-white" />
-        </div>
-        <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">
-          {{ $t('quotes.dragon.title') }}
-        </h2>
-        <p class="text-xl text-emerald-100 leading-relaxed max-w-2xl mx-auto italic">
-          "{{ $t('quotes.dragon.description') }}"
+        <p class="mt-14 text-center text-lg lg:text-xl text-warm-ink/80 max-w-3xl mx-auto leading-relaxed">
+          <span class="font-display font-bold text-warm-ink">{{ $t('toolbox.growthTitle') }}</span>
+          {{ $t('toolbox.growthBody') }}
         </p>
       </div>
     </section>
 
-    <!-- Voor wie -->
-    <section id="voorwie" class="py-14 scroll-mt-24">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <h2 class="text-3xl font-bold tracking-tight text-center">{{ $t('target.title') }}</h2>
-        <div class="mt-10 grid md:grid-cols-2 gap-8">
-          <!-- Consultants -->
-          <div class="rounded-2xl border bg-white overflow-hidden">
-            <div class="p-4 border-b flex items-center gap-2 text-lg font-semibold bg-indigo-50">
-              <UsersIcon class="h-5 w-5 text-indigo-600"/>
-              {{ $t('target.consultants.title') }}
-            </div>
-            <div class="p-6">
-              <!-- Challenges -->
-              <div class="mb-6">
-                <h4 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">{{ $t('target.consultants.challengesTitle') }}</h4>
-                <div class="space-y-2">
-                  <div v-for="(challenge, index) in tm('target.consultants.challenges')" :key="'c-challenge-'+index" class="flex items-start gap-2 text-gray-600">
-                    <span class="text-red-400 mt-0.5">•</span>
-                    <span>{{ rt(challenge) }}</span>
-                  </div>
-                </div>
-              </div>
-              <!-- Benefits -->
-              <div class="mb-6">
-                <h4 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">{{ $t('target.consultants.benefitsTitle') }}</h4>
-                <div class="space-y-2">
-                  <div v-for="(benefit, index) in tm('target.consultants.benefits')" :key="'c-benefit-'+index" class="flex items-start gap-2 text-gray-700">
-                    <CheckCircleIcon class="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0"/>
-                    <span>{{ rt(benefit) }}</span>
-                  </div>
-                </div>
-              </div>
-              <!-- Closing -->
-              <div class="pt-4 border-t">
-                <p class="text-indigo-600 font-semibold">{{ $t('target.consultants.closing') }}</p>
-              </div>
-            </div>
-          </div>
-          <!-- Companies -->
-          <div class="rounded-2xl border bg-white overflow-hidden">
-            <div class="p-4 border-b flex items-center gap-2 text-lg font-semibold bg-emerald-50">
-              <BuildingOffice2Icon class="h-5 w-5 text-emerald-600"/>
-              {{ $t('target.companies.title') }}
-            </div>
-            <div class="p-6">
-              <!-- Challenges -->
-              <div class="mb-6">
-                <h4 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">{{ $t('target.companies.challengesTitle') }}</h4>
-                <div class="space-y-2">
-                  <div v-for="(challenge, index) in tm('target.companies.challenges')" :key="'o-challenge-'+index" class="flex items-start gap-2 text-gray-600">
-                    <span class="text-red-400 mt-0.5">•</span>
-                    <span>{{ rt(challenge) }}</span>
-                  </div>
-                </div>
-              </div>
-              <!-- Benefits -->
-              <div class="mb-6">
-                <h4 class="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-3">{{ $t('target.companies.benefitsTitle') }}</h4>
-                <div class="space-y-2">
-                  <div v-for="(benefit, index) in tm('target.companies.benefits')" :key="'o-benefit-'+index" class="flex items-start gap-2 text-gray-700">
-                    <CheckCircleIcon class="h-5 w-5 text-green-500 mt-0.5 flex-shrink-0"/>
-                    <span>{{ rt(benefit) }}</span>
-                  </div>
-                </div>
-              </div>
-              <!-- Closing -->
-              <div class="pt-4 border-t">
-                <p class="text-emerald-600 font-semibold">{{ $t('target.companies.closing') }}</p>
-              </div>
-            </div>
+    <!-- HOW IT WORKS -->
+    <section id="how" class="py-24 lg:py-32 bg-navy-500 scroll-mt-24">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="text-center mb-16">
+          <p class="text-sm font-semibold uppercase tracking-wider text-amber-300 mb-4">{{ $t('how.eyebrow') }}</p>
+          <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl text-white font-bold leading-tight whitespace-nowrap">
+            {{ $t('how.title') }}
+          </h2>
+        </div>
+
+        <div class="grid md:grid-cols-4 gap-6 max-w-6xl mx-auto">
+          <div v-for="(step, i) in howSteps" :key="step" class="relative">
+            <div class="flex items-center justify-center w-12 h-12 rounded-full bg-white text-navy-500 font-display font-bold text-xl mb-4">{{ i + 1 }}</div>
+            <h3 class="font-display text-xl text-white font-bold mb-2">{{ $t(`how.steps.${step}.title`) }}</h3>
+            <p class="text-white/80 leading-relaxed">{{ $t(`how.steps.${step}.body`) }}</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Consultant Value Proposition -->
-    <section class="py-24 bg-gradient-to-b from-indigo-50/30 to-purple-50/30 relative overflow-hidden">
-      <!-- Background decoration -->
-      <div class="absolute inset-0 bg-gradient-to-r from-blue-50/40 to-indigo-50/40"></div>
-      <div class="absolute -top-24 -right-24 w-96 h-96 bg-gradient-to-r from-indigo-200/30 to-purple-200/30 rounded-full blur-3xl -z-10"></div>
-      <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-gradient-to-r from-purple-200/30 to-pink-200/30 rounded-full blur-3xl -z-10"></div>
-
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
-        <div class="text-center max-w-4xl mx-auto mb-20">
-          <h2 class="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 mb-6" v-html="$t('consultantValue.title', { consultants: '<span class=&quot;bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent font-bold&quot;>', consultantsEnd: '</span>' })"></h2>
-          <p class="text-xl text-gray-600 leading-8">
-            {{ $t('consultantValue.subtitle') }}
-          </p>
-        </div>
-
-        <div class="grid lg:grid-cols-3 gap-8 mb-16">
-
-          <!-- Quality Card -->
-          <div class="bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden hover:shadow-2xl transition-all duration-500 hover:scale-[1.02]">
-            <div class="bg-gradient-to-br from-purple-500 to-indigo-600 p-8 text-white">
-              <div class="flex items-center justify-between mb-4">
-                <h3 class="text-2xl font-bold">{{ $t('consultantValue.quality.title') }}</h3>
-                <AcademicCapIcon class="h-8 w-8 opacity-80" />
-              </div>
-              <p class="text-purple-100 leading-7">
-                {{ $t('consultantValue.quality.description') }}
-              </p>
-            </div>
-            <div class="p-8">
-              <div class="space-y-4">
-                <div
-                  v-for="(benefit, index) in tm('consultantValue.quality.benefits')"
-                  :key="index"
-                  class="flex items-start gap-3"
-                >
-                  <CheckCircleIcon class="h-5 w-5 text-purple-600 mt-0.5 flex-shrink-0" />
-                  <span class="text-gray-700 text-sm leading-6">{{ rt(benefit) }}</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Efficiency Card -->
-          <div class="bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden hover:shadow-2xl transition-all duration-500 hover:scale-[1.02]">
-            <div class="bg-gradient-to-br from-blue-500 to-indigo-600 p-8 text-white">
-              <div class="flex items-center justify-between mb-4">
-                <h3 class="text-2xl font-bold">{{ $t('consultantValue.efficiency.title') }}</h3>
-                <ScaleIcon class="h-8 w-8 opacity-80" />
-              </div>
-              <p class="text-blue-100 leading-7">
-                {{ $t('consultantValue.efficiency.description') }}
-              </p>
-            </div>
-            <div class="p-8">
-              <div class="grid grid-cols-1 gap-6">
-                <div class="text-center">
-                  <div class="text-3xl font-bold text-indigo-600 mb-2">{{ $t('consultantValue.efficiency.stats.time') }}</div>
-                  <div class="text-sm text-gray-600 font-medium">{{ $t('consultantValue.efficiency.stats.timeLabel') }}</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- Assurance Card -->
-          <div class="bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden hover:shadow-2xl transition-all duration-500 hover:scale-[1.02]">
-            <div class="bg-gradient-to-br from-indigo-500 to-purple-600 p-8 text-white">
-              <div class="flex items-center justify-between mb-4">
-                <h3 class="text-2xl font-bold">{{ $t('consultantValue.assurance.title') }}</h3>
-                <ShieldCheckIcon class="h-8 w-8 opacity-80" />
-              </div>
-              <p class="text-indigo-100 leading-7">
-                {{ $t('consultantValue.assurance.description') }}
-              </p>
-            </div>
-            <div class="p-8">
-              <div class="space-y-4">
-                <div
-                  v-for="(point, index) in tm('consultantValue.assurance.points')"
-                  :key="index"
-                  class="flex items-start gap-3"
-                >
-                  <CheckCircleIcon class="h-5 w-5 text-indigo-600 mt-0.5 flex-shrink-0" />
-                  <span class="text-gray-700 text-sm leading-6">{{ rt(point) }}</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- CTA Section -->
-        <div class="text-center">
-          <button
-            @click="scrollTo('demo')"
-            class="group inline-flex items-center justify-center rounded-2xl bg-gradient-to-r from-indigo-600 to-purple-600 px-8 py-4 text-lg font-semibold text-white shadow-xl hover:from-indigo-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 transition-all duration-200 hover:scale-[1.02]"
-          >
-            {{ $t('tagline.cta') }}
-            <ArrowRightIcon class="ml-3 h-5 w-5 group-hover:translate-x-0.5 transition-transform" />
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Quote Section 2: Comfort -->
-    <section class="py-16 bg-gradient-to-r from-amber-50 via-orange-50 to-yellow-50 border-y border-amber-100">
-      <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col md:flex-row items-center gap-8 md:gap-12">
-          <div class="flex-shrink-0">
-            <div class="w-20 h-20 bg-gradient-to-br from-amber-400 to-orange-500 rounded-full flex items-center justify-center shadow-xl shadow-amber-200">
-              <svg class="h-10 w-10 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
-              </svg>
-            </div>
-          </div>
-          <div class="text-center md:text-left">
-            <h2 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">
-              {{ $t('quotes.comfort.title') }}
+    <!-- OUTPUT -->
+    <section id="output" class="py-24 lg:py-32 bg-warm-bg scroll-mt-24">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-stretch">
+          <div class="lg:col-span-5 flex flex-col">
+            <p class="text-sm font-semibold uppercase tracking-wider text-navy-500 mb-4">{{ $t('output.eyebrow') }}</p>
+            <h2 class="font-display text-4xl lg:text-5xl text-warm-ink font-bold leading-tight mb-6">
+              {{ $t('output.title') }}
             </h2>
-            <p class="text-lg text-amber-800 leading-relaxed italic">
-              "{{ $t('quotes.comfort.description') }}"
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Werking -->
-    <section id="werking" class="py-24 bg-gradient-to-b from-white to-indigo-50/30 scroll-mt-24 relative overflow-hidden">
-      <!-- Background decoration -->
-      <div class="absolute inset-0 bg-gradient-to-r from-indigo-50/20 to-purple-50/20"></div>
-
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
-        <div class="text-center max-w-4xl mx-auto mb-20">
-          <h2 class="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 mb-6" v-html="$t('working.title', { werkt: '<span class=&quot;bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent font-bold&quot;>', werktEnd: '</span>' })"></h2>
-          <p class="text-xl text-gray-600 leading-8">
-            {{ $t('working.subtitle') }}
-          </p>
-        </div>
-
-        <!-- Animated Process Flow -->
-        <div class="relative">
-          <!-- Connecting line -->
-          <div class="hidden lg:block absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-1">
-            <div class="absolute inset-0 bg-gradient-to-r from-blue-200 via-purple-200 to-green-200 rounded-full"></div>
-            <div class="absolute inset-0 bg-gradient-to-r from-blue-400 via-purple-400 to-green-400 rounded-full animate-pulse scale-y-150"></div>
-          </div>
-
-          <!-- Process Steps -->
-          <div class="grid lg:grid-cols-3 gap-12 lg:gap-8">
-            <!-- Step 1: Interview -->
-            <div
-              ref="workStep1Reveal.element"
-              :class="[
-                'group relative opacity-0',
-                { 'animate-reveal-up': workStep1Reveal.isVisible }
-              ]"
-            >
-              <div class="bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden hover:shadow-2xl transition-all duration-500 hover:scale-105">
-                <!-- Animated header -->
-                <div class="relative bg-gradient-to-br from-blue-500 to-indigo-600 p-8 text-white overflow-hidden">
-                  <div class="absolute -top-10 -right-10 w-32 h-32 bg-white/10 rounded-full animate-spin-slow"></div>
-                  <div class="absolute -bottom-10 -left-10 w-24 h-24 bg-white/5 rounded-full animate-bounce-slow"></div>
-
-                  <div class="relative">
-                    <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mb-4 backdrop-blur">
-                      <ChatBubbleLeftRightIcon class="h-8 w-8 text-white" />
-                    </div>
-                    <div class="flex items-center gap-3 mb-2">
-                      <span class="text-3xl font-bold">1</span>
-                      <div class="h-px bg-white/30 flex-1"></div>
-                    </div>
-                    <h3 class="text-2xl font-bold">{{ $t('working.step1.title') }}</h3>
-                  </div>
-                </div>
-
-                <!-- Content -->
-                <div class="p-8">
-                  <p class="text-gray-600 leading-7 mb-6">
-                    {{ $t('working.step1.description') }}
-                  </p>
-
-                  <!-- Animated demo -->
-                  <div class="bg-gray-50 rounded-2xl p-4 border border-gray-100">
-                    <div class="space-y-3">
-                      <div class="flex items-center gap-3">
-                        <div class="w-3 h-3 bg-blue-400 rounded-full animate-ping"></div>
-                        <div class="text-sm text-gray-600">{{ $t('working.step1.demo.question') }}</div>
-                      </div>
-                      <div class="flex items-center gap-3">
-                        <div class="w-3 h-3 bg-green-400 rounded-full"></div>
-                        <div class="text-sm text-gray-600">{{ $t('working.step1.demo.answer') }}</div>
-                      </div>
-                      <div class="flex items-center gap-3">
-                        <div class="w-3 h-3 bg-indigo-400 rounded-full animate-pulse"></div>
-                        <div class="text-sm text-gray-600">{{ $t('working.step1.demo.capture') }}</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Step 2: Structure -->
-            <div
-              ref="workStep2Reveal.element"
-              :class="[
-                'group relative lg:mt-12 opacity-0',
-                { 'animate-reveal-up': workStep2Reveal.isVisible }
-              ]"
-            >
-              <div class="bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden hover:shadow-2xl transition-all duration-500 hover:scale-105">
-                <!-- Animated header -->
-                <div class="relative bg-gradient-to-br from-purple-500 to-pink-600 p-8 text-white overflow-hidden">
-                  <div class="absolute top-0 right-0 w-40 h-40 bg-gradient-to-r from-purple-400/20 to-pink-400/20 rounded-full animate-blob"></div>
-                  <div class="absolute -bottom-5 -left-5 w-28 h-28 bg-white/10 rounded-full animate-float"></div>
-
-                  <div class="relative">
-                    <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mb-4 backdrop-blur">
-                      <SparklesIcon class="h-8 w-8 text-white" />
-                    </div>
-                    <div class="flex items-center gap-3 mb-2">
-                      <span class="text-3xl font-bold">2</span>
-                      <div class="h-px bg-white/30 flex-1"></div>
-                    </div>
-                    <h3 class="text-2xl font-bold">{{ $t('working.step2.title') }}</h3>
-                  </div>
-                </div>
-
-                <!-- Content -->
-                <div class="p-8">
-                  <p class="text-gray-600 leading-7 mb-6">
-                    {{ $t('working.step2.description') }}
-                  </p>
-
-                  <!-- Animated demo -->
-                  <div class="bg-gray-50 rounded-2xl p-4 border border-gray-100">
-                    <div class="space-y-2">
-                      <div class="flex items-center justify-between">
-                        <span class="text-xs text-gray-500">{{ $t('working.step2.categories.policy') }}</span>
-                        <div class="w-20 bg-purple-200 h-2 rounded animate-pulse"></div>
-                      </div>
-                      <div class="flex items-center justify-between">
-                        <span class="text-xs text-gray-500">{{ $t('working.step2.categories.risk') }}</span>
-                        <div class="w-16 bg-pink-200 h-2 rounded animate-pulse animation-delay-200"></div>
-                      </div>
-                      <div class="flex items-center justify-between">
-                        <span class="text-xs text-gray-500">{{ $t('working.step2.categories.controls') }}</span>
-                        <div class="w-24 bg-indigo-200 h-2 rounded animate-pulse animation-delay-400"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Step 3: Export -->
-            <div
-              ref="workStep3Reveal.element"
-              :class="[
-                'group relative opacity-0',
-                { 'animate-reveal-up': workStep3Reveal.isVisible }
-              ]"
-            >
-              <div class="bg-white rounded-3xl shadow-xl border border-gray-200 overflow-hidden hover:shadow-2xl transition-all duration-500 hover:scale-105">
-                <!-- Animated header -->
-                <div class="relative bg-gradient-to-br from-green-500 to-emerald-600 p-8 text-white overflow-hidden">
-                  <div class="absolute -top-8 -right-8 w-36 h-36 bg-white/5 rounded-full animate-spin-reverse"></div>
-                  <div class="absolute -bottom-4 -left-4 w-20 h-20 bg-white/10 rounded-full animate-pulse"></div>
-
-                  <div class="relative">
-                    <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center mb-4 backdrop-blur">
-                      <CloudArrowUpIcon class="h-8 w-8 text-white" />
-                    </div>
-                    <div class="flex items-center gap-3 mb-2">
-                      <span class="text-3xl font-bold">3</span>
-                      <div class="h-px bg-white/30 flex-1"></div>
-                    </div>
-                    <h3 class="text-2xl font-bold">{{ $t('working.step3.title') }}</h3>
-                  </div>
-                </div>
-
-                <!-- Content -->
-                <div class="p-8">
-                  <p class="text-gray-600 leading-7 mb-6">
-                    {{ $t('working.step3.description') }}
-                  </p>
-
-                  <!-- Animated demo -->
-                  <div class="bg-gray-50 rounded-2xl p-4 border border-gray-100">
-                    <div class="grid grid-cols-3 gap-2">
-                      <div class="text-center">
-                        <div class="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center mb-1 mx-auto">
-                          <DocumentTextIcon class="h-4 w-4 text-green-600" />
-                        </div>
-                        <span class="text-xs text-gray-500">{{ $t('working.step3.platforms.sharepoint') }}</span>
-                      </div>
-                      <div class="text-center">
-                        <div class="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center mb-1 mx-auto">
-                          <DocumentTextIcon class="h-4 w-4 text-blue-600" />
-                        </div>
-                        <span class="text-xs text-gray-500">{{ $t('working.step3.platforms.confluence') }}</span>
-                      </div>
-                      <div class="text-center">
-                        <div class="w-8 h-8 bg-purple-100 rounded-lg flex items-center justify-center mb-1 mx-auto">
-                          <DocumentTextIcon class="h-4 w-4 text-purple-600" />
-                        </div>
-                        <span class="text-xs text-gray-500">{{ $t('working.step3.platforms.custom') }}</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Additional Features -->
-        <div class="mt-24 grid md:grid-cols-2 gap-8">
-          <div class="group bg-white rounded-2xl shadow-lg border border-gray-200 p-8 hover:shadow-xl transition-all duration-300">
-            <div class="flex items-start gap-4">
-              <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                <LockClosedIcon class="h-6 w-6 text-white" />
-              </div>
-              <div>
-                <h3 class="text-xl font-bold text-gray-900 mb-3">{{ $t('working.features.security.title') }}</h3>
-                <p class="text-gray-600 leading-7">
-                  {{ $t('working.features.security.description') }}
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="group bg-white rounded-2xl shadow-lg border border-gray-200 p-8 hover:shadow-xl transition-all duration-300">
-            <div class="flex items-start gap-4">
-              <div class="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-                <BookOpenIcon class="h-6 w-6 text-white" />
-              </div>
-              <div>
-                <h3 class="text-xl font-bold text-gray-900 mb-3">{{ $t('working.features.templates.title') }}</h3>
-                <p class="text-gray-600 leading-7">
-                  {{ $t('working.features.templates.description') }}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Process Map Showcase -->
-    <section class="py-24 bg-gradient-to-br from-gray-50 to-indigo-50/30 relative overflow-hidden">
-      <!-- Background decoration -->
-      <div class="absolute inset-0 bg-gradient-to-r from-indigo-50/20 to-purple-50/20"></div>
-
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
-        <div class="text-center max-w-4xl mx-auto mb-16">
-          <div class="inline-flex items-center rounded-full bg-indigo-100 px-4 py-2 text-sm font-medium text-indigo-700 ring-1 ring-inset ring-indigo-200 mb-6">
-            <SparklesIcon class="mr-2 h-4 w-4" />
-            {{ $t('processMap.badge') }}
-          </div>
-          <h2 class="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 mb-6" v-html="$t('processMap.title', { processMap: '<span class=&quot;bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent font-bold&quot;>', processMapEnd: '</span>' })"></h2>
-          <p class="text-xl text-gray-600 leading-8">
-            {{ $t('processMap.subtitle') }}
-          </p>
-        </div>
-
-        <div class="grid lg:grid-cols-2 gap-16 items-center">
-          <!-- Process Map Image -->
-          <div
-            ref="processMapLeftReveal.element"
-            :class="[
-              'group relative opacity-0',
-              { 'animate-reveal-left': processMapLeftReveal.isVisible }
-            ]"
-          >
-            <div class="relative bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden p-4 group-hover:shadow-3xl transition-all duration-500">
-              <img
-                src="~/assets/images/process_map.png"
-                :alt="$t('processMap.imageAlt')"
-                class="w-full h-auto rounded-lg"
-              />
-              <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg"></div>
-            </div>
-
-            <!-- Floating elements -->
-            <div class="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-r from-indigo-400 to-purple-400 rounded-full opacity-20 blur-xl -z-10"></div>
-            <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full opacity-20 blur-xl -z-10"></div>
-          </div>
-
-          <!-- Content -->
-          <div
-            ref="processMapRightReveal.element"
-            :class="[
-              'opacity-0',
-              { 'animate-reveal-right': processMapRightReveal.isVisible }
-            ]"
-          >
-            <p class="text-lg text-gray-600 leading-8 mb-8">
-              {{ $t('processMap.description') }}
+            <p class="text-lg text-warm-ink/70 leading-relaxed mb-10">
+              {{ $t('output.body') }}
             </p>
 
-            <!-- Features List -->
-            <div class="space-y-4">
-              <div
-                v-for="(feature, index) in tm('processMap.features')"
-                :key="index"
-                class="flex items-start gap-4"
-              >
-                <div class="flex-shrink-0 w-6 h-6 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full flex items-center justify-center mt-1">
-                  <CheckCircleIcon class="h-4 w-4 text-white" />
-                </div>
-                <span class="text-gray-700 leading-7">{{ rt(feature) }}</span>
-              </div>
-            </div>
-
-            <!-- CTA -->
-            <div class="mt-10">
-              <button
-                @click="scrollTo('demo')"
-                class="group inline-flex items-center justify-center rounded-2xl bg-gradient-to-r from-indigo-600 to-purple-600 px-8 py-4 text-lg font-semibold text-white shadow-xl hover:from-indigo-700 hover:to-purple-700 focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2 transition-all duration-200 hover:scale-[1.02]"
-              >
-                {{ $t('tagline.cta') }}
-                <ArrowRightIcon class="ml-3 h-5 w-5 group-hover:translate-x-0.5 transition-transform" />
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Quote Section 3: Strategic Partner -->
-    <section class="py-20 bg-white relative">
-      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div class="bg-gradient-to-br from-indigo-600 via-purple-600 to-indigo-700 rounded-3xl p-8 sm:p-12 lg:p-16 relative overflow-hidden shadow-2xl">
-          <div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2"></div>
-          <div class="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full translate-y-1/2 -translate-x-1/2"></div>
-
-          <div class="relative grid lg:grid-cols-5 gap-8 items-center">
-            <div class="lg:col-span-3">
-              <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">
-                {{ $t('quotes.strategic.title') }}
-              </h2>
-              <p class="text-xl text-indigo-100 leading-relaxed italic">
-                "{{ $t('quotes.strategic.description') }}"
-              </p>
-            </div>
-            <div class="lg:col-span-2 flex justify-center lg:justify-end">
-              <div class="relative">
-                <div class="w-32 h-32 bg-white/10 backdrop-blur rounded-2xl flex items-center justify-center">
-                  <RocketLaunchIcon class="h-16 w-16 text-white" />
-                </div>
-                <div class="absolute -top-2 -right-2 w-8 h-8 bg-amber-400 rounded-full flex items-center justify-center shadow-lg">
-                  <ArrowRightIcon class="h-4 w-4 text-amber-900" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Application Scope -->
-    <section class="py-24 bg-white relative overflow-hidden">
-      <div class="absolute inset-0 bg-gradient-to-b from-gray-50/50 to-white"></div>
-
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative">
-        <div class="text-center max-w-4xl mx-auto mb-20">
-          <h2 class="text-4xl sm:text-5xl font-bold tracking-tight text-gray-900 mb-6" v-html="$t('applicationScope.title', { concrete: '<span class=&quot;bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent font-bold&quot;>', concreteEnd: '</span>' })"></h2>
-          <p class="text-xl text-gray-600 leading-8">
-            {{ $t('applicationScope.subtitle') }}
-          </p>
-        </div>
-
-        <div class="grid lg:grid-cols-3 gap-8 mb-16">
-          <!-- Current Standards -->
-          <div class="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-3xl border border-emerald-200 p-8">
-            <div class="mb-6">
-              <div class="flex items-center gap-5 mb-3">
-                <div class="w-12 h-12 bg-emerald-500 rounded flex items-center justify-center flex-shrink-0">
-                  <CheckCircleIcon class="h-6 w-6 text-white" />
-                </div>
-                <h3 class="text-2xl font-bold text-gray-900">{{ $t('applicationScope.current.title') }}</h3>
-              </div>
-              <p class="text-gray-600 text-sm">{{ $t('applicationScope.current.description') }}</p>
-            </div>
-
-            <div class="space-y-4">
-              <div
-                v-for="(standard, index) in tm('applicationScope.current.standards')"
-                :key="index"
-                class="bg-white rounded-xl p-4 border border-emerald-100 hover:border-emerald-200 transition-colors"
-              >
-                <div class="font-semibold text-gray-900 mb-2">
-                  <NuxtLink
-                    v-if="getStandardLink(rt(standard.name))"
-                    :to="getStandardLink(rt(standard.name))"
-                    class="hover:text-emerald-600 transition-colors cursor-pointer"
-                  >
-                    {{ rt(standard.name) }}
-                  </NuxtLink>
-                  <span v-else>{{ rt(standard.name) }}</span>
-                </div>
-                <div class="text-sm text-gray-600 leading-6">{{ rt(standard.description) }}</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Upcoming Standards -->
-          <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-3xl border border-blue-200 p-8">
-            <div class="mb-6">
-              <div class="flex items-center gap-5 mb-3">
-                <div class="w-12 h-12 bg-blue-500 rounded flex items-center justify-center flex-shrink-0">
-                  <RocketLaunchIcon class="h-6 w-6 text-white" />
-                </div>
-                <h3 class="text-2xl font-bold text-gray-900">{{ $t('applicationScope.upcoming.title') }}</h3>
-              </div>
-              <p class="text-gray-600 text-sm">{{ $t('applicationScope.upcoming.description') }}</p>
-            </div>
-
-            <div class="space-y-3">
-              <div
-                v-for="(standard, index) in tm('applicationScope.upcoming.standards')"
-                :key="index"
-                class="bg-white rounded-lg p-3 border border-blue-100"
-              >
-                <div class="font-semibold text-gray-900 text-sm">
-                  <NuxtLink
-                    v-if="getStandardLink(rt(standard.name))"
-                    :to="getStandardLink(rt(standard.name))"
-                    class="hover:text-blue-600 transition-colors cursor-pointer"
-                  >
-                    {{ rt(standard.name) }}
-                  </NuxtLink>
-                  <span v-else>{{ rt(standard.name) }}</span>
-                </div>
-                <div class="text-xs text-gray-600">{{ rt(standard.description) }}</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Custom Solutions -->
-          <div class="bg-gradient-to-br from-purple-50 to-indigo-50 rounded-3xl border border-purple-200 p-8">
-            <div class="mb-6">
-              <div class="flex items-center gap-5 mb-3">
-                <div class="w-12 h-12 bg-purple-500 rounded flex items-center justify-center flex-shrink-0">
-                  <CogIcon class="h-6 w-6 text-white" />
-                </div>
-                <h3 class="text-2xl font-bold text-gray-900">{{ $t('applicationScope.custom.title') }}</h3>
-              </div>
-              <p class="text-gray-600 text-sm">{{ $t('applicationScope.custom.description') }}</p>
-            </div>
-
-            <div class="space-y-4 mb-6">
-              <div
-                v-for="(feature, index) in tm('applicationScope.custom.features')"
-                :key="index"
+            <ul class="space-y-5 mb-10">
+              <li
+                v-for="f in outputFeatures"
+                :key="f"
                 class="flex items-start gap-3"
               >
-                <CheckCircleIcon class="h-5 w-5 text-purple-600 mt-0.5 flex-shrink-0" />
-                <span class="text-gray-700 text-sm leading-6">{{ rt(feature) }}</span>
-              </div>
-            </div>
+                <svg viewBox="0 0 9 5" fill="currentColor" class="flex-shrink-0 w-7 h-auto text-navy-500 mt-1.5" aria-hidden="true">
+                  <path d="M0 0 L6 0 L9 2.5 L6 5 L0 5 Z" />
+                </svg>
+                <div>
+                  <h3 class="font-display text-base font-bold text-warm-ink mb-1">{{ $t(`output.features.${f}.title`) }}</h3>
+                  <p class="text-sm text-warm-ink/70 leading-snug">{{ $t(`output.features.${f}.body`) }}</p>
+                </div>
+              </li>
+            </ul>
 
-            <!-- Note about limitations -->
-            <div class="bg-purple-100 rounded-lg p-4 border border-purple-200">
-              <div class="flex items-start gap-3">
-                <LightBulbIcon class="h-5 w-5 text-purple-600 mt-0.5 flex-shrink-0" />
-                <p class="text-purple-800 text-sm leading-6">
-                  {{ $t('applicationScope.custom.note') }}
-                </p>
+            <NuxtLink
+              :to="localePath('sample')"
+              class="inline-flex h-12 items-center justify-center self-start rounded-full px-7 bg-navy-500 text-white font-semibold hover:bg-navy-600 transition-colors shadow-card"
+            >
+              {{ $t('output.ctaButton') }}
+              <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z" /></svg>
+            </NuxtLink>
+          </div>
+
+          <div class="lg:col-span-7 flex justify-center lg:justify-end">
+            <div class="relative w-full max-w-sm h-full">
+              <div class="absolute -inset-2 bg-gradient-to-br from-navy-500/15 via-warm-bg to-navy-700/10 rounded-3xl blur-2xl"></div>
+              <div class="relative h-full bg-white rounded-xl shadow-card-hover border border-warm-border overflow-hidden">
+                <div class="h-full flex flex-col p-6">
+                  <!-- Header with logos -->
+                  <div class="flex justify-between items-start pb-5 border-b border-warm-border">
+                    <div class="flex items-center gap-2 text-warm-ink">
+                      <div class="w-7 h-7 rounded bg-navy-500"></div>
+                      <span class="font-display font-bold text-sm">Adviesbureau XYZ</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-warm-gray">
+                      <span class="text-xs font-semibold">In samenwerking met</span>
+                      <div class="w-7 h-7 rounded bg-warm-ink/80"></div>
+                    </div>
+                  </div>
+
+                  <!-- Doc title -->
+                  <div class="mt-6">
+                    <p class="text-xs font-semibold uppercase tracking-wider text-warm-gray mb-2">Stakeholderanalyse · ISO 9001</p>
+                    <h3 class="font-display text-xl lg:text-2xl text-warm-ink font-bold leading-tight">Klant B.V.</h3>
+                    <p class="text-xs text-warm-gray mt-1">Versie 1.0 · Mei 2026</p>
+                  </div>
+
+                  <!-- Section: Belanghebbenden -->
+                  <div class="mt-6">
+                    <h4 class="font-display text-sm font-bold text-warm-ink mb-3">1. Belanghebbenden</h4>
+                    <div class="space-y-2.5">
+                      <div class="flex items-center gap-3">
+                        <div class="w-1.5 h-1.5 rounded-full bg-navy-500"></div>
+                        <div class="h-1.5 bg-warm-border rounded flex-1"></div>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <div class="w-1.5 h-1.5 rounded-full bg-navy-500"></div>
+                        <div class="h-1.5 bg-warm-border rounded flex-1"></div>
+                      </div>
+                      <div class="flex items-center gap-3">
+                        <div class="w-1.5 h-1.5 rounded-full bg-navy-500"></div>
+                        <div class="h-1.5 bg-warm-border rounded flex-1"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Section: Verwachtingen -->
+                  <div class="mt-6">
+                    <h4 class="font-display text-sm font-bold text-warm-ink mb-3">2. Verwachtingen & eisen</h4>
+                    <div class="space-y-1.5">
+                      <div class="h-1.5 bg-warm-border/70 rounded w-full"></div>
+                      <div class="h-1.5 bg-warm-border/70 rounded w-11/12"></div>
+                      <div class="h-1.5 bg-warm-border/70 rounded w-10/12"></div>
+                      <div class="h-1.5 bg-warm-border/70 rounded w-9/12"></div>
+                    </div>
+                  </div>
+
+                  <!-- Section: Bewijs -->
+                  <div class="mt-6">
+                    <h4 class="font-display text-sm font-bold text-warm-ink mb-3">3. Bewijslast</h4>
+                    <div class="grid grid-cols-2 gap-2">
+                      <div class="p-2 bg-warm-bg rounded border border-warm-border">
+                        <div class="h-1.5 bg-warm-border rounded w-2/3 mb-1.5"></div>
+                        <div class="h-1 bg-navy-500/40 rounded w-1/2"></div>
+                      </div>
+                      <div class="p-2 bg-warm-bg rounded border border-warm-border">
+                        <div class="h-1.5 bg-warm-border rounded w-2/3 mb-1.5"></div>
+                        <div class="h-1 bg-navy-500/40 rounded w-1/2"></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Footer -->
+                  <div class="mt-auto pt-4 border-t border-warm-border flex justify-between text-[10px] text-warm-gray">
+                    <span>Audit-klaar · Helpr.ai</span>
+                    <span>Pagina 1 van 14</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <!-- CTA Section -->
-        <div class="bg-gradient-to-r from-emerald-500 to-teal-600 rounded-3xl p-12 text-center text-white">
-          <h3 class="text-3xl font-bold mb-4">{{ $t('cta.title') }}</h3>
-          <p class="text-emerald-100 text-lg mb-8 max-w-2xl mx-auto">
-            {{ $t('cta.description') }}
-          </p>
-          <button
-            @click="scrollTo('demo')"
-            class="inline-flex items-center justify-center rounded-2xl bg-white px-8 py-4 text-lg font-semibold text-emerald-600 shadow-lg hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-emerald-600 transition-all duration-200 hover:scale-[1.02]"
+    <!-- DATA OUTPUT -->
+    <section id="data" class="py-24 lg:py-32 bg-white scroll-mt-24">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+          <div class="lg:col-span-7 order-last lg:order-first">
+            <div class="relative">
+              <div class="absolute -inset-2 bg-gradient-to-br from-navy-500/10 via-warm-bg to-navy-700/10 rounded-3xl blur-2xl"></div>
+              <div class="relative bg-white rounded-xl shadow-card-hover border border-warm-border p-7 lg:p-8">
+                <div class="flex items-center justify-between pb-4 mb-5 border-b border-warm-border">
+                  <div class="flex items-center gap-2">
+                    <span class="relative flex h-2 w-2">
+                      <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-60"></span>
+                      <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                    </span>
+                    <span class="text-xs font-semibold uppercase tracking-wider text-warm-gray">{{ $t('data.modelTitle') }}</span>
+                  </div>
+                  <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-amber-50 text-gold-600 border border-amber-200">
+                    {{ $t('data.soonTag') }}
+                  </span>
+                </div>
+
+                <div class="font-mono text-sm space-y-2.5">
+                  <div class="text-warm-ink"><span class="text-navy-500 mr-1.5">▾</span>sessions</div>
+                  <div class="pl-6 space-y-1.5">
+                    <div class="text-warm-ink/75"><span class="text-warm-gray mr-1.5">▸</span>interview <span class="text-navy-500/60 ml-2 text-xs">"sa-2026-05"</span></div>
+                    <div class="text-warm-ink/75"><span class="text-warm-gray mr-1.5">▸</span>module <span class="text-navy-500/60 ml-2 text-xs">"stakeholderanalyse"</span></div>
+                  </div>
+
+                  <div class="text-warm-ink"><span class="text-navy-500 mr-1.5">▾</span>claims</div>
+                  <div class="pl-6 space-y-1.5">
+                    <div class="text-warm-ink/75"><span class="text-warm-gray mr-1.5">▸</span>statement</div>
+                    <div class="text-warm-ink/75"><span class="text-warm-gray mr-1.5">▸</span>source <span class="text-navy-500/60 ml-2 text-xs">→ interview_4m23s</span></div>
+                    <div class="text-warm-ink/75"><span class="text-warm-gray mr-1.5">▸</span>verified <span class="text-green-600 ml-2 text-xs">true</span></div>
+                  </div>
+
+                  <div class="text-warm-ink"><span class="text-navy-500 mr-1.5">▾</span>compliance_map</div>
+                  <div class="pl-6 space-y-1.5">
+                    <div class="text-warm-ink/75"><span class="text-warm-gray mr-1.5">▸</span>norm <span class="text-navy-500/60 ml-2 text-xs">"ISO 9001"</span></div>
+                    <div class="text-warm-ink/75"><span class="text-warm-gray mr-1.5">▸</span>section <span class="text-navy-500/60 ml-2 text-xs">"§ 4.1"</span></div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5">
+            <p class="text-sm font-semibold uppercase tracking-wider text-navy-500 mb-4">{{ $t('data.eyebrow') }}</p>
+            <h2 class="font-display text-4xl lg:text-5xl text-warm-ink font-bold leading-tight mb-6">
+              {{ $t('data.title') }}
+            </h2>
+            <p class="text-lg text-warm-ink/70 leading-relaxed mb-10">
+              {{ $t('data.body') }}
+            </p>
+
+            <ul class="space-y-5">
+              <li
+                v-for="f in dataFeatures"
+                :key="f"
+                class="flex items-start gap-3"
+              >
+                <svg viewBox="0 0 9 5" fill="currentColor" class="flex-shrink-0 w-7 h-auto text-navy-500 mt-1.5" aria-hidden="true">
+                  <path d="M0 0 L6 0 L9 2.5 L6 5 L0 5 Z" />
+                </svg>
+                <div>
+                  <h3 class="font-display text-base font-bold text-warm-ink mb-1">{{ $t(`data.features.${f}.title`) }}</h3>
+                  <p class="text-sm text-warm-ink/70 leading-snug">{{ $t(`data.features.${f}.body`) }}</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ELEVENLABS GRANT -->
+    <section class="py-12 lg:py-14 bg-warm-bg">
+      <div class="mx-auto max-w-3xl px-6 lg:px-8">
+        <div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 text-center sm:text-left">
+          <TrophyIcon class="flex-shrink-0 w-12 h-12 text-amber-500" aria-hidden="true" />
+          <a
+            href="https://elevenlabs.io/text-to-speech"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex-shrink-0"
+            :aria-label="$t('grant.linkLabel')"
           >
-            {{ $t('cta.button') }}
-            <ArrowRightIcon class="ml-3 h-5 w-5" />
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Demo CTA -->
-    <section id="demo" class="py-24 bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 relative overflow-hidden scroll-mt-24">
-      <!-- Background decoration -->
-      <div class="absolute inset-0 bg-gradient-to-r from-indigo-500/10 to-purple-500/10"></div>
-      <div class="absolute -top-24 -left-24 w-96 h-96 bg-gradient-to-r from-indigo-400/20 to-purple-400/20 rounded-full blur-3xl"></div>
-      <div class="absolute -bottom-24 -right-24 w-96 h-96 bg-gradient-to-r from-purple-400/20 to-pink-400/20 rounded-full blur-3xl"></div>
-
-      <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="bg-white rounded-3xl shadow-2xl overflow-hidden">
-          <div class="px-8 py-12 sm:px-12 lg:px-16 bg-gradient-to-r from-indigo-600 to-purple-600 text-white text-center">
-            <div class="mx-auto max-w-3xl">
-              <div class="flex items-center justify-center w-16 h-16 bg-white/20 rounded-full mx-auto mb-6">
-                <SparklesIcon class="h-8 w-8 text-white" />
-              </div>
-              <h3 class="text-3xl sm:text-4xl font-bold mb-4">
-                {{ $t('demo.title') }}
-              </h3>
-              <p class="text-xl text-indigo-100 leading-8">
-                {{ $t('demo.subtitle') }}
-              </p>
-            </div>
-          </div>
-
-          <div class="px-8 py-12 sm:px-12 lg:px-16 grid lg:grid-cols-2 gap-12 items-center">
-            <div class="space-y-8">
-              <div class="space-y-6">
-                <div class="flex items-start gap-4">
-                  <div class="flex-shrink-0 w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center">
-                    <PlayCircleIcon class="h-5 w-5 text-indigo-600" />
-                  </div>
-                  <div>
-                    <h4 class="font-semibold text-gray-900 mb-2">{{ $t('demo.benefits.walkthrough.title') }}</h4>
-                    <p class="text-gray-600">{{ $t('demo.benefits.walkthrough.description') }}</p>
-                  </div>
-                </div>
-
-                <div class="flex items-start gap-4">
-                  <div class="flex-shrink-0 w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center">
-                    <DocumentTextIcon class="h-5 w-5 text-purple-600" />
-                  </div>
-                  <div>
-                    <h4 class="font-semibold text-gray-900 mb-2">{{ $t('demo.benefits.examples.title') }}</h4>
-                    <p class="text-gray-600">{{ $t('demo.benefits.examples.description') }}</p>
-                  </div>
-                </div>
-
-                <div class="flex items-start gap-4">
-                  <div class="flex-shrink-0 w-10 h-10 bg-emerald-100 rounded-full flex items-center justify-center">
-                    <LightBulbIcon class="h-5 w-5 text-emerald-600" />
-                  </div>
-                  <div>
-                    <h4 class="font-semibold text-gray-900 mb-2">{{ $t('demo.benefits.advice.title') }}</h4>
-                    <p class="text-gray-600">{{ $t('demo.benefits.advice.description') }}</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="bg-gray-50 rounded-2xl p-6">
-                <div class="flex items-center gap-3 text-sm text-gray-600">
-                  <ShieldCheckIcon class="h-5 w-5 text-green-500" />
-                  <span class="font-medium">{{ $t('demo.guarantee') }}</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="bg-gray-50 rounded-2xl p-8">
-              <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
-                <input type="hidden" name="access_key" value="5a88dd82-d433-4aed-aff0-7edd637ce315">
-                <input type="hidden" name="redirect" :value="successUrl">
-                <input type="hidden" name="subject" value="Nieuw demo verzoek - Helpr.ai">
-                <input type="hidden" name="from_name" value="Helpr.ai Marketing Page">
-                <div>
-                  <label for="demo-name" class="block text-sm font-medium text-gray-700 mb-2">{{ $t('demo.form.name') }} *</label>
-                  <input
-                    id="demo-name"
-                    name="name"
-                    type="text"
-                    required
-                    :placeholder="$t('demo.form.namePlaceholder')"
-                    class="w-full h-12 rounded-xl border-2 border-gray-200 px-4 text-gray-900 placeholder-gray-500 focus:border-indigo-500 focus:ring-0 transition-colors"
-                  />
-                </div>
-
-                <div>
-                  <label for="demo-email" class="block text-sm font-medium text-gray-700 mb-2">{{ $t('demo.form.email') }} *</label>
-                  <input
-                    id="demo-email"
-                    name="email"
-                    required
-                    type="email"
-                    :placeholder="$t('demo.form.emailPlaceholder')"
-                    class="w-full h-12 rounded-xl border-2 border-gray-200 px-4 text-gray-900 placeholder-gray-500 focus:border-indigo-500 focus:ring-0 transition-colors"
-                  />
-                </div>
-
-                <div>
-                  <label for="demo-company" class="block text-sm font-medium text-gray-700 mb-2">{{ $t('demo.form.company') }}</label>
-                  <input
-                    id="demo-company"
-                    name="company"
-                    type="text"
-                    :placeholder="$t('demo.form.companyPlaceholder')"
-                    class="w-full h-12 rounded-xl border-2 border-gray-200 px-4 text-gray-900 placeholder-gray-500 focus:border-indigo-500 focus:ring-0 transition-colors"
-                  />
-                </div>
-
-                <div>
-                  <label for="demo-note" class="block text-sm font-medium text-gray-700 mb-2">{{ $t('demo.form.questions') }}</label>
-                  <textarea
-                    id="demo-note"
-                    name="message"
-                    :placeholder="$t('demo.form.questionsPlaceholder')"
-                    rows="4"
-                    class="w-full rounded-xl border-2 border-gray-200 px-4 py-3 text-gray-900 placeholder-gray-500 focus:border-indigo-500 focus:ring-0 transition-colors resize-none"
-                  ></textarea>
-                </div>
-
-                <button
-                  type="submit"
-                  class="w-full h-12 rounded-xl bg-gradient-to-r from-indigo-600 to-purple-600 text-white font-semibold hover:from-indigo-700 hover:to-purple-700 focus:outline-none focus:ring-4 focus:ring-indigo-500/20 transition-all duration-200 hover:scale-[1.02] shadow-lg"
-                >
-                  {{ $t('demo.form.submit') }}
-                </button>
-
-                <p class="text-xs text-gray-500 text-center">
-                  {{ $t('demo.form.privacy.text') }}
-                  <a class="text-indigo-600 hover:underline" href="#">{{ $t('demo.form.privacy.link') }}</a>
-                </p>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section id="faq" class="py-14 bg-white scroll-mt-24">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="text-center max-w-3xl mx-auto">
-          <h2 class="text-3xl font-bold tracking-tight">{{ $t('faq.title') }}</h2>
-        </div>
-        <div class="mt-10 grid md:grid-cols-2 gap-4">
-          <div
-            v-for="(faq, index) in tm('faq.questions')"
-            :key="index"
-            class="rounded-2xl border"
-          >
-            <div class="p-4 border-b flex items-center gap-2 text-lg font-semibold">
-              <MagnifyingGlassPlusIcon class="h-5 w-5"/> {{ rt(faq.question) }}
-            </div>
-            <div class="p-4 text-slate-600">{{ rt(faq.answer) }}</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="py-14 scroll-mt-24">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div class="rounded-3xl border bg-white p-6 sm:p-8 grid md:grid-cols-2 gap-8 items-center">
-          <div>
-            <h3 class="text-2xl font-semibold tracking-tight">{{ $t('contact.title') }}</h3>
-            <p class="mt-2 text-slate-600 max-w-prose">{{ $t('contact.subtitle') }}</p>
-            <div class="mt-4 text-sm text-slate-700 space-y-1">
-              <div class="flex items-center gap-2"><ShieldCheckIcon class="h-5 w-5"/> {{ $t('contact.partnership') }}</div>
-              <div class="flex items-center gap-2"><DocumentTextIcon class="h-5 w-5"/> {{ $t('contact.onepager') }}</div>
-            </div>
-          </div>
-          <form action="https://api.web3forms.com/submit" method="POST" class="grid gap-3">
-            <input type="hidden" name="access_key" value="5a88dd82-d433-4aed-aff0-7edd637ce315">
-            <input type="hidden" name="redirect" :value="successUrl">
-            <input type="hidden" name="subject" value="Nieuw contactformulier bericht - Helpr.ai">
-            <input type="hidden" name="from_name" value="Helpr.ai Marketing Page">
-            <input name="name" type="text" required :placeholder="$t('contact.form.name')" class="h-11 rounded-xl border px-3" />
-            <input name="email" required type="email" :placeholder="$t('contact.form.email')" class="h-11 rounded-xl border px-3" />
-            <textarea name="message" :placeholder="$t('contact.form.message')" class="min-h-[96px] rounded-xl border px-3 py-2"></textarea>
-            <button type="submit" class="h-11 rounded-2xl bg-slate-900 text-white hover:bg-slate-800">{{ $t('contact.form.submit') }}</button>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="py-10 border-t bg-white/60">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-6 items-center">
-        <div class="text-sm text-slate-600">
-          <div class="font-semibold text-slate-800">{{ $t('common.brand') }}</div>
-          <div>{{ $t('footer.tagline') }}</div>
-          <div class="mt-1">{{ $t('footer.copyright', { year: new Date().getFullYear().toString() }) }}</div>
-        </div>
-        <div class="flex justify-start md:justify-end gap-4 text-sm text-slate-600">
-          <a href="#" class="hover:text-slate-900">{{ $t('footer.privacy') }}</a>
-          <a href="#" class="hover:text-slate-900">{{ $t('footer.security') }}</a>
-          <a href="#" class="hover:text-slate-900 flex items-center gap-2">
-            {{ $t('footer.status') }}
-            <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+            <img
+              src="https://eleven-public-cdn.elevenlabs.io/payloadcms/pwsc4vchsqt-ElevenLabsGrants.webp"
+              alt="ElevenLabs Grants"
+              class="w-48 h-auto opacity-90 hover:opacity-100 transition-opacity"
+            />
           </a>
+          <p class="text-sm lg:text-base text-warm-ink/70 leading-relaxed">
+            {{ $t('grant.title') }}
+          </p>
         </div>
       </div>
-    </footer>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta" class="py-24 lg:py-32 bg-warm-ink relative overflow-hidden scroll-mt-24">
+      <div class="absolute inset-0 -z-0">
+        <div class="absolute top-0 right-0 w-[40rem] h-[40rem] bg-navy-500/20 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 w-[30rem] h-[30rem] bg-navy-700/20 rounded-full blur-3xl"></div>
+      </div>
+
+      <div class="relative mx-auto max-w-4xl px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <p class="text-sm font-semibold uppercase tracking-wider text-navy-500 mb-4">{{ $t('cta.eyebrow') }}</p>
+          <h2 class="font-display text-4xl lg:text-6xl text-white font-bold leading-tight mb-6">
+            {{ $t('cta.title') }}
+          </h2>
+          <p class="text-xl text-white/70 leading-relaxed max-w-2xl mx-auto">
+            {{ $t('cta.subtitle') }}
+          </p>
+        </div>
+
+        <form
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          @submit.prevent="onSubmit"
+          class="grid sm:grid-cols-2 gap-4 p-8 bg-white rounded-2xl shadow-modal"
+        >
+          <input type="hidden" name="access_key" value="5a88dd82-d433-4aed-aff0-7edd637ce315" />
+          <input type="hidden" name="subject" value="Helpr.ai · stakeholderanalyse aanvraag" />
+          <input type="hidden" name="from_name" value="Helpr.ai website" />
+          <input type="checkbox" name="botcheck" class="hidden" tabindex="-1" autocomplete="off" />
+
+          <div class="sm:col-span-2">
+            <label for="cta-company" class="block text-sm font-semibold text-warm-ink mb-2">{{ $t('cta.form.companyLabel') }}</label>
+            <input
+              id="cta-company"
+              v-model="form.company"
+              name="company"
+              type="text"
+              required
+              :placeholder="$t('cta.form.companyPlaceholder')"
+              class="w-full h-11 px-4 rounded-md border border-warm-border bg-white text-warm-ink placeholder:text-warm-gray focus:outline-none focus:border-navy-500 focus:ring-2 focus:ring-navy-500/15 transition-colors"
+            />
+          </div>
+          <div>
+            <label for="cta-name" class="block text-sm font-semibold text-warm-ink mb-2">{{ $t('cta.form.nameLabel') }}</label>
+            <input
+              id="cta-name"
+              v-model="form.name"
+              name="name"
+              type="text"
+              required
+              :placeholder="$t('cta.form.namePlaceholder')"
+              class="w-full h-11 px-4 rounded-md border border-warm-border bg-white text-warm-ink placeholder:text-warm-gray focus:outline-none focus:border-navy-500 focus:ring-2 focus:ring-navy-500/15 transition-colors"
+            />
+          </div>
+          <div>
+            <label for="cta-email" class="block text-sm font-semibold text-warm-ink mb-2">{{ $t('cta.form.emailLabel') }}</label>
+            <input
+              id="cta-email"
+              v-model="form.email"
+              name="email"
+              type="email"
+              required
+              :placeholder="$t('cta.form.emailPlaceholder')"
+              class="w-full h-11 px-4 rounded-md border border-warm-border bg-white text-warm-ink placeholder:text-warm-gray focus:outline-none focus:border-navy-500 focus:ring-2 focus:ring-navy-500/15 transition-colors"
+            />
+          </div>
+          <div class="sm:col-span-2">
+            <button
+              type="submit"
+              :disabled="submitting || submitted"
+              class="w-full h-12 rounded-full bg-navy-500 text-white font-semibold hover:bg-navy-600 transition-colors disabled:opacity-60"
+            >
+              <span v-if="submitting">…</span>
+              <span v-else-if="submitted">{{ $t('cta.form.submitted') }}</span>
+              <span v-else>{{ $t('cta.form.submit') }}</span>
+            </button>
+          </div>
+          <p v-if="submitError" class="sm:col-span-2 text-sm text-red-600 text-center">{{ $t('cta.form.error') }}</p>
+          <p v-else class="sm:col-span-2 text-xs text-warm-gray text-center">{{ $t('cta.form.disclaimer') }}</p>
+        </form>
+      </div>
+    </section>
   </div>
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted, onUnmounted } from 'vue'
-import { useReveal } from '~/composables/useReveal'
-import {
-  ShieldCheckIcon,
-  DocumentTextIcon,
-  SparklesIcon,
-  ChatBubbleLeftRightIcon,
-  CheckCircleIcon,
-  ArrowRightIcon,
-  CloudArrowUpIcon,
-  Square3Stack3DIcon,
-  BuildingOffice2Icon,
-  UsersIcon,
-  BookOpenIcon,
-  LockClosedIcon,
-  MagnifyingGlassPlusIcon,
-  PlayCircleIcon,
-  RocketLaunchIcon,
-  LightBulbIcon,
-  CogIcon,
-  StarIcon,
-  TrophyIcon,
-  Bars3Icon,
-  XMarkIcon,
-  ScaleIcon,
-  AcademicCapIcon,
-} from '@heroicons/vue/24/outline'
+import { ref, computed } from 'vue'
+import { TrophyIcon } from '@heroicons/vue/24/solid'
 
-const scrollTo = (id: string) => {
-  const el = document.getElementById(id)
-  if (el) {
-    const headerHeight = 96 // Approximate header height with py-6 padding
-    const elementPosition = el.offsetTop - headerHeight
-    window.scrollTo({
-      top: elementPosition,
-      behavior: 'smooth'
-    })
-  }
-}
-
-// Reveal animation setup
-const { createRevealElement } = useReveal()
-const heroReveal = createRevealElement()
-const taglineReveal = createRevealElement()
-const valueCard1Reveal = createRevealElement()
-const valueCard2Reveal = createRevealElement()
-const valueCard3Reveal = createRevealElement()
-const workStep1Reveal = createRevealElement()
-const workStep2Reveal = createRevealElement()
-const workStep3Reveal = createRevealElement()
-const processMapLeftReveal = createRevealElement()
-const processMapRightReveal = createRevealElement()
-
-// i18n setup
-const { t, rt, locale, locales, tm } = useI18n()
 const localePath = useLocalePath()
-const switchLocalePath = useSwitchLocalePath()
 
-// Language flags mapping
-const localeFlags: Record<string, string> = { nl: '🇳🇱', en: '🇬🇧' }
-const currentLocaleFlag = computed(() => localeFlags[locale.value] || '🌐')
-const availableLocales = computed(() =>
-  (locales.value as Array<{ code: string; name: string }>).map(loc => ({
-    ...loc,
-    flag: localeFlags[loc.code] || '🌐'
-  }))
-)
-
-const showLangDropdown = ref(false)
-const showMobileMenu = ref(false)
-
-const toggleMobileMenu = () => {
-  showMobileMenu.value = !showMobileMenu.value
-}
-
-const closeMobileMenu = () => {
-  showMobileMenu.value = false
-}
-
-// Computed paths for v-html usage (v-html cannot render Vue components)
-const iso9001Path = computed(() => localePath('programs-iso9001'))
-const iso27001Path = computed(() => localePath('programs-iso27001'))
-const iso42001Path = computed(() => localePath('programs-iso42001'))
-const co2Path = computed(() => localePath('programs-co2-prestatieladder'))
-
-// Success URL for form redirects
-const successUrl = computed(() => {
-  if (typeof window !== 'undefined') {
-    return `${window.location.origin}${localePath('success')}`
-  }
-  return localePath('success')
+useHead({
+  title: 'Helpr.ai · Toolbox voor certificerend Nederland'
 })
 
-// Helper function to get link for standards
-const getStandardLink = (standardName: string) => {
-  const linkMap: Record<string, string> = {
-    'ISO 27001': 'programs-iso27001',
-    'ISO 42001': 'programs-iso42001',
-    'ISO 9001': 'programs-iso9001',
-    'CO₂-Prestatieladder': 'programs-co2-prestatieladder',
-    'CO₂ Performance Ladder': 'programs-co2-prestatieladder'
+const categories = [
+  { id: 'all' },
+  { id: 'co2' },
+  { id: 'iso9001' },
+  { id: 'iso14001' },
+  { id: 'iso27001' },
+  { id: 'iso42001' },
+  { id: 'scl' },
+  { id: 'general' },
+]
+
+type ModuleStatus = 'live' | 'beta' | 'soon'
+interface Module { id: string; category: string; status: ModuleStatus }
+
+const modules: Module[] = [
+  { id: 'co2EnergyInventory', category: 'co2', status: 'live' },
+  { id: 'co2Scope', category: 'co2', status: 'live' },
+  { id: 'co2Reduction', category: 'co2', status: 'live' },
+  { id: 'co2Sector', category: 'co2', status: 'beta' },
+  { id: 'co2Stakeholder', category: 'co2', status: 'live' },
+  { id: 'co2Communication', category: 'co2', status: 'beta' },
+
+  { id: 'iso9001Stakeholder', category: 'iso9001', status: 'live' },
+  { id: 'iso9001Process', category: 'iso9001', status: 'live' },
+  { id: 'iso9001Risk', category: 'iso9001', status: 'live' },
+  { id: 'iso9001Kpi', category: 'iso9001', status: 'beta' },
+  { id: 'iso9001Document', category: 'iso9001', status: 'beta' },
+  { id: 'iso9001InternalAudit', category: 'iso9001', status: 'soon' },
+
+  { id: 'iso14001Aspects', category: 'iso14001', status: 'beta' },
+  { id: 'iso14001Legal', category: 'iso14001', status: 'beta' },
+  { id: 'iso14001Lifecycle', category: 'iso14001', status: 'soon' },
+  { id: 'iso14001Emergency', category: 'iso14001', status: 'soon' },
+
+  { id: 'iso27001Assets', category: 'iso27001', status: 'beta' },
+  { id: 'iso27001Risk', category: 'iso27001', status: 'beta' },
+  { id: 'iso27001Soa', category: 'iso27001', status: 'soon' },
+  { id: 'iso27001Annex', category: 'iso27001', status: 'soon' },
+  { id: 'iso27001Incident', category: 'iso27001', status: 'soon' },
+  { id: 'iso27001Bcp', category: 'iso27001', status: 'soon' },
+
+  { id: 'iso42001UseCases', category: 'iso42001', status: 'beta' },
+  { id: 'iso42001Risk', category: 'iso42001', status: 'soon' },
+  { id: 'iso42001Governance', category: 'iso42001', status: 'soon' },
+  { id: 'iso42001Bias', category: 'iso42001', status: 'soon' },
+
+  { id: 'sclMeasurement', category: 'scl', status: 'soon' },
+  { id: 'sclBehavior', category: 'scl', status: 'soon' },
+  { id: 'sclLeadership', category: 'scl', status: 'soon' },
+
+  { id: 'generalReview', category: 'general', status: 'live' },
+  { id: 'generalAuditUpdate', category: 'general', status: 'live' },
+  { id: 'generalCustomer', category: 'general', status: 'beta' },
+  { id: 'generalSupplier', category: 'general', status: 'beta' },
+]
+
+const activeCategory = ref<string>('all')
+const seededShuffle = <T,>(arr: T[], seed: number): T[] => {
+  const out = [...arr]
+  let s = seed
+  for (let i = out.length - 1; i > 0; i--) {
+    s = (s * 9301 + 49297) % 233280
+    const j = Math.floor((s / 233280) * (i + 1))
+    ;[out[i], out[j]] = [out[j], out[i]]
   }
-  const routeName = linkMap[standardName]
-  return routeName ? localePath(routeName) : null
+  return out
 }
 
-// Close dropdown and mobile menu when clicking outside
-onMounted(() => {
-  const handleClickOutside = (event: Event) => {
-    const target = event.target as HTMLElement
+const filteredModules = computed(() => {
+  const base = activeCategory.value === 'all'
+    ? modules
+    : modules.filter(m => m.category === activeCategory.value)
+  return seededShuffle(base, 42)
+})
 
-    // Close language dropdown if clicking outside of language switcher
-    if (!target.closest('.relative')) {
-      showLangDropdown.value = false
+const promisePillars = ['cherrypick', 'fullTrack', 'initial', 'updates'] as const
+const coreFeatures = ['voice', 'followup', 'domain', 'flexible'] as const
+const howSteps = ['select', 'invite', 'collect', 'export'] as const
+const dataFeatures = ['model', 'api', 'searchable'] as const
+const outputFeatures = ['editable', 'evidence', 'structure'] as const
+
+const form = ref({ name: '', email: '', company: '' })
+const submitted = ref(false)
+const submitting = ref(false)
+const submitError = ref(false)
+
+const onSubmit = async (e: Event) => {
+  const target = e.target as HTMLFormElement
+  submitting.value = true
+  submitError.value = false
+  try {
+    const data = new FormData(target)
+    const res = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: data
+    })
+    const json = await res.json().catch(() => null)
+    if (res.ok && json?.success) {
+      submitted.value = true
+    } else {
+      submitError.value = true
     }
-
-    // Close mobile menu if clicking outside of header
-    if (!target.closest('header')) {
-      showMobileMenu.value = false
-    }
+  } catch {
+    submitError.value = true
+  } finally {
+    submitting.value = false
   }
-  document.addEventListener('click', handleClickOutside)
-  onUnmounted(() => {
-    document.removeEventListener('click', handleClickOutside)
-  })
-})
-
-// Forms now use Web3forms - no client-side handlers needed
-
-// Ensure page starts at top on mount
-onMounted(() => {
-  window.scrollTo({ top: 0, behavior: 'instant' })
-})
+}
 </script>
-
-<style scoped>
-.animation-delay-2000 {
-  animation-delay: 2s;
-}
-
-.animation-delay-4000 {
-  animation-delay: 4s;
-}
-
-.animate-slide-arrow {
-  animation: slide-arrow 3s ease-in-out infinite;
-}
-
-@keyframes slide-arrow {
-  0%, 100% {
-    transform: translateX(-8px);
-  }
-  50% {
-    transform: translateX(8px);
-  }
-}
-</style>
-
-<style>
-/* Global styles for scroll behavior */
-html {
-  scroll-padding-top: 6rem; /* Account for fixed header */
-}
-
-/* Ensure page starts at top on load */
-body {
-  scroll-behavior: smooth;
-}
-</style>
