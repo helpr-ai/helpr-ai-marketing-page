@@ -68,15 +68,20 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-hyphens: auto;
+  hyphens: auto;
 }
 
 body {
   font-family: 'Rawson', ui-sans-serif, system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-wrap: break-word;
+  word-break: normal;
 }
 
 h1, h2, .font-display {
   font-family: 'Fran', Georgia, serif;
   letter-spacing: -0.01em;
+  overflow-wrap: break-word;
 }

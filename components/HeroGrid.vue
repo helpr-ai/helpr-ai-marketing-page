@@ -1,10 +1,21 @@
 <template>
-  <PhotoGrid
-    :photos="photos"
-    :cols="8"
-    :rows="5"
-    :is-present="isPresent"
-  />
+  <div>
+    <div class="hidden lg:block">
+      <PhotoGrid
+        :photos="photos"
+        :cols="8"
+        :rows="5"
+        :is-present="isPresent"
+      />
+    </div>
+    <div class="lg:hidden max-w-[16rem] mx-auto">
+      <PhotoGrid
+        :photos="photos"
+        :cols="2"
+        :rows="4"
+      />
+    </div>
+  </div>
 </template>
 
 <script setup lang="ts">

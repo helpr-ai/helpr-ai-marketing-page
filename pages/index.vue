@@ -21,21 +21,21 @@
             <div class="mt-10 flex flex-col sm:flex-row gap-4">
               <a
                 href="#cta"
-                class="inline-flex h-12 items-center justify-center rounded-full px-7 bg-navy-500 text-white font-semibold hover:bg-navy-600 transition-colors shadow-card"
+                class="inline-flex min-h-[3rem] py-3 items-center justify-center rounded-full px-7 bg-navy-500 text-white font-semibold hover:bg-navy-600 transition-colors shadow-card text-center"
               >
-                {{ $t('hero.ctaPrimary') }}
-                <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                <span>{{ $t('hero.ctaPrimary') }}</span>
+                <svg class="ml-2 h-4 w-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
               </a>
               <a
                 href="#how"
-                class="inline-flex h-12 items-center justify-center rounded-full px-7 bg-white border border-warm-border text-warm-ink font-semibold hover:bg-warm-bg transition-colors"
+                class="inline-flex min-h-[3rem] py-3 items-center justify-center rounded-full px-7 bg-white border border-warm-border text-warm-ink font-semibold hover:bg-warm-bg transition-colors text-center"
               >
                 {{ $t('hero.ctaSecondary') }}
               </a>
             </div>
           </div>
 
-          <div class="lg:col-span-6 hidden lg:block">
+          <div class="lg:col-span-6">
             <ClientOnly>
               <HeroGrid />
             </ClientOnly>
@@ -329,7 +329,7 @@
                   class="text-[9px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded-full bg-warm-bg text-warm-gray border border-warm-border flex-shrink-0"
                 >{{ $t('toolbox.soon') }}</span>
               </div>
-              <h3 class="text-sm font-semibold text-warm-ink leading-snug">{{ $t(`toolbox.modules.${module.id}`) }}</h3>
+              <h3 class="text-sm font-semibold text-warm-ink leading-snug break-words [overflow-wrap:anywhere]">{{ $t(`toolbox.modules.${module.id}`) }}</h3>
             </div>
           </div>
           <div class="absolute inset-x-0 bottom-0 h-[40%] bg-gradient-to-b from-white/0 via-white/85 to-white pointer-events-none"></div>
@@ -490,15 +490,15 @@
             <div class="relative">
               <div class="absolute -inset-2 bg-gradient-to-br from-navy-500/10 via-warm-bg to-navy-700/10 rounded-3xl blur-2xl"></div>
               <div class="relative bg-white rounded-xl shadow-card-hover border border-warm-border p-7 lg:p-8">
-                <div class="flex items-center justify-between pb-4 mb-5 border-b border-warm-border">
-                  <div class="flex items-center gap-2">
-                    <span class="relative flex h-2 w-2">
+                <div class="flex flex-wrap items-center justify-between gap-2 pb-4 mb-5 border-b border-warm-border">
+                  <div class="flex items-center gap-2 min-w-0">
+                    <span class="relative flex h-2 w-2 flex-shrink-0">
                       <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-60"></span>
                       <span class="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
                     </span>
                     <span class="text-xs font-semibold uppercase tracking-wider text-warm-gray">{{ $t('data.modelTitle') }}</span>
                   </div>
-                  <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-amber-50 text-gold-600 border border-amber-200">
+                  <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-amber-50 text-gold-600 border border-amber-200 flex-shrink-0">
                     {{ $t('data.soonTag') }}
                   </span>
                 </div>
