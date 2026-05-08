@@ -35,7 +35,7 @@
             </div>
           </div>
 
-          <div class="lg:col-span-6">
+          <div class="lg:col-span-6 hidden lg:block">
             <ClientOnly>
               <HeroGrid />
             </ClientOnly>
@@ -489,7 +489,7 @@
           <div class="lg:col-span-7 order-last lg:order-first">
             <div class="relative">
               <div class="absolute -inset-2 bg-gradient-to-br from-navy-500/10 via-warm-bg to-navy-700/10 rounded-3xl blur-2xl"></div>
-              <div class="relative bg-white rounded-xl shadow-card-hover border border-warm-border p-7 lg:p-8">
+              <div class="relative bg-white rounded-xl shadow-card-hover border border-warm-border p-5 sm:p-7 lg:p-8 overflow-hidden">
                 <div class="flex flex-wrap items-center justify-between gap-2 pb-4 mb-5 border-b border-warm-border">
                   <div class="flex items-center gap-2 min-w-0">
                     <span class="relative flex h-2 w-2 flex-shrink-0">
@@ -503,24 +503,24 @@
                   </span>
                 </div>
 
-                <div class="font-mono text-sm space-y-2.5">
+                <div class="font-mono text-xs sm:text-sm space-y-2.5 [overflow-wrap:anywhere]">
                   <div class="text-warm-ink"><span class="text-navy-500 mr-1.5">▾</span>sessions</div>
-                  <div class="pl-6 space-y-1.5">
-                    <div class="text-warm-ink/75"><span class="text-warm-gray mr-1.5">▸</span>interview <span class="text-navy-500/60 ml-2 text-xs">"sa-2026-05"</span></div>
-                    <div class="text-warm-ink/75"><span class="text-warm-gray mr-1.5">▸</span>module <span class="text-navy-500/60 ml-2 text-xs">"stakeholderanalyse"</span></div>
+                  <div class="pl-4 sm:pl-6 space-y-1.5">
+                    <div class="text-warm-ink/75"><span class="text-warm-gray mr-1.5">▸</span>interview <span class="text-navy-500/60 ml-2 text-[10px] sm:text-xs">"sa-2026-05"</span></div>
+                    <div class="text-warm-ink/75"><span class="text-warm-gray mr-1.5">▸</span>module <span class="text-navy-500/60 ml-2 text-[10px] sm:text-xs">"stakeholderanalyse"</span></div>
                   </div>
 
                   <div class="text-warm-ink"><span class="text-navy-500 mr-1.5">▾</span>claims</div>
-                  <div class="pl-6 space-y-1.5">
+                  <div class="pl-4 sm:pl-6 space-y-1.5">
                     <div class="text-warm-ink/75"><span class="text-warm-gray mr-1.5">▸</span>statement</div>
-                    <div class="text-warm-ink/75"><span class="text-warm-gray mr-1.5">▸</span>source <span class="text-navy-500/60 ml-2 text-xs">→ interview_4m23s</span></div>
-                    <div class="text-warm-ink/75"><span class="text-warm-gray mr-1.5">▸</span>verified <span class="text-green-600 ml-2 text-xs">true</span></div>
+                    <div class="text-warm-ink/75"><span class="text-warm-gray mr-1.5">▸</span>source <span class="text-navy-500/60 ml-2 text-[10px] sm:text-xs">→ interview_4m23s</span></div>
+                    <div class="text-warm-ink/75"><span class="text-warm-gray mr-1.5">▸</span>verified <span class="text-green-600 ml-2 text-[10px] sm:text-xs">true</span></div>
                   </div>
 
                   <div class="text-warm-ink"><span class="text-navy-500 mr-1.5">▾</span>compliance_map</div>
-                  <div class="pl-6 space-y-1.5">
-                    <div class="text-warm-ink/75"><span class="text-warm-gray mr-1.5">▸</span>norm <span class="text-navy-500/60 ml-2 text-xs">"ISO 9001"</span></div>
-                    <div class="text-warm-ink/75"><span class="text-warm-gray mr-1.5">▸</span>section <span class="text-navy-500/60 ml-2 text-xs">"§ 4.1"</span></div>
+                  <div class="pl-4 sm:pl-6 space-y-1.5">
+                    <div class="text-warm-ink/75"><span class="text-warm-gray mr-1.5">▸</span>norm <span class="text-navy-500/60 ml-2 text-[10px] sm:text-xs">"ISO 9001"</span></div>
+                    <div class="text-warm-ink/75"><span class="text-warm-gray mr-1.5">▸</span>section <span class="text-navy-500/60 ml-2 text-[10px] sm:text-xs">"§ 4.1"</span></div>
                   </div>
                 </div>
 
