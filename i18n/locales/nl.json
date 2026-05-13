@@ -6,8 +6,88 @@
     "toolbox": "Toolbox",
     "how": "Werking",
     "audience": "Voor wie",
+    "products": "Producten",
     "about": "Over ons",
     "cta": "Doe een stakeholderanalyse"
+  },
+  "product": {
+    "overview": {
+      "eyebrow": "Producten",
+      "title": "De AI-toolbox voor certificerend Nederland.",
+      "subtitle": "Klaar voor de normen, ladders en standaarden waar jouw klanten tegenaan lopen. Modulair, schaalbaar en steeds groeiend.",
+      "cards": {
+        "toolbox": {
+          "tag": "AI-toolbox",
+          "title": "De Toolbox",
+          "description": "Modulaire AI-interviews voor ISO 9001, 14001, 27001, 42001, de CO₂-prestatieladder en meer. Cherrypick of compleet traject.",
+          "cta": "Bekijk de Toolbox"
+        },
+        "scl": {
+          "tag": "Verplicht vanaf 1 juli 2026",
+          "title": "Safety Culture Ladder",
+          "description": "AI-interviews die meer ophalen dan een vragenlijst kan. Klaar voor de SCL-certificering in bouw en infra.",
+          "cta": "Naar Safety Culture Ladder"
+        }
+      }
+    },
+    "toolbox": {
+      "eyebrow": "AI-toolbox",
+      "title": "De Toolbox voor certificerend Nederland.",
+      "subtitle": "Modulair, schaalbaar en steeds groeiend. Voor elke ISO-norm en ladder, van CO₂-prestatieladder tot ISO 27001 en de Safety Culture Ladder. Los of in complete tracks te gebruiken.",
+      "cta": "Download een voorbeeld",
+      "back": "Terug naar productoverzicht"
+    },
+    "scl": {
+      "eyebrow": "Safety Culture Ladder",
+      "title": "Safety Culture Ladder",
+      "subtitle": "AI-interviews die de cultuur écht ophalen, voor SCL-certificering vanaf 1 juli 2026.",
+      "what": {
+        "title": "Wat is de Safety Culture Ladder?",
+        "body": "De Safety Culture Ladder (SCL) is een certificeringsstandaard die meet hoe veiligheidscultuur is ingebed in een organisatie. Niet alleen de regels en procedures, maar het echte gedrag: hoe praten mensen over veiligheid, wat doen ze als het spannend wordt, en hoe zit dat door de hele organisatie heen, van management tot medewerkers. De ladder heeft vijf treden, van reactief naar proactief, en laat zien waar een organisatie staat en wat de volgende stap is."
+      },
+      "who": {
+        "title": "Voor wie, en waarom nu?",
+        "body": "Vanaf 1 juli 2026 is de Safety Culture Ladder verplichte certificering voor bedrijven die werken in de aannemerij en infrastructuur. Grote opdrachtgevers in de bouw zoals BAM hanteren de SCL al als harde eis. Dat betekent dat er voor deze sector een concrete en urgente vraag is, van bedrijven die dit serieus willen aanpakken en niet alleen een vinkje willen halen."
+      },
+      "why": {
+        "title": "Waarom met Helpr?",
+        "body1": "De standaard SCL-tool stopt bij een vragenlijst. Scores, maar weinig context.",
+        "body2": "Helpr gaat verder. Met open interviewvragen halen we op wat scores alleen niet vertellen: de praktijkvoorbeelden, de nuances, de dingen die medewerkers zeggen als je de ruimte geeft. Dat levert eerstehands inzichten op die voor een adviseur echt bruikbaar zijn, niet alleen als onderbouwing voor een rapport, maar ook als aanknopingspunten voor het verbetergesprek.",
+        "body3": "De uitkomsten worden automatisch omgezet naar gestructureerde documentatie. Wat overblijft voor de adviseur: inhoudelijk beoordelen, bijsturen, en het gesprek voeren dat er echt toe doet.",
+        "body4": "Bovendien krijg je per subthema concrete aanwijzingen over wat er nodig is om naar trede 3, 4 of 5 te komen, ideaal als basis voor het plan van aanpak."
+      },
+      "how": {
+        "title": "Hoe werkt het? AI voice agents",
+        "intro": "Het hart van onze aanpak zijn één-op-één gesprekken, gevoerd door een AI voice agent. Een echt gesprek op een moment dat de medewerker of het management uitkomt: op kantoor, op de bouwplaats of in de auto op weg terug naar de zaak.",
+        "subhead": "Wat onze agent anders maakt:",
+        "features": {
+          "context": {
+            "title": "Context opbouwen",
+            "body": "In het gesprek bespreekt de AI-interviewer de rol van de gesprekspartner en de subthema's die aan bod moeten komen. Gedurende het gesprek bouwt de AI-agent dat verder uit, door terug te grijpen op eerdere antwoorden en door te vragen waar het interessant wordt."
+          },
+          "probe": {
+            "title": "Doorvragen waar het telt",
+            "body": "Zegt iemand 'veiligheid is hier belangrijk', dan komt de vervolgvraag: wanneer merkte je dat voor het laatst, wat gebeurde er, wat deed je manager? Zo komen de praktijkvoorbeelden boven die de SCL-treden onderscheiden."
+          },
+          "safe": {
+            "title": "Een veilige setting",
+            "body": "Mensen praten vaak opener tegen een AI dan tegen een externe auditor of hun eigen leidinggevende. Antwoorden worden geanonimiseerd verwerkt, wat de bereidheid om eerlijk te zijn merkbaar vergroot."
+          },
+          "scale": {
+            "title": "Schaal zonder concessies",
+            "body": "Of het nu gaat om tien gesprekken of honderd, de AI-agent voert ze allemaal in hetzelfde tempo, met hetzelfde geduld en met dezelfde diepgang."
+          }
+        }
+      },
+      "dossier": {
+        "body": "Na afloop krijgt de adviseur een gestructureerd dossier: kwalitatieve bevindingen per subthema, geordend per laag van de organisatie, ondersteund met geanonimiseerde voorbeelden uit de interviews. Per subthema worden bovendien de stappen benoemd die nodig zijn om naar een hogere trede te groeien. Klaar om te beoordelen, niet om vanaf nul uit te werken."
+      },
+      "cta": {
+        "title": "Benieuwd wat Helpr kan betekenen voor jouw SCL-trajecten?",
+        "button": "Neem contact op"
+      },
+      "back": "Terug naar productoverzicht"
+    }
   },
   "hero": {
     "titleA": "QHSE-adviseurs zijn druk.",

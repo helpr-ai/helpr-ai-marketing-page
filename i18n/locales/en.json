@@ -6,8 +6,88 @@
     "toolbox": "Toolbox",
     "how": "How it works",
     "audience": "Who it's for",
+    "products": "Products",
     "about": "About",
     "cta": "Run a stakeholder analysis"
+  },
+  "product": {
+    "overview": {
+      "eyebrow": "Products",
+      "title": "The AI toolbox for certification consultants.",
+      "subtitle": "Ready for the standards, ladders and frameworks your clients face. Modular, scalable and constantly growing.",
+      "cards": {
+        "toolbox": {
+          "tag": "AI toolbox",
+          "title": "The Toolbox",
+          "description": "Modular AI interviews for ISO 9001, 14001, 27001, 42001, the CO₂ Performance Ladder and more. Cherry-pick or full track.",
+          "cta": "Explore the Toolbox"
+        },
+        "scl": {
+          "tag": "Mandatory from 1 July 2026",
+          "title": "Safety Culture Ladder",
+          "description": "AI interviews that capture more than a questionnaire can. Ready for SCL certification in construction and infrastructure.",
+          "cta": "Go to Safety Culture Ladder"
+        }
+      }
+    },
+    "toolbox": {
+      "eyebrow": "AI toolbox",
+      "title": "The Toolbox for certification consultants.",
+      "subtitle": "Modular, scalable and constantly growing. For every ISO standard and ladder, from the CO₂ Performance Ladder to ISO 27001 and the Safety Culture Ladder. Use standalone or as a complete track.",
+      "cta": "Download a sample",
+      "back": "Back to product overview"
+    },
+    "scl": {
+      "eyebrow": "Safety Culture Ladder",
+      "title": "Safety Culture Ladder",
+      "subtitle": "AI interviews that really capture the culture, ready for SCL certification from 1 July 2026.",
+      "what": {
+        "title": "What is the Safety Culture Ladder?",
+        "body": "The Safety Culture Ladder (SCL) is a certification standard that measures how safety culture is embedded in an organisation. Not just the rules and procedures, but the actual behaviour: how people talk about safety, what they do when things get tense, and how that runs through the whole organisation, from leadership to the shop floor. The ladder has five steps, from reactive to proactive, and shows where an organisation stands and what the next step looks like."
+      },
+      "who": {
+        "title": "Who is it for, and why now?",
+        "body": "From 1 July 2026, the Safety Culture Ladder becomes mandatory certification for companies working in contracting and infrastructure. Major clients in construction like BAM already treat the SCL as a hard requirement. That means there is a concrete and urgent demand from companies that want to take it seriously, not just tick a box."
+      },
+      "why": {
+        "title": "Why with Helpr?",
+        "body1": "The standard SCL tool stops at a questionnaire. Scores, but little context.",
+        "body2": "Helpr goes further. With open interview questions we surface what scores alone don't tell you: the real-life examples, the nuances, the things employees say when given the space. That delivers first-hand insights a consultant can truly use, not just as evidence for a report, but also as starting points for the improvement conversation.",
+        "body3": "The results are automatically turned into structured documentation. What remains for the consultant: assessing on content, steering, and having the conversation that actually matters.",
+        "body4": "On top of that, you get concrete pointers per sub-theme about what's needed to move to step 3, 4 or 5. Ideal as the basis for your action plan."
+      },
+      "how": {
+        "title": "How does it work? AI voice agents",
+        "intro": "The heart of our approach is one-on-one conversations, led by an AI voice agent. A real conversation at a moment that works for the employee or manager: at the office, on the building site, or in the car heading back.",
+        "subhead": "What makes our agent different:",
+        "features": {
+          "context": {
+            "title": "Builds context",
+            "body": "During the conversation the AI interviewer discusses the role of the person they're talking to and the sub-themes that should be covered. As the conversation unfolds, the AI agent builds on it by referring back to earlier answers and probing where it gets interesting."
+          },
+          "probe": {
+            "title": "Probes where it counts",
+            "body": "When someone says 'safety is important here', the follow-up comes: when did you notice that last, what happened, what did your manager do? That's how the real examples emerge that distinguish the SCL steps."
+          },
+          "safe": {
+            "title": "A safe setting",
+            "body": "People often speak more openly to an AI than to an external auditor or their own manager. Answers are processed anonymously, which noticeably increases willingness to be honest."
+          },
+          "scale": {
+            "title": "Scale without compromise",
+            "body": "Whether it's ten conversations or a hundred, the AI agent runs them all at the same pace, with the same patience, and the same depth."
+          }
+        }
+      },
+      "dossier": {
+        "body": "After the interviews, the consultant receives a structured dossier: qualitative findings per sub-theme, organised per layer of the organisation, supported with anonymised examples from the interviews. Per sub-theme, the steps needed to move to a higher tier are also called out. Ready to assess, not to build from scratch."
+      },
+      "cta": {
+        "title": "Curious what Helpr can do for your SCL trajectories?",
+        "button": "Get in touch"
+      },
+      "back": "Back to product overview"
+    }
   },
   "hero": {
     "titleA": "QHSE consultants are busy.",

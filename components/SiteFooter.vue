@@ -10,9 +10,9 @@
         <div class="md:col-span-3">
           <h3 class="text-sm font-semibold uppercase tracking-wider text-white/50 mb-4">{{ $t('footer.product') }}</h3>
           <ul class="space-y-3 text-white/80">
-            <li><a href="/#toolbox" class="hover:text-white transition-colors">{{ $t('nav.toolbox') }}</a></li>
-            <li><a href="/#how" class="hover:text-white transition-colors">{{ $t('nav.how') }}</a></li>
-            <li><a href="/#audience" class="hover:text-white transition-colors">{{ $t('nav.audience') }}</a></li>
+            <li><NuxtLink :to="localePath('product')" class="hover:text-white transition-colors">{{ $t('nav.products') }}</NuxtLink></li>
+            <li><NuxtLink :to="localePath('product-toolbox')" class="hover:text-white transition-colors">{{ $t('product.toolbox.eyebrow') }}</NuxtLink></li>
+            <li><NuxtLink :to="localePath('product-safety-culture-ladder')" class="hover:text-white transition-colors">{{ $t('product.scl.title') }}</NuxtLink></li>
           </ul>
         </div>
 

@@ -53,6 +53,18 @@ export default defineNuxtConfig({
       'sample': {
         nl: '/voorbeeld',
         en: '/sample'
+      },
+      'product': {
+        nl: '/product',
+        en: '/product'
+      },
+      'product-toolbox': {
+        nl: '/product/toolbox',
+        en: '/product/toolbox'
+      },
+      'product-safety-culture-ladder': {
+        nl: '/product/safety-culture-ladder',
+        en: '/product/safety-culture-ladder'
       }
     }
   },

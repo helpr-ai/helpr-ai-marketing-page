@@ -17,7 +17,7 @@
       </NuxtLink>
 
       <nav class="hidden md:flex items-center gap-8 text-sm font-semibold">
-        <a :href="sectionHref('toolbox')" class="text-warm-ink/70 hover:text-warm-ink transition-colors">{{ $t('nav.toolbox') }}</a>
+        <NuxtLink :to="localePath('product')" class="text-warm-ink/70 hover:text-warm-ink transition-colors">{{ $t('nav.products') }}</NuxtLink>
         <a :href="sectionHref('how')" class="text-warm-ink/70 hover:text-warm-ink transition-colors">{{ $t('nav.how') }}</a>
         <a :href="sectionHref('audience')" class="text-warm-ink/70 hover:text-warm-ink transition-colors">{{ $t('nav.audience') }}</a>
         <NuxtLink :to="localePath('about')" class="text-warm-ink/70 hover:text-warm-ink transition-colors">{{ $t('nav.about') }}</NuxtLink>
@@ -76,7 +76,7 @@
       class="md:hidden absolute top-full left-0 right-0 bg-white border-b border-warm-border shadow-lg"
     >
       <div class="px-6 py-4 space-y-1">
-        <a :href="sectionHref('toolbox')" @click="showMobileMenu = false" class="block px-3 py-3 text-warm-ink hover:bg-warm-bg rounded-md font-semibold">{{ $t('nav.toolbox') }}</a>
+        <NuxtLink :to="localePath('product')" @click="showMobileMenu = false" class="block px-3 py-3 text-warm-ink hover:bg-warm-bg rounded-md font-semibold">{{ $t('nav.products') }}</NuxtLink>
         <a :href="sectionHref('how')" @click="showMobileMenu = false" class="block px-3 py-3 text-warm-ink hover:bg-warm-bg rounded-md font-semibold">{{ $t('nav.how') }}</a>
         <a :href="sectionHref('audience')" @click="showMobileMenu = false" class="block px-3 py-3 text-warm-ink hover:bg-warm-bg rounded-md font-semibold">{{ $t('nav.audience') }}</a>
         <NuxtLink :to="localePath('about')" @click="showMobileMenu = false" class="block px-3 py-3 text-warm-ink hover:bg-warm-bg rounded-md font-semibold">{{ $t('nav.about') }}</NuxtLink>
