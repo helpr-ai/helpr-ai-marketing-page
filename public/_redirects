@@ -27,12 +27,10 @@
 /nl/partners/ /nl/ 301
 /en/partners /en/ 301
 /en/partners/ /en/ 301
-/product /nl/ 301
-/product/ /nl/ 301
-/nl/product /nl/ 301
-/nl/product/ /nl/ 301
-/en/product /en/ 301
-/en/product/ /en/ 301
+# Bare /product (and sub-paths) → localized product overview
+/product /nl/product/ 301
+/product/ /nl/product/ 301
+/product/* /nl/product/:splat 301
 /consultants /nl/ 301
 /consultants/ /nl/ 301
 /nl/consultants /nl/ 301
@@ -45,15 +43,19 @@
 /nl/start-traject/ /nl/ 301
 /en/get-started /en/ 301
 /en/get-started/ /en/ 301
-/trajecten /nl/ 301
-/trajecten/ /nl/ 301
-/trajecten/* /nl/ 301
-/nl/trajecten /nl/ 301
-/nl/trajecten/ /nl/ 301
-/nl/trajecten/* /nl/ 301
-/en/programs /en/ 301
-/en/programs/ /en/ 301
-/en/programs/* /en/ 301
+# Old program/track pages — now part of the Toolbox product
+/trajecten /nl/product/toolbox/ 301
+/trajecten/ /nl/product/toolbox/ 301
+/trajecten/* /nl/product/toolbox/ 301
+/nl/trajecten /nl/product/toolbox/ 301
+/nl/trajecten/ /nl/product/toolbox/ 301
+/nl/trajecten/* /nl/product/toolbox/ 301
+/programs /en/product/toolbox/ 301
+/programs/ /en/product/toolbox/ 301
+/programs/* /en/product/toolbox/ 301
+/en/programs /en/product/toolbox/ 301
+/en/programs/ /en/product/toolbox/ 301
+/en/programs/* /en/product/toolbox/ 301
 /prijzen /nl/ 301
 /prijzen/ /nl/ 301
 /nl/prijzen /nl/ 301
