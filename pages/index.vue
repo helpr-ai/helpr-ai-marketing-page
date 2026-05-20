@@ -290,7 +290,7 @@
           </p>
         </div>
 
-        <ToolboxModules fade />
+        <ToolboxModules :limit="20" random />
 
         <p class="mt-14 text-center text-lg lg:text-xl text-warm-ink/80 max-w-3xl mx-auto leading-relaxed">
           <span class="font-display font-bold text-warm-ink">{{ $t('toolbox.growthTitle') }}</span>
