@@ -9,7 +9,9 @@ export default defineNuxtConfig({
         '/sitemap.xml',
         '/sitemap_index.xml',
         '/__sitemap__/nl-NL.xml',
-        '/__sitemap__/en-GB.xml'
+        '/__sitemap__/en-GB.xml',
+        '/nl/certificering/safety-culture-ladder',
+        '/en/certification/safety-culture-ladder'
       ]
     }
   },
@@ -65,6 +67,10 @@ export default defineNuxtConfig({
       'product-safety-culture-ladder': {
         nl: '/product/safety-culture-ladder',
         en: '/product/safety-culture-ladder'
+      },
+      'certificering-safety-culture-ladder': {
+        nl: '/certificering/safety-culture-ladder',
+        en: '/certification/safety-culture-ladder'
       }
     }
   },

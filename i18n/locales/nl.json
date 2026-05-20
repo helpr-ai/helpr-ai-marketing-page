@@ -418,6 +418,114 @@
       "error": "Versturen lukte niet. Probeer het nog eens of mail rechtstreeks naar hello{'@'}helpr.ai."
     }
   },
+  "scl": {
+    "eyebrow": "Safety Culture Ladder Original voor bedrijven",
+    "title": "Een SCL Original-certificaat. Voor {price}.",
+    "price": "€1499",
+    "subtitle": "Onwerkelijk? Dat is het ook. Ervaar de kracht van AI.",
+    "intro": "Vanaf {deadline} is SCL Trede 3 verplicht in bouw en infra. SCL Original is de enige variant die tot een volwaardig certificaat leidt. Traditionele trajecten kosten {oldPrice} en maanden voorbereiding. Wij doen het anders.",
+    "deadline": "1 juli 2026",
+    "oldPrice": "€4.000 tot €15.000",
+    "ctaPrimary": "Meld je aan",
+    "today": "Vandaag aanmelden, vandaag aan de slag.",
+    "photoAlt": "Safety Culture Ladder",
+    "pain": {
+      "eyebrow": "De druk",
+      "title": "De deadline tikt. En de kosten stijgen.",
+      "body1": "Zonder SCL Original Trede 3 word je vanaf 1 juli 2026 uitgesloten van aanbestedingen in de bouw en infra. Geen volwaardig certificaat, geen opdracht. Zo simpel is het.",
+      "body2": "Tegelijk loopt een traditioneel SCL Original-traject op tot duizenden euro's en maanden doorlooptijd. Adviseurs die uren factureren, vragenlijsten die niet de praktijk raken, een rapport dat blijft hangen in beleidstaal."
+    },
+    "why": {
+      "eyebrow": "Waarom dit kan",
+      "title": "AI doet het zware werk. Voor een fractie van de prijs.",
+      "body": "Onze AI voert de interviews met je management én medewerkers. Echte gesprekken, geen vragenlijsten. Ze praten opener tegen een AI dan tegen een externe auditor, dat geeft een eerlijker beeld. Wij verwerken de uitkomsten tot een audit-klaar dossier voor SCL Original. Geen consultant die uren factureert, geen torenhoge factuur."
+    },
+    "support": {
+      "eyebrow": "Volledig ontzorgd",
+      "title": "Een gekwalificeerd SCL-adviseur begeleidt jouw traject.",
+      "body": "Je staat er niet alleen voor. Een ervaren, gekwalificeerd SCL-adviseur ontzorgt je van begin tot eind: van het inrichten van de interviews tot de perfecte voorbereiding op de audit. AI doet het tijdrovende werk, de adviseur bewaakt de regie en de kwaliteit."
+    },
+    "how": {
+      "eyebrow": "Hoe het werkt",
+      "title": "Vier stappen, geen verrassingen.",
+      "steps": {
+        "request": {
+          "title": "Meld je aan",
+          "body": "Je kiest je beoogde trede en bezorgt ons de basisgegevens. Direct na aanmelden krijg je toegang en kun je vandaag nog beginnen."
+        },
+        "interviews": {
+          "title": "Wij voeren de interviews",
+          "body": "Onze AI spreekt management en medewerkers. Op kantoor, op de bouwplaats, of in de auto. Wanneer het uitkomt."
+        },
+        "dossier": {
+          "title": "Wij leveren het dossier",
+          "body": "Een audit-klaar SCL Original-dossier met bevindingen per subthema, geanonimiseerde voorbeelden en concrete verbeterpunten."
+        },
+        "audit": {
+          "title": "Audit door een erkende CI",
+          "body": "Een geaccrediteerd certificatie-instituut (Kiwa, DNV, Bureau Veritas) voert de audit uit. Jij bent voorbereid."
+        }
+      }
+    },
+    "levels": {
+      "eyebrow": "Treden",
+      "title": "Welke trede past bij jou?",
+      "intro": "SCL Original kent vijf treden en is de enige variant die tot een volwaardig certificaat leidt. De meeste organisaties starten op Trede 3, het verplichte niveau vanaf 1 juli 2026.",
+      "level3": {
+        "tag": "Verplicht vanaf 1 juli 2026",
+        "title": "Trede 3",
+        "body": "Veiligheid is besproken en zit in beleid en gedrag. Medewerkers weten wat er van ze verwacht wordt en er wordt actief gestuurd op veilig werken."
+      },
+      "level4": {
+        "tag": "Proactief",
+        "title": "Trede 4",
+        "body": "Veiligheid is een gedeelde verantwoordelijkheid. Iedereen denkt mee, ook de werkvloer. Verbeteringen worden actief opgepakt voordat er iets misgaat."
+      },
+      "level5": {
+        "tag": "Vooruitstrevend",
+        "title": "Trede 5",
+        "body": "Veiligheid is verweven in elke beslissing. Continue verbetering, leiderschap met het goede voorbeeld, transparantie over incidenten en lessen."
+      }
+    },
+    "deliverables": {
+      "title": "Wat je krijgt",
+      "items": {
+        "dossier": "Audit-klaar SCL Original-dossier voor de auditor",
+        "interviews": "Geanonimiseerde inzichten uit interviews met je team",
+        "subthemes": "Bevindingen geordend per subthema en per organisatielaag",
+        "growth": "Concrete stappen om naar een hogere trede te groeien",
+        "support": "Begeleiding tot de audit"
+      }
+    },
+    "guarantee": {
+      "title": "Geen audit gehaald? Geld terug.",
+      "body": "Als je met ons dossier de audit niet haalt, krijg je je geld terug. Zo simpel is het."
+    },
+    "cta": {
+      "eyebrow": "Klaar om te starten?",
+      "title": "Meld je aan. Vandaag aan de slag.",
+      "subtitle": "Vul je gegevens in en de beoogde trede. Direct na aanmelden krijg je toegang en begin je vandaag nog.",
+      "form": {
+        "nameLabel": "Naam",
+        "namePlaceholder": "Voor- en achternaam",
+        "emailLabel": "E-mail",
+        "emailPlaceholder": "naam{'@'}bedrijf.nl",
+        "companyLabel": "Bedrijf",
+        "companyPlaceholder": "Naam van je organisatie",
+        "levelLabel": "Beoogde trede",
+        "levelOption3": "Trede 3 (verplicht vanaf 1 juli 2026)",
+        "levelOption4": "Trede 4",
+        "levelOption5": "Trede 5",
+        "messageLabel": "Toelichting",
+        "messagePlaceholder": "Bijvoorbeeld: organisatiegrootte, gewenste start",
+        "submit": "Meld me aan",
+        "submitting": "Versturen…",
+        "submitted": "Bedankt! Je ontvangt direct je toegang per e-mail.",
+        "disclaimer": "Direct na aanmelden krijg je toegang in je inbox.",
+        "error": "Versturen lukte niet. Probeer het nog eens of mail rechtstreeks naar hello{'@'}helpr.ai."
+      }
+    }
+  },
   "sample": {
     "eyebrow": "Voorbeeld document",
     "title": "Download een voorbeeld stakeholderanalyse.",
@@ -477,7 +585,9 @@
   "footer": {
     "tagline": "AI-toolbox voor certificerend Nederland. Wij stroomlijnen certificeringstrajecten zodat adviseurs zich kunnen concentreren op echt advies.",
     "tagline2": "Gemaakt in Nederland.",
-    "product": "Product",
+    "product": "Voor adviesbureaus",
+    "forBusinesses": "Voor bedrijven",
+    "sclDirect": "SCL Original-certificaat voor €499",
     "company": "Bedrijf",
     "legal": "Juridisch",
     "contact": "Contact",

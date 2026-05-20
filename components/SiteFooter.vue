@@ -7,7 +7,7 @@
           <p class="text-white/70 leading-relaxed max-w-sm">{{ $t('footer.tagline') }}</p>
         </div>
 
-        <div class="md:col-span-3">
+        <div class="md:col-span-4">
           <h3 class="text-sm font-semibold uppercase tracking-wider text-white/50 mb-4">{{ $t('footer.product') }}</h3>
           <ul class="space-y-3 text-white/80">
             <li><NuxtLink :to="localePath('product')" class="hover:text-white transition-colors">{{ $t('nav.products') }}</NuxtLink></li>
@@ -16,17 +16,11 @@
           </ul>
         </div>
 
-        <div class="md:col-span-2">
+        <div class="md:col-span-3">
           <h3 class="text-sm font-semibold uppercase tracking-wider text-white/50 mb-4">{{ $t('footer.company') }}</h3>
           <ul class="space-y-3 text-white/80">
             <li><NuxtLink :to="localePath('about')" class="hover:text-white transition-colors">{{ $t('nav.about') }}</NuxtLink></li>
             <li><a href="mailto:hello@helpr.ai" class="hover:text-white transition-colors">{{ $t('footer.contact') }}</a></li>
-          </ul>
-        </div>
-
-        <div class="md:col-span-2">
-          <h3 class="text-sm font-semibold uppercase tracking-wider text-white/50 mb-4">{{ $t('footer.legal') }}</h3>
-          <ul class="space-y-3 text-white/80">
             <li><a href="#" class="hover:text-white transition-colors">{{ $t('footer.privacy') }}</a></li>
             <li><a href="#" class="hover:text-white transition-colors">{{ $t('footer.terms') }}</a></li>
           </ul>

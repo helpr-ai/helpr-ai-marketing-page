@@ -418,6 +418,114 @@
       "error": "Submission failed. Please try again or email hello{'@'}helpr.ai directly."
     }
   },
+  "scl": {
+    "eyebrow": "Safety Culture Ladder Original for businesses",
+    "title": "An SCL Original certificate. For {price}.",
+    "price": "€1,499",
+    "subtitle": "Too good to be true? It is. Experience the power of AI.",
+    "intro": "From {deadline}, SCL Step 3 is mandatory in construction and infrastructure. SCL Original is the only variant that leads to a full certificate. Traditional trajectories cost {oldPrice} and take months. We do it differently.",
+    "deadline": "1 July 2026",
+    "oldPrice": "€4,000 to €15,000",
+    "ctaPrimary": "Sign up",
+    "today": "Sign up today, start today.",
+    "photoAlt": "Safety Culture Ladder",
+    "pain": {
+      "eyebrow": "The pressure",
+      "title": "The deadline is closing in. And costs keep rising.",
+      "body1": "Without SCL Original Step 3 you'll be excluded from construction and infrastructure tenders from 1 July 2026. No full certificate, no contract. That simple.",
+      "body2": "Meanwhile a traditional SCL Original trajectory runs into thousands of euros and months of work. Consultants billing by the hour, questionnaires that miss the actual practice, reports stuck in policy language."
+    },
+    "why": {
+      "eyebrow": "Why this works",
+      "title": "AI does the heavy lifting. For a fraction of the price.",
+      "body": "Our AI runs the interviews with your management and employees. Real conversations, no questionnaires. People talk more openly to an AI than to an outside auditor, which gives a more honest picture. We turn the outcomes into an audit-ready SCL Original dossier. No consultant billing by the hour, no towering invoice."
+    },
+    "support": {
+      "eyebrow": "Fully handled",
+      "title": "A qualified SCL advisor guides your trajectory.",
+      "body": "You're not on your own. An experienced, qualified SCL advisor takes care of everything from start to finish: from setting up the interviews to flawless audit preparation. AI does the time-consuming work, the advisor keeps the lead and the quality in check."
+    },
+    "how": {
+      "eyebrow": "How it works",
+      "title": "Four steps, no surprises.",
+      "steps": {
+        "request": {
+          "title": "Sign up",
+          "body": "Pick your target step and share the basics. Right after signing up you get access and you can start today."
+        },
+        "interviews": {
+          "title": "We run the interviews",
+          "body": "Our AI talks to management and staff. At the office, on the building site, in the car. Whenever it suits."
+        },
+        "dossier": {
+          "title": "We deliver the dossier",
+          "body": "An audit-ready SCL Original dossier with findings per sub-theme, anonymised examples and concrete improvement points."
+        },
+        "audit": {
+          "title": "Audit by an accredited CB",
+          "body": "An accredited certification body (Kiwa, DNV, Bureau Veritas) runs the audit. You're prepared."
+        }
+      }
+    },
+    "levels": {
+      "eyebrow": "Steps",
+      "title": "Which step fits you?",
+      "intro": "SCL Original has five steps and is the only variant that leads to a full certificate. Most organisations start at Step 3, the mandatory level from 1 July 2026.",
+      "level3": {
+        "tag": "Mandatory from 1 July 2026",
+        "title": "Step 3",
+        "body": "Safety is discussed and embedded in policy and behaviour. Staff know what is expected and there is active steering toward safe work."
+      },
+      "level4": {
+        "tag": "Proactive",
+        "title": "Step 4",
+        "body": "Safety is a shared responsibility. Everyone contributes, including the shop floor. Improvements are tackled before things go wrong."
+      },
+      "level5": {
+        "tag": "Forward-looking",
+        "title": "Step 5",
+        "body": "Safety is woven into every decision. Continuous improvement, leadership by example, transparency about incidents and lessons."
+      }
+    },
+    "deliverables": {
+      "title": "What you get",
+      "items": {
+        "dossier": "Audit-ready SCL Original dossier for the auditor",
+        "interviews": "Anonymised insights from interviews with your team",
+        "subthemes": "Findings organised per sub-theme and organisational layer",
+        "growth": "Concrete steps to grow to a higher step",
+        "support": "Support up to the audit"
+      }
+    },
+    "guarantee": {
+      "title": "Audit failed? Money back.",
+      "body": "If you don't pass the audit with our dossier, you get your money back. That simple."
+    },
+    "cta": {
+      "eyebrow": "Ready to start?",
+      "title": "Sign up. Start today.",
+      "subtitle": "Fill in your details and target step. Right after signing up you get access and start today.",
+      "form": {
+        "nameLabel": "Name",
+        "namePlaceholder": "First and last name",
+        "emailLabel": "Email",
+        "emailPlaceholder": "name{'@'}company.com",
+        "companyLabel": "Company",
+        "companyPlaceholder": "Your organisation name",
+        "levelLabel": "Target step",
+        "levelOption3": "Step 3 (mandatory from 1 July 2026)",
+        "levelOption4": "Step 4",
+        "levelOption5": "Step 5",
+        "messageLabel": "Notes",
+        "messagePlaceholder": "E.g. organisation size, desired start",
+        "submit": "Sign me up",
+        "submitting": "Sending…",
+        "submitted": "Thanks! You'll receive your access by email shortly.",
+        "disclaimer": "Right after signing up you'll get access in your inbox.",
+        "error": "Submission failed. Please try again or email hello{'@'}helpr.ai directly."
+      }
+    }
+  },
   "sample": {
     "eyebrow": "Sample document",
     "title": "Download a sample stakeholder analysis.",
@@ -477,7 +585,9 @@
   "footer": {
     "tagline": "The AI toolbox for certification consultants. We streamline trajectories so consultants can focus on real advice.",
     "tagline2": "Made in the Netherlands.",
-    "product": "Product",
+    "product": "For consultancies",
+    "forBusinesses": "For businesses",
+    "sclDirect": "SCL Original certificate for €499",
     "company": "Company",
     "legal": "Legal",
     "contact": "Contact",

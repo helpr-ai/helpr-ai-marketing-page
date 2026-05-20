@@ -31,6 +31,14 @@
 /product /nl/product/ 301
 /product/ /nl/product/ 301
 /product/* /nl/product/:splat 301
+
+# Bare /certificering and /certification → localized
+/certificering /nl/certificering/safety-culture-ladder/ 301
+/certificering/ /nl/certificering/safety-culture-ladder/ 301
+/certificering/* /nl/certificering/:splat 301
+/certification /en/certification/safety-culture-ladder/ 301
+/certification/ /en/certification/safety-culture-ladder/ 301
+/certification/* /en/certification/:splat 301
 /consultants /nl/ 301
 /consultants/ /nl/ 301
 /nl/consultants /nl/ 301

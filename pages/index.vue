@@ -10,8 +10,8 @@
         <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
           <div class="lg:col-span-6">
             <h1 class="font-display text-5xl sm:text-6xl lg:text-7xl leading-[1.05] text-warm-ink font-bold [hyphens:none] [overflow-wrap:normal]">
-              <span class="whitespace-nowrap">{{ $t('hero.titleA') }}</span><br />
-              <span class="text-navy-500 whitespace-nowrap">{{ $t('hero.titleB') }}</span>
+              <span>{{ $t('hero.titleA') }}</span><br />
+              <span class="text-navy-500">{{ $t('hero.titleB') }}</span>
             </h1>
 
             <p class="mt-8 text-xl lg:text-2xl text-warm-ink/70 leading-relaxed max-w-2xl">
