@@ -102,12 +102,11 @@
     <!-- CORE: AI INTERVIEWS -->
     <section id="core" class="py-24 lg:py-32 bg-warm-ink text-white scroll-mt-24">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <div class="grid grid-cols-1 lg:grid-cols-[auto_1fr_1fr] gap-8 lg:gap-12 lg:items-stretch">
+        <div class="grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-8 lg:gap-12 lg:items-stretch mb-14 lg:mb-20">
           <svg
             viewBox="0 0 64 80"
             preserveAspectRatio="xMidYMid meet"
-            class="lg:self-stretch w-24 h-32 lg:w-auto lg:h-auto text-navy-500"
-            style="aspect-ratio: 64 / 80;"
+            class="flex-shrink-0 w-28 h-36 lg:w-48 lg:h-60 text-navy-500"
             fill="none"
             stroke="currentColor"
             stroke-width="2.5"
@@ -125,7 +124,7 @@
             <line x1="24" y1="62" x2="40" y2="62" />
           </svg>
 
-          <div>
+          <div class="max-w-2xl">
             <p class="text-sm font-semibold uppercase tracking-wider text-navy-500 mb-4">{{ $t('core.eyebrow') }}</p>
             <h2 class="font-display text-3xl lg:text-4xl text-white font-bold leading-tight mb-5">
               {{ $t('core.title') }}
@@ -134,22 +133,22 @@
               {{ $t('core.body') }}
             </p>
           </div>
+        </div>
 
-          <ul class="space-y-5 lg:space-y-6">
-            <li
-              v-for="f in coreFeatures"
-              :key="f"
-              class="flex items-start gap-3"
-            >
-              <svg viewBox="0 0 9 5" fill="currentColor" class="flex-shrink-0 w-7 h-auto text-navy-500 mt-1.5" aria-hidden="true">
-                <path d="M0 0 L6 0 L9 2.5 L6 5 L0 5 Z" />
-              </svg>
-              <div>
-                <h3 class="font-display text-base font-bold text-white mb-1">{{ $t(`core.features.${f}.title`) }}</h3>
-                <p class="text-sm text-white/65 leading-snug">{{ $t(`core.features.${f}.body`) }}</p>
-              </div>
-            </li>
-          </ul>
+        <div class="grid sm:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto">
+          <div
+            v-for="f in coreFeatures"
+            :key="f"
+            class="flex items-start gap-4"
+          >
+            <svg viewBox="0 0 9 5" fill="currentColor" class="flex-shrink-0 w-9 h-auto text-navy-500 mt-2" aria-hidden="true">
+              <path d="M0 0 L6 0 L9 2.5 L6 5 L0 5 Z" />
+            </svg>
+            <div>
+              <h3 class="font-display text-xl lg:text-2xl text-white font-bold mb-2">{{ $t(`core.features.${f}.title`) }}</h3>
+              <p class="text-base text-white/75 leading-relaxed">{{ $t(`core.features.${f}.body`) }}</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -443,10 +442,10 @@
     <section id="data" class="py-24 lg:py-32 bg-white scroll-mt-24">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          <div class="lg:col-span-7 order-last lg:order-first">
-            <div class="relative">
+          <div class="lg:col-span-5 order-last lg:order-first">
+            <div class="relative max-w-sm lg:max-w-none">
               <div class="absolute -inset-2 bg-gradient-to-br from-navy-500/10 via-warm-bg to-navy-700/10 rounded-3xl blur-2xl"></div>
-              <div class="relative bg-white rounded-xl shadow-card-hover border border-warm-border p-5 sm:p-7 lg:p-8 overflow-hidden">
+              <div class="relative bg-white rounded-xl shadow-card-hover border border-warm-border p-5 sm:p-7 lg:p-7 overflow-hidden">
                 <div class="flex flex-wrap items-center justify-between gap-2 pb-4 mb-5 border-b border-warm-border">
                   <div class="flex items-center gap-2 min-w-0">
                     <span class="relative flex h-2 w-2 flex-shrink-0">
@@ -485,7 +484,7 @@
             </div>
           </div>
 
-          <div class="lg:col-span-5">
+          <div class="lg:col-span-7">
             <p class="text-sm font-semibold uppercase tracking-wider text-navy-500 mb-4">{{ $t('data.eyebrow') }}</p>
             <h2 class="font-display text-4xl lg:text-5xl text-warm-ink font-bold leading-tight mb-6">
               {{ $t('data.title') }}
