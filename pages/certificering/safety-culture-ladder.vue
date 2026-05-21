@@ -20,14 +20,7 @@
             </p>
             <p class="text-base lg:text-lg text-warm-ink/70 leading-relaxed mb-10">
               <i18n-t keypath="scl.intro" tag="span">
-                <template #deadline>
-                  <a
-                    href="https://gc-veiligheid.nl/actueel/item/naar-trede-3-safety-culture-ladder-per-1-juli-2026"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="font-semibold text-warm-ink underline decoration-navy-500/40 hover:decoration-navy-500 underline-offset-2"
-                  >{{ $t('scl.deadline') }}</a>
-                </template>
+                <template #deadline><span class="font-semibold text-warm-ink">{{ $t('scl.deadline') }}</span></template>
                 <template #oldPrice><span class="font-semibold text-warm-ink">{{ $t('scl.oldPrice') }}</span></template>
               </i18n-t>
             </p>
@@ -61,8 +54,20 @@
           {{ $t('scl.pain.title') }}
         </h2>
         <div class="space-y-5 text-lg text-warm-ink/80 leading-relaxed">
-          <p>{{ $t('scl.pain.body1') }}</p>
+          <p>
+            <i18n-t keypath="scl.pain.body1" tag="span">
+              <template #deadlineLink>
+                <a
+                  href="https://gc-veiligheid.nl/actueel/item/naar-trede-3-safety-culture-ladder-per-1-juli-2026"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="font-semibold text-warm-ink underline decoration-navy-500/40 hover:decoration-navy-500 underline-offset-2"
+                >{{ $t('scl.pain.deadlineLink') }}</a>
+              </template>
+            </i18n-t>
+          </p>
           <p>{{ $t('scl.pain.body2') }}</p>
+          <p class="text-warm-ink font-semibold">{{ $t('scl.pain.body3') }}</p>
         </div>
       </div>
     </section>
@@ -94,26 +99,33 @@
     </section>
 
     <!-- HOE HET WERKT -->
-    <section class="py-20 lg:py-28">
+    <section class="py-20 lg:py-28 bg-warm-bg">
       <div class="mx-auto max-w-6xl px-6 lg:px-8">
         <div class="mb-14 max-w-3xl">
           <p class="text-sm font-semibold uppercase tracking-wider text-navy-500 mb-4">{{ $t('scl.how.eyebrow') }}</p>
-          <h2 class="font-display text-3xl lg:text-4xl text-warm-ink font-bold leading-tight">
+          <h2 class="font-display text-3xl lg:text-4xl text-warm-ink font-bold leading-tight mb-6">
             {{ $t('scl.how.title') }}
           </h2>
+          <p class="text-lg text-warm-ink/70 leading-relaxed">
+            {{ $t('scl.how.intro') }}
+          </p>
         </div>
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div v-for="(step, i) in howSteps" :key="step">
-            <div class="flex items-center justify-center w-12 h-12 rounded-full bg-warm-ink text-white font-display font-bold text-xl mb-4">{{ i + 1 }}</div>
-            <h3 class="font-display text-xl text-warm-ink font-bold mb-2">{{ $t(`scl.how.steps.${step}.title`) }}</h3>
-            <p class="text-warm-ink/70 leading-relaxed">{{ $t(`scl.how.steps.${step}.body`) }}</p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div
+            v-for="(step, i) in howSteps"
+            :key="step"
+            class="p-6 bg-white rounded-2xl border border-warm-border shadow-card"
+          >
+            <div class="flex items-center justify-center w-11 h-11 rounded-full bg-warm-ink text-white font-display font-bold text-lg mb-4">{{ i + 1 }}</div>
+            <h3 class="font-display text-lg text-warm-ink font-bold mb-2">{{ $t(`scl.how.steps.${step}.title`) }}</h3>
+            <p class="text-sm text-warm-ink/70 leading-relaxed">{{ $t(`scl.how.steps.${step}.body`) }}</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- TREDEN -->
-    <section class="py-20 lg:py-28 bg-warm-bg">
+    <section class="py-20 lg:py-28">
       <div class="mx-auto max-w-6xl px-6 lg:px-8">
         <div class="mb-14 max-w-3xl">
           <p class="text-sm font-semibold uppercase tracking-wider text-navy-500 mb-4">{{ $t('scl.levels.eyebrow') }}</p>
@@ -141,43 +153,28 @@
             >
               {{ $t(`scl.levels.${lvl}.tag`) }}
             </span>
-            <h3 class="font-display text-2xl text-warm-ink font-bold mb-3">{{ $t(`scl.levels.${lvl}.title`) }}</h3>
+            <h3 class="font-display text-2xl text-warm-ink font-bold mb-1">{{ $t(`scl.levels.${lvl}.title`) }}</h3>
+            <p class="font-display text-3xl text-navy-500 font-bold mb-4">{{ $t(`scl.levels.${lvl}.price`) }}</p>
             <p class="text-warm-ink/70 leading-relaxed">{{ $t(`scl.levels.${lvl}.body`) }}</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- WAT JE KRIJGT -->
+
+    <!-- FAQ -->
     <section class="py-20 lg:py-28">
       <div class="mx-auto max-w-4xl px-6 lg:px-8">
-        <h2 class="font-display text-3xl lg:text-4xl text-warm-ink font-bold leading-tight mb-10">
-          {{ $t('scl.deliverables.title') }}
+        <p class="text-sm font-semibold uppercase tracking-wider text-navy-500 mb-4">{{ $t('scl.faq.eyebrow') }}</p>
+        <h2 class="font-display text-3xl lg:text-4xl text-warm-ink font-bold leading-tight mb-12">
+          {{ $t('scl.faq.title') }}
         </h2>
-        <ul class="space-y-5">
-          <li
-            v-for="item in deliverables"
-            :key="item"
-            class="flex items-start gap-4"
-          >
-            <svg viewBox="0 0 9 5" fill="currentColor" class="flex-shrink-0 w-7 h-auto text-navy-500 mt-2" aria-hidden="true">
-              <path d="M0 0 L6 0 L9 2.5 L6 5 L0 5 Z" />
-            </svg>
-            <span class="text-lg text-warm-ink/80 leading-relaxed">{{ $t(`scl.deliverables.items.${item}`) }}</span>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- GUARANTEE -->
-    <section class="py-16 lg:py-20 bg-navy-500 text-white">
-      <div class="mx-auto max-w-3xl px-6 lg:px-8 text-center">
-        <h2 class="font-display text-2xl lg:text-3xl text-white font-bold leading-tight mb-3">
-          {{ $t('scl.guarantee.title') }}
-        </h2>
-        <p class="text-lg text-white/85 leading-relaxed">
-          {{ $t('scl.guarantee.body') }}
-        </p>
+        <div class="space-y-8">
+          <div v-for="item in faqItems" :key="item" class="border-b border-warm-border pb-8 last:border-b-0">
+            <h3 class="font-display text-xl lg:text-2xl text-warm-ink font-bold mb-3">{{ $t(`scl.faq.items.${item}.q`) }}</h3>
+            <p class="text-base lg:text-lg text-warm-ink/75 leading-relaxed">{{ $t(`scl.faq.items.${item}.a`) }}</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -287,19 +284,32 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 
 const { t } = useI18n()
 
-useHead(() => ({
-  title: 'SCL-certificering voor ' + t('scl.price') + ' · Helpr.ai',
-  meta: [
-    { name: 'description', content: t('scl.intro', { oldPrice: t('scl.oldPrice') }) }
-  ]
+const howSteps = ['baseline', 'gap', 'buyin', 'plan', 'training', 'implementation', 'preaudit', 'audit'] as const
+const faqItems = ['efficient', 'anonymous', 'time', 'ontzorgen', 'audit', 'audience', 'difference', 'trede'] as const
+
+const faqJsonLd = computed(() => JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqItems.map(k => ({
+    '@type': 'Question',
+    name: t(`scl.faq.items.${k}.q`),
+    acceptedAnswer: { '@type': 'Answer', text: t(`scl.faq.items.${k}.a`) }
+  }))
 }))
 
-const howSteps = ['request', 'interviews', 'dossier', 'audit'] as const
-const deliverables = ['dossier', 'interviews', 'subthemes', 'growth', 'support'] as const
+useHead(() => ({
+  title: 'SCL Original-certificering voor ' + t('scl.price') + ' · Helpr.ai',
+  meta: [
+    { name: 'description', content: t('scl.intro', { deadline: t('scl.deadline'), oldPrice: t('scl.oldPrice') }) }
+  ],
+  script: [
+    { type: 'application/ld+json', innerHTML: faqJsonLd.value }
+  ]
+}))
 
 const form = ref({ name: '', email: '', company: '', targetLevel: '3', message: '' })
 const submitted = ref(false)

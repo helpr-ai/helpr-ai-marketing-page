@@ -113,7 +113,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed, onMounted, onUnmounted } from 'vue'
+import { ref, computed, onMounted, onUnmounted, watch, nextTick } from 'vue'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 
 const { locale, locales } = useI18n()
@@ -159,5 +159,10 @@ onMounted(() => {
 onUnmounted(() => {
   window.removeEventListener('scroll', onScroll)
   document.removeEventListener('click', onClickOutside)
+})
+
+// Recompute scroll state on route change (component is kept-alive across navigations)
+watch(() => route.fullPath, () => {
+  nextTick(() => onScroll())
 })
 </script>

@@ -420,9 +420,9 @@
   },
   "scl": {
     "eyebrow": "Safety Culture Ladder Original for businesses",
-    "title": "An SCL Original certificate. For {price}.",
+    "title": "An SCL Original‑certificate. For {price}.",
     "price": "€1,499",
-    "subtitle": "Too good to be true? It is. Experience the power of AI.",
+    "subtitle": "Too good to be true? It isn't. Experience the power of AI.",
     "intro": "From {deadline}, SCL Step 3 is mandatory in construction and infrastructure. SCL Original is the only variant that leads to a full certificate. Traditional trajectories cost {oldPrice} and take months. We do it differently.",
     "deadline": "1 July 2026",
     "oldPrice": "€4,000 to €15,000",
@@ -431,59 +431,119 @@
     "photoAlt": "Safety Culture Ladder",
     "pain": {
       "eyebrow": "The pressure",
-      "title": "The deadline is closing in. And costs keep rising.",
-      "body1": "Without SCL Original Step 3 you'll be excluded from construction and infrastructure tenders from 1 July 2026. No full certificate, no contract. That simple.",
-      "body2": "Meanwhile a traditional SCL Original trajectory runs into thousands of euros and months of work. Consultants billing by the hour, questionnaires that miss the actual practice, reports stuck in policy language."
+      "title": "The clock is ticking. And costs keep rising.",
+      "body1": "Without Safety Culture Ladder Step 3 you'll be excluded from construction and infrastructure tenders {deadlineLink}. No full certificate, no contract.",
+      "deadlineLink": "from 1 July 2026",
+      "body2": "Meanwhile a traditional Safety Culture Ladder trajectory runs into thousands of euros and months of work. Consultants billing by the hour, questionnaires that miss the actual practice, reports stuck in policy language.",
+      "body3": "We do it differently. Cheaper, faster, with more quality."
     },
     "why": {
       "eyebrow": "Why this works",
       "title": "AI does the heavy lifting. For a fraction of the price.",
-      "body": "Our AI runs the interviews with your management and employees. Real conversations, no questionnaires. People talk more openly to an AI than to an outside auditor, which gives a more honest picture. We turn the outcomes into an audit-ready SCL Original dossier. No consultant billing by the hour, no towering invoice."
+      "body": "Our AI runs the interviews with management and employees. Real conversations, no questionnaires. People talk more openly to an AI than to an external auditor. That gives a more honest and more complete picture. We process the outcomes anonymously into an audit‑ready dossier for the Safety Culture Ladder. No consultant billing by the hour, no towering invoice."
     },
     "support": {
       "eyebrow": "Fully handled",
-      "title": "A qualified SCL advisor guides your trajectory.",
-      "body": "You're not on your own. An experienced, qualified SCL advisor takes care of everything from start to finish: from setting up the interviews to flawless audit preparation. AI does the time-consuming work, the advisor keeps the lead and the quality in check."
+      "title": "A qualified Safety Culture Ladder advisor guides your trajectory.",
+      "body": "We facilitate the interviews with management and employees and deliver the report. From there our qualified advisor translates the outcomes into concrete steps for training, implementation and communication. Ready for the audit."
     },
     "how": {
-      "eyebrow": "How it works",
-      "title": "Four steps, no surprises.",
+      "eyebrow": "The trajectory",
+      "title": "Step by step to your SCL Original certificate.",
+      "intro": "An efficient certification trajectory starts with your sign-up. From there we take care of the whole process, in eight concrete steps.",
       "steps": {
-        "request": {
-          "title": "Sign up",
-          "body": "Pick your target step and share the basics. Right after signing up you get access and you can start today."
+        "baseline": {
+          "title": "Baseline measurement",
+          "body": "Our AI runs conversations with management and employees. Real interviews, anonymously processed. That's how we honestly map the current safety culture."
         },
-        "interviews": {
-          "title": "We run the interviews",
-          "body": "Our AI talks to management and staff. At the office, on the building site, in the car. Whenever it suits."
+        "gap": {
+          "title": "Gap analysis",
+          "body": "A qualified SCL advisor compares the outcomes with the requirements for your target step. Crystal clear: what's already there, what still needs work."
         },
-        "dossier": {
-          "title": "We deliver the dossier",
-          "body": "An audit-ready SCL Original dossier with findings per sub-theme, anonymised examples and concrete improvement points."
+        "buyin": {
+          "title": "Building support",
+          "body": "We share findings across every layer of the organisation. Our advisor helps leadership lock in commitment. No buy-in, no change."
+        },
+        "plan": {
+          "title": "Action plan",
+          "body": "We deliver a concrete plan with measures, timelines and owners. No abstract policy papers, just a workable plan for your organisation."
+        },
+        "training": {
+          "title": "Training",
+          "body": "Our advisor recommends the training needed to raise the safety level in your organisation. Delivery is up to you."
+        },
+        "implementation": {
+          "title": "Implementation",
+          "body": "You roll out the measures to make your organisation safer and more aware. Our advisor keeps a sharp eye on progress."
+        },
+        "preaudit": {
+          "title": "Pre-audit",
+          "body": "We test your readiness for the official audit. No surprises, no loose ends. You enter the audit with confidence."
         },
         "audit": {
-          "title": "Audit by an accredited CB",
-          "body": "An accredited certification body (Kiwa, DNV, Bureau Veritas) runs the audit. You're prepared."
+          "title": "Certification",
+          "body": "An accredited certification body runs the official audit. We guide you all the way to flawless audit preparation."
+        }
+      }
+    },
+    "faq": {
+      "eyebrow": "Frequently asked questions",
+      "title": "Frequently asked questions about efficient certification with Helpr.",
+      "items": {
+        "efficient": {
+          "q": "What makes this Safety Culture Ladder trajectory so efficient?",
+          "a": "Our AI runs the time-consuming interviews with your team. A qualified Safety Culture Ladder advisor steers the process and safeguards quality. No weeks of workshops, no questionnaires nobody completes. An efficient certification trajectory from sign-up to certificate."
+        },
+        "anonymous": {
+          "q": "Is the trajectory anonymous?",
+          "a": "Yes. All interviews are processed anonymously. Employees can speak freely; names are never traceable. That delivers a more honest and complete picture of the safety culture in your organisation."
+        },
+        "time": {
+          "q": "How much time does achieving the Safety Culture Ladder take from our organisation?",
+          "a": "A typical AI interview takes 20 to 30 minutes per participant, at a moment that suits the employee. The full trajectory typically runs 2 to 6 months, depending on the behaviour change required in your organisation."
+        },
+        "ontzorgen": {
+          "q": "Are we really fully taken care of?",
+          "a": "We facilitate the interviews, deliver the report, and our advisor translates the outcomes into concrete steps for training, implementation and communication. We keep progress in check. Execution and behaviour change is up to your organisation itself, we don't step in there. But we prepare you flawlessly for the audit."
+        },
+        "audit": {
+          "q": "How do we know we'll pass the Safety Culture Ladder audit?",
+          "a": "We work with qualified Safety Culture Ladder advisors whose only goal is to get you ready for the audit. We deliver an audit‑ready dossier that meets all requirements for the target step, plus a pre‑audit check to test readiness."
+        },
+        "audience": {
+          "q": "Which organisations is this suitable for?",
+          "a": "Any company in construction, infrastructure, engineering or services aiming for Safety Culture Ladder Step 3, 4 or 5. From SMEs to large organisations."
+        },
+        "difference": {
+          "q": "What's the difference with a traditional consultancy?",
+          "a": "A traditional Safety Culture Ladder trajectory costs €4,000 to €15,000 and runs for months. We do it for €1,499 (Step 3) and start today. AI does the heavy lifting, a qualified advisor safeguards quality. Same result, a fraction of the price."
+        },
+        "trede": {
+          "q": "Can we also reach Step 4 or Step 5?",
+          "a": "Yes. SCL Original has five steps and is the only variant leading to a full certificate. We support Step 3 (€1,499), Step 4 (€1,999) and Step 5 (€2,499). You indicate your target at sign-up."
         }
       }
     },
     "levels": {
       "eyebrow": "Steps",
       "title": "Which step fits you?",
-      "intro": "SCL Original has five steps and is the only variant that leads to a full certificate. Most organisations start at Step 3, the mandatory level from 1 July 2026.",
+      "intro": "The Safety Culture Ladder has five steps, and SCL Original is the only variant that leads to a full certificate. Most organisations start at Step 3, the mandatory level from 1 July 2026. Step 4 and 5 are also available.",
       "level3": {
         "tag": "Mandatory from 1 July 2026",
         "title": "Step 3",
+        "price": "€1,499",
         "body": "Safety is discussed and embedded in policy and behaviour. Staff know what is expected and there is active steering toward safe work."
       },
       "level4": {
         "tag": "Proactive",
         "title": "Step 4",
+        "price": "€1,999",
         "body": "Safety is a shared responsibility. Everyone contributes, including the shop floor. Improvements are tackled before things go wrong."
       },
       "level5": {
         "tag": "Forward-looking",
         "title": "Step 5",
+        "price": "€2,499",
         "body": "Safety is woven into every decision. Continuous improvement, leadership by example, transparency about incidents and lessons."
       }
     },
@@ -491,7 +551,7 @@
       "title": "What you get",
       "items": {
         "dossier": "Audit-ready SCL Original dossier for the auditor",
-        "interviews": "Anonymised insights from interviews with your team",
+        "interviews": "Insights from interviews across your organisation (anonymous)",
         "subthemes": "Findings organised per sub-theme and organisational layer",
         "growth": "Concrete steps to grow to a higher step",
         "support": "Support up to the audit"

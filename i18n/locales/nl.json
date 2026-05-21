@@ -420,9 +420,9 @@
   },
   "scl": {
     "eyebrow": "Safety Culture Ladder Original voor bedrijven",
-    "title": "Een SCL Original-certificaat. Voor {price}.",
+    "title": "Een SCL Original‑certificaat. Voor {price}.",
     "price": "€1499",
-    "subtitle": "Onwerkelijk? Dat is het ook. Ervaar de kracht van AI.",
+    "subtitle": "Onwerkelijk? Dat is het niet. Ervaar de kracht van AI.",
     "intro": "Vanaf {deadline} is SCL Trede 3 verplicht in bouw en infra. SCL Original is de enige variant die tot een volwaardig certificaat leidt. Traditionele trajecten kosten {oldPrice} en maanden voorbereiding. Wij doen het anders.",
     "deadline": "1 juli 2026",
     "oldPrice": "€4.000 tot €15.000",
@@ -431,59 +431,119 @@
     "photoAlt": "Safety Culture Ladder",
     "pain": {
       "eyebrow": "De druk",
-      "title": "De deadline tikt. En de kosten stijgen.",
-      "body1": "Zonder SCL Original Trede 3 word je vanaf 1 juli 2026 uitgesloten van aanbestedingen in de bouw en infra. Geen volwaardig certificaat, geen opdracht. Zo simpel is het.",
-      "body2": "Tegelijk loopt een traditioneel SCL Original-traject op tot duizenden euro's en maanden doorlooptijd. Adviseurs die uren factureren, vragenlijsten die niet de praktijk raken, een rapport dat blijft hangen in beleidstaal."
+      "title": "De klok tikt. En de kosten lopen op.",
+      "body1": "Zonder Safety Culture Ladder Trede 3 word je {deadlineLink} uitgesloten van aanbestedingen in de bouw en infra. Geen volwaardig certificaat, geen opdracht.",
+      "deadlineLink": "vanaf 1 juli 2026",
+      "body2": "Tegelijk loopt een traditioneel Safety Culture Ladder-traject op tot duizenden euro's en maanden doorlooptijd. Adviseurs die uren factureren, vragenlijsten die de praktijk niet raken, een rapport dat blijft hangen in beleidstaal.",
+      "body3": "Wij doen het anders. Goedkoper, sneller, met meer kwaliteit."
     },
     "why": {
       "eyebrow": "Waarom dit kan",
       "title": "AI doet het zware werk. Voor een fractie van de prijs.",
-      "body": "Onze AI voert de interviews met je management én medewerkers. Echte gesprekken, geen vragenlijsten. Ze praten opener tegen een AI dan tegen een externe auditor, dat geeft een eerlijker beeld. Wij verwerken de uitkomsten tot een audit-klaar dossier voor SCL Original. Geen consultant die uren factureert, geen torenhoge factuur."
+      "body": "Onze AI voert de interviews met management én medewerkers. Echte gesprekken, geen vragenlijsten. Mensen praten opener tegen een AI dan tegen een externe auditor. Dat geeft een eerlijker en vollediger beeld. Wij verwerken de uitkomsten anoniem tot een audit‑klaar dossier voor de Safety Culture Ladder. Geen consultant die uren factureert, geen torenhoge factuur."
     },
     "support": {
       "eyebrow": "Volledig ontzorgd",
-      "title": "Een gekwalificeerd SCL-adviseur begeleidt jouw traject.",
-      "body": "Je staat er niet alleen voor. Een ervaren, gekwalificeerd SCL-adviseur ontzorgt je van begin tot eind: van het inrichten van de interviews tot de perfecte voorbereiding op de audit. AI doet het tijdrovende werk, de adviseur bewaakt de regie en de kwaliteit."
+      "title": "Een gekwalificeerd Safety Culture Ladder-adviseur begeleidt jouw traject.",
+      "body": "Wij faciliteren de interviews met management en medewerkers en leveren het rapport. Vanaf daar vertaalt onze gekwalificeerde adviseur de uitkomsten naar concrete stappen voor opleiding, implementatie en communicatie. Klaar voor de audit."
     },
     "how": {
-      "eyebrow": "Hoe het werkt",
-      "title": "Vier stappen, geen verrassingen.",
+      "eyebrow": "Het traject",
+      "title": "Stap voor stap naar je SCL Original-certificaat.",
+      "intro": "Een efficiënt certificeringstraject begint met je aanmelding. Daarna nemen wij het hele proces uit handen, in acht concrete stappen.",
       "steps": {
-        "request": {
-          "title": "Meld je aan",
-          "body": "Je kiest je beoogde trede en bezorgt ons de basisgegevens. Direct na aanmelden krijg je toegang en kun je vandaag nog beginnen."
+        "baseline": {
+          "title": "Nulmeting",
+          "body": "Onze AI voert gesprekken met management én medewerkers. Echte interviews, anoniem verwerkt. Zo brengen we de huidige veiligheidscultuur eerlijk in kaart."
         },
-        "interviews": {
-          "title": "Wij voeren de interviews",
-          "body": "Onze AI spreekt management en medewerkers. Op kantoor, op de bouwplaats, of in de auto. Wanneer het uitkomt."
+        "gap": {
+          "title": "Gap-analyse",
+          "body": "Een gekwalificeerd SCL-adviseur vergelijkt de uitkomsten met de eisen voor jouw beoogde trede. Glashelder zichtbaar wat er al staat en wat er nog moet."
         },
-        "dossier": {
-          "title": "Wij leveren het dossier",
-          "body": "Een audit-klaar SCL Original-dossier met bevindingen per subthema, geanonimiseerde voorbeelden en concrete verbeterpunten."
+        "buyin": {
+          "title": "Draagvlak creëren",
+          "body": "Wij delen de bevindingen op alle lagen van de organisatie. Onze adviseur helpt het management om commitment los te trekken. Zonder draagvlak geen verandering."
+        },
+        "plan": {
+          "title": "Plan van aanpak",
+          "body": "Wij leveren een concreet plan met maatregelen, tijdlijnen en verantwoordelijken. Geen abstracte beleidsstukken, maar een werkbaar plan voor jouw organisatie."
+        },
+        "training": {
+          "title": "Training",
+          "body": "Onze adviseur adviseert welke trainingen nodig zijn om het veiligheidsniveau binnen je organisatie te verhogen. De uitvoering ligt bij jou."
+        },
+        "implementation": {
+          "title": "Implementatie",
+          "body": "Jij voert de maatregelen uit om je organisatie veiliger en bewuster te maken. Onze adviseur houdt de voortgang scherp in de gaten."
+        },
+        "preaudit": {
+          "title": "Pre-audit",
+          "body": "Wij toetsen je gereedheid voor de officiële audit. Geen verrassingen, geen open eindjes. Je gaat met vertrouwen de audit in."
         },
         "audit": {
-          "title": "Audit door een erkende CI",
-          "body": "Een geaccrediteerd certificatie-instituut (Kiwa, DNV, Bureau Veritas) voert de audit uit. Jij bent voorbereid."
+          "title": "Certificering",
+          "body": "Een geaccrediteerde certificatieinstelling voert de officiële audit uit. Wij begeleiden je tot en met de perfecte voorbereiding."
+        }
+      }
+    },
+    "faq": {
+      "eyebrow": "Veelgestelde vragen",
+      "title": "Veelgestelde vragen over efficiënt certificeren met Helpr.",
+      "items": {
+        "efficient": {
+          "q": "Wat maakt dit Safety Culture Ladder-traject zo efficiënt?",
+          "a": "Onze AI voert de tijdrovende interviews met je team. Een gekwalificeerd Safety Culture Ladder-adviseur stuurt het proces en bewaakt de kwaliteit. Geen wekenlange werkgroepen, geen vragenlijsten die niemand invult. Een efficiënt certificeringstraject van aanmelding tot certificaat."
+        },
+        "anonymous": {
+          "q": "Is het traject anoniem?",
+          "a": "Ja. Alle interviews worden anoniem verwerkt. Medewerkers spreken vrijuit; namen worden nergens herleidbaar gemaakt. Dat geeft een eerlijker en vollediger beeld van de veiligheidscultuur binnen je organisatie."
+        },
+        "time": {
+          "q": "Hoeveel tijd kost het behalen van de Safety Culture Ladder ons als organisatie?",
+          "a": "Een gemiddeld AI-interview duurt 20 tot 30 minuten per deelnemer, op een moment dat het de medewerker uitkomt. De doorlooptijd van het hele traject ligt doorgaans tussen 2 en 6 maanden, afhankelijk van de gedragsverandering die nodig is in je organisatie."
+        },
+        "ontzorgen": {
+          "q": "Worden wij echt volledig ontzorgd?",
+          "a": "Wij faciliteren de interviews, leveren het rapport en onze adviseur vertaalt de uitkomsten naar concrete stappen voor opleiding, implementatie en communicatie. De voortgang houden we scherp in de gaten. De uitvoering en gedragsverandering ligt bij je organisatie zelf, daar gaan wij niet in mee. Wel stomen we je klaar voor de audit."
+        },
+        "audit": {
+          "q": "Hoe weten we zeker dat we de Safety Culture Ladder-audit halen?",
+          "a": "Wij werken met gekwalificeerde Safety Culture Ladder-adviseurs die als enige doel hebben: jou klaar maken voor de audit. Wij leveren een audit‑klaar dossier dat voldoet aan alle eisen voor de beoogde trede, plus een pre‑audit check om je gereedheid te toetsen."
+        },
+        "audience": {
+          "q": "Voor welke organisaties is dit geschikt?",
+          "a": "Voor elk bedrijf in de bouw, infra, engineering of dienstverlening dat Safety Culture Ladder Trede 3, 4 of 5 wil behalen. Van MKB tot grote organisaties."
+        },
+        "difference": {
+          "q": "Wat is het verschil met een traditioneel adviesbureau?",
+          "a": "Een traditioneel Safety Culture Ladder-traject kost €4.000 tot €15.000 en duurt maanden. Wij doen het voor €1499 (Trede 3) en starten vandaag. AI doet het zware werk, een gekwalificeerd adviseur bewaakt de kwaliteit. Hetzelfde resultaat, een fractie van de prijs."
+        },
+        "trede": {
+          "q": "Kunnen we ook Trede 4 of Trede 5 halen?",
+          "a": "Ja. SCL Original kent vijf treden en is de enige variant die tot een volwaardig certificaat leidt. Wij ondersteunen Trede 3 (€1499), Trede 4 (€1999) en Trede 5 (€2499). Je geeft bij aanmelding aan welke je beoogt."
         }
       }
     },
     "levels": {
       "eyebrow": "Treden",
       "title": "Welke trede past bij jou?",
-      "intro": "SCL Original kent vijf treden en is de enige variant die tot een volwaardig certificaat leidt. De meeste organisaties starten op Trede 3, het verplichte niveau vanaf 1 juli 2026.",
+      "intro": "De Safety Culture Ladder kent vijf treden en SCL Original is de enige variant die tot een volwaardig certificaat leidt. De meeste organisaties starten op Trede 3, het verplichte niveau vanaf 1 juli 2026. Trede 4 en 5 zijn ook mogelijk.",
       "level3": {
         "tag": "Verplicht vanaf 1 juli 2026",
         "title": "Trede 3",
+        "price": "€1499",
         "body": "Veiligheid is besproken en zit in beleid en gedrag. Medewerkers weten wat er van ze verwacht wordt en er wordt actief gestuurd op veilig werken."
       },
       "level4": {
         "tag": "Proactief",
         "title": "Trede 4",
+        "price": "€1999",
         "body": "Veiligheid is een gedeelde verantwoordelijkheid. Iedereen denkt mee, ook de werkvloer. Verbeteringen worden actief opgepakt voordat er iets misgaat."
       },
       "level5": {
         "tag": "Vooruitstrevend",
         "title": "Trede 5",
+        "price": "€2499",
         "body": "Veiligheid is verweven in elke beslissing. Continue verbetering, leiderschap met het goede voorbeeld, transparantie over incidenten en lessen."
       }
     },
@@ -491,7 +551,7 @@
       "title": "Wat je krijgt",
       "items": {
         "dossier": "Audit-klaar SCL Original-dossier voor de auditor",
-        "interviews": "Geanonimiseerde inzichten uit interviews met je team",
+        "interviews": "Inzichten uit interviews in je organisatie (anoniem)",
         "subthemes": "Bevindingen geordend per subthema en per organisatielaag",
         "growth": "Concrete stappen om naar een hogere trede te groeien",
         "support": "Begeleiding tot de audit"
