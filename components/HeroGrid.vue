@@ -10,7 +10,7 @@
 </template>
 
 <script setup lang="ts">
-const { locale } = useI18n()
+const { locale } = useI18n({ useScope: 'global' })
 
 const photoModules = import.meta.glob(
   '~/assets/images/hero-tiles/*.{jpg,jpeg,png,webp,avif}',

@@ -420,7 +420,7 @@
   },
   "scl": {
     "eyebrow": "Safety Culture Ladder Original for businesses",
-    "title": "An SCL Original‑certificate. For {price}.",
+    "title": "An SCL Original certificate. For {price}.",
     "price": "€1,499",
     "subtitle": "Too good to be true? It isn't. Experience the power of AI.",
     "intro": "From {deadline}, SCL Step 3 is mandatory in construction and infrastructure. SCL Original is the only variant that leads to a full certificate. Traditional trajectories cost {oldPrice} and take months. We do it differently.",
@@ -495,7 +495,7 @@
           "a": "Our AI runs the time-consuming interviews with your team. A qualified Safety Culture Ladder advisor steers the process and safeguards quality. No weeks of workshops, no questionnaires nobody completes. An efficient certification trajectory from sign-up to certificate."
         },
         "anonymous": {
-          "q": "Is the trajectory anonymous?",
+          "q": "Are the interviews anonymous?",
           "a": "Yes. All interviews are processed anonymously. Employees can speak freely; names are never traceable. That delivers a more honest and complete picture of the safety culture in your organisation."
         },
         "time": {

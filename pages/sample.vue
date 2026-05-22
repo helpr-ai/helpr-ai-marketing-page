@@ -98,7 +98,7 @@
 import { ref } from 'vue'
 
 const localePath = useLocalePath()
-const { t } = useI18n()
+const { t } = useI18n({ useScope: 'global' })
 
 useHead(() => ({
   title: t('sample.title') + ' · Helpr.ai'

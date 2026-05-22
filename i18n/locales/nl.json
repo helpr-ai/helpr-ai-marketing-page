@@ -420,7 +420,7 @@
   },
   "scl": {
     "eyebrow": "Safety Culture Ladder Original voor bedrijven",
-    "title": "Een SCL Original‑certificaat. Voor {price}.",
+    "title": "Een SCL Original certificaat. Voor {price}.",
     "price": "€1499",
     "subtitle": "Onwerkelijk? Dat is het niet. Ervaar de kracht van AI.",
     "intro": "Vanaf {deadline} is SCL Trede 3 verplicht in bouw en infra. SCL Original is de enige variant die tot een volwaardig certificaat leidt. Traditionele trajecten kosten {oldPrice} en maanden voorbereiding. Wij doen het anders.",
@@ -444,7 +444,7 @@
     },
     "support": {
       "eyebrow": "Volledig ontzorgd",
-      "title": "Een gekwalificeerd Safety Culture Ladder-adviseur begeleidt jouw traject.",
+      "title": "Een gekwalificeerde Safety Culture Ladder adviseur begeleidt jouw traject.",
       "body": "Wij faciliteren de interviews met management en medewerkers en leveren het rapport. Vanaf daar vertaalt onze gekwalificeerde adviseur de uitkomsten naar concrete stappen voor opleiding, implementatie en communicatie. Klaar voor de audit."
     },
     "how": {
@@ -458,7 +458,7 @@
         },
         "gap": {
           "title": "Gap-analyse",
-          "body": "Een gekwalificeerd SCL-adviseur vergelijkt de uitkomsten met de eisen voor jouw beoogde trede. Glashelder zichtbaar wat er al staat en wat er nog moet."
+          "body": "Een gekwalificeerde SCL-adviseur vergelijkt de uitkomsten met de eisen voor jouw beoogde trede. Glashelder zichtbaar wat er al staat en wat er nog moet."
         },
         "buyin": {
           "title": "Draagvlak creëren",
@@ -492,10 +492,10 @@
       "items": {
         "efficient": {
           "q": "Wat maakt dit Safety Culture Ladder-traject zo efficiënt?",
-          "a": "Onze AI voert de tijdrovende interviews met je team. Een gekwalificeerd Safety Culture Ladder-adviseur stuurt het proces en bewaakt de kwaliteit. Geen wekenlange werkgroepen, geen vragenlijsten die niemand invult. Een efficiënt certificeringstraject van aanmelding tot certificaat."
+          "a": "Onze AI voert de tijdrovende interviews met je team. Een gekwalificeerde Safety Culture Ladder-adviseur stuurt het proces en bewaakt de kwaliteit. Geen wekenlange werkgroepen, geen vragenlijsten die niemand invult. Een efficiënt certificeringstraject van aanmelding tot certificaat."
         },
         "anonymous": {
-          "q": "Is het traject anoniem?",
+          "q": "Zijn de interviews anoniem?",
           "a": "Ja. Alle interviews worden anoniem verwerkt. Medewerkers spreken vrijuit; namen worden nergens herleidbaar gemaakt. Dat geeft een eerlijker en vollediger beeld van de veiligheidscultuur binnen je organisatie."
         },
         "time": {
@@ -516,7 +516,7 @@
         },
         "difference": {
           "q": "Wat is het verschil met een traditioneel adviesbureau?",
-          "a": "Een traditioneel Safety Culture Ladder-traject kost €4.000 tot €15.000 en duurt maanden. Wij doen het voor €1499 (Trede 3) en starten vandaag. AI doet het zware werk, een gekwalificeerd adviseur bewaakt de kwaliteit. Hetzelfde resultaat, een fractie van de prijs."
+          "a": "Een traditioneel Safety Culture Ladder-traject kost €4.000 tot €15.000 en duurt maanden. Wij doen het voor €1499 (Trede 3) en starten vandaag. AI doet het zware werk, een gekwalificeerde adviseur bewaakt de kwaliteit. Hetzelfde resultaat, een fractie van de prijs."
         },
         "trede": {
           "q": "Kunnen we ook Trede 4 of Trede 5 halen?",

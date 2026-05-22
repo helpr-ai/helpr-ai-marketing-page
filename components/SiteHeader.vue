@@ -116,7 +116,7 @@
 import { ref, computed, onMounted, onUnmounted, watch, nextTick } from 'vue'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 
-const { locale, locales } = useI18n()
+const { locale, locales } = useI18n({ useScope: 'global' })
 const localePath = useLocalePath()
 const switchLocalePath = useSwitchLocalePath()
 

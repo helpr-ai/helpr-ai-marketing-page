@@ -286,7 +286,7 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue'
 
-const { t } = useI18n()
+const { t } = useI18n({ useScope: 'global' })
 
 const howSteps = ['baseline', 'gap', 'buyin', 'plan', 'training', 'implementation', 'preaudit', 'audit'] as const
 const faqItems = ['efficient', 'anonymous', 'time', 'ontzorgen', 'audit', 'audience', 'difference', 'trede'] as const

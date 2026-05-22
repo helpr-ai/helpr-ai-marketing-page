@@ -7,7 +7,7 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 
-const { locale, locales } = useI18n()
+const { locale, locales } = useI18n({ useScope: 'global' })
 
 interface LocaleEntry { code: string; iso?: string }
 const currentIso = computed(() => {

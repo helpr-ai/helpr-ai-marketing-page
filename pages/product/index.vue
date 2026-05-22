@@ -56,7 +56,7 @@
 
 <script setup lang="ts">
 const localePath = useLocalePath()
-const { t } = useI18n()
+const { t } = useI18n({ useScope: 'global' })
 
 useHead(() => ({
   title: t('product.overview.title') + ' · Helpr.ai'

@@ -105,7 +105,7 @@ import jaapPhoto from '~/assets/images/photos/jaap.png'
 import erikPhoto from '~/assets/images/photos/erik.png'
 
 const localePath = useLocalePath()
-const { t } = useI18n()
+const { t } = useI18n({ useScope: 'global' })
 
 useHead(() => ({
   title: t('about.hero.titleA') + ' · Helpr.ai'
