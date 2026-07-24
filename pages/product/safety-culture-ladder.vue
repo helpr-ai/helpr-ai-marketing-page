@@ -122,7 +122,7 @@
           {{ $t('product.scl.cta.title') }}
         </h2>
         <a
-          href="mailto:hello@helpr.ai?subject=Safety%20Culture%20Ladder"
+          href="mailto:info@helpr.ai?subject=Safety%20Culture%20Ladder"
           class="inline-flex min-h-[3rem] py-3 items-center justify-center rounded-full px-7 bg-white text-navy-500 font-semibold hover:bg-warm-bg transition-colors shadow-card"
         >
           {{ $t('product.scl.cta.button') }}

@@ -97,7 +97,7 @@
     "ctaSecondary": "How it works"
   },
   "partners": {
-    "heading": "Trusted by consultancies across the Netherlands"
+    "heading": "Trusted by clients and consultancies across the Netherlands"
   },
   "industries": {
     "eyebrow": "Every sector",
@@ -415,7 +415,7 @@
       "submit": "Start my stakeholder analysis",
       "submitted": "Thanks! We'll be in touch shortly.",
       "disclaimer": "We'll get back to you within one business day.",
-      "error": "Submission failed. Please try again or email hello{'@'}helpr.ai directly."
+      "error": "Submission failed. Please try again or email info{'@'}helpr.ai directly."
     }
   },
   "scl": {
@@ -582,7 +582,7 @@
         "submitting": "Sending…",
         "submitted": "Thanks! You'll receive your access by email shortly.",
         "disclaimer": "Right after signing up you'll get access in your inbox.",
-        "error": "Submission failed. Please try again or email hello{'@'}helpr.ai directly."
+        "error": "Submission failed. Please try again or email info{'@'}helpr.ai directly."
       }
     }
   },
@@ -601,7 +601,7 @@
       "submitting": "Sending…",
       "submitted": "Thanks! We're sending the sample to you now.",
       "disclaimer": "You'll receive the sample in your inbox within minutes.",
-      "error": "Submission failed. Please try again or email hello{'@'}helpr.ai directly."
+      "error": "Submission failed. Please try again or email info{'@'}helpr.ai directly."
     },
     "back": "Back to home"
   },

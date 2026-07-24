@@ -20,7 +20,7 @@
           <h3 class="text-sm font-semibold uppercase tracking-wider text-white/50 mb-4">{{ $t('footer.company') }}</h3>
           <ul class="space-y-3 text-white/80">
             <li><NuxtLink :to="localePath('about')" class="hover:text-white transition-colors">{{ $t('nav.about') }}</NuxtLink></li>
-            <li><a href="mailto:hello@helpr.ai" class="hover:text-white transition-colors">{{ $t('footer.contact') }}</a></li>
+            <li><a href="mailto:info@helpr.ai" class="hover:text-white transition-colors">{{ $t('footer.contact') }}</a></li>
             <li><a href="#" class="hover:text-white transition-colors">{{ $t('footer.privacy') }}</a></li>
             <li><a href="#" class="hover:text-white transition-colors">{{ $t('footer.terms') }}</a></li>
           </ul>

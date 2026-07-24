@@ -46,11 +46,17 @@
 
     <!-- PARTNERS STRIP -->
     <section class="py-16 border-y border-warm-border bg-white">
-      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-screen-2xl px-6 lg:px-8">
         <p class="text-center text-xs font-semibold uppercase tracking-wider text-warm-gray mb-10">
           {{ $t('partners.heading') }}
         </p>
         <div class="flex flex-wrap items-center justify-center gap-x-12 gap-y-8 lg:gap-x-20">
+          <a href="https://enexis.nl" target="_blank" rel="noopener noreferrer" aria-label="Enexis">
+            <img src="~/assets/images/logos/enexis_logo.svg" alt="Enexis" class="h-10 w-auto opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
+          </a>
+          <a href="https://buskerbv.nl" target="_blank" rel="noopener noreferrer" aria-label="Busker BV">
+            <img src="~/assets/images/logos/busker_logo.svg" alt="Busker BV" class="h-7 w-auto opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
+          </a>
           <a href="https://coningadviesgroep.nl" target="_blank" rel="noopener noreferrer" aria-label="Coning Adviesgroep">
             <img src="~/assets/images/logos/coning_logo.png" alt="Coning" class="h-10 w-auto opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
           </a>

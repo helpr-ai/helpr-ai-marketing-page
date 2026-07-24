@@ -97,7 +97,7 @@
     "ctaSecondary": "Hoe het werkt"
   },
   "partners": {
-    "heading": "Vertrouwd door adviesbureaus in heel Nederland"
+    "heading": "Vertrouwd door klanten en adviesbureaus in heel Nederland"
   },
   "industries": {
     "eyebrow": "Voor iedere sector",
@@ -415,7 +415,7 @@
       "submit": "Start mijn stakeholderanalyse",
       "submitted": "Bedankt! We nemen snel contact op.",
       "disclaimer": "We nemen binnen één werkdag contact met je op.",
-      "error": "Versturen lukte niet. Probeer het nog eens of mail rechtstreeks naar hello{'@'}helpr.ai."
+      "error": "Versturen lukte niet. Probeer het nog eens of mail rechtstreeks naar info{'@'}helpr.ai."
     }
   },
   "scl": {
@@ -582,7 +582,7 @@
         "submitting": "Versturen…",
         "submitted": "Bedankt! Je ontvangt direct je toegang per e-mail.",
         "disclaimer": "Direct na aanmelden krijg je toegang in je inbox.",
-        "error": "Versturen lukte niet. Probeer het nog eens of mail rechtstreeks naar hello{'@'}helpr.ai."
+        "error": "Versturen lukte niet. Probeer het nog eens of mail rechtstreeks naar info{'@'}helpr.ai."
       }
     }
   },
@@ -601,7 +601,7 @@
       "submitting": "Versturen…",
       "submitted": "Bedankt! We sturen het voorbeeld nu naar je toe.",
       "disclaimer": "Je ontvangt het voorbeeld binnen enkele minuten in je inbox.",
-      "error": "Versturen lukte niet. Probeer het nog eens of mail rechtstreeks naar hello{'@'}helpr.ai."
+      "error": "Versturen lukte niet. Probeer het nog eens of mail rechtstreeks naar info{'@'}helpr.ai."
     },
     "back": "Terug naar home"
   },

@@ -11,7 +11,9 @@ export default defineNuxtConfig({
         '/__sitemap__/nl-NL.xml',
         '/__sitemap__/en-GB.xml',
         '/nl/certificering/safety-culture-ladder',
-        '/en/certification/safety-culture-ladder'
+        '/en/certification/safety-culture-ladder',
+        '/nl/flyers/safety-culture-ladder',
+        '/en/flyers/safety-culture-ladder'
       ]
     }
   },
@@ -71,6 +73,10 @@ export default defineNuxtConfig({
       'certificering-safety-culture-ladder': {
         nl: '/certificering/safety-culture-ladder',
         en: '/certification/safety-culture-ladder'
+      },
+      'flyers-safety-culture-ladder': {
+        nl: '/flyers/safety-culture-ladder',
+        en: '/flyers/safety-culture-ladder'
       }
     }
   },

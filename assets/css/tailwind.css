@@ -68,8 +68,6 @@
 
 html {
   scroll-behavior: smooth;
-  -webkit-hyphens: auto;
-  hyphens: auto;
 }
 
 body {
@@ -80,8 +78,13 @@ body {
   word-break: normal;
 }
 
+h1, h2, h3, h4, h5, h6, .font-display {
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  overflow-wrap: break-word;
+}
+
 h1, h2, .font-display {
   font-family: 'Fran', Georgia, serif;
   letter-spacing: -0.01em;
-  overflow-wrap: break-word;
 }
