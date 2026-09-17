@@ -24,16 +24,10 @@
                 {{ $t('rie.hero.ctaPrimary') }}
                 <svg class="ml-2 h-4 w-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
               </a>
-              <a
-                href="#screenshots"
-                class="inline-flex min-h-[3rem] py-3 items-center justify-center rounded-full px-7 bg-white border border-warm-border text-warm-ink font-semibold hover:bg-warm-bg transition-colors"
-              >
-                {{ $t('rie.hero.ctaSecondary') }}
-              </a>
             </div>
           </div>
 
-          <div class="lg:col-span-5">
+          <div v-if="showAdvisor" class="lg:col-span-5">
             <div class="rounded-2xl bg-white border border-warm-border shadow-card p-6 lg:p-8">
               <p class="text-xs font-semibold uppercase tracking-wider text-warm-gray mb-4">{{ $t('rie.hero.advisor.eyebrow') }}</p>
               <div class="flex items-center gap-4 mb-4">
@@ -74,14 +68,10 @@
         <p class="text-center text-xs font-semibold uppercase tracking-wider text-warm-gray mb-8">
           {{ $t('rie.partners.label') }}
         </p>
-        <div class="flex flex-wrap items-center justify-center gap-6">
-          <div
-            v-for="n in 4"
-            :key="n"
-            class="w-40 h-16 rounded-md border-2 border-dashed border-warm-border bg-warm-bg flex items-center justify-center text-xs font-semibold text-warm-gray"
-          >
-            {{ $t('rie.partners.placeholder') }}
-          </div>
+        <div class="flex justify-center">
+          <a href="https://www.vanhouten.nl/" target="_blank" rel="noopener noreferrer" aria-label="Van Houten en Partners">
+            <img src="~/assets/images/logos/logo_van_houten_en_partners.svg" alt="Van Houten en Partners" class="h-10 w-auto opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
+          </a>
         </div>
       </div>
     </section>
@@ -108,9 +98,10 @@
             <p class="text-sm text-warm-ink/70 leading-relaxed">{{ $t(`rie.how.blocks.${b}.body`) }}</p>
           </div>
         </div>
-        <blockquote class="max-w-3xl mx-auto p-8 bg-white rounded-2xl border-l-4 border-navy-500 shadow-card">
-          <p class="text-lg lg:text-xl text-warm-ink font-display leading-snug mb-4">{{ $t('rie.how.quote.body') }}</p>
-          <footer class="text-sm text-warm-ink/60 italic">{{ $t('rie.how.quote.caption') }}</footer>
+        <blockquote class="relative max-w-3xl mx-auto p-10 lg:p-12 bg-white rounded-2xl shadow-card overflow-hidden">
+          <span aria-hidden="true" class="pointer-events-none absolute -top-6 -left-2 font-display text-[10rem] leading-none text-navy-500/10 select-none">„</span>
+          <p class="relative text-lg lg:text-xl text-warm-ink font-display leading-snug mb-4">{{ $t('rie.how.quote.body') }}</p>
+          <footer class="relative text-sm text-warm-ink/60 italic">{{ $t('rie.how.quote.caption') }}</footer>
         </blockquote>
       </div>
     </section>
@@ -125,7 +116,7 @@
           <p>{{ $t('rie.choice.body1') }}</p>
           <p>{{ $t('rie.choice.body2') }}</p>
         </div>
-        <div class="grid md:grid-cols-2 gap-6">
+        <div class="max-w-2xl">
           <div
             v-for="b in choiceBlocks"
             :key="b"
@@ -153,29 +144,6 @@
             <div class="flex items-center justify-center w-11 h-11 rounded-full bg-navy-500 text-white font-display font-bold text-lg mb-5">{{ i + 1 }}</div>
             <h3 class="font-display text-xl text-warm-ink font-bold mb-3">{{ $t(`rie.benefits.items.${b}.title`) }}</h3>
             <p class="text-warm-ink/70 leading-relaxed">{{ $t(`rie.benefits.items.${b}.body`) }}</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SCREENSHOTS -->
-    <section id="screenshots" class="py-20 lg:py-28 bg-warm-bg scroll-mt-24">
-      <div class="mx-auto max-w-6xl px-6 lg:px-8">
-        <div class="mb-14 max-w-3xl">
-          <h2 class="font-display text-3xl lg:text-4xl text-warm-ink font-bold leading-tight mb-6">
-            {{ $t('rie.screenshots.title') }}
-          </h2>
-          <p class="text-lg text-warm-ink/70 leading-relaxed">
-            {{ $t('rie.screenshots.intro') }}
-          </p>
-        </div>
-        <div class="grid md:grid-cols-3 gap-6">
-          <div v-for="s in screenshotItems" :key="s" class="flex flex-col">
-            <div class="aspect-[4/3] rounded-xl border-2 border-dashed border-warm-border bg-white flex items-center justify-center p-6 mb-4">
-              <p class="text-xs font-semibold uppercase tracking-wider text-warm-gray text-center">{{ $t(`rie.screenshots.items.${s}.placeholder`) }}</p>
-            </div>
-            <h3 class="font-display text-lg text-warm-ink font-bold mb-2">{{ $t(`rie.screenshots.items.${s}.title`) }}</h3>
-            <p class="text-sm text-warm-ink/70 leading-relaxed">{{ $t(`rie.screenshots.items.${s}.body`) }}</p>
           </div>
         </div>
       </div>
@@ -222,7 +190,6 @@
     <section class="py-20 lg:py-28 bg-warm-bg">
       <div class="mx-auto max-w-6xl px-6 lg:px-8">
         <div class="mb-14 max-w-3xl">
-          <p class="text-sm font-semibold uppercase tracking-wider text-navy-500 mb-4">{{ $t('rie.pricing.eyebrow') }}</p>
           <h2 class="font-display text-3xl lg:text-4xl text-warm-ink font-bold leading-tight mb-6">
             {{ $t('rie.pricing.title') }}
           </h2>
@@ -289,10 +256,9 @@
           <h2 class="font-display text-3xl lg:text-4xl text-warm-ink font-bold leading-tight mb-4">
             {{ $t('rie.cta.title') }}
           </h2>
-          <p class="text-lg text-warm-ink/70 leading-relaxed mb-3">
+          <p class="text-lg text-warm-ink/70 leading-relaxed">
             {{ $t('rie.cta.body') }}
           </p>
-          <p class="text-sm text-warm-ink/60">{{ $t('rie.cta.phone') }}</p>
         </div>
 
         <form
@@ -393,12 +359,13 @@ import { ref, computed } from 'vue'
 
 const { t } = useI18n({ useScope: 'global' })
 
+const showAdvisor = false
+
 const howBlocks = ['tailored', 'right', 'language'] as const
-const choiceBlocks = ['built', 'done'] as const
+const choiceBlocks = ['built'] as const
 const benefitItems = ['complete', 'plan', 'reviewed'] as const
-const screenshotItems = ['interview', 'inventory', 'plan'] as const
 const effortSteps = ['intake', 'interviews', 'round'] as const
-const askItems = ['call', 'participants', 'duration', 'docs'] as const
+const askItems = ['call', 'participants', 'duration'] as const
 const pricingRows = ['small', 'medium', 'large'] as const
 const faqItems = ['responsible', 'privacy', 'language', 'time', 'who', 'data', 'multisite'] as const
 
@@ -422,7 +389,7 @@ useHead(() => ({
   ]
 }))
 
-const form = ref({ name: '', email: '', company: '', size: 'medium', message: '' })
+const form = ref({ name: '', email: '', company: '', size: 'small', message: '' })
 const submitted = ref(false)
 const submitting = ref(false)
 const submitError = ref(false)

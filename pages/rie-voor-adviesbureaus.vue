@@ -10,9 +10,12 @@
         <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 items-start">
           <div class="lg:col-span-7">
             <p class="text-sm font-semibold uppercase tracking-wider text-navy-500 mb-4">{{ $t('rieAdvies.hero.eyebrow') }}</p>
-            <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl text-warm-ink font-bold leading-[1.05] mb-6">
+            <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl text-warm-ink font-bold leading-[1.05] mb-5">
               {{ $t('rieAdvies.hero.title') }}
             </h1>
+            <p class="text-xl lg:text-2xl text-navy-500 font-display font-semibold leading-snug mb-6">
+              {{ $t('rieAdvies.hero.payoff') }}
+            </p>
             <p class="text-base lg:text-lg text-warm-ink/70 leading-relaxed mb-10">
               {{ $t('rieAdvies.hero.body') }}
             </p>
@@ -39,7 +42,6 @@
               <p class="font-display text-3xl text-warm-ink font-bold mb-3">{{ $t('rieAdvies.hero.sidebox.value') }}</p>
               <p class="text-sm text-warm-ink/70 leading-relaxed mb-5">{{ $t('rieAdvies.hero.sidebox.detail') }}</p>
               <div class="pt-4 border-t border-warm-border">
-                <p class="text-xs font-semibold uppercase tracking-wider text-warm-gray mb-1">{{ $t('rieAdvies.hero.sidebox.priceLabel') }}</p>
                 <p class="font-display text-2xl text-navy-500 font-bold">{{ $t('rieAdvies.hero.sidebox.price') }}</p>
               </div>
             </div>
@@ -51,12 +53,7 @@
     <!-- STRIP -->
     <section class="py-8 lg:py-10 bg-warm-bg border-y border-warm-border">
       <div class="mx-auto max-w-6xl px-6 lg:px-8">
-        <div class="flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 text-sm text-warm-ink/80">
-          <p class="flex-1">{{ $t('rieAdvies.strip.body') }}</p>
-          <a href="#channel" class="font-semibold text-navy-500 hover:text-navy-600 transition-colors inline-flex items-center gap-1 whitespace-nowrap">
-            → {{ $t('rieAdvies.strip.link') }}
-          </a>
-        </div>
+        <p class="text-sm text-warm-ink/80">{{ $t('rieAdvies.strip.body') }}</p>
       </div>
     </section>
 
@@ -120,19 +117,9 @@
           <h2 class="font-display text-3xl lg:text-4xl text-warm-ink font-bold leading-tight mb-6">
             {{ $t('rieAdvies.control.title') }}
           </h2>
-          <p class="text-lg text-warm-ink/70 leading-relaxed">
+          <p class="text-lg lg:text-xl text-warm-ink/80 leading-relaxed">
             {{ $t('rieAdvies.control.body') }}
           </p>
-        </div>
-        <div class="grid md:grid-cols-2 gap-6">
-          <div
-            v-for="b in controlBlocks"
-            :key="b"
-            class="p-6 bg-white rounded-2xl border border-warm-border shadow-card"
-          >
-            <h3 class="font-display text-lg text-warm-ink font-bold mb-2">{{ $t(`rieAdvies.control.blocks.${b}.title`) }}</h3>
-            <p class="text-sm text-warm-ink/70 leading-relaxed">{{ $t(`rieAdvies.control.blocks.${b}.body`) }}</p>
-          </div>
         </div>
       </div>
     </section>
@@ -184,47 +171,63 @@
       </div>
     </section>
 
-    <!-- BUY -->
+    <!-- BUY / FOMO -->
     <section class="py-20 lg:py-28 bg-warm-bg">
-      <div class="mx-auto max-w-4xl px-6 lg:px-8">
+      <div class="mx-auto max-w-3xl px-6 lg:px-8 text-center">
         <p class="text-sm font-semibold uppercase tracking-wider text-navy-500 mb-4">{{ $t('rieAdvies.buy.eyebrow') }}</p>
-        <h2 class="font-display text-3xl lg:text-4xl text-warm-ink font-bold leading-tight mb-8">
+        <h2 class="font-display text-3xl lg:text-4xl text-warm-ink font-bold leading-tight mb-6">
           {{ $t('rieAdvies.buy.title') }}
         </h2>
-        <div class="space-y-5 text-lg text-warm-ink/80 leading-relaxed mb-10">
-          <p>{{ $t('rieAdvies.buy.body1') }}</p>
-          <p>{{ $t('rieAdvies.buy.body2') }}</p>
-        </div>
-        <div class="p-6 lg:p-8 bg-white rounded-2xl border border-warm-border shadow-card">
-          <p class="text-xs font-semibold uppercase tracking-wider text-warm-gray mb-4">{{ $t('rieAdvies.buy.compareLabel') }}</p>
-          <div class="grid sm:grid-cols-2 gap-4 mb-4">
-            <div class="p-4 bg-warm-bg rounded-lg">
-              <p class="font-display text-lg text-warm-ink font-semibold">{{ $t('rieAdvies.buy.compareNow') }}</p>
-            </div>
-            <div class="p-4 bg-navy-50 rounded-lg border border-navy-500">
-              <p class="font-display text-lg text-navy-700 font-semibold">{{ $t('rieAdvies.buy.compareWith') }}</p>
-            </div>
-          </div>
-          <p class="text-xs text-warm-gray italic">{{ $t('rieAdvies.buy.footnote') }}</p>
-        </div>
+        <p class="text-lg lg:text-xl text-warm-ink/80 leading-relaxed mb-10">
+          {{ $t('rieAdvies.buy.body') }}
+        </p>
+        <a
+          href="#cta"
+          class="inline-flex min-h-[3rem] py-3 items-center justify-center rounded-full px-7 bg-navy-500 text-white font-semibold hover:bg-navy-600 transition-colors shadow-card"
+        >
+          {{ $t('rieAdvies.buy.cta') }}
+          <svg class="ml-2 h-4 w-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+        </a>
       </div>
     </section>
 
     <!-- PRICING -->
     <section class="py-20 lg:py-28">
       <div class="mx-auto max-w-6xl px-6 lg:px-8">
-        <div class="mb-14 max-w-3xl">
+        <div class="mb-12 max-w-3xl">
           <p class="text-sm font-semibold uppercase tracking-wider text-navy-500 mb-4">{{ $t('rieAdvies.pricing.eyebrow') }}</p>
           <h2 class="font-display text-3xl lg:text-4xl text-warm-ink font-bold leading-tight mb-6">
             {{ $t('rieAdvies.pricing.title') }}
           </h2>
-          <p class="text-lg text-warm-ink/70 leading-relaxed mb-8">
+          <p class="text-lg text-warm-ink/70 leading-relaxed">
             {{ $t('rieAdvies.pricing.intro') }}
           </p>
-          <div class="inline-flex items-center px-4 py-2 rounded-md border-2 border-dashed border-warm-border bg-warm-bg text-sm font-semibold text-warm-gray">
-            {{ $t('rieAdvies.pricing.tableNote') }}
-          </div>
         </div>
+
+        <div class="overflow-x-auto rounded-2xl border border-warm-border shadow-card bg-white mb-10">
+          <table class="w-full text-left">
+            <thead class="bg-warm-bg border-b border-warm-border">
+              <tr>
+                <th class="px-6 py-4 text-xs font-semibold uppercase tracking-wider text-warm-gray">{{ $t('rieAdvies.pricing.table.headerVolume') }}</th>
+                <th class="px-6 py-4 text-xs font-semibold uppercase tracking-wider text-warm-gray">
+                  {{ $t('rieAdvies.pricing.table.headerSmall') }}
+                  <span class="block text-[0.65rem] font-normal normal-case tracking-normal text-warm-gray/80">{{ $t('rieAdvies.pricing.table.headerSmallSub') }}</span>
+                </th>
+                <th class="px-6 py-4 text-xs font-semibold uppercase tracking-wider text-warm-gray">{{ $t('rieAdvies.pricing.table.headerLarge') }}</th>
+                <th class="px-6 py-4 text-xs font-semibold uppercase tracking-wider text-warm-gray">{{ $t('rieAdvies.pricing.table.headerExtra') }}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr v-for="tier in pricingTiers" :key="tier" class="border-b border-warm-border last:border-b-0">
+                <td class="px-6 py-5 font-semibold text-warm-ink">{{ $t(`rieAdvies.pricing.table.rows.${tier}.volume`) }}</td>
+                <td class="px-6 py-5 font-display text-lg text-navy-500 font-bold">{{ $t(`rieAdvies.pricing.table.rows.${tier}.small`) }}</td>
+                <td class="px-6 py-5 font-display text-lg text-navy-500 font-bold">{{ $t(`rieAdvies.pricing.table.rows.${tier}.large`) }}</td>
+                <td class="px-6 py-5 font-display text-lg text-warm-ink font-bold">{{ $t(`rieAdvies.pricing.table.rows.${tier}.extra`) }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
         <div class="grid md:grid-cols-3 gap-6 mb-8">
           <div
             v-for="b in pricingBlocks"
@@ -239,33 +242,8 @@
       </div>
     </section>
 
-    <!-- CHANNEL -->
-    <section id="channel" class="py-20 lg:py-28 bg-warm-bg scroll-mt-24">
-      <div class="mx-auto max-w-6xl px-6 lg:px-8">
-        <div class="mb-14 max-w-3xl">
-          <p class="text-sm font-semibold uppercase tracking-wider text-navy-500 mb-4">{{ $t('rieAdvies.channel.eyebrow') }}</p>
-          <h2 class="font-display text-3xl lg:text-4xl text-warm-ink font-bold leading-tight mb-6">
-            {{ $t('rieAdvies.channel.title') }}
-          </h2>
-          <p class="text-lg text-warm-ink/70 leading-relaxed">
-            {{ $t('rieAdvies.channel.body') }}
-          </p>
-        </div>
-        <div class="grid md:grid-cols-3 gap-6">
-          <div
-            v-for="b in channelBlocks"
-            :key="b"
-            class="p-6 bg-white rounded-2xl border border-warm-border shadow-card"
-          >
-            <h3 class="font-display text-lg text-warm-ink font-bold mb-2">{{ $t(`rieAdvies.channel.blocks.${b}.title`) }}</h3>
-            <p class="text-sm text-warm-ink/70 leading-relaxed">{{ $t(`rieAdvies.channel.blocks.${b}.body`) }}</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- FAQ -->
-    <section class="py-20 lg:py-28">
+    <section class="py-20 lg:py-28 bg-warm-bg">
       <div class="mx-auto max-w-4xl px-6 lg:px-8">
         <p class="text-sm font-semibold uppercase tracking-wider text-navy-500 mb-4">{{ $t('rieAdvies.faq.eyebrow') }}</p>
         <h2 class="font-display text-3xl lg:text-4xl text-warm-ink font-bold leading-tight mb-12">
@@ -275,31 +253,6 @@
           <div v-for="item in faqItems" :key="item" class="border-b border-warm-border pb-8 last:border-b-0">
             <h3 class="font-display text-xl lg:text-2xl text-warm-ink font-bold mb-3">{{ $t(`rieAdvies.faq.items.${item}.q`) }}</h3>
             <p class="text-base lg:text-lg text-warm-ink/75 leading-relaxed">{{ $t(`rieAdvies.faq.items.${item}.a`) }}</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- NOT YET -->
-    <section class="py-20 lg:py-28 bg-warm-bg">
-      <div class="mx-auto max-w-6xl px-6 lg:px-8">
-        <div class="mb-14 max-w-3xl">
-          <p class="text-sm font-semibold uppercase tracking-wider text-navy-500 mb-4">{{ $t('rieAdvies.notyet.eyebrow') }}</p>
-          <h2 class="font-display text-3xl lg:text-4xl text-warm-ink font-bold leading-tight mb-6">
-            {{ $t('rieAdvies.notyet.title') }}
-          </h2>
-          <p class="text-lg text-warm-ink/70 leading-relaxed">
-            {{ $t('rieAdvies.notyet.body') }}
-          </p>
-        </div>
-        <div class="grid md:grid-cols-2 gap-6">
-          <div
-            v-for="b in notyetBlocks"
-            :key="b"
-            class="p-6 bg-white rounded-2xl border border-warm-border shadow-card"
-          >
-            <h3 class="font-display text-lg text-warm-ink font-bold mb-2">{{ $t(`rieAdvies.notyet.blocks.${b}.title`) }}</h3>
-            <p class="text-sm text-warm-ink/70 leading-relaxed">{{ $t(`rieAdvies.notyet.blocks.${b}.body`) }}</p>
           </div>
         </div>
       </div>
@@ -412,15 +365,13 @@ import { ref, computed } from 'vue'
 
 const { t } = useI18n({ useScope: 'global' })
 
-const whyBlocks = ['report', 'ai'] as const
+const whyBlocks = ['report', 'expert'] as const
 const differentBlocks = ['right', 'cause', 'round', 'label'] as const
-const controlBlocks = ['scope', 'single', 'anon', 'sign'] as const
 const screenshotItems = ['dossier', 'inventory', 'plan'] as const
 const trajectSteps = ['intake', 'interviews', 'round'] as const
+const pricingTiers = ['tier1', 'tier2', 'tier3'] as const
 const pricingBlocks = ['setup', 'first', 'leads'] as const
-const channelBlocks = ['leads', 'price', 'own'] as const
 const faqItems = ['ownership', 'training', 'dropout', 'questions', 'expert', 'lockin'] as const
-const notyetBlocks = ['instrument', 'update', 'depth', 'size'] as const
 
 const faqJsonLd = computed(() => JSON.stringify({
   '@context': 'https://schema.org',
