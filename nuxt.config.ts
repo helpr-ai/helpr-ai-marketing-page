@@ -13,7 +13,11 @@ export default defineNuxtConfig({
         '/nl/certificering/safety-culture-ladder',
         '/en/certification/safety-culture-ladder',
         '/nl/flyers/safety-culture-ladder',
-        '/en/flyers/safety-culture-ladder'
+        '/en/flyers/safety-culture-ladder',
+        '/nl/rie',
+        '/en/rie',
+        '/nl/rie-voor-adviesbureaus',
+        '/en/rie-voor-adviesbureaus'
       ]
     }
   },
@@ -77,6 +81,14 @@ export default defineNuxtConfig({
       'flyers-safety-culture-ladder': {
         nl: '/flyers/safety-culture-ladder',
         en: '/flyers/safety-culture-ladder'
+      },
+      'rie': {
+        nl: '/rie',
+        en: '/rie'
+      },
+      'rie-voor-adviesbureaus': {
+        nl: '/rie-voor-adviesbureaus',
+        en: '/rie-voor-adviesbureaus'
       }
     }
   },

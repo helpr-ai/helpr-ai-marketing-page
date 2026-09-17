@@ -73,6 +73,41 @@
       </div>
     </section>
 
+    <!-- SCL CALLOUT -->
+    <section class="py-16 lg:py-20 bg-warm-bg">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <NuxtLink
+          :to="localePath('certificering-safety-culture-ladder')"
+          class="group block rounded-2xl bg-white border border-warm-border shadow-card overflow-hidden hover:shadow-modal transition-shadow"
+        >
+          <div class="grid lg:grid-cols-2 gap-0 items-stretch">
+            <div class="p-8 lg:p-12 flex flex-col justify-center">
+              <span class="inline-flex self-start items-center rounded-full bg-amber-100 text-amber-800 text-xs font-semibold uppercase tracking-wider px-3 py-1 mb-6">
+                {{ $t('homeScl.tag') }}
+              </span>
+              <h2 class="font-display text-3xl lg:text-4xl text-warm-ink font-bold leading-tight mb-4">
+                {{ $t('homeScl.title') }}
+              </h2>
+              <p class="text-lg text-warm-ink/70 leading-relaxed mb-8">
+                {{ $t('homeScl.subtitle') }}
+              </p>
+              <span class="inline-flex items-center text-navy-500 font-semibold group-hover:text-navy-600 transition-colors">
+                {{ $t('homeScl.cta') }}
+                <svg class="ml-2 h-4 w-4 flex-shrink-0 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+              </span>
+            </div>
+            <div class="hidden lg:block relative bg-warm-bg overflow-hidden">
+              <img
+                src="~/assets/images/scl.png"
+                alt="Safety Culture Ladder"
+                class="absolute inset-0 w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </NuxtLink>
+      </div>
+    </section>
+
     <!-- PAIN -->
     <section class="py-24 lg:py-32">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
@@ -519,31 +554,6 @@
       </div>
     </section>
 
-    <!-- ELEVENLABS GRANT -->
-    <section class="py-12 lg:py-14 bg-warm-bg">
-      <div class="mx-auto max-w-3xl px-6 lg:px-8">
-        <div class="flex flex-col sm:flex-row items-center gap-6 sm:gap-8 text-center sm:text-left">
-          <TrophyIcon class="flex-shrink-0 w-12 h-12 text-amber-500" aria-hidden="true" />
-          <a
-            href="https://elevenlabs.io/text-to-speech"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="flex-shrink-0"
-            :aria-label="$t('grant.linkLabel')"
-          >
-            <img
-              src="https://eleven-public-cdn.elevenlabs.io/payloadcms/pwsc4vchsqt-ElevenLabsGrants.webp"
-              alt="ElevenLabs Grants"
-              class="w-48 h-auto opacity-90 hover:opacity-100 transition-opacity"
-            />
-          </a>
-          <p class="text-sm lg:text-base text-warm-ink/70 leading-relaxed">
-            {{ $t('grant.title') }}
-          </p>
-        </div>
-      </div>
-    </section>
-
     <!-- CTA -->
     <section id="cta" class="py-24 lg:py-32 bg-warm-ink relative overflow-hidden scroll-mt-24">
       <div class="absolute inset-0 -z-0">
@@ -630,7 +640,6 @@
 
 <script setup lang="ts">
 import { ref, computed } from 'vue'
-import { TrophyIcon } from '@heroicons/vue/24/solid'
 
 const localePath = useLocalePath()
 
