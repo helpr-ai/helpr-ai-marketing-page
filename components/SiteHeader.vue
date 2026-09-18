@@ -58,7 +58,7 @@
           :href="sectionHref('cta')"
           class="inline-flex h-10 items-center rounded-full px-5 bg-navy-500 text-white text-sm font-semibold hover:bg-navy-600 transition-colors"
         >
-          {{ $t('nav.cta') }}
+          {{ ctaLabel }}
         </a>
       </div>
 
@@ -88,7 +88,7 @@
           @click="showMobileMenu = false"
           class="block mt-3 h-11 rounded-full px-5 bg-navy-500 text-white text-sm font-semibold leading-[44px] text-center"
         >
-          {{ $t('nav.cta') }}
+          {{ ctaLabel }}
         </a>
 
         <div class="pt-3 mt-3 border-t border-warm-border">
@@ -136,6 +136,7 @@ const showMobileMenu = ref(false)
 const scrolled = ref(false)
 
 const route = useRoute()
+const { t } = useI18n({ useScope: 'global' })
 const homePath = computed(() => localePath('index'))
 const sectionHref = (id: string) => {
   // On home page use bare hash so smooth-scroll works without re-navigation;
@@ -144,6 +145,11 @@ const sectionHref = (id: string) => {
     ? `#${id}`
     : `${homePath.value}#${id}`
 }
+
+const ctaLabel = computed(() => {
+  const name = String(route.name ?? '')
+  return name.startsWith('rie') ? t('nav.rieCta') : t('nav.cta')
+})
 
 const onScroll = () => { scrolled.value = window.scrollY > 8 }
 const onClickOutside = (event: Event) => {

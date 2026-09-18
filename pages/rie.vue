@@ -7,12 +7,15 @@
       </div>
 
       <div class="mx-auto max-w-6xl px-6 lg:px-8">
-        <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+        <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
           <div class="lg:col-span-7">
             <p class="text-sm font-semibold uppercase tracking-wider text-navy-500 mb-4">{{ $t('rie.hero.eyebrow') }}</p>
-            <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl text-warm-ink font-bold leading-[1.05] mb-6">
+            <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl text-warm-ink font-bold leading-[1.05] mb-5">
               {{ $t('rie.hero.title') }}
             </h1>
+            <p class="text-xl lg:text-2xl text-navy-500 font-display font-semibold leading-snug mb-6">
+              {{ $t('rie.hero.payoff') }}
+            </p>
             <p class="text-base lg:text-lg text-warm-ink/70 leading-relaxed mb-10">
               {{ $t('rie.hero.body') }}
             </p>
@@ -27,22 +30,11 @@
             </div>
           </div>
 
-          <div v-if="showAdvisor" class="lg:col-span-5">
-            <div class="rounded-2xl bg-white border border-warm-border shadow-card p-6 lg:p-8">
-              <p class="text-xs font-semibold uppercase tracking-wider text-warm-gray mb-4">{{ $t('rie.hero.advisor.eyebrow') }}</p>
-              <div class="flex items-center gap-4 mb-4">
-                <div class="w-14 h-14 flex-shrink-0 rounded-full bg-warm-bg border border-warm-border flex items-center justify-center text-warm-gray">
-                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
-                </div>
-                <div>
-                  <p class="font-display text-lg text-warm-ink font-bold leading-tight">{{ $t('rie.hero.advisor.name') }}</p>
-                  <p class="text-sm text-warm-ink/70">{{ $t('rie.hero.advisor.role') }}</p>
-                </div>
-              </div>
-              <p class="text-sm text-warm-ink/70 leading-relaxed mb-5">{{ $t('rie.hero.advisor.body') }}</p>
-              <div class="pt-4 border-t border-warm-border flex items-center gap-2 text-sm text-warm-ink/80 font-semibold">
-                <svg class="w-4 h-4 text-navy-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                {{ $t('rie.hero.advisor.leadTime') }}
+          <div class="lg:col-span-5">
+            <div class="relative aspect-video rounded-2xl border-2 border-dashed border-warm-border bg-white overflow-hidden flex items-center justify-center p-8">
+              <div class="text-center">
+                <svg class="mx-auto w-16 h-16 text-warm-gray/60 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                <p class="text-sm font-semibold text-warm-gray leading-snug">{{ $t('rie.hero.videoPlaceholder') }}</p>
               </div>
             </div>
           </div>
@@ -64,13 +56,22 @@
 
     <!-- PARTNERS -->
     <section class="py-14 lg:py-16 bg-white border-b border-warm-border">
-      <div class="mx-auto max-w-6xl px-6 lg:px-8">
+      <div class="mx-auto max-w-screen-2xl px-6 lg:px-8">
         <p class="text-center text-xs font-semibold uppercase tracking-wider text-warm-gray mb-8">
           {{ $t('rie.partners.label') }}
         </p>
-        <div class="flex justify-center">
+        <div class="flex flex-wrap items-center justify-center gap-x-12 gap-y-8 lg:gap-x-16">
           <a href="https://www.vanhouten.nl/" target="_blank" rel="noopener noreferrer" aria-label="Van Houten en Partners">
             <img src="~/assets/images/logos/logo_van_houten_en_partners.svg" alt="Van Houten en Partners" class="h-10 w-auto opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
+          </a>
+          <div class="h-10 flex items-center px-4 rounded-md border-2 border-dashed border-warm-border text-xs font-semibold text-warm-gray" aria-label="Improcon">
+            Improcon
+          </div>
+          <a href="https://coningadviesgroep.nl" target="_blank" rel="noopener noreferrer" aria-label="Coning Adviesgroep">
+            <img src="~/assets/images/logos/coning_logo.png" alt="Coning Adviesgroep" class="h-10 w-auto opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
+          </a>
+          <a href="https://certificeringsadvies.nl" target="_blank" rel="noopener noreferrer" aria-label="Certificeringsadvies Nederland">
+            <img src="~/assets/images/logos/certificeringsadvies_nederland_logo.svg" alt="Certificeringsadvies Nederland" class="h-10 w-auto opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
           </a>
         </div>
       </div>
@@ -98,7 +99,7 @@
             <p class="text-sm text-warm-ink/70 leading-relaxed">{{ $t(`rie.how.blocks.${b}.body`) }}</p>
           </div>
         </div>
-        <blockquote class="relative max-w-3xl mx-auto p-10 lg:p-12 bg-white rounded-2xl shadow-card overflow-hidden">
+        <blockquote v-if="showQuote" class="relative max-w-3xl mx-auto p-10 lg:p-12 bg-white rounded-2xl shadow-card overflow-hidden">
           <span aria-hidden="true" class="pointer-events-none absolute -top-6 -left-2 font-display text-[10rem] leading-none text-navy-500/10 select-none">„</span>
           <p class="relative text-lg lg:text-xl text-warm-ink font-display leading-snug mb-4">{{ $t('rie.how.quote.body') }}</p>
           <footer class="relative text-sm text-warm-ink/60 italic">{{ $t('rie.how.quote.caption') }}</footer>
@@ -112,19 +113,9 @@
         <h2 class="font-display text-3xl lg:text-4xl text-white font-bold leading-tight mb-8">
           {{ $t('rie.choice.title') }}
         </h2>
-        <div class="space-y-5 text-lg text-white/80 leading-relaxed mb-12">
+        <div class="space-y-5 text-lg text-white/80 leading-relaxed">
           <p>{{ $t('rie.choice.body1') }}</p>
           <p>{{ $t('rie.choice.body2') }}</p>
-        </div>
-        <div class="max-w-2xl">
-          <div
-            v-for="b in choiceBlocks"
-            :key="b"
-            class="p-6 bg-white/5 rounded-2xl border border-white/10"
-          >
-            <h3 class="font-display text-lg text-white font-bold mb-2">{{ $t(`rie.choice.blocks.${b}.title`) }}</h3>
-            <p class="text-sm text-white/75 leading-relaxed">{{ $t(`rie.choice.blocks.${b}.body`) }}</p>
-          </div>
         </div>
       </div>
     </section>
@@ -202,18 +193,9 @@
           <div
             v-for="row in pricingRows"
             :key="row"
-            :class="[
-              'p-8 bg-white rounded-2xl border shadow-card flex flex-col',
-              row === 'medium' ? 'border-navy-500 ring-1 ring-navy-500' : 'border-warm-border'
-            ]"
+            class="p-8 bg-white rounded-2xl border border-warm-border shadow-card flex flex-col"
           >
-            <div class="flex items-center gap-2 mb-4">
-              <span class="text-sm font-semibold text-warm-ink">{{ $t(`rie.pricing.rows.${row}.size`) }}</span>
-              <span
-                v-if="row === 'medium'"
-                class="inline-flex items-center px-2 py-0.5 rounded-full bg-navy-50 text-navy-700 text-xs font-semibold uppercase tracking-wider"
-              >{{ $t('rie.pricing.rows.medium.badge') }}</span>
-            </div>
+            <p class="text-sm font-semibold text-warm-ink mb-4">{{ $t(`rie.pricing.rows.${row}.size`) }}</p>
             <p class="font-display text-4xl text-navy-500 font-bold mb-5">{{ $t(`rie.pricing.rows.${row}.price`) }}</p>
             <p class="text-warm-ink/70 leading-relaxed">{{ $t(`rie.pricing.rows.${row}.includes`) }}</p>
           </div>
@@ -359,10 +341,9 @@ import { ref, computed } from 'vue'
 
 const { t } = useI18n({ useScope: 'global' })
 
-const showAdvisor = false
+const showQuote = false
 
 const howBlocks = ['tailored', 'right', 'language'] as const
-const choiceBlocks = ['built'] as const
 const benefitItems = ['complete', 'plan', 'reviewed'] as const
 const effortSteps = ['intake', 'interviews', 'round'] as const
 const askItems = ['call', 'participants', 'duration'] as const

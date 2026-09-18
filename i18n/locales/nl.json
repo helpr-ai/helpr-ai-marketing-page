@@ -10,7 +10,8 @@
     "certification": "Certificering",
     "rie": "RI&E",
     "about": "Over ons",
-    "cta": "Doe een stakeholderanalyse"
+    "cta": "Doe een stakeholderanalyse",
+    "rieCta": "Wil je het zelf ervaren?"
   },
   "homeScl": {
     "tag": "Verplicht vanaf 1 juli 2026",
@@ -660,66 +661,50 @@
   },
   "rie": {
     "meta": {
-      "title": "Risico-inventarisatie & -evaluatie · Helpr.ai",
-      "description": "Een volledige RI&E met plan van aanpak, opgebouwd uit gesprekken met je eigen mensen en beoordeeld door een gecertificeerde kerndeskundige. Het comfort van een consultant, voor de prijs van doe-het-zelf."
+      "title": "Het RI&E-platform · Helpr.ai",
+      "description": "De AI-revolutie voor RI&E's. Het comfort van een consultant, voor de prijs van doe-het-zelf. Ontwikkeld door experts met 15 jaar ervaring."
     },
     "hero": {
-      "eyebrow": "Risico-inventarisatie & -evaluatie",
-      "title": "Het comfort van een consultant, voor de prijs van doe-het-zelf.",
-      "body": "Ervaar het comfort van een goed gesprek waarin je wordt gevraagd naar je risico's, met een kundige AI-adviseur. De juiste mensen beschrijven hun eigen werk. Dat resulteert in een volledige RI&E met een krachtig plan van aanpak, beoordeeld en ondertekend door een gecertificeerde adviseur.",
-      "ctaPrimary": "Luister naar een interview van 30 seconden",
+      "eyebrow": "Het RI&E-platform voor werkgevers",
+      "title": "De AI-revolutie voor RI&E's.",
+      "payoff": "Het comfort van een consultant, voor de prijs van doe-het-zelf.",
+      "body": "Voldoe aan alle wettelijke eisen zonder gedoe. Je eigen mensen beschrijven hun eigen werk in een gesprek. Wat eruit komt is een volledige RI&E met plan van aanpak, beoordeeld en ondertekend door een gecertificeerde adviseur.",
+      "ctaPrimary": "Wil je het zelf ervaren?",
       "ctaSecondary": "Bekijk het platform",
-      "advisor": {
-        "eyebrow": "Wie het uitvoert",
-        "name": "[NAAM ADVISEUR]",
-        "role": "hoger veiligheidskundige bij [BUREAU]",
-        "body": "Je traject wordt uitgevoerd en ondertekend door een gecertificeerd adviesbureau uit ons netwerk, bij jou in de regio. Wij bouwen het platform; zij doen het vak.",
-        "leadTime": "Doorlooptijd [X] werkdagen"
-      }
+      "videoPlaceholder": "Video: iemand achter een laptop in gesprek met de AI-interviewer — volgt"
     },
     "strip": {
-      "item1": "Inventarisatie, evaluatie, toetsing en plan van aanpak in één traject",
-      "item2": "Beoordeeld en ondertekend door een gecertificeerde kerndeskundige",
-      "item3": "Interviews in het Nederlands, Engels, Pools en Turks",
-      "item4": "Voldoet aan de eisen van de Arbowet"
+      "item1": "Volledig traject: inventarisatie, evaluatie, toetsing en plan van aanpak",
+      "item2": "Ontwikkeld door experts met ruim 15 jaar ervaring",
+      "item3": "Interviews in alle talen: Nederlands, Engels, Pools, Turks en meer",
+      "item4": "Voldoet aan alle wettelijke eisen"
     },
     "partners": {
-      "label": "Uitgevoerd door gecertificeerde adviesbureaus",
-      "placeholder": "[LOGO]"
+      "label": "Uitgevoerd door gecertificeerde adviesbureaus"
     },
     "how": {
-      "eyebrow": "Hoe de inventarisatie gaat",
-      "title": "Gesprekken op maat, met de mensen die het werk doen",
-      "body": "De gesprekken worden samengesteld op basis van wat jouw bedrijf doet. Elk onderwerp gaat naar iemand die er verstand van heeft: het beleid naar de KAM-coördinator of de directeur, de werkplek naar de mensen op de werkvloer. De interviewer kent de risico's die bij jouw branche horen en vraagt door waar een antwoord half blijft. Je hoeft dus niet zelf te bedenken wat er in je RI&E thuishoort.",
+      "eyebrow": "De revolutie in inventariseren",
+      "title": "Laagdrempelig inventariseren, wanneer het jou uitkomt",
+      "body": "Weg van eindeloze, dure consultantgesprekken. Je mensen praten met een AI-interviewer die hun vak kent. In hun eigen taal, op hun eigen moment, in jouw snelheid.",
       "blocks": {
         "tailored": {
           "title": "Afgestemd op je bedrijf",
-          "body": "Uit een bibliotheek van meer dan 200 onderwerpen wordt gekozen wat bij jouw werk past. Een kantoor krijgt andere vragen dan een werkplaats met heftrucks."
+          "body": "Uit meer dan 200 onderwerpen kiezen we wat past bij jouw werk. Een kantoor krijgt andere vragen dan een werkplaats met heftrucks."
         },
         "right": {
-          "title": "Bij de juiste persoon",
-          "body": "Niemand krijgt vragen over werk dat hij niet doet. Dat scheelt tijd, en het levert antwoorden op die kloppen met de praktijk."
+          "title": "Kennis waar zij zit",
+          "body": "Elk onderwerp komt bij iemand die er verstand van heeft. Beleid bij de KAM-coördinator, werkplek bij de mensen op de vloer. Antwoorden die kloppen met de praktijk."
         },
         "language": {
-          "title": "In een taal die past",
-          "body": "Het gesprek gaat in het Nederlands, Engels, Pools of Turks. Wie makkelijker praat dan schrijft, vertelt hier meer dan hij ooit in een formulier zou invullen."
+          "title": "De comfortabele manier van delen",
+          "body": "Praten is voor de meeste mensen makkelijker dan schrijven. In hun eigen taal, in hun eigen tempo, delen ze meer dan een formulier ooit ophaalt."
         }
-      },
-      "quote": {
-        "body": "„Losliggende kabels worden hier geaccepteerd als iets dat bij het werk hoort, al vindt de deelnemer zelf ook dat het beter kan.\"",
-        "caption": "Een aankruisvakje levert dit niet op. Iemand die doorvraagt wel."
       }
     },
     "choice": {
-      "title": "Tot nu toe moest je kiezen",
-      "body1": "Een adviseur inhuren die langskomt, je mensen spreekt en alles uitwerkt: grondig, maar je bent al snel € 2.500 verder en het duurt weken voor er een afspraak staat. Of een online vragenlijst voor een paar honderd euro, die je zelf moet invullen en die niemand beoordeelt.",
-      "body2": "Wij hebben het deel geautomatiseerd dat het duurst is en het minst om vakmanschap vraagt: het ophalen van informatie. Het beoordelen blijft mensenwerk.",
-      "blocks": {
-        "built": {
-          "title": "Ontwikkeld met veiligheidskundigen",
-          "body": "De interviews zijn opgebouwd met de expertise van veiligheidskundigen en arbodeskundigen die dit werk al 15 jaar doen. Onze eigen methodiek, verpakt in een gesprek."
-        }
-      }
+      "title": "Maak kennis met de absolute no-brainer voor RI&E's",
+      "body1": "Er is geen beter alternatief als je comfortabel door een RI&E-traject wilt. Wij doen de volledige heavy lifting: informatie in kaart brengen, categoriseren, risico's inschatten en het plan van aanpak opstellen.",
+      "body2": "Alleen voor de rondgang komt er nog een adviseur langs. Voor de rest neemt het platform het over."
     },
     "benefits": {
       "title": "Wat het oplevert",
@@ -729,7 +714,7 @@
           "body": "Opgebouwd uit gesprekken met de mensen die het werk doen, en dus over jouw bedrijf in plaats van over je branche in het algemeen."
         },
         "plan": {
-          "title": "Een plan dat je direct kunt uitvoeren",
+          "title": "Een plan van aanpak dat je direct kunt uitvoeren",
           "body": "Concrete maatregelen met een verantwoordelijke en een datum, in een volgorde die klopt. Werk dat je maandag kunt oppakken."
         },
         "reviewed": {
@@ -759,15 +744,15 @@
         "title": "Wat wij van je vragen",
         "subtitle": "(zodat je vooraf weet waar je ja tegen zegt)",
         "items": {
-          "call": "Eén intake — online of telefonisch.",
-          "participants": "Alle relevante werknemers aanwijzen — beleid, locatie en uitvoering. Vaak een handvol mensen, geen hele afdeling.",
-          "duration": "15 minuten per deelnemer — op hun eigen moment. Geen voorbereiding, geen materiaal vooraf."
+          "call": "Eén intake, online of telefonisch.",
+          "participants": "Alle relevante werknemers aanwijzen: beleid, locatie en uitvoering. Vaak een handvol mensen, geen hele afdeling.",
+          "duration": "15 minuten per deelnemer, op hun eigen moment. Geen voorbereiding, geen materiaal vooraf."
         }
       }
     },
     "pricing": {
-      "title": "Eén vaste prijs voor het hele traject",
-      "intro": "Inventarisatie, evaluatie, plan van aanpak en de beoordeling door een gecertificeerde kerndeskundige zitten er samen in. Aan het eind ben je er klaar mee. Bij de meeste aanbieders betaal je de toetsing apart bij, vaak enkele honderden euro's.",
+      "title": "Onze tarieven",
+      "intro": "Vaste tarieven voor het hele RI&E-traject: inventarisatie, evaluatie, plan van aanpak en de beoordeling door een gecertificeerde kerndeskundige. De rondgang op locatie en extra vestigingen zijn losse posten.",
       "headerSize": "Omvang",
       "headerPrice": "Prijs",
       "headerIncludes": "Wat erin zit",
@@ -779,7 +764,6 @@
         },
         "medium": {
           "size": "26–100 medewerkers",
-          "badge": "meest gekozen",
           "price": "€ 895",
           "includes": "Meerdere functiegroepen en onderwerpen. Inventarisatie, plan van aanpak en beoordeling door een kerndeskundige."
         },
@@ -790,10 +774,10 @@
         }
       },
       "extras": {
-        "round": "Rondgang op locatie — + € 750. De adviseur komt langs met het concept al in handen.",
-        "site": "Extra vestiging — € 295. Inclusief eigen interviews en eigen hoofdstuk in het rapport.",
-        "update": "Jaarlijkse actualisatie — vanaf € 195, vanaf het tweede jaar. Eerste jaar inbegrepen.",
-        "comparison": "Ter vergelijking — € 1.500 tot € 3.500 is de marktprijs voor een volledig adviseurstraject bij een MKB-bedrijf."
+        "round": "Rondgang op locatie: + € 750. De adviseur komt langs met het concept al in handen.",
+        "site": "Extra vestiging: € 295. Inclusief eigen interviews en eigen hoofdstuk in het rapport.",
+        "update": "Jaarlijkse actualisatie: vanaf € 195, vanaf het tweede jaar. Eerste jaar inbegrepen.",
+        "comparison": "Ter vergelijking: € 1.500 tot € 3.500 is de marktprijs voor een volledig adviseurstraject bij een MKB-bedrijf."
       },
       "footnote": "Alle bedragen exclusief btw. De beoordeling door een gecertificeerde kerndeskundige zit in elk pakket, ook waar die wettelijk niet verplicht is."
     },
@@ -803,11 +787,11 @@
       "items": {
         "responsible": {
           "q": "Wie is er verantwoordelijk voor de inhoud?",
-          "a": "Een mens. De AI haalt de informatie op en doet het voorwerk; een gecertificeerde kerndeskundige beoordeelt, corrigeert en ondertekent. De ruwe uitvoer gaat nooit rechtstreeks naar jou."
+          "a": "De AI haalt de informatie op en doet het voorwerk. Een gecertificeerde kerndeskundige beoordeelt, corrigeert en ondertekent. De ruwe uitvoer gaat nooit rechtstreeks naar jou."
         },
         "privacy": {
           "q": "Wat gebeurt er met wat mijn mensen zeggen?",
-          "a": "De antwoorden uit alle gesprekken worden per onderwerp samengevoegd tot één bevinding. Er staat dus niet in het rapport wie wat heeft gezegd, en individuele antwoorden zijn niet terug te lezen. Wel worden namen genoemd waar dat hoort, bijvoorbeeld wie verantwoordelijk is voor de BHV."
+          "a": "De antwoorden uit alle gesprekken worden per onderwerp samengevoegd tot één bevinding. Er staat niet in het rapport wie wat heeft gezegd, en individuele antwoorden zijn niet terug te lezen. Namen worden alleen genoemd waar dat hoort, bijvoorbeeld wie verantwoordelijk is voor de BHV."
         },
         "language": {
           "q": "Mijn mensen spreken niet allemaal Nederlands.",
@@ -815,7 +799,7 @@
         },
         "time": {
           "q": "Hoeveel tijd kost dit mijn mensen?",
-          "a": "Ongeveer 15 minuten per interview, plus één intake met jou. Wij beloven je geen tijdwinst: een RI&E goed doen kost tijd. Het verschil zit in wat je ervoor betaalt, en in het feit dat je mensen het op hun eigen moment doen in plaats van wanneer er een adviseur langskomt."
+          "a": "Ongeveer 15 minuten per interview, plus één intake met jou. Je mensen doen het op hun eigen moment, in hun eigen taal. Je koopt effectief 75% minder adviesuur in en spreidt het over de agenda's van je team, in plaats van vast te zitten aan de agenda van één adviseur."
         },
         "who": {
           "q": "Wie voert het traject eigenlijk uit?",
@@ -827,7 +811,7 @@
         },
         "multisite": {
           "q": "Werkt het ook voor meerdere vestigingen?",
-          "a": "Ja. Beleid wordt één keer uitgevraagd op concernniveau, per vestiging vragen we alleen wat daar anders is. Elke vestiging krijgt een eigen hoofdstuk."
+          "a": "Ja. Sterker nog: hoe meer vestigingen, hoe meer tijd je bespaart. Beleid vraag je één keer uit op concernniveau, per vestiging bespreken we alleen de locatie-gebonden risico's. Elke vestiging krijgt een eigen hoofdstuk in het rapport."
         }
       }
     },
@@ -841,7 +825,7 @@
         "nameLabel": "Naam",
         "namePlaceholder": "Voor- en achternaam",
         "emailLabel": "E-mailadres",
-        "emailPlaceholder": "je{'@'}bedrijf.nl",
+        "emailPlaceholder": "naam{'@'}jouwbedrijf.nl",
         "sizeLabel": "Omvang organisatie",
         "sizeOptionSmall": "t/m 25 medewerkers",
         "sizeOptionMedium": "26–100 medewerkers",
@@ -854,7 +838,7 @@
         "submitting": "Bezig...",
         "submitted": "Bedankt! We nemen snel contact op.",
         "error": "Er ging iets mis. Probeer het later opnieuw of mail info{'@'}helpr.ai.",
-        "disclaimer": "We reageren binnen één werkdag. Vrijblijvend en zonder verplichtingen."
+        "disclaimer": "We reageren binnen 24 uur. Vrijblijvend en zonder verplichtingen."
       }
     }
   },
