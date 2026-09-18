@@ -50,35 +50,25 @@
       </div>
     </section>
 
-    <!-- STRIP -->
-    <section class="py-8 lg:py-10 bg-warm-bg border-y border-warm-border">
-      <div class="mx-auto max-w-6xl px-6 lg:px-8">
-        <p class="text-sm text-warm-ink/80">{{ $t('rieAdvies.strip.body') }}</p>
-      </div>
-    </section>
-
-    <!-- WHY NOW -->
-    <section class="py-20 lg:py-28 bg-warm-bg">
-      <div class="mx-auto max-w-6xl px-6 lg:px-8">
-        <div class="mb-14 max-w-3xl">
-          <p class="text-sm font-semibold uppercase tracking-wider text-navy-500 mb-4">{{ $t('rieAdvies.why.eyebrow') }}</p>
-          <h2 class="font-display text-3xl lg:text-4xl text-warm-ink font-bold leading-tight mb-6">
-            {{ $t('rieAdvies.why.title') }}
-          </h2>
-          <div class="space-y-5 text-lg text-warm-ink/70 leading-relaxed">
-            <p>{{ $t('rieAdvies.why.body1') }}</p>
-            <p>{{ $t('rieAdvies.why.body2') }}</p>
+    <!-- PARTNERS -->
+    <section class="py-16 bg-white border-y border-warm-border">
+      <div class="mx-auto max-w-screen-2xl px-6 lg:px-8">
+        <p class="text-center text-xs font-semibold uppercase tracking-wider text-warm-gray mb-10">
+          {{ $t('rieAdvies.partners.label') }}
+        </p>
+        <div class="flex flex-wrap items-center justify-center gap-x-12 gap-y-8 lg:gap-x-16">
+          <a href="https://www.vanhouten.nl/" target="_blank" rel="noopener noreferrer" aria-label="Van Houten en Partners">
+            <img src="~/assets/images/logos/logo_van_houten_en_partners.svg" alt="Van Houten en Partners" class="h-10 w-auto opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
+          </a>
+          <div class="h-10 flex items-center px-4 rounded-md border-2 border-dashed border-warm-border text-xs font-semibold text-warm-gray" aria-label="Improcon">
+            Improcon
           </div>
-        </div>
-        <div class="grid md:grid-cols-2 gap-6">
-          <div
-            v-for="b in whyBlocks"
-            :key="b"
-            class="p-6 bg-white rounded-2xl border border-warm-border shadow-card"
-          >
-            <h3 class="font-display text-lg text-warm-ink font-bold mb-2">{{ $t(`rieAdvies.why.blocks.${b}.title`) }}</h3>
-            <p class="text-sm text-warm-ink/70 leading-relaxed">{{ $t(`rieAdvies.why.blocks.${b}.body`) }}</p>
-          </div>
+          <a href="https://coningadviesgroep.nl" target="_blank" rel="noopener noreferrer" aria-label="Coning Adviesgroep">
+            <img src="~/assets/images/logos/coning_logo.png" alt="Coning Adviesgroep" class="h-10 w-auto opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
+          </a>
+          <a href="https://certificeringsadvies.nl" target="_blank" rel="noopener noreferrer" aria-label="Certificeringsadvies Nederland">
+            <img src="~/assets/images/logos/certificeringsadvies_nederland_logo.svg" alt="Certificeringsadvies Nederland" class="h-10 w-auto opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
+          </a>
         </div>
       </div>
     </section>
@@ -127,14 +117,6 @@
     <!-- SCREENSHOTS -->
     <section id="screenshots" class="py-20 lg:py-28 bg-warm-bg scroll-mt-24">
       <div class="mx-auto max-w-6xl px-6 lg:px-8">
-        <div class="mb-14 max-w-3xl">
-          <h2 class="font-display text-3xl lg:text-4xl text-warm-ink font-bold leading-tight mb-6">
-            {{ $t('rieAdvies.screenshots.title') }}
-          </h2>
-          <p class="text-lg text-warm-ink/70 leading-relaxed">
-            {{ $t('rieAdvies.screenshots.intro') }}
-          </p>
-        </div>
         <div class="grid md:grid-cols-3 gap-6">
           <div v-for="s in screenshotItems" :key="s" class="flex flex-col">
             <div class="aspect-[4/3] rounded-xl border-2 border-dashed border-warm-border bg-white flex items-center justify-center p-6 mb-4">
@@ -172,10 +154,9 @@
     </section>
 
     <!-- BUY / FOMO -->
-    <section class="py-20 lg:py-28 bg-warm-bg">
+    <section class="py-20 lg:py-28 bg-white">
       <div class="mx-auto max-w-3xl px-6 lg:px-8 text-center">
-        <p class="text-sm font-semibold uppercase tracking-wider text-navy-500 mb-4">{{ $t('rieAdvies.buy.eyebrow') }}</p>
-        <h2 class="font-display text-3xl lg:text-4xl text-warm-ink font-bold leading-tight mb-6">
+        <h2 class="font-display text-3xl lg:text-5xl text-navy-500 font-bold leading-tight mb-8">
           {{ $t('rieAdvies.buy.title') }}
         </h2>
         <p class="text-lg lg:text-xl text-warm-ink/80 leading-relaxed mb-10">
@@ -188,57 +169,6 @@
           {{ $t('rieAdvies.buy.cta') }}
           <svg class="ml-2 h-4 w-4 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
         </a>
-      </div>
-    </section>
-
-    <!-- PRICING -->
-    <section class="py-20 lg:py-28">
-      <div class="mx-auto max-w-6xl px-6 lg:px-8">
-        <div class="mb-12 max-w-3xl">
-          <p class="text-sm font-semibold uppercase tracking-wider text-navy-500 mb-4">{{ $t('rieAdvies.pricing.eyebrow') }}</p>
-          <h2 class="font-display text-3xl lg:text-4xl text-warm-ink font-bold leading-tight mb-6">
-            {{ $t('rieAdvies.pricing.title') }}
-          </h2>
-          <p class="text-lg text-warm-ink/70 leading-relaxed">
-            {{ $t('rieAdvies.pricing.intro') }}
-          </p>
-        </div>
-
-        <div class="overflow-x-auto rounded-2xl border border-warm-border shadow-card bg-white mb-10">
-          <table class="w-full text-left">
-            <thead class="bg-warm-bg border-b border-warm-border">
-              <tr>
-                <th class="px-6 py-4 text-xs font-semibold uppercase tracking-wider text-warm-gray">{{ $t('rieAdvies.pricing.table.headerVolume') }}</th>
-                <th class="px-6 py-4 text-xs font-semibold uppercase tracking-wider text-warm-gray">
-                  {{ $t('rieAdvies.pricing.table.headerSmall') }}
-                  <span class="block text-[0.65rem] font-normal normal-case tracking-normal text-warm-gray/80">{{ $t('rieAdvies.pricing.table.headerSmallSub') }}</span>
-                </th>
-                <th class="px-6 py-4 text-xs font-semibold uppercase tracking-wider text-warm-gray">{{ $t('rieAdvies.pricing.table.headerLarge') }}</th>
-                <th class="px-6 py-4 text-xs font-semibold uppercase tracking-wider text-warm-gray">{{ $t('rieAdvies.pricing.table.headerExtra') }}</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr v-for="tier in pricingTiers" :key="tier" class="border-b border-warm-border last:border-b-0">
-                <td class="px-6 py-5 font-semibold text-warm-ink">{{ $t(`rieAdvies.pricing.table.rows.${tier}.volume`) }}</td>
-                <td class="px-6 py-5 font-display text-lg text-navy-500 font-bold">{{ $t(`rieAdvies.pricing.table.rows.${tier}.small`) }}</td>
-                <td class="px-6 py-5 font-display text-lg text-navy-500 font-bold">{{ $t(`rieAdvies.pricing.table.rows.${tier}.large`) }}</td>
-                <td class="px-6 py-5 font-display text-lg text-warm-ink font-bold">{{ $t(`rieAdvies.pricing.table.rows.${tier}.extra`) }}</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-6 mb-8">
-          <div
-            v-for="b in pricingBlocks"
-            :key="b"
-            class="p-8 bg-white rounded-2xl border border-warm-border shadow-card"
-          >
-            <h3 class="font-display text-lg text-warm-ink font-bold mb-3">{{ $t(`rieAdvies.pricing.blocks.${b}.title`) }}</h3>
-            <p class="text-warm-ink/70 leading-relaxed">{{ $t(`rieAdvies.pricing.blocks.${b}.body`) }}</p>
-          </div>
-        </div>
-        <p class="text-xs text-warm-gray">{{ $t('rieAdvies.pricing.footnote') }}</p>
       </div>
     </section>
 
@@ -262,7 +192,6 @@
     <section id="cta" class="py-24 lg:py-32 bg-warm-ink scroll-mt-24">
       <div class="mx-auto max-w-3xl px-6 lg:px-8">
         <div class="text-center mb-12">
-          <p class="text-sm font-semibold uppercase tracking-wider text-navy-500 mb-4">{{ $t('rieAdvies.cta.eyebrow') }}</p>
           <h2 class="font-display text-3xl lg:text-4xl text-white font-bold leading-tight mb-4">
             {{ $t('rieAdvies.cta.title') }}
           </h2>
@@ -365,13 +294,10 @@ import { ref, computed } from 'vue'
 
 const { t } = useI18n({ useScope: 'global' })
 
-const whyBlocks = ['report', 'expert'] as const
 const differentBlocks = ['right', 'cause', 'round', 'label'] as const
 const screenshotItems = ['dossier', 'inventory', 'plan'] as const
 const trajectSteps = ['intake', 'interviews', 'round'] as const
-const pricingTiers = ['tier1', 'tier2', 'tier3'] as const
-const pricingBlocks = ['setup', 'first', 'leads'] as const
-const faqItems = ['ownership', 'training', 'dropout', 'questions', 'expert', 'lockin'] as const
+const faqItems = ['solo', 'staffel', 'expert', 'ownership', 'training', 'lockin'] as const
 
 const faqJsonLd = computed(() => JSON.stringify({
   '@context': 'https://schema.org',
