@@ -824,184 +824,90 @@
   },
   "rie": {
     "meta": {
-      "title": "Het RI&E-platform · Helpr.ai",
-      "description": "De AI-revolutie voor RI&E's. Het comfort van een consultant, voor de prijs van doe-het-zelf. Ontwikkeld door experts met 15 jaar ervaring."
+      "title": "De RI&E-aanpak · Helpr.ai",
+      "description": "Een AI-interviewer spreekt per thema de mensen die het werk kennen en vraagt door tot de oorzaak. Jij komt op de rondgang met een concept-RI&E waarin de organisatie al aan het woord is geweest."
     },
     "hero": {
-      "eyebrow": "Het RI&E-platform voor werkgevers",
-      "title": "De AI-revolutie voor RI&E's.",
-      "payoff": "Het comfort van een consultant, voor de prijs van doe-het-zelf.",
-      "body": "Voldoe aan alle wettelijke eisen zonder gedoe. Je eigen mensen beschrijven hun eigen werk in een gesprek. Wat eruit komt is een volledige RI&E met plan van aanpak, beoordeeld en ondertekend door een gecertificeerde adviseur.",
-      "ctaPrimary": "Wil je het zelf ervaren?",
-      "ctaSecondary": "Bekijk het platform",
-      "videoPlaceholder": "Video: iemand achter een laptop in gesprek met de AI-interviewer — volgt"
-    },
-    "strip": {
-      "item1": "Volledig traject: inventarisatie, evaluatie, toetsing en plan van aanpak",
-      "item2": "Ontwikkeld door experts met ruim 15 jaar ervaring",
-      "item3": "Interviews in alle talen: Nederlands, Engels, Pools, Turks en meer",
-      "item4": "Voldoet aan alle wettelijke eisen"
-    },
-    "partners": {
-      "label": "Uitgevoerd door gecertificeerde adviesbureaus"
-    },
-    "how": {
-      "eyebrow": "De revolutie in inventariseren",
-      "title": "Laagdrempelig inventariseren, wanneer het jou uitkomt",
-      "body": "Weg van eindeloze, dure consultantgesprekken. Je mensen praten met een AI-interviewer die hun vak kent. In hun eigen taal, op hun eigen moment, in jouw snelheid.",
-      "blocks": {
-        "tailored": {
-          "title": "Afgestemd op je bedrijf",
-          "body": "Uit meer dan 200 onderwerpen kiezen we wat past bij jouw werk. Een kantoor krijgt andere vragen dan een werkplaats met heftrucks."
-        },
-        "right": {
-          "title": "Kennis waar zij zit",
-          "body": "Elk onderwerp komt bij iemand die er verstand van heeft. Beleid bij de KAM-coördinator, werkplek bij de mensen op de vloer. Antwoorden die kloppen met de praktijk."
-        },
-        "language": {
-          "title": "De comfortabele manier van delen",
-          "body": "Praten is voor de meeste mensen makkelijker dan schrijven. In hun eigen taal, in hun eigen tempo, delen ze meer dan een formulier ooit ophaalt."
-        }
+      "eyebrow": "RI&E · voor KAM-coördinatoren en veiligheidskundigen",
+      "title": "Alle collega's aan het woord, jij behoudt de regie.",
+      "body": "Een AI-interviewer spreekt per thema de mensen die het werk kennen en vraagt door tot de oorzaak. Jij komt op de rondgang met een concept-RI&E waarin de organisatie al aan het woord is geweest.",
+      "ctaPrimary": "Plan een demo",
+      "ctaSecondary": "Ervaar een interview",
+      "bullets": {
+        "b1": "2 à 3 uur van jouw tijd per traject",
+        "b2": "Grondoorzaak bij elke bevinding",
+        "b3": "Gesprekken in de eigen taal",
+        "b4": "Getoetst door een kerndeskundige"
       }
     },
-    "choice": {
-      "title": "Maak kennis met de absolute no-brainer voor RI&E's",
-      "body1": "Er is geen beter alternatief als je comfortabel door een RI&E-traject wilt. Wij doen de volledige heavy lifting: informatie in kaart brengen, categoriseren, risico's inschatten en het plan van aanpak opstellen.",
-      "body2": "Alleen voor de rondgang komt er nog een adviseur langs. Voor de rest neemt het platform het over."
+    "banner": "Een nieuwe RI&E voor elke vestiging, met de juiste mensen aan het woord.",
+    "compare": {
+      "title": "Een vragenlijst laat zien hoe het hoort. Een gesprek laat zien hoe het gaat.",
+      "body": "In vrijwel elke RI&E-tool vult één persoon de hele lijst in, meestal iemand van kantoor. Die vult in hoe het hoort te gaan. Bij helpr.ai vertellen de mensen die het werk doen hoe het werkelijk gaat.",
+      "s1Value": "24%",
+      "s1Label": "van de bedrijven betrekt medewerkers actief bij de RI&E",
+      "s2Value": "45%",
+      "s2Label": "van de werknemers is niet ingelicht over de RI&E",
+      "s3Value": "52%",
+      "s3Label": "van de werkgevers heeft geen RI&E of een RI&E van onvoldoende kwaliteit",
+      "source": "Bron: Nederlandse Arbeidsinspectie, Arbo in Bedrijf 2024–2025",
+      "colVragenlijst": "RI&E-vragenlijst",
+      "colHelpr": "RI&E via helpr.ai",
+      "rowWhoLabel": "Wie vertelt",
+      "rowWhoA": "Eén invuller, de hele lijst",
+      "rowWhoB": "Per thema de mensen die er verstand van hebben",
+      "rowProbeLabel": "Doorvragen",
+      "rowProbeA": "Ja of nee, en door naar de volgende vraag",
+      "rowProbeB": "Vraagt door op een stellig ja en herkent beleid dat op papier staat maar niet leeft",
+      "rowReportLabel": "Rapport",
+      "rowReportA": "Risico, risicoklasse, actiepunt",
+      "rowReportB": "Plus de praktijk in eigen woorden en de grondoorzaak per bevinding",
+      "rowRoundLabel": "Rondgang",
+      "rowRoundA": "Je begint met een lege lijst",
+      "rowRoundB": "Je verifieert een concept dat er al ligt",
+      "rowLanguageLabel": "Taal en moment",
+      "rowLanguageA": "Nederlands, achter een computer",
+      "rowLanguageB": "Eigen taal, eigen moment, ook op de telefoon",
+      "findingTag": "Bevinding uit een testrapport",
+      "findingQuote": "„Losliggende kabels worden geaccepteerd als iets dat bij het werk hoort, al vindt de deelnemer zelf ook dat het beter kan.\"",
+      "findingCaption": "Een vragenlijst noteert \"kabels: in orde\". Dit gesprek laat zien waarom het misgaat.",
+      "metaRiskLabel": "Risicoscore",
+      "metaRiskValue": "Fine & Kinney, met kleurcodering",
+      "metaCauseLabel": "Grondoorzaak",
+      "metaCauseValue": "Veilig gedrag en naleving",
+      "metaMeasureLabel": "Maatregel",
+      "metaMeasureValue": "Met prioriteit, deadline en verantwoordelijke"
     },
-    "benefits": {
-      "title": "Wat het oplevert",
-      "items": {
-        "complete": {
-          "title": "Een volledige RI&E",
-          "body": "Opgebouwd uit gesprekken met de mensen die het werk doen, en dus over jouw bedrijf in plaats van over je branche in het algemeen."
-        },
-        "plan": {
-          "title": "Een plan van aanpak dat je direct kunt uitvoeren",
-          "body": "Concrete maatregelen met een verantwoordelijke en een datum, in een volgorde die klopt. Werk dat je maandag kunt oppakken."
-        },
-        "reviewed": {
-          "title": "Een adviseur die het beoordeelt",
-          "body": "Een gecertificeerde kerndeskundige leest het na, corrigeert waar nodig en zet zijn naam eronder. Je krijgt geen uitvoer van een computer in handen."
-        }
-      }
-    },
-    "effort": {
-      "title": "Kwaliteit en snelheid gaan hand in hand",
-      "intro": "Drie stappen. Jij neemt er maar één: vertellen over wat je doet. De rest nemen wij en de adviseur over.",
-      "steps": {
-        "intake": {
-          "title": "Intake",
-          "body": "De adviseur brengt in kaart wat je doet, welke vestigingen erbij horen en welke onderwerpen spelen. Samen zet je de interviews klaar en bepaal je wie welk onderwerp krijgt. Online of telefonisch."
-        },
-        "interviews": {
-          "title": "Interviews",
-          "body": "Iedere deelnemer krijgt een link en alleen de onderwerpen die bij zijn werk horen. 15 minuten per persoon, op een moment dat hem uitkomt. Voorbereiden hoeft niet."
-        },
-        "round": {
-          "title": "Rondgang en oplevering",
-          "body": "De adviseur loopt met de concept-RI&E in de hand over je locatie, weegt de bevindingen en vult aan waar nodig. Daarna toetst en ondertekent hij, en krijg je de RI&E met het plan van aanpak."
-        }
-      },
-      "asks": {
-        "title": "Wat wij van je vragen",
-        "subtitle": "(zodat je vooraf weet waar je ja tegen zegt)",
-        "items": {
-          "call": "Eén intake, online of telefonisch.",
-          "participants": "Alle relevante werknemers aanwijzen: beleid, locatie en uitvoering. Vaak een handvol mensen, geen hele afdeling.",
-          "duration": "15 minuten per deelnemer, op hun eigen moment. Geen voorbereiding, geen materiaal vooraf."
-        }
-      }
-    },
-    "pricing": {
-      "title": "Onze tarieven",
-      "intro": "Vaste tarieven voor het hele RI&E-traject: inventarisatie, evaluatie, plan van aanpak en de beoordeling door een gecertificeerde kerndeskundige. De rondgang op locatie en extra vestigingen zijn losse posten.",
-      "headerSize": "Omvang",
-      "headerPrice": "Prijs",
-      "headerIncludes": "Wat erin zit",
-      "rows": {
-        "small": {
-          "size": "t/m 25 medewerkers",
-          "price": "€ 595",
-          "includes": "Eén locatie. Inventarisatie, plan van aanpak en beoordeling door een kerndeskundige."
-        },
-        "medium": {
-          "size": "26–100 medewerkers",
-          "price": "€ 895",
-          "includes": "Meerdere functiegroepen en onderwerpen. Inventarisatie, plan van aanpak en beoordeling door een kerndeskundige."
-        },
-        "large": {
-          "size": "101–300 medewerkers",
-          "price": "€ 1.295",
-          "includes": "Complexere organisaties. Inventarisatie, plan van aanpak en beoordeling door een kerndeskundige."
-        }
-      },
-      "extras": {
-        "round": "Rondgang op locatie: + € 750. De adviseur komt langs met het concept al in handen.",
-        "site": "Extra vestiging: € 295. Inclusief eigen interviews en eigen hoofdstuk in het rapport.",
-        "update": "Jaarlijkse actualisatie: vanaf € 195, vanaf het tweede jaar. Eerste jaar inbegrepen.",
-        "comparison": "Ter vergelijking: € 1.500 tot € 3.500 is de marktprijs voor een volledig adviseurstraject bij een MKB-bedrijf."
-      },
-      "footnote": "Alle bedragen exclusief btw. De beoordeling door een gecertificeerde kerndeskundige zit in elk pakket, ook waar die wettelijk niet verplicht is."
-    },
-    "faq": {
-      "eyebrow": "Vragen",
-      "title": "Veelgestelde vragen",
-      "items": {
-        "responsible": {
-          "q": "Wie is er verantwoordelijk voor de inhoud?",
-          "a": "De AI haalt de informatie op en doet het voorwerk. Een gecertificeerde kerndeskundige beoordeelt, corrigeert en ondertekent. De ruwe uitvoer gaat nooit rechtstreeks naar jou."
-        },
-        "privacy": {
-          "q": "Wat gebeurt er met wat mijn mensen zeggen?",
-          "a": "De antwoorden uit alle gesprekken worden per onderwerp samengevoegd tot één bevinding. Er staat niet in het rapport wie wat heeft gezegd, en individuele antwoorden zijn niet terug te lezen. Namen worden alleen genoemd waar dat hoort, bijvoorbeeld wie verantwoordelijk is voor de BHV."
-        },
-        "language": {
-          "q": "Mijn mensen spreken niet allemaal Nederlands.",
-          "a": "Dat is precies waarom een gesprek wint van een formulier. De interviews worden in meerdere talen gevoerd; iedereen vertelt het in de taal waarin hij denkt."
-        },
-        "time": {
-          "q": "Hoeveel tijd kost dit mijn mensen?",
-          "a": "Ongeveer 15 minuten per interview, plus één intake met jou. Je mensen doen het op hun eigen moment, in hun eigen taal. Je koopt effectief 75% minder adviesuur in en spreidt het over de agenda's van je team, in plaats van vast te zitten aan de agenda van één adviseur."
-        },
-        "who": {
-          "q": "Wie voert het traject eigenlijk uit?",
-          "a": "Een gecertificeerd adviesbureau uit ons netwerk, bij jou in de regio. Wij koppelen je aan een bureau dat je branche kent; zij beoordelen, toetsen en tekenen. Het rapport draagt hun naam. Wij bouwen en onderhouden het platform."
-        },
-        "data": {
-          "q": "En de privacy?",
-          "a": "Wij verwerken je gegevens onder een verwerkersovereenkomst. Voor vragen over hoe wij AI inzetten en welke gegevens daarvoor worden gebruikt, mail info{'@'}helpr.ai."
-        },
-        "multisite": {
-          "q": "Werkt het ook voor meerdere vestigingen?",
-          "a": "Ja. Sterker nog: hoe meer vestigingen, hoe meer tijd je bespaart. Beleid vraag je één keer uit op concernniveau, per vestiging bespreken we alleen de locatie-gebonden risico's. Elke vestiging krijgt een eigen hoofdstuk in het rapport."
-        }
-      }
+    "regie": {
+      "title": "Jij houdt de regie, van scope tot handtekening.",
+      "scopeWhen": "Vooraf",
+      "scopeTitle": "Jij bepaalt de scope",
+      "scopeBody": "Alleen wat van toepassing is, wordt uitgevraagd. Een RI&E op maat, geen generieke vragenlijst. Bij een groep vraag je het beleid één keer uit.",
+      "verifyWhen": "Op locatie",
+      "verifyTitle": "Jij verifieert",
+      "verifyBody": "Een gesprek vervangt geen deskundig oog. Tijdens de rondgang toets je het concept aan wat je ziet en vul je aan. Jouw aanpassingen blijven herleidbaar.",
+      "expertsLead": "Ontwikkeld door veiligheidskundigen.",
+      "expertsBody": "De vraagstelling is opgebouwd met specialisten met ruim vijftien jaar praktijkervaring."
     },
     "cta": {
-      "eyebrow": "Aan de slag",
-      "title": "Zullen we beginnen?",
-      "body": "Eén gesprek van twintig minuten en je weet of dit bij jouw organisatie past. Wij laten je horen hoe zo'n interview klinkt, wat eruit komt en welk bureau uit ons netwerk bij jou past.",
+      "title": "Maak je eerste RI&E met Helpr.ai",
+      "body": "In twintig minuten laten we zien hoe je een vestiging inricht en wat er uit de gesprekken komt.",
+      "b1": "Een proefinterview om zelf te ervaren",
+      "b2": "Een voorbeeldrapport met plan van aanpak",
+      "b3": "Een voorstel om te starten met één vestiging",
       "form": {
-        "companyLabel": "Bedrijfsnaam",
-        "companyPlaceholder": "Naam van je organisatie",
         "nameLabel": "Naam",
-        "namePlaceholder": "Voor- en achternaam",
-        "emailLabel": "E-mailadres",
-        "emailPlaceholder": "naam{'@'}jouwbedrijf.nl",
-        "sizeLabel": "Omvang organisatie",
-        "sizeOptionSmall": "t/m 25 medewerkers",
-        "sizeOptionMedium": "26–100 medewerkers",
-        "sizeOptionLarge": "101–300 medewerkers",
-        "sizeOptionOther": "Anders / weet ik niet",
-        "messageLabel": "Bericht (optioneel)",
-        "messagePlaceholder": "Vertel kort wat we voor je kunnen betekenen",
-        "submit": "Plan een kennismaking",
-        "submitSecondary": "Eerst een interview horen",
+        "orgLabel": "Organisatie",
+        "emailLabel": "E-mail",
+        "roleLabel": "Ik ben",
+        "roleKam": "KAM-coördinator of QHSE-manager",
+        "roleInternal": "Interne veiligheidskundige",
+        "rolePreventive": "Preventiemedewerker",
+        "submit": "Plan een demo",
         "submitting": "Bezig...",
         "submitted": "Bedankt! We nemen snel contact op.",
         "error": "Er ging iets mis. Probeer het later opnieuw of mail info{'@'}helpr.ai.",
-        "disclaimer": "We reageren binnen 24 uur. Vrijblijvend en zonder verplichtingen."
+        "disclaimer": "We reageren binnen één werkdag."
       }
     }
   },
