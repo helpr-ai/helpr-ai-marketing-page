@@ -164,7 +164,6 @@
           <a href="#cta" class="text-white font-semibold hover:text-navy-300 transition-colors mt-2">
             {{ $t('home.experience.cta') }} →
           </a>
-          <p class="text-xs text-white/50 mt-1">{{ $t('home.experience.audioNote') }}</p>
         </div>
 
         <div class="flex flex-col gap-4">
@@ -293,8 +292,12 @@
               <a href="https://buskerbv.nl" target="_blank" rel="noopener noreferrer" aria-label="Busker BV">
                 <img src="~/assets/images/logos/busker_logo.svg" alt="Busker BV" class="h-7 w-auto opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
               </a>
-              <img src="~/assets/images/logos/alcedo-logo.png" alt="Alcedo" class="h-10 w-auto opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
-              <img src="~/assets/images/logos/hoolwerfheiwerken_logo.svg" alt="Hoolwerf Heiwerken" class="h-10 w-auto opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
+              <div class="bg-warm-ink rounded-lg px-4 py-2.5 opacity-80 hover:opacity-100 transition-opacity">
+                <img src="~/assets/images/logos/alcedo-logo.png" alt="Alcedo" class="h-7 w-auto" />
+              </div>
+              <div class="bg-warm-ink rounded-lg px-4 py-2.5 opacity-80 hover:opacity-100 transition-opacity">
+                <img src="~/assets/images/logos/hoolwerfheiwerken_logo.svg" alt="Hoolwerf Heiwerken" class="h-7 w-auto" />
+              </div>
             </div>
           </div>
 
@@ -315,7 +318,6 @@
             </div>
           </div>
 
-          <p class="text-xs text-warm-gray italic">{{ $t('home.partners.logoNote') }}</p>
         </div>
 
         <div class="flex flex-col gap-5">
@@ -335,7 +337,7 @@
     <section id="vertrouwen" class="pb-24 lg:pb-32 scroll-mt-24">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
         <div class="bg-white border border-warm-border rounded-2xl p-10 flex flex-col gap-8">
-          <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-7">
+          <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-7">
             <div class="flex flex-col gap-2">
               <svg class="w-6 h-6 text-navy-500 mb-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2" /><path d="M8 10V7a4 4 0 0 1 8 0v3" /></svg>
               <p class="font-bold text-warm-ink">{{ $t('home.trust.dpaTitle') }}</p>
@@ -355,13 +357,6 @@
               <svg class="w-6 h-6 text-navy-500 mb-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2" /><path d="M8 20h8" /><path d="M12 16v4" /></svg>
               <p class="font-bold text-warm-ink">{{ $t('home.trust.securityTitle') }}</p>
               <p class="text-sm text-warm-ink/75">{{ $t('home.trust.securityBody') }}</p>
-            </div>
-            <div class="flex flex-col gap-2">
-              <svg class="w-6 h-6 text-navy-500 mb-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H8l-4 4z" /><path d="M8 9h8" /><path d="M8 12h5" /></svg>
-              <p class="font-bold text-warm-ink">{{ $t('home.trust.aiTitle') }}</p>
-              <a href="mailto:info@helpr.ai?subject=Vraag%20over%20AI%20%26%20privacy" class="text-sm text-navy-500 font-semibold hover:text-navy-600 transition-colors">
-                {{ $t('home.trust.aiLink') }} →
-              </a>
             </div>
           </div>
           <div class="h-px bg-warm-border"></div>

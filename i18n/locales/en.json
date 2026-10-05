@@ -1070,7 +1070,6 @@
       "title": "Een formulier heeft geen context en vraagt niet door.",
       "payoff": "Breng risico's in kaart met de mensen die het werk verrichten.",
       "body": "De AI-interviewer kent het vak, vraagt door waar een antwoord te makkelijk is en luistert naar wat er werkelijk gebeurt. Zo klinkt dat.",
-      "audioNote": "[Audio- of videofragment volgt, uit een afgerond interview, met toestemming]",
       "cta": "Doe zelf een proefinterview",
       "exampleNote": "Voorbeeldgesprek ter illustratie",
       "tabScl": "Safety Culture Ladder",
@@ -1112,7 +1111,6 @@
     "partners": {
       "clientsLabel": "Klanten",
       "partnersLabel": "Inhoud ontwikkeld met",
-      "logoNote": "[Logo's van partnerorganisaties volgen na akkoord]",
       "t1Body": "„Ik stond echt met mijn oren te klapperen. De kwaliteit van het gesprek was ongelofelijk.\"",
       "t1Cite": "Frank van de Beek, Coning Adviesgroep",
       "t2Body": "„Het is geen auditor die dat gesprek voert. Het is echt een gesprekspartner in een adviseursrol.\"",
@@ -1126,9 +1124,7 @@
       "notrainTitle": "Geen modeltraining",
       "notrainBody": "Gesprekken worden niet gebruikt om AI-modellen te trainen.",
       "securityTitle": "Beveiliging en opslag",
-      "securityBody": "[Waar de data staat en hoe het platform beveiligd is, door Erik te bevestigen]",
-      "aiTitle": "Hoe wij AI inzetten",
-      "aiLink": "Lees de pagina AI & privacy",
+      "securityBody": "Data staat in Europa.",
       "experts": "Ontwikkeld met specialisten. De vraagstelling is opgebouwd met veiligheidskundigen met ruim vijftien jaar praktijkervaring."
     },
     "contact": {
