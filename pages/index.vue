@@ -14,10 +14,7 @@
         <p class="font-display text-2xl lg:text-4xl text-navy-500 font-bold leading-tight max-w-4xl mb-8">
           {{ $t('home.hero.payoff') }}
         </p>
-        <div class="max-w-3xl text-xl text-warm-ink/75 leading-relaxed space-y-1">
-          <p>{{ $t('home.hero.body1') }}</p>
-          <p>{{ $t('home.hero.body2') }}</p>
-        </div>
+        <p class="max-w-3xl text-xl text-warm-ink/75 leading-relaxed">{{ $t('home.hero.body') }}</p>
       </div>
     </section>
 
@@ -101,7 +98,8 @@
       <div class="mx-auto max-w-7xl px-6 lg:px-8 flex flex-col gap-12">
         <div class="max-w-4xl flex flex-col gap-5">
           <h2 class="font-display text-4xl lg:text-5xl text-warm-ink font-bold leading-tight">
-            {{ $t('home.possible.title') }}
+            {{ $t('home.possible.titleLine1') }}<br />
+            {{ $t('home.possible.titleLine2') }}
           </h2>
           <p class="text-xl text-warm-ink/75 leading-relaxed">{{ $t('home.possible.body') }}</p>
         </div>
@@ -263,7 +261,10 @@
         <div class="flex flex-col gap-4">
           <figure class="bg-warm-bg rounded-2xl p-8 flex flex-col gap-4">
             <blockquote class="font-display text-2xl text-warm-ink font-semibold leading-snug">{{ $t('home.case.quote') }}</blockquote>
-            <figcaption class="text-sm text-warm-gray">{{ $t('home.case.quoteCite') }}</figcaption>
+            <figcaption class="flex items-center gap-4 text-sm text-warm-gray">
+              <img src="~/assets/images/logos/enexis_logo.svg" alt="Enexis" class="h-8 w-auto" />
+              <span>{{ $t('home.case.quoteCite') }}</span>
+            </figcaption>
           </figure>
           <div class="grid grid-cols-2 gap-4">
             <div class="bg-warm-bg rounded-2xl p-6 flex flex-col gap-1.5">
@@ -287,10 +288,10 @@
             <p class="text-xs font-semibold uppercase tracking-wider text-warm-gray">{{ $t('home.partners.clientsLabel') }}</p>
             <div class="flex flex-wrap items-center gap-x-10 gap-y-6">
               <a href="https://enexis.nl" target="_blank" rel="noopener noreferrer" aria-label="Enexis">
-                <img src="~/assets/images/logos/enexis_logo.svg" alt="Enexis" class="h-10 w-auto opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
+                <img src="~/assets/images/logos/enexis_logo.svg" alt="Enexis" class="h-10 w-auto opacity-90 hover:opacity-100 transition-opacity" />
               </a>
               <a href="https://buskerbv.nl" target="_blank" rel="noopener noreferrer" aria-label="Busker BV">
-                <img src="~/assets/images/logos/busker_logo.svg" alt="Busker BV" class="h-7 w-auto opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
+                <img src="~/assets/images/logos/busker_logo.svg" alt="Busker BV" class="h-7 w-auto opacity-90 hover:opacity-100 transition-opacity" />
               </a>
               <div class="bg-warm-ink rounded-lg px-4 py-2.5 opacity-80 hover:opacity-100 transition-opacity">
                 <img src="~/assets/images/logos/alcedo-logo.png" alt="Alcedo" class="h-7 w-auto" />
@@ -305,15 +306,15 @@
             <p class="text-xs font-semibold uppercase tracking-wider text-warm-gray">{{ $t('home.partners.partnersLabel') }}</p>
             <div class="flex flex-wrap items-center gap-x-10 gap-y-6">
               <a href="https://www.vanhouten.nl/" target="_blank" rel="noopener noreferrer" aria-label="Van Houten en Partners">
-                <img src="~/assets/images/logos/logo_van_houten_en_partners.svg" alt="Van Houten en Partners" class="h-9 w-auto opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
+                <img src="~/assets/images/logos/logo_van_houten_en_partners.svg" alt="Van Houten en Partners" class="h-9 w-auto opacity-90 hover:opacity-100 transition-opacity" />
               </a>
               <a href="https://coningadviesgroep.nl" target="_blank" rel="noopener noreferrer" aria-label="Coning Adviesgroep">
-                <img src="~/assets/images/logos/coning_logo.png" alt="Coning Adviesgroep" class="h-9 w-auto opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
+                <img src="~/assets/images/logos/coning_logo.png" alt="Coning Adviesgroep" class="h-9 w-auto opacity-90 hover:opacity-100 transition-opacity" />
               </a>
-              <img src="~/assets/images/logos/improcon.svg" alt="Improcon" class="h-9 w-auto opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
-              <img src="~/assets/images/logos/kwaliteit_in_bedrijf.webp" alt="Kwaliteit in Bedrijf" class="h-9 w-auto opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
+              <img src="~/assets/images/logos/improcon.svg" alt="Improcon" class="h-9 w-auto opacity-90 hover:opacity-100 transition-opacity" />
+              <img src="~/assets/images/logos/kwaliteit_in_bedrijf.webp" alt="Kwaliteit in Bedrijf" class="h-9 w-auto opacity-90 hover:opacity-100 transition-opacity" />
               <a href="https://certificeringsadvies.nl" target="_blank" rel="noopener noreferrer" aria-label="Certificeringsadvies Nederland">
-                <img src="~/assets/images/logos/certificeringsadvies_nederland_logo.svg" alt="Certificeringsadvies Nederland" class="h-9 w-auto opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
+                <img src="~/assets/images/logos/certificeringsadvies_nederland_logo.svg" alt="Certificeringsadvies Nederland" class="h-9 w-auto opacity-90 hover:opacity-100 transition-opacity" />
               </a>
             </div>
           </div>
@@ -324,10 +325,6 @@
           <figure class="bg-white border border-warm-border rounded-2xl p-8 flex flex-col gap-4">
             <blockquote class="font-display text-2xl text-warm-ink font-semibold leading-snug">{{ $t('home.partners.t1Body') }}</blockquote>
             <figcaption class="text-sm text-warm-gray">{{ $t('home.partners.t1Cite') }}</figcaption>
-          </figure>
-          <figure class="bg-white border border-warm-border rounded-2xl p-8 flex flex-col gap-4">
-            <blockquote class="font-display text-2xl text-warm-ink font-semibold leading-snug">{{ $t('home.partners.t2Body') }}</blockquote>
-            <figcaption class="text-sm text-warm-gray">{{ $t('home.partners.t2Cite') }}</figcaption>
           </figure>
         </div>
       </div>

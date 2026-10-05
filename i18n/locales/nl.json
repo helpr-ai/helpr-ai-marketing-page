@@ -22,14 +22,13 @@
   "home": {
     "meta": {
       "title": "Helpr.ai · Geef iedereen het woord",
-      "description": "Van directie tot werkvloer, op elke vestiging, breng de risico's en veiligheidscultuur in kaart met AI-interviews. Een onderbouwd totaalbeeld binnen 1 dag."
+      "description": "Van directie tot werkvloer, op elke vestiging, breng de risico's en veiligheidscultuur in kaart met AI-interviews. Een onderbouwd totaalbeeld binnen één dag."
     },
     "hero": {
       "eyebrow": "Safety Culture Ladder · RI&E",
       "title": "Geef iedereen het woord en ontdek wat er echt speelt.",
       "payoff": "Geen zorgen: wij voeren alle gesprekken...",
-      "body1": "Van directie tot werkvloer, op elke vestiging, breng de risico's en veiligheidscultuur in kaart met AI-interviews.",
-      "body2": "Krijg een onderbouwd totaalbeeld binnen 1 dag."
+      "body": "Van directie tot werkvloer, op elke vestiging, breng de risico's en veiligheidscultuur in kaart met AI-interviews, en krijg een onderbouwd totaalbeeld binnen één dag."
     },
     "products": {
       "scl": {
@@ -57,7 +56,8 @@
       "experience": "Ervaar een interview"
     },
     "possible": {
-      "title": "Je hele organisatie aan het woord. In een echt gesprek.",
+      "titleLine1": "Je hele organisatie aan het woord.",
+      "titleLine2": "In een echt gesprek.",
       "body": "Iedereen interviewen was tot nu toe onmogelijk. Dus sprak je een handvol mensen, of stuurde je een vragenlijst. Nu kun je iedereen spreken die ertoe doet, met de diepgang van een natuurlijk AI-interview.",
       "features": {
         "wide": {
@@ -147,9 +147,7 @@
       "clientsLabel": "Klanten",
       "partnersLabel": "Inhoud ontwikkeld met",
       "t1Body": "„Ik stond echt met mijn oren te klapperen. De kwaliteit van het gesprek was ongelofelijk.\"",
-      "t1Cite": "Frank van de Beek, Coning Adviesgroep",
-      "t2Body": "„Het is geen auditor die dat gesprek voert. Het is echt een gesprekspartner in een adviseursrol.\"",
-      "t2Cite": "Thomas Paans, QHSE, Brabant Water"
+      "t1Cite": "Frank van de Beek, Coning Adviesgroep"
     },
     "trust": {
       "dpaTitle": "Verwerkersovereenkomst",
