@@ -10,7 +10,7 @@
     "certification": "Certification",
     "rie": "RI&E",
     "about": "About",
-    "cta": "Run a stakeholder analysis",
+    "cta": "Book a meeting",
     "rieCta": "Wil je het zelf ervaren?"
   },
   "homeScl": {
@@ -982,6 +982,173 @@
         "error": "Er ging iets mis. Probeer het later opnieuw of mail info{'@'}helpr.ai.",
         "disclaimer": "We reageren binnen 24 uur. Vrijblijvend en zonder verplichtingen."
       }
+    }
+  },
+  "home": {
+    "meta": {
+      "title": "Helpr.ai · Geef iedereen het woord",
+      "description": "Van directie tot werkvloer, op elke vestiging, breng de risico's en veiligheidscultuur in kaart met AI-interviews. Een onderbouwd totaalbeeld binnen 1 dag."
+    },
+    "hero": {
+      "eyebrow": "Safety Culture Ladder · RI&E",
+      "title": "Geef iedereen het woord en ontdek wat er echt speelt.",
+      "payoff": "Geen zorgen: wij voeren alle gesprekken...",
+      "body1": "Van directie tot werkvloer, op elke vestiging, breng de risico's en veiligheidscultuur in kaart met AI-interviews.",
+      "body2": "Krijg een onderbouwd totaalbeeld binnen 1 dag."
+    },
+    "products": {
+      "scl": {
+        "title": "Safety Culture Ladder",
+        "lead": "De diepgang van een interne audit. Zorgvuldiger dan ooit, binnen één werkdag.",
+        "body": "Niet alleen de score, maar wat mensen op de werkvloer doen en waarom. Anders heb je alleen een cijfer.",
+        "b1": "Als interne audit, als nulmeting vóór certificering of als jaarlijkse meting",
+        "b2": "Gap-analyse per thema van de ladder, met het verbeterpotentieel per thema en plan van aanpak",
+        "b3": "De veiligheidskundige blijft in control",
+        "proof": "Bewezen bij onder meer Enexis: per vestiging binnen twee tot drie weken een totaalbeeld, met verbeterpunten per thema",
+        "price": "Vanaf € 1.495 per vestiging, t/m 25 interviews",
+        "cta": "Bekijk de SCL-aanpak"
+      },
+      "rie": {
+        "title": "RI&E: de nieuwe standaard!",
+        "lead": "Het nieuwe RI&E-platform van helpr.ai zet de nieuwe standaard op het gebied van risico's inventariseren en evalueren. Haal de kennis op bij de mensen uit de praktijk en geef ze het woord.",
+        "body": "De mensen die het werk doen vertellen zelf over de risico's die ze zien en ervaren. Wie gehoord is, herkent zich in de maatregelen en werkt mee aan de aanpak.",
+        "b1": "Een totaalbeeld van de risico's, breder dan wat de wet vraagt",
+        "b2": "Medewerkers die zelf hun risico's benoemen, en zich daardoor verantwoordelijk voelen voor de aanpak",
+        "b3": "De RI&E is op orde: volledig, onderbouwd en klaar voor de toetsing",
+        "proof": "Ontwikkeld door veiligheidsexperts met ruim 15 jaar ervaring.",
+        "price": "Start vandaag nog.",
+        "cta": "Bekijk de RI&E-aanpak"
+      },
+      "experience": "Ervaar een interview"
+    },
+    "possible": {
+      "title": "Je hele organisatie aan het woord. In een echt gesprek.",
+      "body": "Iedereen interviewen was tot nu toe onmogelijk. Dus sprak je een handvol mensen, of stuurde je een vragenlijst. Nu kun je iedereen spreken die ertoe doet, met de diepgang van een natuurlijk AI-interview.",
+      "features": {
+        "wide": {
+          "title": "Zo breed als je wilt",
+          "body": "Van directie tot werkvloer, op alle vestigingen, in alle ploegen. Desnoods de hele organisatie."
+        },
+        "rich": {
+          "title": "Een rijk gesprek",
+          "body": "Geen aankruisvakjes. De interviewer kent het vak en vraagt door op risico's, gedrag en de redenen erachter."
+        },
+        "fast": {
+          "title": "Snel resultaat",
+          "body": "Gesprekken op een eigen moment, zonder agenda's. Het rapport ligt er binnen één werkdag na het laatste gesprek."
+        },
+        "control": {
+          "title": "Jij houdt de regie",
+          "body": "Jij bepaalt wie wat gevraagd wordt, toetst de uitkomsten en vult aan waar nodig."
+        }
+      },
+      "quotesHeading": "Een gesprek haalt zoveel meer op dan een traditionele vragenlijst...",
+      "quotes": {
+        "q1": {
+          "tag": "RI&E · bevinding",
+          "body": "„Losliggende kabels worden hier geaccepteerd als iets dat bij het werk hoort, al vindt de deelnemer zelf ook dat het beter kan.\"",
+          "caption": "Een aankruisvakje levert dit niet op. Iemand die doorvraagt wel."
+        },
+        "q2": {
+          "tag": "Safety Culture Ladder · bevinding",
+          "body": "„Medewerkers melden onveilige situaties steeds minder, omdat ze na een melding niets meer terughoren. Meerdere deelnemers noemen het melden daardoor zinloos.\"",
+          "caption": "Een score zegt dat het thema lager scoort. Dit zegt waarom."
+        },
+        "q3": {
+          "tag": "Safety Culture Ladder · bevinding",
+          "body": "„Leidinggevenden zeggen dat veiligheid voorgaat, maar op drukke dagen gaat de planning voor. Medewerkers nemen dat signaal over en slaan de LMRA dan over.\"",
+          "caption": "Een vragenlijst meet wat mensen vinden. Een gesprek laat zien wat ze doen."
+        }
+      }
+    },
+    "bigQuote": {
+      "lead": "Kwaliteit, zorgvuldigheid en snelheid gaan eindelijk",
+      "accent": "hand in hand!"
+    },
+    "experience": {
+      "eyebrow": "Ervaar het zelf",
+      "title": "Een formulier heeft geen context en vraagt niet door.",
+      "payoff": "Breng risico's in kaart met de mensen die het werk verrichten.",
+      "body": "De AI-interviewer kent het vak, vraagt door waar een antwoord te makkelijk is en luistert naar wat er werkelijk gebeurt. Zo klinkt dat.",
+      "audioNote": "[Audio- of videofragment volgt, uit een afgerond interview, met toestemming]",
+      "cta": "Doe zelf een proefinterview",
+      "exampleNote": "Voorbeeldgesprek ter illustratie",
+      "tabScl": "Safety Culture Ladder",
+      "tabRie": "RI&E",
+      "roleAi": "AI-interviewer",
+      "roleWorker": "Medewerker",
+      "dialogScl": {
+        "q1": "Wanneer voelde dat voor het laatst niet veilig?",
+        "a1": "Vorige week. Bij de aansluiting op de mast.",
+        "q2": "Wat hield je tegen om er iets van te zeggen?",
+        "a2": "M'n ploegleider had haast. Ik wilde niet lastig zijn."
+      },
+      "dialogRie": {
+        "q1": "Zit er een beschermkap op de zaagmachine?",
+        "a1": "Ja, maar die staat bij ons altijd open. Anders zie je het blad niet. Iedereen doet dat.",
+        "q2": "Is daarbij weleens iets bijna misgegaan?",
+        "a2": "Vorige maand schoot er een stuk hout terug. Ik kon net opzij stappen.",
+        "q3": "Wat zou ervoor zorgen dat de kap wel dicht kan blijven?",
+        "a3": "Een doorzichtige kap. Dan zie je het blad gewoon en hoeft hij niet open."
+      }
+    },
+    "case": {
+      "eyebrow": "Case · Safety Culture Ladder",
+      "title": "Hoe Enexis een volledig beeld kreeg van de veiligheidscultuur in recordtijd.",
+      "body": "Enexis is gecertificeerd op trede 4 en wil de veiligheidscultuur verder versterken. De interne audit moest daarom meer opleveren dan een trede: het verhaal achter de score, met herkenbare situaties voor monteurs, werkvoorbereiders en teammanagers.",
+      "resultsLabel": "Wat het opleverde",
+      "r1": "Een representatief beeld per vestiging, van management tot werkvloer, met scores per subthema en praktijkvoorbeelden",
+      "r2": "Zichtbaar waar het melden vastloopt, waarom terugkoppeling op meldingen achterwege blijft en waar leidinggevenden een positieve invloed hebben",
+      "r3": "Het auditteam besteedt minder tijd aan interviewen en meer aan valideren, verdiepen en het ondersteunen van vestigingen",
+      "r4": "Na de pilot op drie vestigingen uitgebreid naar alle vestigingen en afdelingen",
+      "readMore": "Lees de case",
+      "quote": "„We zijn gestart met een pilot op drie vestigingen. Een belangrijk doel was om te onderzoeken hoe medewerkers die dagelijks in de praktijk werken de inzet van AI ervaren. De resultaten van de pilot waren zeer positief.\"",
+      "quoteCite": "Mirjam Kop, directeur HSEQ, Enexis Groep",
+      "stat1Value": "2 tot 3 weken",
+      "stat1Label": "doorlooptijd per vestiging",
+      "stat2Value": "1 werkdag",
+      "stat2Label": "van laatste interview tot rapport"
+    },
+    "partners": {
+      "clientsLabel": "Klanten",
+      "partnersLabel": "Inhoud ontwikkeld met",
+      "logoNote": "[Logo's van partnerorganisaties volgen na akkoord]",
+      "t1Body": "„Ik stond echt met mijn oren te klapperen. De kwaliteit van het gesprek was ongelofelijk.\"",
+      "t1Cite": "Frank van de Beek, Coning Adviesgroep",
+      "t2Body": "„Het is geen auditor die dat gesprek voert. Het is echt een gesprekspartner in een adviseursrol.\"",
+      "t2Cite": "Thomas Paans, QHSE, Brabant Water"
+    },
+    "trust": {
+      "dpaTitle": "Verwerkersovereenkomst",
+      "dpaBody": "Je gegevens blijven van jou; wij verwerken ze in jouw opdracht.",
+      "anonTitle": "Anoniem, per groep",
+      "anonBody": "Antwoorden worden gebundeld; niemand leest terug wie wat zei.",
+      "notrainTitle": "Geen modeltraining",
+      "notrainBody": "Gesprekken worden niet gebruikt om AI-modellen te trainen.",
+      "securityTitle": "Beveiliging en opslag",
+      "securityBody": "[Waar de data staat en hoe het platform beveiligd is, door Erik te bevestigen]",
+      "aiTitle": "Hoe wij AI inzetten",
+      "aiLink": "Lees de pagina AI & privacy",
+      "experts": "Ontwikkeld met specialisten. De vraagstelling is opgebouwd met veiligheidskundigen met ruim vijftien jaar praktijkervaring."
+    },
+    "contact": {
+      "title": "Ervaar het zelf, plan een demo.",
+      "body": "In twintig minuten laten we zien hoe een interview werkt en wat eruit komt.",
+      "b1": "Een proefinterview om zelf te ervaren",
+      "b2": "Inclusief rapportage en roadmap",
+      "b3": "Een voorstel voor een pilot",
+      "nameLabel": "Naam",
+      "orgLabel": "Organisatie",
+      "emailLabel": "E-mail",
+      "topicLabel": "Waarover?",
+      "topicScl": "Safety Culture Ladder",
+      "topicRie": "RI&E",
+      "topicBoth": "Beide",
+      "submit": "Plan een kennismaking",
+      "submitting": "Bezig...",
+      "submitted": "Bedankt! We nemen snel contact op.",
+      "error": "Er ging iets mis. Probeer het later opnieuw of mail info{'@'}helpr.ai.",
+      "disclaimer": "We reageren binnen één werkdag."
     }
   }
 }
