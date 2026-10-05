@@ -299,6 +299,7 @@
               <div class="bg-warm-ink rounded-lg px-4 py-2.5 opacity-80 hover:opacity-100 transition-opacity">
                 <img src="~/assets/images/logos/hoolwerfheiwerken_logo.svg" alt="Hoolwerf Heiwerken" class="h-7 w-auto" />
               </div>
+              <img src="~/assets/images/logos/kwaliteit_in_bedrijf.webp" alt="Kwaliteit in Bedrijf" class="h-10 w-auto opacity-90 hover:opacity-100 transition-opacity" />
             </div>
           </div>
 
@@ -312,7 +313,6 @@
                 <img src="~/assets/images/logos/coning_logo.png" alt="Coning Adviesgroep" class="h-9 w-auto opacity-90 hover:opacity-100 transition-opacity" />
               </a>
               <img src="~/assets/images/logos/improcon.svg" alt="Improcon" class="h-9 w-auto opacity-90 hover:opacity-100 transition-opacity" />
-              <img src="~/assets/images/logos/kwaliteit_in_bedrijf.webp" alt="Kwaliteit in Bedrijf" class="h-9 w-auto opacity-90 hover:opacity-100 transition-opacity" />
               <a href="https://certificeringsadvies.nl" target="_blank" rel="noopener noreferrer" aria-label="Certificeringsadvies Nederland">
                 <img src="~/assets/images/logos/certificeringsadvies_nederland_logo.svg" alt="Certificeringsadvies Nederland" class="h-9 w-auto opacity-90 hover:opacity-100 transition-opacity" />
               </a>
