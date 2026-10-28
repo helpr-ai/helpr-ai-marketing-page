@@ -11,7 +11,20 @@
     "rie": "RI&E",
     "about": "Over ons",
     "cta": "Plan een kennismaking",
-    "rieCta": "Wil je het zelf ervaren?"
+    "rieCta": "Wil je het zelf ervaren?",
+    "blog": "Blog"
+  },
+  "blog": {
+    "index": {
+      "eyebrow": "Blog",
+      "title": "Verhalen van helpr.ai",
+      "body": "Cases, inzichten en lessen uit het werk met onze klanten.",
+      "metaTitle": "Blog · Helpr.ai",
+      "metaDescription": "Verhalen, cases en inzichten over AI-interviews, Safety Culture Ladder, RI&E en meer.",
+      "empty": "Nog geen posts."
+    },
+    "readMore": "Lees het verhaal",
+    "back": "Terug naar het blog"
   },
   "homeScl": {
     "tag": "Verplicht vanaf 1 juli 2026",
@@ -148,6 +161,12 @@
       "partnersLabel": "Inhoud ontwikkeld met",
       "t1Body": "„Ik stond echt met mijn oren te klapperen. De kwaliteit van het gesprek was ongelofelijk.\"",
       "t1Cite": "Frank van de Beek, Coning Adviesgroep"
+    },
+    "blog": {
+      "eyebrow": "Blog",
+      "title": "Recent verschenen",
+      "body": "Cases en inzichten uit het werk met onze klanten.",
+      "cta": "Alle posts bekijken"
     },
     "trust": {
       "dpaTitle": "Verwerkersovereenkomst",

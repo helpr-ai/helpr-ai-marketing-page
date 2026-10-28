@@ -11,7 +11,8 @@
     "rie": "RI&E",
     "about": "About",
     "cta": "Book a meeting",
-    "rieCta": "Wil je het zelf ervaren?"
+    "rieCta": "Wil je het zelf ervaren?",
+    "blog": "Blog"
   },
   "homeScl": {
     "tag": "Mandatory from 1 July 2026",
@@ -1049,6 +1050,24 @@
       "submitted": "Bedankt! We nemen snel contact op.",
       "error": "Er ging iets mis. Probeer het later opnieuw of mail info{'@'}helpr.ai.",
       "disclaimer": "We reageren binnen één werkdag."
+    },
+    "blog": {
+      "eyebrow": "Blog",
+      "title": "Recent verschenen",
+      "body": "Cases en inzichten uit het werk met onze klanten.",
+      "cta": "Alle posts bekijken"
     }
+  },
+  "blog": {
+    "index": {
+      "eyebrow": "Blog",
+      "title": "Verhalen van helpr.ai",
+      "body": "Cases, inzichten en lessen uit het werk met onze klanten.",
+      "metaTitle": "Blog · Helpr.ai",
+      "metaDescription": "Verhalen, cases en inzichten over AI-interviews, Safety Culture Ladder, RI&E en meer.",
+      "empty": "Nog geen posts."
+    },
+    "readMore": "Lees het verhaal",
+    "back": "Terug naar het blog"
   }
 }

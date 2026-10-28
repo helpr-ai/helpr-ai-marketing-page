@@ -17,7 +17,11 @@ export default defineNuxtConfig({
         '/nl/rie',
         '/en/rie',
         '/nl/rie-voor-adviesbureaus',
-        '/en/rie-voor-adviesbureaus'
+        '/en/rie-voor-adviesbureaus',
+        '/nl/blog',
+        '/en/blog',
+        '/nl/blog/verbeterdag-ai-interviews',
+        '/en/blog/verbeterdag-ai-interviews'
       ]
     }
   },
@@ -89,6 +93,14 @@ export default defineNuxtConfig({
       'rie-voor-adviesbureaus': {
         nl: '/rie-voor-adviesbureaus',
         en: '/rie-voor-adviesbureaus'
+      },
+      'blog': {
+        nl: '/blog',
+        en: '/blog'
+      },
+      'blog-verbeterdag-ai-interviews': {
+        nl: '/blog/verbeterdag-ai-interviews',
+        en: '/blog/verbeterdag-ai-interviews'
       }
     }
   },

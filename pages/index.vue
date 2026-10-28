@@ -330,6 +330,54 @@
       </div>
     </section>
 
+    <!-- BLOG -->
+    <section v-if="latestPosts.length" class="pb-24 lg:pb-28">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-5 mb-10">
+          <div class="flex flex-col gap-3 max-w-2xl">
+            <p class="text-sm font-semibold uppercase tracking-wider text-navy-500">{{ $t('home.blog.eyebrow') }}</p>
+            <h2 class="font-display text-3xl lg:text-4xl text-warm-ink font-bold leading-tight">
+              {{ $t('home.blog.title') }}
+            </h2>
+            <p class="text-lg text-warm-ink/75 leading-relaxed">{{ $t('home.blog.body') }}</p>
+          </div>
+          <NuxtLink
+            :to="localePath('blog')"
+            class="hidden sm:inline-flex items-center text-navy-500 font-semibold hover:text-navy-600 whitespace-nowrap"
+          >
+            {{ $t('home.blog.cta') }} →
+          </NuxtLink>
+        </div>
+        <div class="grid md:grid-cols-2 gap-6">
+          <NuxtLink
+            v-for="post in latestPosts"
+            :key="post.slug"
+            :to="localePath({ name: `blog-${post.slug}` as any })"
+            class="group block bg-white border border-warm-border rounded-2xl shadow-card hover:shadow-modal transition-shadow p-8 flex flex-col gap-3"
+          >
+            <div class="flex flex-wrap items-center gap-2 text-xs font-semibold">
+              <span class="uppercase tracking-wider text-navy-500">{{ post.tag }}</span>
+              <span class="text-warm-gray">·</span>
+              <span class="text-warm-gray">{{ post.dateDisplay }}</span>
+            </div>
+            <h3 class="font-display text-2xl text-warm-ink font-bold leading-snug group-hover:text-navy-500 transition-colors">
+              {{ post.title }}
+            </h3>
+            <p class="text-warm-ink/75 leading-relaxed">{{ post.excerpt }}</p>
+            <span class="text-navy-500 font-semibold mt-auto pt-2 inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+              {{ $t('blog.readMore') }} →
+            </span>
+          </NuxtLink>
+        </div>
+        <NuxtLink
+          :to="localePath('blog')"
+          class="sm:hidden mt-6 inline-flex items-center text-navy-500 font-semibold hover:text-navy-600"
+        >
+          {{ $t('home.blog.cta') }} →
+        </NuxtLink>
+      </div>
+    </section>
+
     <!-- VERTROUWEN -->
     <section id="vertrouwen" class="pb-24 lg:pb-32 scroll-mt-24">
       <div class="mx-auto max-w-7xl px-6 lg:px-8">
@@ -437,6 +485,9 @@ const featureKeys = ['wide', 'rich', 'fast', 'control'] as const
 const quoteKeys = ['q1', 'q2', 'q3'] as const
 
 const activeDialog = ref<'scl' | 'rie'>('scl')
+
+const { latest } = useBlogPosts()
+const latestPosts = latest(2)
 
 useHead(() => ({
   title: t('home.meta.title'),
