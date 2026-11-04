@@ -24,7 +24,7 @@
     <section class="pb-14">
       <div class="mx-auto max-w-5xl px-6 lg:px-8">
         <img
-          src="~/assets/images/blog/6-10-26_Nationale-Verbeterdag_Oktober-2026_Fort-Voordorp177_Coen-Koppen-Fotografie.jpeg"
+          src="/images/blog/6-10-26_Nationale-Verbeterdag_Oktober-2026_Fort-Voordorp177_Coen-Koppen-Fotografie.jpeg"
           alt="Nationale Verbeterdag 2026 — Fort Voordorp"
           class="w-full aspect-[16/9] object-cover rounded-2xl shadow-card"
         />
@@ -114,7 +114,7 @@
     <section class="pb-16">
       <div class="mx-auto max-w-4xl px-6 lg:px-8">
         <img
-          src="~/assets/images/blog/6-10-26_Nationale-Verbeterdag_Oktober-2026_Fort-Voordorp101_Coen-Koppen-Fotografie.jpg"
+          src="/images/blog/6-10-26_Nationale-Verbeterdag_Oktober-2026_Fort-Voordorp101_Coen-Koppen-Fotografie.jpg"
           alt="Nationale Verbeterdag 2026 — Fort Voordorp"
           class="w-full aspect-[3/2] object-cover rounded-2xl shadow-card"
         />

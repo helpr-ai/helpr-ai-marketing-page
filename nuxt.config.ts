@@ -21,7 +21,9 @@ export default defineNuxtConfig({
         '/nl/blog',
         '/en/blog',
         '/nl/blog/verbeterdag-ai-interviews',
-        '/en/blog/verbeterdag-ai-interviews'
+        '/en/blog/verbeterdag-ai-interviews',
+        '/nl/blog/enexis-safety-culture-ladder',
+        '/en/blog/enexis-safety-culture-ladder'
       ]
     }
   },
@@ -101,6 +103,10 @@ export default defineNuxtConfig({
       'blog-verbeterdag-ai-interviews': {
         nl: '/blog/verbeterdag-ai-interviews',
         en: '/blog/verbeterdag-ai-interviews'
+      },
+      'blog-enexis-safety-culture-ladder': {
+        nl: '/blog/enexis-safety-culture-ladder',
+        en: '/blog/enexis-safety-culture-ladder'
       }
     }
   },

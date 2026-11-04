@@ -353,20 +353,35 @@
             v-for="post in latestPosts"
             :key="post.slug"
             :to="localePath({ name: `blog-${post.slug}` as any })"
-            class="group block bg-white border border-warm-border rounded-2xl shadow-card hover:shadow-modal transition-shadow p-8 flex flex-col gap-3"
+            class="group block bg-white border border-warm-border rounded-2xl shadow-card hover:shadow-modal transition-shadow overflow-hidden flex flex-col"
           >
-            <div class="flex flex-wrap items-center gap-2 text-xs font-semibold">
-              <span class="uppercase tracking-wider text-navy-500">{{ post.tag }}</span>
-              <span class="text-warm-gray">·</span>
-              <span class="text-warm-gray">{{ post.dateDisplay }}</span>
+            <div
+              v-if="post.heroImage"
+              :class="[
+                'relative aspect-[16/9] overflow-hidden bg-warm-bg',
+                post.heroImageContain ? 'flex items-center justify-center p-8' : ''
+              ]"
+            >
+              <img
+                :src="post.heroImage"
+                :alt="post.heroImageAlt"
+                :class="post.heroImageContain ? 'max-h-full w-auto object-contain' : 'absolute inset-0 w-full h-full object-cover'"
+              />
             </div>
-            <h3 class="font-display text-2xl text-warm-ink font-bold leading-snug group-hover:text-navy-500 transition-colors">
-              {{ post.title }}
-            </h3>
-            <p class="text-warm-ink/75 leading-relaxed">{{ post.excerpt }}</p>
-            <span class="text-navy-500 font-semibold mt-auto pt-2 inline-flex items-center gap-1 group-hover:gap-2 transition-all">
-              {{ $t('blog.readMore') }} →
-            </span>
+            <div class="p-8 flex flex-col gap-3 flex-grow">
+              <div class="flex flex-wrap items-center gap-2 text-xs font-semibold">
+                <span class="uppercase tracking-wider text-navy-500">{{ post.tag }}</span>
+                <span class="text-warm-gray">·</span>
+                <span class="text-warm-gray">{{ post.dateDisplay }}</span>
+              </div>
+              <h3 class="font-display text-2xl text-warm-ink font-bold leading-snug group-hover:text-navy-500 transition-colors">
+                {{ post.title }}
+              </h3>
+              <p class="text-warm-ink/75 leading-relaxed">{{ post.excerpt }}</p>
+              <span class="text-navy-500 font-semibold mt-auto pt-2 inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                {{ $t('blog.readMore') }} →
+              </span>
+            </div>
           </NuxtLink>
         </div>
         <NuxtLink
