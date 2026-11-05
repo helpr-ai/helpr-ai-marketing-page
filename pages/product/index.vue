@@ -20,31 +20,31 @@
       <div class="mx-auto max-w-6xl px-6 lg:px-8">
         <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
           <NuxtLink
-            :to="localePath('product-toolbox')"
+            :to="localePath('certificering-safety-culture-ladder')"
             class="group relative flex flex-col p-8 lg:p-10 bg-white rounded-2xl border border-warm-border shadow-card hover:shadow-card-hover hover:border-navy-500 transition-all"
           >
             <span class="inline-flex items-center self-start px-3 py-1 rounded-full bg-navy-50 text-navy-700 text-xs font-semibold uppercase tracking-wider mb-6">
-              {{ $t('product.overview.cards.toolbox.tag') }}
-            </span>
-            <h2 class="font-display text-3xl text-warm-ink font-bold mb-4">{{ $t('product.overview.cards.toolbox.title') }}</h2>
-            <p class="text-warm-ink/70 leading-relaxed mb-8">{{ $t('product.overview.cards.toolbox.description') }}</p>
-            <span class="mt-auto inline-flex items-center text-navy-500 font-semibold group-hover:translate-x-1 transition-transform">
-              {{ $t('product.overview.cards.toolbox.cta') }}
-              <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
-            </span>
-          </NuxtLink>
-
-          <NuxtLink
-            :to="localePath('product-safety-culture-ladder')"
-            class="group relative flex flex-col p-8 lg:p-10 bg-white rounded-2xl border border-warm-border shadow-card hover:shadow-card-hover hover:border-navy-500 transition-all"
-          >
-            <span class="inline-flex items-center self-start px-3 py-1 rounded-full bg-amber-50 text-gold-600 text-xs font-semibold uppercase tracking-wider mb-6">
               {{ $t('product.overview.cards.scl.tag') }}
             </span>
             <h2 class="font-display text-3xl text-warm-ink font-bold mb-4">{{ $t('product.overview.cards.scl.title') }}</h2>
             <p class="text-warm-ink/70 leading-relaxed mb-8">{{ $t('product.overview.cards.scl.description') }}</p>
             <span class="mt-auto inline-flex items-center text-navy-500 font-semibold group-hover:translate-x-1 transition-transform">
               {{ $t('product.overview.cards.scl.cta') }}
+              <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+            </span>
+          </NuxtLink>
+
+          <NuxtLink
+            :to="localePath('rie')"
+            class="group relative flex flex-col p-8 lg:p-10 bg-white rounded-2xl border border-warm-border shadow-card hover:shadow-card-hover hover:border-navy-500 transition-all"
+          >
+            <span class="inline-flex items-center self-start px-3 py-1 rounded-full bg-navy-50 text-navy-700 text-xs font-semibold uppercase tracking-wider mb-6">
+              {{ $t('product.overview.cards.rie.tag') }}
+            </span>
+            <h2 class="font-display text-3xl text-warm-ink font-bold mb-4">{{ $t('product.overview.cards.rie.title') }}</h2>
+            <p class="text-warm-ink/70 leading-relaxed mb-8">{{ $t('product.overview.cards.rie.description') }}</p>
+            <span class="mt-auto inline-flex items-center text-navy-500 font-semibold group-hover:translate-x-1 transition-transform">
+              {{ $t('product.overview.cards.rie.cta') }}
               <svg class="ml-2 h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
             </span>
           </NuxtLink>

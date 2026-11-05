@@ -202,20 +202,20 @@
   "product": {
     "overview": {
       "eyebrow": "Producten",
-      "title": "De AI-toolbox voor certificerend Nederland.",
-      "subtitle": "Klaar voor de normen, ladders en standaarden waar jouw klanten tegenaan lopen. Modulair, schaalbaar en steeds groeiend.",
+      "title": "AI-interviews voor SCL en RI&E.",
+      "subtitle": "Breed en diepgaand inzicht in veiligheidscultuur en risico's, met de juiste mensen aan het woord.",
       "cards": {
-        "toolbox": {
-          "tag": "AI-toolbox",
-          "title": "De Toolbox",
-          "description": "Modulaire AI-interviews voor ISO 9001, 14001, 27001, 42001, de CO₂-prestatieladder en meer. Cherrypick of compleet traject.",
-          "cta": "Bekijk de Toolbox"
-        },
         "scl": {
-          "tag": "Verplicht vanaf 1 juli 2026",
+          "tag": "Safety Culture Ladder",
           "title": "Safety Culture Ladder",
-          "description": "AI-interviews die meer ophalen dan een vragenlijst kan. Klaar voor de SCL-certificering in bouw en infra.",
+          "description": "De diepgang van een interne audit, binnen één werkdag. Niet alleen de score, maar het verhaal achter de score.",
           "cta": "Naar Safety Culture Ladder"
+        },
+        "rie": {
+          "tag": "Nieuwe standaard",
+          "title": "RI&E",
+          "description": "Haal kennis op bij de mensen uit de praktijk en krijg een volledig RI&E-rapport met plan van aanpak.",
+          "cta": "Naar RI&E"
         }
       }
     },

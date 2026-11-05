@@ -26,7 +26,7 @@
       </nav>
 
       <div class="hidden md:flex items-center gap-3">
-        <div class="relative">
+        <div v-if="SHOW_LANGUAGE_SWITCHER" class="relative">
           <button
             @click.stop="showLangDropdown = !showLangDropdown"
             class="flex items-center gap-1 px-2 py-1.5 rounded-md hover:bg-warm-bg transition-colors text-sm font-semibold text-warm-ink/70"
@@ -93,7 +93,7 @@
           {{ ctaLabel }}
         </a>
 
-        <div class="pt-3 mt-3 border-t border-warm-border">
+        <div v-if="SHOW_LANGUAGE_SWITCHER" class="pt-3 mt-3 border-t border-warm-border">
           <div class="text-xs uppercase tracking-wide text-warm-gray font-semibold mb-2 px-3">Language</div>
           <div class="flex gap-2 px-3">
             <NuxtLink
@@ -124,13 +124,19 @@ const { locale, locales } = useI18n({ useScope: 'global' })
 const localePath = useLocalePath()
 const switchLocalePath = useSwitchLocalePath()
 
+// Flip this to true to re-enable the English language switcher
+// once all pages have been translated. The /en/ routes still exist either way.
+const SHOW_LANGUAGE_SWITCHER = false
+
 const localeFlags: Record<string, string> = { nl: '🇳🇱', en: '🇬🇧' }
 const currentLocaleFlag = computed(() => localeFlags[locale.value] || '🌐')
 const availableLocales = computed(() =>
-  (locales.value as Array<{ code: string; name: string }>).map(loc => ({
-    ...loc,
-    flag: localeFlags[loc.code] || '🌐'
-  }))
+  (locales.value as Array<{ code: string; name: string }>)
+    .filter(loc => SHOW_LANGUAGE_SWITCHER || loc.code === 'nl')
+    .map(loc => ({
+      ...loc,
+      flag: localeFlags[loc.code] || '🌐'
+    }))
 )
 
 const showLangDropdown = ref(false)

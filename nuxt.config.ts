@@ -49,11 +49,10 @@ export default defineNuxtConfig({
     strategy: 'prefix',
     lazy: true,
     langDir: 'locales/',
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'i18n_redirected',
-      redirectOn: 'root'
-    },
+    // Browser-based taaldetectie staat uit zolang de EN-vertalingen nog niet bij zijn.
+    // Iedereen landt op NL; de /en/ routes blijven bestaan en bereikbaar.
+    // Zet deze terug op het object-form zodra EN volledig vertaald is.
+    detectBrowserLanguage: false,
     customRoutes: 'config',
     pages: {
       'index': {
