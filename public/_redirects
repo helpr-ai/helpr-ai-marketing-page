@@ -1,6 +1,9 @@
-# Redirect root based on browser language
-/ /nl/ 302 Language=nl
-/ /en/ 302
+# Root altijd naar NL zolang de EN-vertalingen nog niet bij zijn.
+# Zodra EN compleet is: onderstaande regel vervangen door het paar hieronder
+# (NL voor NL-browsers, EN als fallback).
+/ /nl/ 302
+# / /nl/ 302 Language=nl
+# / /en/ 302
 
 # Old paths → homepage
 /over-ons /nl/over-ons/ 301
