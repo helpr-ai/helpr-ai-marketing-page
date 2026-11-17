@@ -69,6 +69,7 @@
           <a href="https://certificeringsadvies.nl" target="_blank" rel="noopener noreferrer" aria-label="Certificeringsadvies Nederland">
             <img src="~/assets/images/logos/certificeringsadvies_nederland_logo.svg" alt="Certificeringsadvies Nederland" class="h-10 w-auto opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
           </a>
+          <img src="~/assets/images/logos/vink_logo.svg" alt="Vink" class="h-10 w-auto opacity-70 hover:opacity-100 transition-opacity grayscale hover:grayscale-0" />
         </div>
       </div>
     </section>

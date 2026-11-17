@@ -78,10 +78,11 @@ body {
   word-break: normal;
 }
 
-h1, h2, h3, h4, h5, h6, .font-display {
-  -webkit-hyphens: auto;
-  hyphens: auto;
+h1, h2, h3, h4, h5, h6, .font-display, blockquote {
+  -webkit-hyphens: manual;
+  hyphens: manual;
   overflow-wrap: break-word;
+  text-wrap: balance;
 }
 
 h1, h2, .font-display {

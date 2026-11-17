@@ -424,171 +424,343 @@
     }
   },
   "scl": {
-    "eyebrow": "Safety Culture Ladder Original for businesses",
-    "title": "An SCL Original certificate. For {price}.",
-    "price": "€1,499",
-    "subtitle": "Too good to be true? It isn't. Experience the power of AI.",
-    "intro": "From {deadline}, SCL Step 3 is mandatory in construction and infrastructure. SCL Original is the only variant that leads to a full certificate. Traditional trajectories cost {oldPrice} and take months. We do it differently.",
-    "deadline": "1 July 2026",
-    "oldPrice": "€4,000 to €15,000",
-    "ctaPrimary": "Sign up",
-    "today": "Sign up today, start today.",
-    "photoAlt": "Safety Culture Ladder",
-    "pain": {
-      "eyebrow": "The pressure",
-      "title": "The clock is ticking. And costs keep rising.",
-      "body1": "Without Safety Culture Ladder Step 3 you'll be excluded from construction and infrastructure tenders {deadlineLink}. No full certificate, no contract.",
-      "deadlineLink": "from 1 July 2026",
-      "body2": "Meanwhile a traditional Safety Culture Ladder trajectory runs into thousands of euros and months of work. Consultants billing by the hour, questionnaires that miss the actual practice, reports stuck in policy language.",
-      "body3": "We do it differently. Cheaper, faster, with more quality."
+    "meta": {
+      "title": "Safety Culture Ladder · Helpr.ai",
+      "description": "Het verhaal achter je SCL-score. Helpr spreekt management en medewerkers in AI-interviews van 20 tot 30 minuten. Per vestiging of afdeling een onderbouwd beeld op de thema's van SCL 2.0."
     },
-    "why": {
-      "eyebrow": "Why this works",
-      "title": "AI does the heavy lifting. For a fraction of the price.",
-      "body": "Our AI runs the interviews with management and employees. Real conversations, no questionnaires. People talk more openly to an AI than to an external auditor. That gives a more honest and more complete picture. We process the outcomes anonymously into an audit‑ready dossier for the Safety Culture Ladder. No consultant billing by the hour, no towering invoice."
+    "hero": {
+      "eyebrow": "Safety Culture Ladder",
+      "title": "Het verhaal achter je SCL-score.",
+      "body": "Helpr interviewt management en medewerkers in AI-interviews van 20 tot 30 minuten. Je krijgt per vestiging of afdeling een onderbouwd beeld op de thema's van SCL 2.0, met voorbeelden uit de praktijk.",
+      "ctaPrimary": "Ervaar een interview",
+      "ctaSecondary": "Plan een gesprek",
+      "proof": "Ingezet door Enexis op 17 vestigingen en afdelingen.",
+      "clipLabel": "Zo klinkt een interview",
+      "clipPlatform": "Op YouTube",
+      "clipQuestion": "„Wat hield je tegen om er iets van te zeggen?\"",
+      "clipAnswer": "„De ploegleider had haast. Ik wilde niet lastig zijn.\"",
+      "clipCaption": "Voorbeeldgesprek ter illustratie",
+      "youtubeUrl": "https://www.youtube.com/watch?v=7HqWF69dVKQ"
     },
-    "support": {
-      "eyebrow": "Fully handled",
-      "title": "A qualified Safety Culture Ladder advisor guides your trajectory.",
-      "body": "We facilitate the interviews with management and employees and deliver the report. From there our qualified advisor translates the outcomes into concrete steps for training, implementation and communication. Ready for the audit."
+    "stats": {
+      "s1Value": "3 → 17",
+      "s1Label": "Enexis ging van 3 naar 17 vestigingen en afdelingen",
+      "s2Value": "90%",
+      "s2Label": "van de deelnemers is (zeer) positief",
+      "s3Value": "85%",
+      "s3Label": "zou opnieuw meedoen",
+      "source": "Percentages uit de evaluatie van Enexis onder deelnemers aan de pilot."
     },
-    "how": {
-      "eyebrow": "The trajectory",
-      "title": "Step by step to your SCL Original certificate.",
-      "intro": "An efficient certification trajectory starts with your sign-up. From there we take care of the whole process, in eight concrete steps.",
-      "steps": {
-        "baseline": {
-          "title": "Baseline measurement",
-          "body": "Our AI runs conversations with management and employees. Real interviews, anonymously processed. That's how we honestly map the current safety culture."
+    "compare": {
+      "body": "Echte gesprekken laten zien wat er op de werkvloer gebeurt, maar je bent zelf beperkt inzetbaar. Een vragenlijst daarentegen bereikt iedereen, maar geeft alleen een cijfer. En mensen geven vaak het antwoord dat gewenst is. Daarom bieden AI-interviews uitkomst.",
+      "questionnaireTag": "De vragenlijst",
+      "questionnaireQuestion": "Weet je welk gedrag bij veilig en gezond werken hoort? En wat gebeurt er wanneer je je daar niet aan houdt?",
+      "questionnaireMin": "Trede 1",
+      "questionnaireMax": "Trede 5",
+      "questionnaireOutcome": "Uitkomst: een cijfer.",
+      "dialogTag": "Het gesprek",
+      "dialogQ1": "Wat gebeurt er als iemand zich niet aan de afspraken houdt?",
+      "dialogA1": "Meestal niks. Pas als het misgaat zegt de leiding er iets van.",
+      "dialogQ2": "Wanneer zag je dat voor het laatst gebeuren?",
+      "dialogA2": "Vorige week bij de mast. De ploegleider had haast, dus ik zei niks.",
+      "dialogOutcome": "Uitkomst: wat er gebeurt, en waarom.",
+      "quote2": "„Leidinggevenden zeggen dat veiligheid voorgaat, maar op drukke dagen gaat de planning voor. Medewerkers nemen dat signaal over en slaan de LMRA dan over.\"",
+      "titleLine1": "Een score zegt wáár je staat.",
+      "titleLine2": "Niet waarom."
+    },
+    "tryit": {
+      "title": "Ervaar het zelf.",
+      "body": "Laat je emailadres achter en krijg een uitnodiging voor een AI-interview.",
+      "videoLink": "Liever eerst kijken? Bekijk het filmpje",
+      "formTitle": "Vraag je proefinterview aan",
+      "emailLabel": "Zakelijk e-mailadres",
+      "emailPlaceholder": "naam{'@'}bedrijf.nl",
+      "submit": "Stuur mij een uitnodiging",
+      "micNote": "We nemen binnen één werkdag contact op met een link naar het interview.",
+      "submitting": "Bezig...",
+      "submitted": "Bedankt! Je hoort snel van ons.",
+      "error": "Er ging iets mis. Probeer het later opnieuw of mail info{'@'}helpr.ai."
+    },
+    "howItWorks": {
+      "eyebrow": "Hoe het werkt",
+      "title": "In 5 stappen van een eerste gesprek naar een veilige werkcultuur.",
+      "context": {
+        "title": "Contextinterview",
+        "body": "De HSE-coördinator vertelt hoe de organisatie werkt.",
+        "duration": "10 tot 15 minuten"
+      },
+      "kickoff": {
+        "title": "Kick-off",
+        "body": "De deelnemers horen wat er gaat gebeuren en waarom.",
+        "duration": "Ongeveer 20 minuten"
+      },
+      "interviews": {
+        "title": "Interviews",
+        "body": "Op een eigen moment, via telefoon of computer.",
+        "duration": "20 tot 30 minuten"
+      },
+      "report": {
+        "title": "Rapport",
+        "body": "Klaar na het laatste interview.",
+        "duration": "Binnen één werkdag"
+      },
+      "improve": {
+        "title": "Verbeteren",
+        "body": "Jij valideert, verdiept en stuurt op verbetering.",
+        "duration": ""
+      },
+      "footnote": "Gemiddeld twee weken per vestiging of afdeling."
+    },
+    "report": {
+      "eyebrow": "Wat je krijgt",
+      "title": "Per vestiging of afdeling een rapport waar je mee verder kunt.",
+      "summary": {
+        "title": "Managementsamenvatting",
+        "body": "De belangrijkste bevindingen voor de directie."
+      },
+      "indication": {
+        "title": "Indicatie per thema en subthema",
+        "body": "Op de thema's van SCL 2.0."
+      },
+      "diff": {
+        "title": "Verschil management en medewerkers",
+        "body": "Waar de beelden uit elkaar lopen."
+      },
+      "examples": {
+        "title": "Voorbeelden uit de praktijk",
+        "body": "Uit de gesprekken zelf."
+      },
+      "gap": {
+        "title": "Gap-analyse",
+        "body": "Wat er nodig is voor de volgende trede."
+      },
+      "actions": {
+        "title": "Voorgestelde acties",
+        "body": "Waar je morgen mee kunt beginnen."
+      },
+      "cta": "Bekijk een voorbeeldrapport",
+      "mockTitle": "Interne meting SCL",
+      "mockSubtitle": "Vestiging Noord",
+      "mockBadge": "Voorbeeld met fictieve gegevens",
+      "mockSummaryLabel": "Managementsamenvatting",
+      "mockSummary": "Management en medewerkers verschillen het meest op Leren en verbeteren. Medewerkers melden minder, omdat ze na een melding niets meer terughoren.",
+      "mockIndicationLabel": "Indicatie per thema",
+      "mockLegendManagement": "Management",
+      "mockLegendEmployees": "Medewerkers",
+      "mockTrede": "Trede",
+      "mockGroupBeleid": "Beleid en leiderschap",
+      "mockGroupKennis": "Kennis en vaardigheden",
+      "mockGroupProcessen": "Primaire en secundaire processen",
+      "mockGroupSamenwerken": "Samenwerken met externe partijen",
+      "mockGroupLeren": "Leren en verbeteren",
+      "mockQuoteLabel": "Uit de gesprekken",
+      "mockQuote": "„Vorige week bij de mast. De ploegleider had haast, dus ik zei niks.\"",
+      "mockGapLabel": "Gap-analyse",
+      "mockGap": "Voor trede 4 op Leren en verbeteren is vaste terugkoppeling op meldingen nodig.",
+      "mockActionLabel": "Voorgestelde actie",
+      "mockAction": "Leg per vestiging vast wie er op elke melding terugkomt, en binnen welke termijn."
+    },
+    "role": {
+      "eyebrow": "Plaats in het SCL-traject",
+      "helprLabel": "Helpr",
+      "helprTitle": "Interne meting",
+      "helprBody": "Interviews met management en medewerkers, per vestiging of afdeling.",
+      "verifyLabel": "Jij of je adviseur",
+      "verifyTitle": "Verificatie en werkplekbezoeken",
+      "verifyBody": "Je toetst de uitkomsten en gaat gerichter de werkplek op.",
+      "auditLabel": "Certificerende instelling",
+      "auditTitle": "Externe audit",
+      "auditBody": "De onafhankelijke beoordeling, zoals je SCL-product die voorschrijft.",
+      "titleLine1": "Helpr doet de interne meting.",
+      "titleLine2": "De audit blijft bij de certificerende instelling."
+    },
+    "products": {
+      "title": "Waar Helpr past in de SCL-producten",
+      "colProduct": "Product",
+      "colOutcome": "Uitkomst",
+      "colAudit": "Externe audit",
+      "colQuestionnaire": "Vragenlijst",
+      "colRole": "Rol van Helpr",
+      "coreTag": "Kernproduct",
+      "originalName": "SCL Original",
+      "originalOutcome": "Certificaat, trede 1 t/m 5",
+      "originalAudit": "100% in alle drie de jaren",
+      "originalQuestionnaire": "Vrije keuze",
+      "originalRole": "Vervangt de eigen vragenlijst",
+      "sclName": "SCL",
+      "sclOutcome": "Certificaat",
+      "sclAudit": "100% in jaar 1, 40% in jaar 2 en 3",
+      "sclQuestionnaire": "Vrije keuze",
+      "sclRole": "Vervangt de eigen vragenlijst",
+      "lightName": "SCL Light",
+      "lightOutcome": "Verklaring met trede-indicatie",
+      "lightAudit": "40% in jaar 1",
+      "lightQuestionnaire": "SAQ verplicht",
+      "lightRole": "Alleen verdieping naast de SAQ",
+      "lightSmallName": "SCL Light klein",
+      "lightSmallNameSub": "5 tot 50 medewerkers",
+      "lightSmallOutcome": "Verklaring",
+      "lightSmallAudit": "Geen in jaar 3 bij aantoonbare voortgang",
+      "lightSmallQuestionnaire": "Zelfverklaring via webtool",
+      "lightSmallRole": "Alleen verdieping",
+      "selfName": "Self Assessment",
+      "selfOutcome": "Zelfverklaring",
+      "selfAudit": "Geen",
+      "selfQuestionnaire": "Via webtool",
+      "selfRole": "Alleen verdieping",
+      "note": "Helpr is geen certificerende instelling en geeft geen certificaat. Observaties op de werkplek, rondgangen en documentcontrole blijven bij jou of je adviseur."
+    },
+    "trust": {
+      "title": "Waarom je de uitkomst kunt vertrouwen.",
+      "body": "Helpr verkoopt geen certificaat en heeft dus geen belang bij een hoge uitkomst. De uitkomst kan ook lager uitvallen, en dat is precies waar je iets aan hebt.",
+      "sampleTitle": "Steekproef",
+      "sampleBody": "We volgen de steekproef die NEN hanteert: meestal 20 tot 25 medewerkers en rond 5 managers per eenheid. De grootte blijft jouw keuze.",
+      "scoringTitle": "Scoring",
+      "scoringBody": "De norm beschrijft gedrag per trede. De interviewer zoekt daarnaar en vraagt door.",
+      "langTitle": "Taal",
+      "langBody": "Een indicatie per trede of de ontwikkeling per thema, wat bij jullie past.",
+      "controlTitle": "Controle",
+      "controlBody": "Jouw veiligheidskundige beoordeelt de uitkomsten en blijft verantwoordelijk."
+    },
+    "floor": {
+      "eyebrow": "De werkvloer doet mee",
+      "title": "Waarom de werkvloer meedoet.",
+      "body1": "De AI-interviewer past zich aan de deelnemer aan.",
+      "body2": "Zo doen ook mensen mee die je met een vragenlijst niet bereikt, zoals collega's op de bouwplaats die moeite hebben met lezen of schrijven.",
+      "statValue": "50 tot 80%",
+      "statLabel": "respons op de eerste dag, dankzij een kick-off die wij verzorgen.",
+      "items": {
+        "language": {
+          "title": "Eigen taalniveau",
+          "body": "De interviewer stemt zijn taal af op de deelnemer."
         },
-        "gap": {
-          "title": "Gap analysis",
-          "body": "A qualified SCL advisor compares the outcomes with the requirements for your target step. Crystal clear: what's already there, what still needs work."
+        "languages": {
+          "title": "Meerdere talen",
+          "body": "Deelnemers praten in de taal die voor hen het makkelijkst is."
         },
-        "buyin": {
-          "title": "Building support",
-          "body": "We share findings across every layer of the organisation. Our advisor helps leadership lock in commitment. No buy-in, no change."
+        "moment": {
+          "title": "Eigen moment",
+          "body": "Via telefoon of computer, wanneer het uitkomt."
         },
-        "plan": {
-          "title": "Action plan",
-          "body": "We deliver a concrete plan with measures, timelines and owners. No abstract policy papers, just a workable plan for your organisation."
-        },
-        "training": {
-          "title": "Training",
-          "body": "Our advisor recommends the training needed to raise the safety level in your organisation. Delivery is up to you."
-        },
-        "implementation": {
-          "title": "Implementation",
-          "body": "You roll out the measures to make your organisation safer and more aware. Our advisor keeps a sharp eye on progress."
-        },
-        "preaudit": {
-          "title": "Pre-audit",
-          "body": "We test your readiness for the official audit. No surprises, no loose ends. You enter the audit with confidence."
-        },
-        "audit": {
-          "title": "Certification",
-          "body": "An accredited certification body runs the official audit. We guide you all the way to flawless audit preparation."
+        "examples": {
+          "title": "Met voorbeelden",
+          "body": "Is een vraag niet duidelijk, dan geeft de interviewer een voorbeeld."
         }
       }
+    },
+    "case": {
+      "eyebrow": "Case Enexis",
+      "quote": "„We zijn gestart met een pilot op drie vestigingen. Een belangrijk doel was om te onderzoeken hoe medewerkers die dagelijks in de praktijk werken de inzet van AI ervaren. De resultaten van de pilot waren zeer positief.\"",
+      "cite": "Mirjam Kop",
+      "citeRole": "Directeur HSEQ, Enexis Groep",
+      "situationLabel": "Situatie",
+      "situation": "Enexis is gecertificeerd op trede 4 en wil het verhaal achter de score.",
+      "resultLabel": "Resultaat",
+      "result": "Van een pilot op drie vestigingen naar 17 vestigingen en afdelingen. Uit de eigen evaluatie: 90% (zeer) positief, 85% zou opnieuw meedoen.",
+      "cta": "Lees de volledige case"
+    },
+    "price": {
+      "eyebrow": "Prijs",
+      "title": "Eén heldere prijsstelling.",
+      "body": "Voor iedere klant dezelfde prijs per vestiging of afdeling.",
+      "amount": "€ 1.495",
+      "unit": "per rapport, voor één vestiging of afdeling",
+      "inc1": "T/m 25 interviews",
+      "inc2": "Contextinterview",
+      "inc3": "Kick-off",
+      "inc4": "Analyse en rapportage",
+      "extraLabel": "Per 25 extra interviews",
+      "extraValue": "€ 645",
+      "pilotLabel": "Pilot op drie eenheden",
+      "pilotValue": "vanaf € 4.485",
+      "cta": "Plan een gesprek",
+      "vat": "Alle bedragen exclusief btw."
+    },
+    "privacy": {
+      "title": "Privacy en beveiliging",
+      "voiceTitle": "Je stem",
+      "voiceBody": "We bewaren geen audio, ook niet bij leveranciers.",
+      "accessTitle": "Wie wat kan zien",
+      "accessBody": "Je krijgt uitkomsten per groep. Personen zijn niet op te vragen.",
+      "trainingTitle": "Geen modeltraining",
+      "trainingBody": "Gesprekken worden niet gebruikt om modellen te trainen.",
+      "dpaTitle": "Verwerkersovereenkomst",
+      "dpaBody": "Die sluiten we met elke klant.",
+      "link": "Alles over privacy en beveiliging"
     },
     "faq": {
-      "eyebrow": "Frequently asked questions",
-      "title": "Frequently asked questions about efficient certification with Helpr.",
+      "title": "Veelgestelde vragen",
       "items": {
-        "efficient": {
-          "q": "What makes this Safety Culture Ladder trajectory so efficient?",
-          "a": "Our AI runs the time-consuming interviews with your team. A qualified Safety Culture Ladder advisor steers the process and safeguards quality. No weeks of workshops, no questionnaires nobody completes. An efficient certification trajectory from sign-up to certificate."
+        "what": {
+          "q": "Wat is een AI-interview?",
+          "a": "Een gesproken gesprek van 20 tot 30 minuten, via telefoon of computer. De AI-interviewer kent het vak en vraagt door waar een antwoord te makkelijk is."
         },
-        "anonymous": {
-          "q": "Are the interviews anonymous?",
-          "a": "Yes. All interviews are processed anonymously. Employees can speak freely; names are never traceable. That delivers a more honest and complete picture of the safety culture in your organisation."
+        "replaceAudit": {
+          "q": "Vervangt Helpr de externe audit?",
+          "a": "Nee. Helpr is de interne meting vooraf. De externe audit blijft bij de certificerende instelling."
         },
-        "time": {
-          "q": "How much time does achieving the Safety Culture Ladder take from our organisation?",
-          "a": "A typical AI interview takes 20 to 30 minutes per participant, at a moment that suits the employee. The full trajectory typically runs 2 to 6 months, depending on the behaviour change required in your organisation."
+        "whichProduct": {
+          "q": "Voor welk SCL-product werkt dit?",
+          "a": "Bij SCL en SCL Original kan Helpr de eigen vragenlijst vervangen. Bij SCL Light, SCL Light klein en Self Assessment blijft de voorgeschreven vragenlijst of webtool verplicht, en is Helpr een verdieping daarnaast."
         },
-        "ontzorgen": {
-          "q": "Are we really fully taken care of?",
-          "a": "We facilitate the interviews, deliver the report, and our advisor translates the outcomes into concrete steps for training, implementation and communication. We keep progress in check. Execution and behaviour change is up to your organisation itself, we don't step in there. But we prepare you flawlessly for the audit."
+        "timePerPerson": {
+          "q": "Hoeveel tijd kost het per persoon?",
+          "a": "Een klein uur, inclusief kick-off. Dat is meer dan de 10 minuten van een vragenlijst. Daarvoor krijg je terug wat een vragenlijst niet oplevert: voorbeelden, context en het waarom."
         },
-        "audit": {
-          "q": "How do we know we'll pass the Safety Culture Ladder audit?",
-          "a": "We work with qualified Safety Culture Ladder advisors whose only goal is to get you ready for the audit. We deliver an audit‑ready dossier that meets all requirements for the target step, plus a pre‑audit check to test readiness."
+        "sample": {
+          "q": "Hoeveel interviews zijn nodig voor een betrouwbaar beeld?",
+          "a": "We volgen de steekproef die NEN hanteert: meestal 20 tot 25 medewerkers en rond 5 managers per eenheid. De grootte blijft jouw keuze."
         },
-        "audience": {
-          "q": "Which organisations is this suitable for?",
-          "a": "Any company in construction, infrastructure, engineering or services aiming for Safety Culture Ladder Step 3, 4 or 5. From SMEs to large organisations."
+        "indication": {
+          "q": "Hoe komt de indicatie per thema tot stand?",
+          "a": "De norm beschrijft voorbeeldgedrag per trede. De interviewer zoekt daarnaar en vraagt door. Jouw veiligheidskundige beoordeelt de uitkomsten en blijft verantwoordelijk. Werk je niet met tredes, dan krijg je de ontwikkeling per thema."
         },
-        "difference": {
-          "q": "What's the difference with a traditional consultancy?",
-          "a": "A traditional Safety Culture Ladder trajectory costs €4,000 to €15,000 and runs for months. We do it for €1,499 (Step 3) and start today. AI does the heavy lifting, a qualified advisor safeguards quality. Same result, a fraction of the price."
+        "reading": {
+          "q": "Kan een AI tussen de regels door lezen?",
+          "a": "Je wint en je verliest iets. Lichaamstaal valt weg. Daar staat tegenover dat je iedereen spreekt, ook op locaties waar je zelf niet komt, en dat mensen hun verhaal niet aan een collega van de afdeling hoeven te vertellen."
         },
-        "trede": {
-          "q": "Can we also reach Step 4 or Step 5?",
-          "a": "Yes. SCL Original has five steps and is the only variant leading to a full certificate. We support Step 3 (€1,499), Step 4 (€1,999) and Step 5 (€2,499). You indicate your target at sign-up."
+        "accessibility": {
+          "q": "Doen monteurs en mensen met weinig taalvaardigheid ook mee?",
+          "a": "Ja. Er hoeft niets gelezen of ingevuld te worden. Het taalniveau is aan te passen, het gesprek kan in meerdere talen, en na de kick-off is er direct tijd voor het interview."
+        },
+        "limits": {
+          "q": "Wat kan Helpr niet?",
+          "a": "Observaties op de werkplek, rondgangen en documentcontrole. Die blijven bij jou of je adviseur."
+        },
+        "methodHistory": {
+          "q": "Kan Helpr onze eigen methode en eerdere metingen meenemen?",
+          "a": "Je methode en context gaan mee via het contextinterview. Historische rapporten inladen kan nog niet."
+        },
+        "voiceStored": {
+          "q": "Wordt de stem bewaard?",
+          "a": "Nee. We bewaren geen audio, ook niet bij leveranciers."
+        },
+        "managerSee": {
+          "q": "Ziet een leidinggevende wat een medewerker zegt?",
+          "a": "Nee. Je krijgt uitkomsten per groep. Personen zijn niet op te vragen."
+        },
+        "dpa": {
+          "q": "Is er een verwerkersovereenkomst?",
+          "a": "Ja, die sluiten we met elke klant. Meer staat op de pagina over privacy en beveiliging."
         }
       }
     },
-    "levels": {
-      "eyebrow": "Steps",
-      "title": "Which step fits you?",
-      "intro": "The Safety Culture Ladder has five steps, and SCL Original is the only variant that leads to a full certificate. Most organisations start at Step 3, the mandatory level from 1 July 2026. Step 4 and 5 are also available.",
-      "level3": {
-        "tag": "Mandatory from 1 July 2026",
-        "title": "Step 3",
-        "price": "€1,499",
-        "body": "Safety is discussed and embedded in policy and behaviour. Staff know what is expected and there is active steering toward safe work."
-      },
-      "level4": {
-        "tag": "Proactive",
-        "title": "Step 4",
-        "price": "€1,999",
-        "body": "Safety is a shared responsibility. Everyone contributes, including the shop floor. Improvements are tackled before things go wrong."
-      },
-      "level5": {
-        "tag": "Forward-looking",
-        "title": "Step 5",
-        "price": "€2,499",
-        "body": "Safety is woven into every decision. Continuous improvement, leadership by example, transparency about incidents and lessons."
-      }
-    },
-    "deliverables": {
-      "title": "What you get",
-      "items": {
-        "dossier": "Audit-ready SCL Original dossier for the auditor",
-        "interviews": "Insights from interviews across your organisation (anonymous)",
-        "subthemes": "Findings organised per sub-theme and organisational layer",
-        "growth": "Concrete steps to grow to a higher step",
-        "support": "Support up to the audit"
-      }
-    },
-    "guarantee": {
-      "title": "Audit failed? Money back.",
-      "body": "If you don't pass the audit with our dossier, you get your money back. That simple."
-    },
     "cta": {
-      "eyebrow": "Ready to start?",
-      "title": "Sign up. Start today.",
-      "subtitle": "Fill in your details and target step. Right after signing up you get access and start today.",
-      "form": {
-        "nameLabel": "Name",
-        "namePlaceholder": "First and last name",
-        "emailLabel": "Email",
-        "emailPlaceholder": "name{'@'}company.com",
-        "companyLabel": "Company",
-        "companyPlaceholder": "Your organisation name",
-        "levelLabel": "Target step",
-        "levelOption3": "Step 3 (mandatory from 1 July 2026)",
-        "levelOption4": "Step 4",
-        "levelOption5": "Step 5",
-        "messageLabel": "Notes",
-        "messagePlaceholder": "E.g. organisation size, desired start",
-        "submit": "Sign me up",
-        "submitting": "Sending…",
-        "submitted": "Thanks! You'll receive your access by email shortly.",
-        "disclaimer": "Right after signing up you'll get access in your inbox.",
-        "error": "Submission failed. Please try again or email info{'@'}helpr.ai directly."
-      }
+      "title": "Ervaar het zelf, of praat met ons.",
+      "ctaPrimary": "Ervaar een interview",
+      "ctaSecondary": "Plan een gesprek",
+      "jaapName": "Jaap Koelewijn",
+      "jaapRole": "Medeoprichter",
+      "jaapPhone": "06 43 91 05 06",
+      "jaapPhoneHref": "tel:+31643910506",
+      "jaapEmail": "jaap{'@'}helpr.ai",
+      "jaapEmailHref": "mailto:jaap{'@'}helpr.ai",
+      "jorienName": "Jorien Knevel",
+      "jorienRole": "Medeoprichter",
+      "jorienPhone": "06 20 10 14 10",
+      "jorienPhoneHref": "tel:+31620101410",
+      "jorienEmail": "jorien{'@'}helpr.ai",
+      "jorienEmailHref": "mailto:jorien{'@'}helpr.ai"
     }
   },
   "sample": {

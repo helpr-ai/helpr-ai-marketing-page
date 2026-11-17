@@ -300,6 +300,7 @@
                 <img src="~/assets/images/logos/hoolwerfheiwerken_logo.svg" alt="Hoolwerf Heiwerken" class="h-7 w-auto" />
               </div>
               <img src="~/assets/images/logos/kwaliteit_in_bedrijf.webp" alt="Kwaliteit in Bedrijf" class="h-10 w-auto opacity-90 hover:opacity-100 transition-opacity" />
+              <img src="~/assets/images/logos/vink_logo.svg" alt="Vink" class="h-10 w-auto opacity-90 hover:opacity-100 transition-opacity" />
             </div>
           </div>
 
